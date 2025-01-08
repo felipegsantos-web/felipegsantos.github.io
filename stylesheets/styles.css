@@ -55,22 +55,10 @@ a:hover small {
 }
 
 
-/* Apply the default color */
-.social-icon {
-  filter: grayscale(0%) brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(0deg); /* Default color effect */
-  transition: filter 0.3s ease, fill 0.3s ease; /* Smooth transition */
-}
-
-/* Hover color effect */
-.social-icon:hover {
-  filter: grayscale(0%) brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(0deg); /* Keep color adjustment for hover */
-}
-
 .social-icon path, .social-icon svg {
   fill: #8c0101 !important; /* Default color */
 }
 
-/* Hover fill color */
 .social-icon:hover path, .social-icon:hover svg {
   fill: #d11111 !important; /* Hover color */
 }
