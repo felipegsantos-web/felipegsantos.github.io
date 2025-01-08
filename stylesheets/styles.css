@@ -55,18 +55,15 @@ a:hover small {
 }
 
 
-/* Default color */
 .social-icon {
-  width: 35px;
-  height: 35px;
-  fill: #8c0101; /* Set default color */
-  transition: fill 0.3s ease; /* Smooth transition */
+    fill: #8c0101; 
+    transition: fill 0.3s ease; 
 }
 
-/* Hover color */
 .social-icon:hover {
-  fill: #d11111; /* Hover color */
+    fill: #d11111; 
 }
+
 
 
 
