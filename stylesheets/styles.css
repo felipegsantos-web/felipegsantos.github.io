@@ -54,15 +54,14 @@ a:hover small {
   color:#777;
 }
 
-
-.social-icon svg {
+.social-icon path, .social-icon svg {
   fill: #8c0101 !important; /* Default color */
+  transition: fill 0.3s ease; /* Smooth transition */
 }
 
-.social-icon:hover svg {
+.social-icon:hover path, .social-icon:hover svg {
   fill: #d11111 !important; /* Hover color */
 }
-
 
 
 .wrapper {
