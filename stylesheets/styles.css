@@ -268,3 +268,13 @@ footer {
     color:#444;
   }
 }
+
+/* Added styles for the icon hover effect */
+a i {
+  color: black; /* Default color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+a i:hover {
+  color: #8c0101; /* Red color on hover */
+}
