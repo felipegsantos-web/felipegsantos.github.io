@@ -54,6 +54,24 @@ a:hover small {
   color:#777;
 }
 
+.social-icon {
+  filter: grayscale(0%) brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(0deg); /* Default color effect */
+  transition: filter 0.3s ease; /* Smooth transition */
+}
+
+.social-icon:hover {
+  filter: grayscale(0%) brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(0deg); /* Hover color effect */
+}
+
+/.social-icon path {
+  fill: #8c0101 !important; /* Default color */
+}
+
+.social-icon:hover path {
+  fill: #d11111 !important; /* Hover color */
+}
+
+
 .wrapper {
   width:860px;
   margin:0 auto;
