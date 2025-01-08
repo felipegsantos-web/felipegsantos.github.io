@@ -33,17 +33,28 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <style>
+<style>
     .email-icon {
-      color: black; /* Default color */
-      font-size: 35px; /* Set the icon size to match your previous image size */
-      transition: color 0.3s ease; /* Smooth transition for color change */
-    }
+    color: black; /* Default color */
+    font-size: 35px; /* Set the icon size to match your previous image size */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
 
-    .email-icon:hover {
-      color: #8c0101; /* Color on hover */
-    }
-  </style>
+  .email-icon:hover {
+    color: #8c0101; /* Color on hover */
+  }
+
+  
+  .cv-icon {
+    filter: grayscale(100%) brightness(0) invert(1); /* Initial black */
+    transition: filter 0.3s ease; /* Smooth transition for filter */
+  }
+
+  .cv-icon:hover {
+    filter: grayscale(0%) brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(0deg); /* Turns to #8c0101 */
+  }
+</style>
+
 
     <!-- Add canonical link to avoid duplicate content issues -->
     <link rel="canonical" href="https://yourwebsite.com">
@@ -61,7 +72,7 @@
         Babeş-Bolyai University</strong></p>
 
         <a href="mailto:felipe.santos@ubbcluj.ro"><i class="fa-solid fa-envelope" class="email-icon"></i></a>
-        <a href="https://drive.google.com/file/d/16NQDdRim9zVLQWd3QNtTBpLteJD2wW38/view?usp=sharing"><img src="images/cv.svg" alt="CV of Felipe G. Santos" width="45" height="45" fill="#8c0101"></a>
+        <a href="https://drive.google.com/file/d/16NQDdRim9zVLQWd3QNtTBpLteJD2wW38/view?usp=sharing"><img src="images/cv.svg" alt="CV of Felipe G. Santos" class="cv-icon" width="45" height="45"></a>
         <a href="https://scholar.google.es/citations?user=wA7Yb2gAAAAJ&hl=es&inst=18254509834311452328&oi=ao"><img src="images/scholar.svg" alt="CV of Felipe G. Santos" width="35" height="40" fill="#8c0101"></a>
         <a href="https://x.com/feligsantos"><img src="images/twitter.svg" alt="CV of Felipe G. Santos" width="30" height="30" fill="#8c0101"></a>
         
