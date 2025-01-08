@@ -55,11 +55,11 @@ a:hover small {
 }
 
 
-.social-icon path, .social-icon svg {
+.social-icon svg {
   fill: #8c0101 !important; /* Default color */
 }
 
-.social-icon:hover path, .social-icon:hover svg {
+.social-icon:hover svg {
   fill: #d11111 !important; /* Hover color */
 }
 
