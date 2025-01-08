@@ -54,18 +54,16 @@ a:hover small {
   color:#777;
 }
 
-
 .social-icon {
-    fill: #8c0101; 
-    transition: fill 0.3s ease; 
+  width: 24px;
+  height: 24px;
+  fill: #8c0101; 
+  transition: fill 0.3s ease;
 }
 
 .social-icon:hover {
-    fill: #d11111; 
+  fill: #d11111; 
 }
-
-
-
 
 .wrapper {
   width:860px;
