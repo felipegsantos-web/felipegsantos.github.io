@@ -56,21 +56,12 @@ a:hover small {
 
 
 .social-icon {
-  filter: grayscale(0%) brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(0deg); /* Default color effect */
+  filter: grayscale(0%) brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(0deg);
   transition: filter 0.3s ease; /* Smooth transition */
 }
 
 .social-icon:hover {
-  filter: grayscale(0%) brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(0deg); /* Color on hover */
-}
-
-.social-icon path, .social-icon svg {
-  fill: #8c0101 !important; /* Default color */
-  transition: fill 0.3s ease; /* Smooth transition */
-}
-
-.social-icon:hover path, .social-icon:hover svg {
-  fill: #d11111 !important; /* Hover color */
+  filter: grayscale(0%) brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(0deg);
 }
 
 
