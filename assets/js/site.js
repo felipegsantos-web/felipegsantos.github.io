@@ -46,10 +46,10 @@
   /* ---- Theme toggle ---- */
   const html = document.documentElement;
   function getStoredTheme() {
-    try { return sessionStorage.getItem('theme'); } catch { return null; }
+    return null;
   }
   function setStoredTheme(t) {
-    try { sessionStorage.setItem('theme', t); } catch {}
+    // theme stored in memory
   }
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   let currentTheme = getStoredTheme() || (prefersDark ? 'dark' : 'light');
