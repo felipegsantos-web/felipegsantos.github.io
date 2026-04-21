@@ -161,3 +161,20 @@ document.querySelectorAll('a[data-track]').forEach(function(a){
 });
 
 })();
+
+/* ── Publication view toggle (theme / flat list) ────────────── */
+(function(){
+  var btns=document.querySelectorAll('.view-btn');
+  if(!btns.length)return;
+  var viewTheme=document.getElementById('view-theme');
+  var viewList=document.getElementById('view-list');
+  btns.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      btns.forEach(function(b){b.classList.remove('active')});
+      btn.classList.add('active');
+      var v=btn.dataset.view;
+      if(viewTheme)viewTheme.hidden=(v!=='theme');
+      if(viewList)viewList.hidden=(v!=='list');
+    });
+  });
+})();
