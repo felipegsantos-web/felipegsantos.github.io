@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.felipegsantos.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.felipegsantos.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.felipegsantos.com/es/"/>
+    <changefreq>monthly</changefreq><priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.felipegsantos.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.felipegsantos.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.felipegsantos.com/es/"/>
+    <changefreq>monthly</changefreq><priority>1.0</priority>
+  </url>
+  <url><loc>https://www.felipegsantos.com/en/publications/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.felipegsantos.com/es/publicaciones/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.felipegsantos.com/en/media/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.felipegsantos.com/es/medios/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.felipegsantos.com/en/cv/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.felipegsantos.com/es/cv/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.felipegsantos.com/en/current-work/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.felipegsantos.com/es/trabajo-actual/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.felipegsantos.com/en/consultancy/</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.felipegsantos.com/es/consultoria/</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.felipegsantos.com/en/contact/</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.felipegsantos.com/es/contacto/</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+</urlset>
