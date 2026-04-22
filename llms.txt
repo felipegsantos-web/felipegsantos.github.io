@@ -1,6 +1,6 @@
 # Felipe G. Santos
 
-> Research Fellow in Political Sociology at City St George's, University of London and Babeş-Bolyai University (Romania). Studies social movements, political participation, far-right politics, and democratic change in Europe. Uses comparative, ethnographic, and survey methods. Author of *Social Movements that Care* (Palgrave Macmillan, 2024). Cited by 350+.
+> Research Fellow in Political Sociology at City St George's, University of London, United Kingdom and Babeş-Bolyai University (Romania). Studies social movements, political participation, far-right politics, and democratic change in Europe. Uses comparative, ethnographic, and survey methods. Author of *Social Movements that Care* (Palgrave Macmillan, 2024). Cited by 350+.
 
 Felipe G. Santos is a political sociologist working at the intersection of social movements, collective action, electoral politics, and democratic theory. His empirical work is grounded in European cases — Spain, Hungary, the UK, and comparative cross-national surveys — and employs a range of methods including ethnography, protest event analysis, survey experiments, and elite interviews.
 
@@ -12,14 +12,27 @@ Research areas: care and social movements; far-right politics and civil society 
 - [Publications](https://www.felipegsantos.com/en/publications/): Full publication list organised by research theme, with abstracts
 - [Research](https://www.felipegsantos.com/en/current-work/): Active research projects (INTERFACED, TakePart) and working papers
 - [Media](https://www.felipegsantos.com/en/media/): Press, radio, podcast, and opinion coverage
-- [CV](https://www.felipegsantos.com/en/cv/): Academic positions, education, grants, awards, and professional service
+- [CV](https://www.felipegsantos.com/en/cv/): Academic positions, education, awards, and professional service
 - [Contact](https://www.felipegsantos.com/en/contact/): Contact form and email
+
+## Publication theme pages (English)
+
+- [Care, Empowerment & Social Movements](https://www.felipegsantos.com/en/publications/theme/care/): Publications on care, solidarity, and housing movements
+- [The Far Right in Europe](https://www.felipegsantos.com/en/publications/theme/farright/): Publications on far-right parties, strategies, and civil society capture
+- [Protest & Political Participation](https://www.felipegsantos.com/en/publications/theme/protest/): Publications on protest repertoires, online and in-person participation
+- [Electoral & Non-Electoral Politics](https://www.felipegsantos.com/en/publications/theme/movementparties/): Publications on movement parties and the street-ballot relationship
+- [Democratic Quality & Backsliding](https://www.felipegsantos.com/en/publications/theme/democracy/): Publications on opposition strategies and democratic erosion
 
 ## Spanish versions
 
 - [Inicio (Spanish home)](https://www.felipegsantos.com/es/): Versión en español del sitio
 - [Publicaciones](https://www.felipegsantos.com/es/publicaciones/): Lista de publicaciones por tema
 - [Investigación](https://www.felipegsantos.com/es/trabajo-actual/): Proyectos activos y documentos de trabajo
+- [Cuidados, Empoderamiento y Movimientos Sociales](https://www.felipegsantos.com/es/publicaciones/tema/care/): Publicaciones sobre cuidados y movimientos sociales
+- [La Extrema Derecha en Europa](https://www.felipegsantos.com/es/publicaciones/tema/farright/): Publicaciones sobre extrema derecha
+- [Protesta y Participación Política](https://www.felipegsantos.com/es/publicaciones/tema/protest/): Publicaciones sobre protesta y participación
+- [Política Electoral y No Electoral](https://www.felipegsantos.com/es/publicaciones/tema/movementparties/): Publicaciones sobre partidos de movimiento
+- [Calidad Democrática y Retroceso Democrático](https://www.felipegsantos.com/es/publicaciones/tema/democracy/): Publicaciones sobre erosión democrática
 
 ## Academic profiles
 
@@ -28,7 +41,15 @@ Research areas: care and social movements; far-right politics and civil society 
 - [ResearchGate](https://www.researchgate.net/profile/Felipe-G-Santos): Publication repository
 - [LinkedIn](https://www.linkedin.com/in/felipegsantos/): Professional profile
 
+## Notable publications (2024–2026)
+
+- *Social Movements that Care* (2024, Palgrave Macmillan): Monograph on the PAH housing movement and the politics of care
+- "Policy over Protest" (2024, *Perspectives on Politics*): Survey experiments on movement party support
+- "Opposition electoral strategies against democratic backsliding" (2025, *Democratization*): Hungary 2022 coalition analysis
+- "One foot in parliament, one on the streets" (2026, *Party Politics*): Individual protest and party evaluations
+- "Methodological Pluralism in the Study of Political Participation" (2024, Routledge Handbook of Political Participation): Now published as a book chapter
+
 ## Optional
 
-- [Consultancy](https://www.felipegsantos.com/en/consultancy/): Expert analysis and advisory services on political sociology topics
+- [Consultancy](https://www.felipegsantos.com/en/consultancy/): Expert analysis and advisory services on survey design, democratic backsliding, and political participation
 - [Sitemap](https://www.felipegsantos.com/sitemap.xml): Full URL list for all pages

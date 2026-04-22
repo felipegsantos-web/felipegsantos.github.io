@@ -1,54 +1,76 @@
 /* ============================================================
-   DESIGN TOKENS — Felipe G. Santos Academic Website v2
+   DESIGN TOKENS — Felipe G. Santos Academic Website
    ============================================================ */
 :root {
+  /* Foundation */
   --bg:           #F6F2EB;
-  --surface:      #FBF8F3;
-  --surface2:     #FFFFFF;
-  --surface-off:  #EEE8DF;
-  --border:       #D9D1C7;
-  --divider:      #DFD7CB;
+  --bg-alt:       #F2ECE0;
+  --bg-card:      #FBF8F2;
 
-  --text:         #1F2423;
-  --text-muted:   #5C6664;
-  --text-faint:   #9AACAA;
-  --text-inv:     #FBF8F3;
+  /* Text */
+  --text:         #2B2621;
+  --text-secondary: #5C534C;
+  --text-muted:   #9A8C80;
+  --text-inv:     #EDE6D8;
 
-  --teal:         #0F6B6F;
-  --teal-hover:   #0B5558;
-  --teal-active:  #093F42;
-  --teal-hi:      #C8DBD9;
-  --teal-bg:      #EAF2F2;
+  /* Accent (rust/terra) */
+  --accent:       #A0462B;
+  --accent-hover: #7F3522;
+  --accent-soft:  #E8C9BF;
 
-  --terra:        #A35C45;
-  --terra-hover:  #8A4A35;
-  --terra-hi:     #E8D4CC;
+  /* Borders */
+  --border:       #DDD4C8;
+  --border-strong:#C9BDA9;
 
-  /* Publication type colours */
-  --pub-book:     #6B4E9A;   /* violet   */
+  /* Semantic */
+  --success:      #56735F;
+  --info:         #5C728A;
+  --error:        #8B2C1F;
+
+  /* Focus */
+  --focus-ring:   #C97A5D;
+
+  /* Legacy aliases — map to new palette for backwards compat */
+  --surface:      var(--bg-card);
+  --surface2:     var(--bg-card);
+  --surface-off:  var(--bg-alt);
+  --divider:      var(--border);
+  --text-faint:   var(--text-muted);
+
+  /* Keep teal as accent for pub badge colors (no change to hue) */
+  --teal:         var(--accent);
+  --teal-hover:   var(--accent-hover);
+  --teal-active:  #5C2B1A;
+  --teal-hi:      var(--accent-soft);
+  --teal-bg:      color-mix(in oklab, var(--accent) 8%, var(--bg));
+
+  /* Terra = same as accent */
+  --terra:        var(--accent);
+  --terra-hover:  var(--accent-hover);
+  --terra-hi:     var(--accent-soft);
+
+  /* Publication type colours — unchanged */
+  --pub-book:     #6B4E9A;
   --pub-book-bg:  #EDE8F5;
-  --pub-article:  #0F6B6F;   /* teal     */
-  --pub-article-bg: #EAF2F2;
-  --pub-chapter:  #A35C45;   /* terracotta */
+  --pub-article:  #2C5F7A;
+  --pub-article-bg: #E0EEF5;
+  --pub-chapter:  #A0462B;
   --pub-chapter-bg: #F5EBE7;
-  --pub-review:   #8A6A1E;   /* amber    */
+  --pub-review:   #8A6A1E;
   --pub-review-bg:#F5EEE0;
-  --pub-wip:      #2E6DA4;   /* steel    */
-  --pub-wip-bg:   #E5EEF7;
+  --pub-wip:      #5C728A;
+  --pub-wip-bg:   #E4EDF5;
 
-  --success:      #3D7A3A;
-  --warning:      #8A6A1E;
-  --info:         #2E6DA4;
-
+  /* Radius, spacing, type, shadows — unchanged from previous */
   --r-sm:  0.25rem;
   --r-md:  0.375rem;
   --r-lg:  0.625rem;
   --r-xl:  1rem;
   --r-full:9999px;
 
-  --shadow-sm: 0 1px 3px rgba(31,36,35,.06);
-  --shadow-md: 0 4px 12px rgba(31,36,35,.09);
-  --shadow-lg: 0 12px 32px rgba(31,36,35,.12);
+  --shadow-sm: 0 1px 3px rgba(43,38,33,.06);
+  --shadow-md: 0 4px 12px rgba(43,38,33,.09);
+  --shadow-lg: 0 12px 32px rgba(43,38,33,.12);
 
   --ease: 180ms cubic-bezier(.16,1,.3,1);
   --ease-slow: 320ms cubic-bezier(.16,1,.3,1);
@@ -72,33 +94,64 @@
 }
 
 [data-theme='dark'] {
-  --bg:#181614; --surface:#1E1C19; --surface2:#242220;
-  --surface-off:#1B1916; --border:#373430; --divider:#2E2B27;
-  --text:#D8D3CB; --text-muted:#7D847F; --text-faint:#4A5250;
-  --text-inv:#1F2423;
-  --teal:#5BA8AC; --teal-hover:#4A9296; --teal-hi:#1E3535; --teal-bg:#1A2E2E;
-  --terra:#C4806A; --terra-hover:#B06D57; --terra-hi:#4A2E24;
-  --pub-book:#B39FD4; --pub-book-bg:#2A2035;
-  --pub-article:#5BA8AC; --pub-article-bg:#1A2E2E;
-  --pub-chapter:#C4806A; --pub-chapter-bg:#2E1E18;
-  --pub-review:#C9A44A; --pub-review-bg:#2A2210;
-  --pub-wip:#6EA8D4; --pub-wip-bg:#1A2535;
-  --shadow-sm:0 1px 3px rgba(0,0,0,.2);
-  --shadow-md:0 4px 12px rgba(0,0,0,.3);
-  --shadow-lg:0 12px 32px rgba(0,0,0,.4);
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme]) {
-    --bg:#181614; --surface:#1E1C19; --surface2:#242220;
-    --surface-off:#1B1916; --border:#373430; --divider:#2E2B27;
-    --text:#D8D3CB; --text-muted:#7D847F; --text-faint:#4A5250;
-    --text-inv:#1F2423;
-    --teal:#5BA8AC; --teal-hover:#4A9296; --teal-hi:#1E3535; --teal-bg:#1A2E2E;
-    --terra:#C4806A; --terra-hover:#B06D57; --terra-hi:#4A2E24;
-    --pub-book:#B39FD4; --pub-book-bg:#2A2035;
-    --pub-article:#5BA8AC; --pub-article-bg:#1A2E2E;
-    --pub-chapter:#C4806A; --pub-chapter-bg:#2E1E18;
-    --pub-review:#C9A44A; --pub-review-bg:#2A2210;
-    --pub-wip:#6EA8D4; --pub-wip-bg:#1A2535;
-  }
+  /* Foundation */
+  --bg:           #1C1815;
+  --bg-alt:       #231E1A;
+  --bg-card:      #2A2420;
+
+  /* Text */
+  --text:         #EDE6D8;
+  --text-secondary: #B8AC9C;
+  --text-muted:   #988B7D;
+  --text-inv:     #2B2621;
+
+  /* Accent */
+  --accent:       #D2764F;
+  --accent-hover: #E89068;
+  --accent-soft:  #4A2B20;
+
+  /* Borders */
+  --border:       #3A322C;
+  --border-strong:#5A4F44;
+
+  /* Semantic */
+  --success:      #8FA888;
+  --info:         #8DA1BC;
+  --error:        #D46B5A;
+
+  /* Focus */
+  --focus-ring:   #E89068;
+
+  /* Legacy aliases */
+  --surface:      var(--bg-card);
+  --surface2:     var(--bg-card);
+  --surface-off:  var(--bg-alt);
+  --divider:      var(--border);
+  --text-faint:   var(--text-muted);
+
+  --teal:         var(--accent);
+  --teal-hover:   var(--accent-hover);
+  --teal-active:  #F0B090;
+  --teal-hi:      var(--accent-soft);
+  --teal-bg:      color-mix(in oklab, var(--accent) 12%, var(--bg));
+
+  --terra:        var(--accent);
+  --terra-hover:  var(--accent-hover);
+  --terra-hi:     var(--accent-soft);
+
+  /* Publication type colours — dark mode */
+  --pub-book:     #B39FD4;
+  --pub-book-bg:  #2A2035;
+  --pub-article:  #7AB0C8;
+  --pub-article-bg: #1A2E38;
+  --pub-chapter:  #D2764F;
+  --pub-chapter-bg: #2E1E18;
+  --pub-review:   #C9A44A;
+  --pub-review-bg:#2A2210;
+  --pub-wip:      #8DA1BC;
+  --pub-wip-bg:   #1A2535;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.25);
+  --shadow-md: 0 4px 12px rgba(0,0,0,.35);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,.45);
 }
