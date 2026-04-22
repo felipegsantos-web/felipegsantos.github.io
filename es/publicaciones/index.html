@@ -83,104 +83,75 @@
   <div class="container">
     <div class="page-header">
       <h1 class="page-title">Publicaciones</h1>
-      <p class="page-intro">Registro completo de libros, artículos revisados por pares y capítulos — organizado por tema de investigación.</p>
+      <p class="page-intro">Explora mi investigación por tema o consulta la lista completa de publicaciones.</p>
     </div>
 
     <!-- View toggle: by-theme vs flat list -->
     <div class="pub-view-toggle" role="group" aria-label="Modo de vista">
-      <button class="view-btn active" data-view="theme">Por tema</button>
-      <button class="view-btn" data-view="list">Lista completa</button>
+      <button class="view-btn active" data-view="theme">Temas de investigación</button>
+      <button class="view-btn" data-view="list">Todas las publicaciones</button>
     </div>
 
-    <!-- BY-THEME VIEW -->
+    <!-- THEME OVERVIEW VIEW -->
     <div id="view-theme">
 
-      <!-- Highlighted -->
-      <section aria-labelledby="highlighted-h" style="margin-bottom:var(--sp10)">
-        <h2 class="section-heading" id="highlighted-h" style="margin-top:var(--sp8)">Publicaciones destacadas</h2>
-        <div class="pub-list pub-list--highlighted">
-          <article class="pub-entry" data-pub="book care movements housing" data-themes="care">
-      <div class="pub-entry__meta-top">
-        <span class="type-badge type-badge--book">Libro</span>
-        <span class="pub-entry__year">2024</span>
-      </div>
-      <h3 class="pub-entry__title">
-        <a href="https://link.springer.com/book/10.1007/978-3-031-74296-5" target="_blank" rel="noopener" data-track="Publication Click">Social Movements that Care: Empathy, Solidarity, and Empowerment in the Fight Against Evictions</a>
-      </h3>
-      <p class="pub-entry__authors"><span class='pub-entry__me'>Felipe G. Santos</span></p>
-      <p class="pub-entry__venue">Palgrave Macmillan, London</p>
-      <p class="pub-entry__abstract">Este libro ofrece un análisis original de cómo la Plataforma de Afectados por la Hipoteca (PAH) construyó uno de los movimientos sociales más eficaces del siglo XXI. A partir de un trabajo de campo etnográfico exhaustivo, entrevistas en profundidad y encuestas originales, sostiene que el cuidado —en sus formas de empatía, solidaridad y empoderamiento colectivo— no era un subproducto del activismo sino una estrategia política deliberada.</p><p class="pub-entry__why"><span class="pub-entry__why-label">Por qué importa:</span> Reformula cómo entendemos el éxito de los movimientos sociales: no solo en función de recursos u oportunidades, sino de la infraestructura emocional y relacional que construyen.</p>
-    </article>
-<article class="pub-entry" data-pub="article movement parties elections" data-themes="movementparties">
-      <div class="pub-entry__meta-top">
-        <span class="type-badge type-badge--article">Artículo</span>
-        <span class="pub-entry__year">2024</span>
-      </div>
-      <h3 class="pub-entry__title">
-        <a href="https://doi.org/10.1017/S1537592724001439" target="_blank" rel="noopener" data-track="Publication Click">Policy over Protest: Experimental Evidence on the Drivers of Support for Movement Parties</a>
-      </h3>
-      <p class="pub-entry__authors"><span class='pub-entry__me'>Felipe G. Santos</span> y Dan Mercea</p>
-      <p class="pub-entry__venue"><em>Perspectives on Politics</em></p>
-      <p class="pub-entry__abstract">¿Qué impulsa el apoyo electoral a los partidos de movimiento: sus posiciones de política pública o sus actividades de protesta? Usando experimentos de encuesta conjoint y viñetas en cinco países europeos, este artículo muestra que los votantes responden principalmente al contenido de las políticas, no a las tácticas de protesta.</p><p class="pub-entry__why"><span class="pub-entry__why-label">Por qué importa:</span> Resuelve un debate prolongado en la literatura mostrando, con evidencia experimental, que a los votantes les importa más lo que los partidos de movimiento defienden que cómo protestan.</p>
-    </article>
-<article class="pub-entry" data-pub="article far-right education europe" data-themes="farright">
-      <div class="pub-entry__meta-top">
-        <span class="type-badge type-badge--article">Artículo</span>
-        <span class="pub-entry__year">2021</span>
-      </div>
-      <h3 class="pub-entry__title">
-        <a href="https://doi.org/10.1093/ia/iiab112" target="_blank" rel="noopener" data-track="Publication Click">Europe's Far-Right Schools and Their Project for International Order</a>
-      </h3>
-      <p class="pub-entry__authors"><span class='pub-entry__me'>Felipe G. Santos</span> y Dorit Geva</p>
-      <p class="pub-entry__venue"><em>International Affairs</em></p>
-      <p class="pub-entry__abstract">Los partidos de extrema derecha de Europa han creado una red de escuelas de formación y academias ideológicas para formar una nueva élite política y promover una visión alternativa del orden internacional.</p><p class="pub-entry__why"><span class="pub-entry__why-label">Por qué importa:</span> Expone la infraestructura intelectual a largo plazo de la extrema derecha europea, revelando que su desafío a la democracia liberal no es solo electoral sino organizacional e ideacional.</p>
-    </article>
+      <!-- Theme entry cards -->
+      <section id="themes-overview" aria-labelledby="themes-overview-h" style="margin-bottom:var(--sp12)">
+        <h2 class="section-heading sr-only" id="themes-overview-h">Temas de investigación</h2>
+        <div class="theme-entry-grid" style="margin-top:var(--sp6)">
+          
+      <a href="#theme-care" class="theme-entry-card" style="--theme-color:#0F6B6F" aria-label="Cuidados, Empoderamiento y Movimientos Sociales">
+        <div class="theme-entry-card__art"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="40" cy="44" rx="28" ry="22" fill="#0F6B6F" opacity="0.18"/><path d="M40 20 C28 20 18 30 18 40 C18 52 30 62 40 68 C50 62 62 52 62 40 C62 30 52 20 40 20Z" fill="#0F6B6F" opacity="0.55"/></svg></div>
+        <div class="theme-entry-card__body">
+          <h3 class="theme-entry-card__name">Cuidados, Empoderamiento y Movimientos Sociales</h3>
+          <p class="theme-entry-card__summary">Cómo la solidaridad, la empatía y el cuidado mutuo funcionan como recursos políticos dentro de los movimientos sociales que luchan por los derechos a la vivienda.</p>
+          <span class="theme-entry-card__count">8 publicaciones ↓</span>
+        </div>
+      </a>
+      <a href="#theme-farright" class="theme-entry-card" style="--theme-color:#A35C45" aria-label="La Extrema Derecha en Europa">
+        <div class="theme-entry-card__art"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="14" y="14" width="52" height="52" rx="4" fill="#A35C45" opacity="0.15"/><polygon points="40,12 68,64 12,64" fill="#A35C45" opacity="0.55"/></svg></div>
+        <div class="theme-entry-card__body">
+          <h3 class="theme-entry-card__name">La Extrema Derecha en Europa</h3>
+          <p class="theme-entry-card__summary">Partidos de extrema derecha, instituciones educativas, movimientos antigénero y estrategias en la sociedad civil — cómo la derecha radical construye poder.</p>
+          <span class="theme-entry-card__count">3 publicaciones ↓</span>
+        </div>
+      </a>
+      <a href="#theme-protest" class="theme-entry-card" style="--theme-color:#2E6DA4" aria-label="Protesta y Participación Política">
+        <div class="theme-entry-card__art"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="40" cy="40" r="26" fill="#2E6DA4" opacity="0.15"/><rect x="20" y="36" width="40" height="8" rx="4" fill="#2E6DA4" opacity="0.55"/><rect x="34" y="16" width="12" height="48" rx="4" fill="#2E6DA4" opacity="0.35"/></svg></div>
+        <div class="theme-entry-card__body">
+          <h3 class="theme-entry-card__name">Protesta y Participación Política</h3>
+          <p class="theme-entry-card__summary">Quién protesta, cómo y por qué — desde manifestaciones presenciales hasta el activismo digital. Análisis a nivel individual de la participación en protestas.</p>
+          <span class="theme-entry-card__count">7 publicaciones ↓</span>
+        </div>
+      </a>
+      <a href="#theme-movementparties" class="theme-entry-card" style="--theme-color:#6B4E9A" aria-label="Política Electoral y No Electoral">
+        <div class="theme-entry-card__art"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="40" cy="40" rx="30" ry="18" fill="#6B4E9A" opacity="0.15"/><path d="M14 50 Q40 18 66 50" stroke="#6B4E9A" stroke-width="5" fill="none" opacity="0.6" stroke-linecap="round"/></svg></div>
+        <div class="theme-entry-card__body">
+          <h3 class="theme-entry-card__name">Política Electoral y No Electoral</h3>
+          <p class="theme-entry-card__summary">Cómo los movimientos de protesta y la política electoral interactúan — a través de partidos de movimiento, votantes de protesta y el límite fluido entre la calle y las urnas.</p>
+          <span class="theme-entry-card__count">3 publicaciones ↓</span>
+        </div>
+      </a>
+      <a href="#theme-democracy" class="theme-entry-card" style="--theme-color:#8A6A1E" aria-label="Calidad Democrática y Retroceso Democrático">
+        <div class="theme-entry-card__art"><svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="12" y="44" width="12" height="24" rx="2" fill="#8A6A1E" opacity="0.55"/><rect x="34" y="28" width="12" height="40" rx="2" fill="#8A6A1E" opacity="0.45"/><rect x="56" y="36" width="12" height="32" rx="2" fill="#8A6A1E" opacity="0.35"/></svg></div>
+        <div class="theme-entry-card__body">
+          <h3 class="theme-entry-card__name">Calidad Democrática y Retroceso Democrático</h3>
+          <p class="theme-entry-card__summary">Estrategias de la oposición, coaliciones electorales y actitudes de los ciudadanos ante la erosión democrática — con investigación comparada en Hungría, España y Europa del Sur.</p>
+          <span class="theme-entry-card__count">1 publicación ↓</span>
+        </div>
+      </a>
         </div>
       </section>
 
-      <!-- WIP -->
-      <section id="wip" aria-labelledby="wip-h" style="margin-bottom:var(--sp10)">
-        <h2 class="section-heading" id="wip-h">Investigación en curso</h2>
-        <p class="section-intro">Artículos actualmente en revisión o en preparación.</p>
-        <div class="pub-list wip-pub-list">
-          <article class="pub-entry wip-entry">
-      <div class="pub-entry__meta-top">
-        <span class="type-badge type-badge--wip">En revisión</span>
-      </div>
-      <h3 class="pub-entry__title">Digital Protest Repertoires and Political Participation in Post-Pandemic Europe</h3>
-      <p class="pub-entry__authors"><strong>Felipe G. Santos</strong>, Dan Mercea y Mathias Hoffmann</p>
-      <p class="pub-entry__abstract">Examina cómo los cambios en los repertorios de protesta durante la pandemia —hacia formas en línea e híbridas— han transformado los patrones de participación política en las democracias europeas.</p>
-      <p class="pub-entry__why"><span class="pub-entry__why-label">Por qué importa:</span> Aporta la primera evidencia comparada a gran escala de que la pandemia transformó de forma duradera las formas de protesta en Europa.</p>
-    </article>
-<article class="pub-entry wip-entry">
-      <div class="pub-entry__meta-top">
-        <span class="type-badge type-badge--wip">Documento de trabajo</span>
-      </div>
-      <h3 class="pub-entry__title">Authoritarian Nostalgia and Democratic Backsliding: Survey Evidence from Southern Europe</h3>
-      <p class="pub-entry__authors"><strong>Felipe G. Santos</strong></p>
-      <p class="pub-entry__abstract">Utiliza datos de encuesta originales para investigar la relación entre la nostalgia por regímenes autoritarios y el declive del apoyo a las instituciones democráticas en Portugal y España.</p>
-      <p class="pub-entry__why"><span class="pub-entry__why-label">Por qué importa:</span> Conecta memorias históricas del autoritarismo con las amenazas actuales a la democracia, una dimensión crítica pero poco estudiada de la erosión democrática en Europa del Sur.</p>
-    </article>
-<article class="pub-entry wip-entry">
-      <div class="pub-entry__meta-top">
-        <span class="type-badge type-badge--wip">En prensa — Routledge</span>
-      </div>
-      <h3 class="pub-entry__title">Methodological Pluralism in the Study of Political Participation</h3>
-      <p class="pub-entry__authors"><strong>Felipe G. Santos</strong> y Claudius Wagemann</p>
-      <p class="pub-entry__abstract">Capítulo de libro en <em>Protest and Democracy</em> (Routledge). Defiende el pluralismo metodológico como principio central en el estudio de la participación política.</p>
-      <p class="pub-entry__why"><span class="pub-entry__why-label">Por qué importa:</span> Cuestiona la ortodoxia cuantitativa en la investigación sobre participación y abre espacio para enfoques mixtos y comparativos.</p>
-    </article>
-        </div>
-      </section>
-
-      <!-- Theme sections -->
-      <section aria-labelledby="by-theme-h">
-        <h2 class="section-heading" id="by-theme-h" style="margin-bottom:var(--sp6)">Por tema de investigación</h2>
+      <!-- Theme pub subsections (linked from cards above) -->
+      <div class="theme-pub-sections">
         
         <section class="theme-pub-section" id="theme-care" aria-labelledby="theme-care-h">
-          <h3 class="theme-pub-section__heading" id="theme-care-h" style="border-left:4px solid #0F6B6F">
+          <a href="#themes-overview" class="theme-pub-section__back" aria-label="Volver a temas">&#8593; Todos los temas</a>
+          <h2 class="theme-pub-section__heading" id="theme-care-h" style="border-left:4px solid #0F6B6F; padding-left:var(--sp4)">
             Cuidados, Empoderamiento y Movimientos Sociales
-          </h3>
+          </h2>
+          <p class="theme-pub-section__desc">Cómo la solidaridad, la empatía y el cuidado mutuo funcionan como recursos políticos dentro de los movimientos sociales que luchan por los derechos a la vivienda.</p>
           <div class="pub-list">
             <article class="pub-entry" data-pub="book care movements housing" data-themes="care">
       <div class="pub-entry__meta-top">
@@ -281,9 +252,11 @@
           </div>
         </section>
         <section class="theme-pub-section" id="theme-farright" aria-labelledby="theme-farright-h">
-          <h3 class="theme-pub-section__heading" id="theme-farright-h" style="border-left:4px solid #A35C45">
+          <a href="#themes-overview" class="theme-pub-section__back" aria-label="Volver a temas">&#8593; Todos los temas</a>
+          <h2 class="theme-pub-section__heading" id="theme-farright-h" style="border-left:4px solid #A35C45; padding-left:var(--sp4)">
             La Extrema Derecha en Europa
-          </h3>
+          </h2>
+          <p class="theme-pub-section__desc">Partidos de extrema derecha, instituciones educativas, movimientos antigénero y estrategias en la sociedad civil — cómo la derecha radical construye poder.</p>
           <div class="pub-list">
             <article class="pub-entry" data-pub="article far-right spain vox" data-themes="farright">
       <div class="pub-entry__meta-top">
@@ -324,9 +297,11 @@
           </div>
         </section>
         <section class="theme-pub-section" id="theme-protest" aria-labelledby="theme-protest-h">
-          <h3 class="theme-pub-section__heading" id="theme-protest-h" style="border-left:4px solid #2E6DA4">
+          <a href="#themes-overview" class="theme-pub-section__back" aria-label="Volver a temas">&#8593; Todos los temas</a>
+          <h2 class="theme-pub-section__heading" id="theme-protest-h" style="border-left:4px solid #2E6DA4; padding-left:var(--sp4)">
             Protesta y Participación Política
-          </h3>
+          </h2>
+          <p class="theme-pub-section__desc">Quién protesta, cómo y por qué — desde manifestaciones presenciales hasta el activismo digital. Análisis a nivel individual de la participación en protestas.</p>
           <div class="pub-list">
             <article class="pub-entry" data-pub="article protest participation parties" data-themes="movementparties protest">
       <div class="pub-entry__meta-top">
@@ -415,9 +390,11 @@
           </div>
         </section>
         <section class="theme-pub-section" id="theme-movementparties" aria-labelledby="theme-movementparties-h">
-          <h3 class="theme-pub-section__heading" id="theme-movementparties-h" style="border-left:4px solid #6B4E9A">
+          <a href="#themes-overview" class="theme-pub-section__back" aria-label="Volver a temas">&#8593; Todos los temas</a>
+          <h2 class="theme-pub-section__heading" id="theme-movementparties-h" style="border-left:4px solid #6B4E9A; padding-left:var(--sp4)">
             Política Electoral y No Electoral
-          </h3>
+          </h2>
+          <p class="theme-pub-section__desc">Cómo los movimientos de protesta y la política electoral interactúan — a través de partidos de movimiento, votantes de protesta y el límite fluido entre la calle y las urnas.</p>
           <div class="pub-list">
             <article class="pub-entry" data-pub="article protest participation parties" data-themes="movementparties protest">
       <div class="pub-entry__meta-top">
@@ -458,9 +435,11 @@
           </div>
         </section>
         <section class="theme-pub-section" id="theme-democracy" aria-labelledby="theme-democracy-h">
-          <h3 class="theme-pub-section__heading" id="theme-democracy-h" style="border-left:4px solid #8A6A1E">
+          <a href="#themes-overview" class="theme-pub-section__back" aria-label="Volver a temas">&#8593; Todos los temas</a>
+          <h2 class="theme-pub-section__heading" id="theme-democracy-h" style="border-left:4px solid #8A6A1E; padding-left:var(--sp4)">
             Calidad Democrática y Retroceso Democrático
-          </h3>
+          </h2>
+          <p class="theme-pub-section__desc">Estrategias de la oposición, coaliciones electorales y actitudes de los ciudadanos ante la erosión democrática — con investigación comparada en Hungría, España y Europa del Sur.</p>
           <div class="pub-list">
             <article class="pub-entry" data-pub="article democracy elections" data-themes="democracy">
       <div class="pub-entry__meta-top">
@@ -476,7 +455,7 @@
     </article>
           </div>
         </section>
-      </section>
+      </div>
 
     </div>
 
@@ -746,8 +725,6 @@
           <a href="https://orcid.org/0000-0001-7006-2088" class="footer-social__link" target="_blank" rel="noopener" aria-label="ORCID" role="listitem"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.891-1.566 3.891-3.722 0-2.025-1.453-3.722-3.903-3.722h-2.285z"/></svg></a>
           <a href="https://www.researchgate.net/profile/Felipe-G-Santos" class="footer-social__link" target="_blank" rel="noopener" aria-label="ResearchGate" role="listitem"><svg width="15" height="15" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M0 32v448h448V32H0zm262.2 334.4c-6.6 3-33.2 6-50.2-17.2l-46.5-60.5-19.7 19v41.5c0 4.3-4.6 6.6-12.6 6.6h-28.1c-4.3 0-6.6-1.7-6.6-6.6V188.4c0-4.3 2.3-6.6 6.6-6.6h28.1c8 0 12.6 2.3 12.6 6.6v66.1l66.4-66.8c4-4.7 14.9-6.6 22.9-6.6H264c7 0 8.6 6.9 3.4 12.6l-56.5 58 60.8 79.4c4.7 6.3 1.3 13.3-9.5 13.3zm140.8-143.5c.3 33.1-21.3 70.8-62.3 70.8h-4c-4.3 0-6.6-2-6.6-6.6v-27.1c0-4.3 2.3-6.6 6.6-6.6 18.3 0 29.3-13.6 29.7-28.4.7-18.9-12.6-30.9-30.6-30.9h-27.4v172.1c0 4.3-2.3 6.6-6.6 6.6h-29.4c-4.3 0-6.6-2.3-6.6-6.6V188.4c0-4.3 2.3-6.6 6.6-6.6h65.1c36.7 0 65.6 27.7 65.5 61.1z"/></svg></a>
           <a href="https://www.linkedin.com/in/felipegsantos/" class="footer-social__link" target="_blank" rel="noopener" aria-label="LinkedIn" role="listitem"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-          <a href="https://x.com/feligsantos" class="footer-social__link" target="_blank" rel="noopener" aria-label="X / Twitter" role="listitem"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.006 2.25h6.102l4.26 5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-          <a href="https://bsky.app/profile/feligsantos.bsky.social" class="footer-social__link" target="_blank" rel="noopener" aria-label="Bluesky" role="listitem"><svg width="15" height="15" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2 42.1-31.6 110.3-56 110.3 21.8 0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1 10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"/></svg></a>
         </div>
       </div>
       <nav aria-label="Páginas">

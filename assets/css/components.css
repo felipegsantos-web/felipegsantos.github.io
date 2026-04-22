@@ -638,3 +638,28 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
 .form-feedback--success{background:#e0f5f0;color:#0a4d40;border:1px solid #b0e0d8}
 .form-feedback--error{background:#fde8e4;color:#7a2010;border:1px solid #f5c4bb}
 .contact-form__fallback{margin-top:var(--sp5);font-size:var(--tx-sm);color:var(--text-muted)}
+
+/* ── Theme entry cards (publications page) ─────────────────── */
+.theme-entry-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--sp5)}
+.theme-entry-card{display:flex;gap:var(--sp4);padding:var(--sp5);background:var(--surface);
+  border:1px solid var(--border);border-radius:var(--r-lg);text-decoration:none;color:inherit;
+  transition:border-color var(--ease),box-shadow var(--ease);
+  border-left:4px solid var(--theme-color,var(--teal))}
+.theme-entry-card:hover{box-shadow:var(--shadow-md);border-color:var(--theme-color,var(--teal))}
+.theme-entry-card__art{flex-shrink:0;width:72px;height:72px}
+.theme-entry-card__art svg{width:100%;height:100%}
+.theme-entry-card__body{display:flex;flex-direction:column;gap:var(--sp2)}
+.theme-entry-card__name{font-size:var(--tx-sm);font-weight:700;color:var(--text-primary);line-height:1.3}
+.theme-entry-card__summary{font-size:var(--tx-xs);color:var(--text-muted);line-height:1.55;flex:1}
+.theme-entry-card__count{font-size:var(--tx-xs);font-weight:600;color:var(--theme-color,var(--teal));margin-top:var(--sp1)}
+.theme-pub-section{margin-bottom:var(--sp14);padding-top:var(--sp8);border-top:1px solid var(--border)}
+.theme-pub-section__back{font-size:var(--tx-xs);color:var(--text-muted);text-decoration:none;display:inline-block;margin-bottom:var(--sp3)}
+.theme-pub-section__back:hover{color:var(--teal)}
+.theme-pub-section__heading{font-size:var(--tx-xl);margin-bottom:var(--sp3)}
+.theme-pub-section__desc{font-size:var(--tx-sm);color:var(--text-muted);margin-bottom:var(--sp6);max-width:62ch}
+
+/* ── Consultancy two-track layout ──────────────────────────── */
+.consult-track__heading{font-size:var(--tx-lg);font-weight:700;color:var(--text-primary);margin-bottom:var(--sp2)}
+.consult-track__intro{font-size:var(--tx-sm);color:var(--text-muted);max-width:65ch}
+.consult-track{padding-bottom:var(--sp8);border-bottom:1px solid var(--border)}
+.consult-track:last-child{border-bottom:none}
