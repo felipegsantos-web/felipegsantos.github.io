@@ -621,3 +621,20 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
   .hero-photo-wrap{order:0}
   .hero-photo{max-width:200px}
 }
+
+/* ── Contact form ──────────────────────────────────────────── */
+.contact-layout--form .contact-main{max-width:640px}
+.contact-form{display:flex;flex-direction:column;gap:var(--sp5)}
+.form-field{display:flex;flex-direction:column;gap:var(--sp2)}
+.form-label{font-size:var(--tx-sm);font-weight:600;color:var(--text-primary)}
+.form-input{padding:var(--sp3) var(--sp4);border:1px solid var(--border);border-radius:var(--r-sm);
+  background:var(--surface);color:var(--text-primary);font-size:var(--tx-base);
+  font-family:inherit;transition:border-color var(--ease),box-shadow var(--ease)}
+.form-input:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,107,111,.15)}
+.form-textarea{resize:vertical;min-height:120px}
+.form-submit{align-self:flex-start}
+.form-submit:disabled{opacity:.6;cursor:not-allowed}
+.form-feedback{margin-top:var(--sp2);font-size:var(--tx-sm);padding:var(--sp3) var(--sp4);border-radius:var(--r-sm)}
+.form-feedback--success{background:#e0f5f0;color:#0a4d40;border:1px solid #b0e0d8}
+.form-feedback--error{background:#fde8e4;color:#7a2010;border:1px solid #f5c4bb}
+.contact-form__fallback{margin-top:var(--sp5);font-size:var(--tx-sm);color:var(--text-muted)}
