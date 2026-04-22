@@ -306,7 +306,7 @@
 
 /* ── Page header utility ─────────────────────────────────────── */
 .page-header{padding-block:clamp(var(--sp8),5vw,var(--sp14));
-  border-bottom:1px solid var(--border);margin-bottom:var(--sp8)}
+  margin-bottom:var(--sp8)}
 .page-title{font-family:var(--font-display);font-size:var(--tx-2xl);
   font-weight:700;color:var(--text);margin-bottom:var(--sp3)}
 .page-tagline{font-size:var(--tx-lg);color:var(--teal);margin-bottom:var(--sp3);font-weight:500}
