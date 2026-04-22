@@ -68,7 +68,7 @@
 /* ── Footer ─────────────────────────────────────────────────── */
 .site-footer{background:var(--surface);border-top:1px solid var(--border);
   padding-block:clamp(var(--sp12),6vw,var(--sp20))}
-.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:var(--sp12)}
+.footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp12)}
 .footer-brand__name{font-family:var(--font-display);font-size:var(--tx-lg);
   font-weight:700;color:var(--text);margin-bottom:var(--sp1)}
 .footer-brand__role{font-size:var(--tx-sm);color:var(--text-muted);margin-bottom:var(--sp5)}
@@ -110,7 +110,6 @@
 
 /* ── Responsive ─────────────────────────────────────────────── */
 @media(max-width:900px){
-  .footer-grid{grid-template-columns:1fr 1fr}
   .site-logo__role{display:none}
 }
 @media(max-width:700px){
