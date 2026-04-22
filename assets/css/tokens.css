@@ -8,7 +8,7 @@
   --bg-card:      #FBF8F2;
 
   /* Text */
-  --text:         #2B2621;
+  --text:         #1A1410;
   --text-secondary: #5C534C;
   --text-muted:   #9A8C80;
   --text-inv:     #EDE6D8;
@@ -103,7 +103,7 @@
   --text:         #EDE6D8;
   --text-secondary: #B8AC9C;
   --text-muted:   #988B7D;
-  --text-inv:     #2B2621;
+  --text-inv:     #1A1410;
 
   /* Accent */
   --accent:       #D2764F;
