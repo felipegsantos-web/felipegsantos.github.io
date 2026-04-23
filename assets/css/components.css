@@ -230,6 +230,9 @@
   line-height:1.6;text-align:center;margin:0}
 .hero-photo__social{display:flex;flex-wrap:wrap;justify-content:center;
   gap:var(--sp2);margin-top:var(--sp4);width:100%;max-width:260px}
+.hero-photo-wrap .footer-social{width:100%;max-width:260px;justify-content:space-between;gap:0}
+.hero-photo-wrap .footer-social__link{width:46px;height:46px}
+.hero-photo-wrap .footer-social__link svg{width:20px;height:20px}
 .inline-link{color:var(--accent);text-decoration:none}
 .inline-link:hover{text-decoration:underline}
 
