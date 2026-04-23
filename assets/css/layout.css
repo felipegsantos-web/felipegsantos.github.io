@@ -84,10 +84,7 @@
 .footer-nav__link{font-size:var(--tx-sm);color:var(--text-muted);text-decoration:none;
   transition:color var(--ease)}
 .footer-nav__link:hover{color:var(--teal)}
-.footer-bottom{margin-top:var(--sp12);padding-top:var(--sp6);
-  border-top:1px solid var(--border);display:flex;justify-content:space-between;
-  align-items:center;gap:var(--sp4);flex-wrap:wrap}
-.footer-bottom__copy{font-size:var(--tx-xs);color:var(--text-faint)}
+
 
 /* ── Page hero ──────────────────────────────────────────────── */
 .page-hero{padding-block:clamp(var(--sp10),7vw,var(--sp20));
@@ -115,5 +112,5 @@
 @media(max-width:700px){
   .site-nav{display:none}
   .mobile-menu-btn{display:flex}
-  .footer-bottom{flex-direction:column;align-items:flex-start;gap:var(--sp2)}
+
 }
