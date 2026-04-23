@@ -67,12 +67,13 @@
 
 /* ── Footer ─────────────────────────────────────────────────── */
 .site-footer{background:var(--surface);border-top:1px solid var(--border);
-  padding-block:clamp(var(--sp12),6vw,var(--sp20))}
-.footer-brand{max-width:420px}
+  padding-block:clamp(var(--sp6),3vw,var(--sp10))}
+.footer-brand{display:flex;align-items:center;justify-content:space-between;gap:var(--sp8);flex-wrap:wrap}
+.footer-brand__info{display:flex;flex-direction:column;gap:var(--sp1)}
 .footer-brand__name{font-family:var(--font-display);font-size:var(--tx-lg);
-  font-weight:700;color:var(--text);margin-bottom:var(--sp1)}
-.footer-brand__role{font-size:var(--tx-sm);color:var(--text-muted);margin-bottom:var(--sp5)}
-.footer-social{display:flex;gap:var(--sp3);flex-wrap:wrap}
+  font-weight:700;color:var(--text);margin:0}
+.footer-brand__role{font-size:var(--tx-sm);color:var(--text-muted);margin:0}
+.footer-social{display:flex;gap:var(--sp3);flex-wrap:wrap;align-items:center}
 .footer-social__link{display:flex;align-items:center;justify-content:center;
   width:32px;height:32px;border-radius:var(--r-full);border:1px solid var(--border);
   color:var(--text-muted);text-decoration:none;
