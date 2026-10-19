@@ -23,12 +23,11 @@ projects:
   status: past
   url: https://takepart.ro/
   description_en: "TakePart (Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation) starts from a paradox: traditional civic engagement is declining, while social movements use social media to drive collective action. The project studies how movements turn online interactions into offline activism across Europe. Led by Dan Mercea and funded by the European Union (NextGenerationEU) and the Romanian Government through Romania's National Recovery and Resilience Plan, 2023 to 2026."
-  description_es: "TakePart (Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation) parte de una paradoja: el compromiso cívico tradicional disminuye, mientras los movimientos sociales usan las redes sociales para impulsar la acción colectiva. El proyecto estudia cómo los movimientos convierten las interacciones online en activismo presencial en Europa. Dirigido por Dan Mercea y financiado por la Unión Europea (NextGenerationEU) y el Gobierno de Rumanía a través del Plan Nacional de Recuperación y Resiliencia, 2023 a 2026."
+  description_es: "TakePart (Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation) parte de una paradoja: el compromiso cívico tradicional disminuye, mientras los movimientos sociales usan las redes sociales para impulsar la acción colectiva. El proyecto estudia cómo los movimientos convierten las interacciones online en activismo presencial en Europa. Dirigido por Dan Mercea y financiado por la European Union (NextGenerationEU) y el Romanian Government a través del National Recovery and Resilience Plan de Rumanía, 2023 a 2026."
 - id: readjust
   name: READJUST Climate
   title: "READJUST Climate: Reasons, Emotions, and Attitudes Towards Climate Change, Mitigation and Justice"
-  funder_en: European Climate Foundation
-  funder_es: Fundación Europea del Clima
+  funder: European Climate Foundation
   years_en: June 2023 to December 2024
   years_es: junio de 2023 a diciembre de 2024
   role: Co-PI
@@ -36,13 +35,11 @@ projects:
 - id: prodem
   name: ProDem
   title: "Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe"
-  funder_en: Volkswagen Foundation
-  funder_es: Fundación Volkswagen
+  funder: Volkswagen Foundation
   status: past
   description_en: "ProDem (Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe), funded by the Volkswagen Foundation. Its outputs include the edited book <em>Protest and Democracy</em> (Routledge, 2025) and a six-country survey of 10,347 people (2022)."
-  description_es: "ProDem (Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe), financiado por la Fundación Volkswagen. Entre sus resultados están el libro colectivo <em>Protest and Democracy</em> (Routledge, 2025) y una encuesta en seis países a 10.347 personas (2022)."
+  description_es: "ProDem (Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe), financiado por la Volkswagen Foundation. Entre sus resultados están el libro colectivo <em>Protest and Democracy</em> (Routledge, 2025) y una encuesta en seis países a 10.347 personas (2022)."
 - id: mobilise
   name: MOBILISE
-  funder_en: Open Research Area (ORA) scheme
-  funder_es: Programa Open Research Area (ORA)
+  funder: Open Research Area (ORA) scheme
   status: past
