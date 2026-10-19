@@ -1,3 +1,5 @@
+> **Note (2026):** this is a historical record from April 2026. The generator it cites (`gen/build_all_pages.py`) no longer exists anywhere, so its rebuild instructions do not apply. The site is now built with Jekyll; see `README.md`.
+
 # DECISIONS.md — Site update: discoverability + content changes
 
 **Branch:** `feature/discoverability-content-updates`
