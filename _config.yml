@@ -1,0 +1,14 @@
+title: Felipe G. Santos
+url: https://www.felipegsantos.com
+baseurl: ""
+
+# Everything that is not part of the published site.
+exclude:
+  - README.md
+  - docs/
+  - scripts/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+  - .bundle/

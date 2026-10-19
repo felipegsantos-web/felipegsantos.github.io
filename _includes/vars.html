@@ -1,0 +1,5 @@
+{%- comment -%}Shorthands shared by the templates. Page bodies are rendered before their layout, so every include that needs them pulls them in itself.{%- endcomment -%}
+{%- assign L = page.lang -%}
+{%- assign I = site.data.i18n -%}
+{%- assign profile = site.data.profile -%}
+{%- include rel.html -%}

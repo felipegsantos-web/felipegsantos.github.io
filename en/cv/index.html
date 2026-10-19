@@ -1,168 +1,48 @@
-<!doctype html>
-<html lang="en">
-<head>
-<script>!function(){var t=localStorage.getItem('site-theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}()</script>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CV — Felipe G. Santos</title>
-<meta name="description" content="Academic curriculum vitae of Felipe G. Santos, Research Fellow in Political Sociology.">
-<meta name="author" content="Felipe G. Santos">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="CV — Felipe G. Santos">
-<meta property="og:description" content="Academic curriculum vitae of Felipe G. Santos, Research Fellow in Political Sociology.">
-<meta property="og:image" content="https://www.felipegsantos.com/images/Perfil.png">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.felipegsantos.com/en/cv/">
-<meta property="og:locale" content="en_GB">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@feligsantos">
-<meta name="twitter:creator" content="@feligsantos">
-<link rel="canonical" href="https://www.felipegsantos.com/en/cv/">
-<link rel="alternate" hreflang="en" href="https://www.felipegsantos.com/en/cv/">
-<link rel="alternate" hreflang="es" href="https://www.felipegsantos.com/es/cv/">
-<link rel="alternate" hreflang="x-default" href="https://www.felipegsantos.com/en/">
-<link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg?v=2">
-<link rel="icon" type="image/png" href="../../assets/favicon.png?v=2" sizes="32x32">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../assets/css/tokens.css?v=20260423d">
-<link rel="stylesheet" href="../../assets/css/base.css?v=20260423d">
-<link rel="stylesheet" href="../../assets/css/layout.css?v=20260423d">
-<link rel="stylesheet" href="../../assets/css/components.css?v=20260423d">
-<script defer data-domain="felipegsantos.com" src="https://plausible.io/js/script.outbound-links.js"></script>
-</head>
-<body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<header class="site-header" role="banner">
-  <div class="container">
-    <div class="header-inner">
-      <a href="/en/" class="site-logo" aria-label="Felipe G. Santos — Home">
-        <span class="site-logo__name">Felipe G. Santos</span>
-      </a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <ul class="site-nav__list" role="list"><li><a href="/en/" class="site-nav__link">Home</a></li>
-<li><a href="/en/publications/" class="site-nav__link">Publications</a></li>
-<li><a href="/en/media/" class="site-nav__link">Media</a></li>
-<li><a href="/en/cv/" class="site-nav__link">CV</a></li>
-<li><a href="/en/consultancy/" class="site-nav__link">Consultancy</a></li>
-<li><a href="/en/contact/" class="site-nav__link">Contact</a></li></ul>
-      </nav>
-      <div class="header-controls">
-        <div class="lang-toggle" role="group" aria-label="Language selector">
-          <a href="#" class="lang-toggle__btn active" data-lang-btn="en" aria-label="Switch to English" aria-current="true">EN</a>
-          <a href="/es/" class="lang-toggle__btn" data-lang-btn="es" aria-label="Cambiar a español" aria-current="false">ES</a>
-        </div>
-        <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        </button>
-        <button class="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </div>
-</header>
-<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
-  <ul class="mobile-nav__list" role="list"><li><a href="/en/" class="mobile-nav__link">Home</a></li>
-<li><a href="/en/publications/" class="mobile-nav__link">Publications</a></li>
-<li><a href="/en/media/" class="mobile-nav__link">Media</a></li>
-<li><a href="/en/cv/" class="mobile-nav__link">CV</a></li>
-<li><a href="/en/consultancy/" class="mobile-nav__link">Consultancy</a></li>
-<li><a href="/en/contact/" class="mobile-nav__link">Contact</a></li></ul>
-  <div class="mobile-nav__controls">
-    <a href="#" class="lang-toggle__btn active" data-lang-btn="en" aria-label="Switch to English">EN</a>
-    <a href="/es/" class="lang-toggle__btn" data-lang-btn="es" aria-label="Cambiar a español">ES</a>
-    <button class="theme-toggle" data-theme-toggle aria-label="Switch theme">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-    </button>
-  </div>
-</nav>
+---
+layout: default
+lang: en
+ref: cv
+title: "CV — Felipe G. Santos"
+description: "Academic curriculum vitae of Felipe G. Santos, Research Fellow in Political Sociology."
+---
+{% include vars.html %}
+{% assign position_key = "position_" | append: L %}{% assign scholar = profile.profiles | where: "id", "scholar" | first %}{% assign orcid = profile.profiles | where: "id", "orcid" | first %}
 <main id="main-content">
   <div class="container">
     <div class="page-header cv-page-header">
       <h1 class="page-title">Curriculum Vitae</h1>
-      <a href="../../documents/CV.pdf" class="btn btn--primary cv-download-btn" style="margin-top:var(--sp3)" download data-track="CV Download">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <a href="{{ rel }}documents/CV.pdf" class="btn btn--primary cv-download-btn mt-sp3" download data-track="CV Download">
+        {% include icon.html name="download" %}
         Download PDF
       </a>
     </div>
     <div class="cv-layout">
       <nav class="cv-sidebar" aria-label="CV sections">
         <ul class="cv-sidebar__list">
-          <li><a href="#positions" class="cv-sidebar__link">Academic Positions</a></li><li><a href="#education" class="cv-sidebar__link">Education</a></li><li><a href="#awards" class="cv-sidebar__link">Awards & Honors</a></li><li><a href="#service" class="cv-sidebar__link">Professional Service</a></li><li><a href="#publications" class="cv-sidebar__link">Publications</a></li>
+          {%- for sec in site.data.cv %}{% assign k_title = "title_" | append: L %}<li><a href="#{{ sec.id }}" class="cv-sidebar__link">{{ sec[k_title] }}</a></li>{% endfor -%}<li><a href="#publications" class="cv-sidebar__link">Publications</a></li>
         </ul>
       </nav>
       <div class="cv-body">
         <div class="cv-contact-card">
           <div>
-            <p class="cv-contact__name">Felipe G. Santos</p>
-            <p class="cv-contact__role">Research Fellow in Political Sociology</p>
+            <p class="cv-contact__name">{{ profile.name }}</p>
+            <p class="cv-contact__role">{{ profile[position_key] }}</p>
           </div>
           <div class="cv-contact__links">
-            <a href="mailto:f.santos@citystgeorges.ac.uk" class="cv-contact__link"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> f.santos@citystgeorges.ac.uk</a>
-            <a href="https://scholar.google.es/citations?user=wA7Yb2gAAAAJ" target="_blank" rel="noopener" class="cv-contact__link"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg> Google Scholar</a>
-            <a href="https://orcid.org/0000-0001-7006-2088" target="_blank" rel="noopener" class="cv-contact__link"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.891-1.566 3.891-3.722 0-2.025-1.453-3.722-3.903-3.722h-2.285z"/></svg> 0000-0001-7006-2088</a>
+            <a href="mailto:{{ profile.email }}" class="cv-contact__link">{% include icon.html name="email" %} {{ profile.email }}</a>
+            <a href="{{ scholar.url }}" target="_blank" rel="noopener" class="cv-contact__link">{% include icon.html name="scholar" %} {{ scholar.label }}</a>
+            <a href="{{ orcid.url }}" target="_blank" rel="noopener" class="cv-contact__link">{% include icon.html name="orcid" %} {{ profile.orcid }}</a>
           </div>
         </div>
-        <section id="positions" class="cv-section">
-          <h2 class="cv-section__heading">Academic Positions</h2>
-          <div class="cv-entries">
-            <div class="cv-entry"><div class="cv-entry__years">2021 – present</div><div class="cv-entry__body"><p class="cv-entry__role">Postdoctoral Research Fellow</p><p class="cv-entry__org">City St George's, University of London, United Kingdom</p><p class="cv-entry__detail">Department of Sociology; INTERFACED project (Horizon Europe)</p></div></div>
-            <div class="cv-entry"><div class="cv-entry__years">2023 – present</div><div class="cv-entry__body"><p class="cv-entry__role">Postdoctoral Research Fellow</p><p class="cv-entry__org">Babeş-Bolyai University, Romania</p><p class="cv-entry__detail">TakePart project — NextGenerationEU</p></div></div>
-          </div>
-        </section>
-        <section id="education" class="cv-section">
-          <h2 class="cv-section__heading">Education</h2>
-          <div class="cv-entries">
-            <div class="cv-entry"><div class="cv-entry__years">2014 – 2020</div><div class="cv-entry__body"><p class="cv-entry__role">PhD in Political Sciences, <em>summa cum laude</em></p><p class="cv-entry__org">Central European University, Budapest</p><p class="cv-entry__detail">Winner: ESA Young Scholar Award 2021; CEU Outstanding Dissertation Award 2020</p></div></div>
-            <div class="cv-entry"><div class="cv-entry__years">2013 – 2014</div><div class="cv-entry__body"><p class="cv-entry__role">MA in European Political and Administrative Studies</p><p class="cv-entry__org">College of Europe, Bruges</p></div></div>
-            <div class="cv-entry"><div class="cv-entry__years">2011 – 2013</div><div class="cv-entry__body"><p class="cv-entry__role">MS in International Relations</p><p class="cv-entry__org">Institute for Social and European Studies, Corvinus University, Koszeg</p></div></div>
-            <div class="cv-entry"><div class="cv-entry__years">2005 – 2011</div><div class="cv-entry__body"><p class="cv-entry__role">‘Licenciatura’ (BA + MS) in Business Management</p><p class="cv-entry__org">University of A Coruña, Spain</p></div></div>
-          </div>
-        </section>
-        <section id="awards" class="cv-section">
-          <h2 class="cv-section__heading">Awards & Honors</h2>
-          <div class="cv-entries">
-            <div class="cv-entry"><div class="cv-entry__years">2021</div><div class="cv-entry__body"><p class="cv-entry__role">ESA Young Scholar Award</p><p class="cv-entry__org">European Sociological Association</p></div></div>
-            <div class="cv-entry"><div class="cv-entry__years">2020</div><div class="cv-entry__body"><p class="cv-entry__role">Outstanding Dissertation Award</p><p class="cv-entry__org">Central European University</p></div></div>
-          </div>
-        </section>
-        <section id="service" class="cv-section">
-          <h2 class="cv-section__heading">Professional Service</h2>
-          <div class="cv-entries">
-            <div class="cv-entry"><div class="cv-entry__years">Ongoing</div><div class="cv-entry__body"><p class="cv-entry__role">Board Member</p><p class="cv-entry__org">Social Movements Research Network, Council for European Studies (CES)</p></div></div>
-            <div class="cv-entry"><div class="cv-entry__years">Ongoing</div><div class="cv-entry__body"><p class="cv-entry__role">Peer Reviewer</p><p class="cv-entry__org"><em>West European Politics</em>, <em>European Societies</em>, <em>Mobilization</em>, <em>International Affairs</em>, <em>Social Movement Studies</em>, <em>Social Science History</em>, <em>Political Studies</em>, <em>Employee Relations</em>, <em>Sociology Compass</em></p></div></div>
-          </div>
-        </section>
+        {% include cv-sections.html %}
         <section id="publications" class="cv-section">
           <h2 class="cv-section__heading">Publications</h2>
-          <p style="font-size:var(--tx-base);color:var(--text-muted);line-height:1.7;margin-top:var(--sp4)">
+          <p class="cv-pointer">
             For a full list of publications — including books, journal articles, and book chapters — please visit the
-            <a href="../../publications/" class="inline-link">Publications page</a>.
+            <a href="/en/publications/" class="inline-link">Publications page</a>.
           </p>
         </section>
       </div>
     </div>
   </div>
 </main>
-<footer class="site-footer" role="contentinfo">
-  <div class="container">
-    <div class="footer-brand">
-      <div class="footer-brand__info">
-        <p class="footer-brand__name">Felipe G. Santos</p>
-        <p class="footer-brand__role">Research Fellow in Political Sociology</p>
-      </div>
-      <div class="footer-social" role="list" aria-label="Academic profiles">
-        <a href="mailto:f.santos@citystgeorges.ac.uk" class="footer-social__link" aria-label="Email" role="listitem"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
-        <a href="https://scholar.google.es/citations?user=wA7Yb2gAAAAJ" class="footer-social__link" target="_blank" rel="noopener" aria-label="Google Scholar" role="listitem"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg></a>
-        <a href="https://orcid.org/0000-0001-7006-2088" class="footer-social__link" target="_blank" rel="noopener" aria-label="ORCID" role="listitem"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.891-1.566 3.891-3.722 0-2.025-1.453-3.722-3.903-3.722h-2.285z"/></svg></a>
-        <a href="https://www.researchgate.net/profile/Felipe-G-Santos" class="footer-social__link" target="_blank" rel="noopener" aria-label="ResearchGate" role="listitem"><svg width="15" height="15" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M0 32v448h448V32H0zm262.2 334.4c-6.6 3-33.2 6-50.2-17.2l-46.5-60.5-19.7 19v41.5c0 4.3-4.6 6.6-12.6 6.6h-28.1c-4.3 0-6.6-1.7-6.6-6.6V188.4c0-4.3 2.3-6.6 6.6-6.6h28.1c8 0 12.6 2.3 12.6 6.6v66.1l66.4-66.8c4-4.7 14.9-6.6 22.9-6.6H264c7 0 8.6 6.9 3.4 12.6l-56.5 58 60.8 79.4c4.7 6.3 1.3 13.3-9.5 13.3zm140.8-143.5c.3 33.1-21.3 70.8-62.3 70.8h-4c-4.3 0-6.6-2-6.6-6.6v-27.1c0-4.3 2.3-6.6 6.6-6.6 18.3 0 29.3-13.6 29.7-28.4.7-18.9-12.6-30.9-30.6-30.9h-27.4v172.1c0 4.3-2.3 6.6-6.6 6.6h-29.4c-4.3 0-6.6-2.3-6.6-6.6V188.4c0-4.3 2.3-6.6 6.6-6.6h65.1c36.7 0 65.6 27.7 65.5 61.1z"/></svg></a>
-        <a href="https://www.linkedin.com/in/felipegsantos/" class="footer-social__link" target="_blank" rel="noopener" aria-label="LinkedIn" role="listitem"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="../../assets/js/site.js"></script>
-</body>
-</html>

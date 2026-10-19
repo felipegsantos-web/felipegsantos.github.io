@@ -1,0 +1,152 @@
+# Interface strings. Every key has an `en` and an `es` value.
+skip_link:
+  en: Skip to main content
+  es: Ir al contenido principal
+logo_label:
+  en: Felipe G. Santos — Home
+  es: Felipe G. Santos — Inicio
+nav_label:
+  en: Main navigation
+  es: Navegación principal
+mobile_nav_label:
+  en: Mobile navigation
+  es: Navegación móvil
+lang_group_label:
+  en: Language selector
+  es: Selector de idioma
+lang_en_label:
+  en: Switch to English
+  es: Switch to English
+lang_es_label:
+  en: Cambiar a español
+  es: Cambiar a español
+theme_toggle_label:
+  en: Switch to dark mode
+  es: Cambiar a modo oscuro
+theme_toggle_mobile_label:
+  en: Switch theme
+  es: Cambiar tema
+menu_open_label:
+  en: Open menu
+  es: Abrir menú
+profiles_label:
+  en: Academic profiles
+  es: Perfiles académicos
+hero_photo_alt:
+  en: Felipe G. Santos — Research Fellow in Political Sociology
+  es: Felipe G. Santos — Research Fellow in Political Sociology
+# Main navigation, in order. `url` is per language.
+nav:
+  - key: home
+    label: {en: Home, es: Inicio}
+    url: {en: /en/, es: /es/}
+  - key: publications
+    label: {en: Publications, es: Publicaciones}
+    url: {en: /en/publications/, es: /es/publicaciones/}
+  - key: media
+    label: {en: Media, es: Medios}
+    url: {en: /en/media/, es: /es/medios/}
+  - key: cv
+    label: {en: CV, es: CV}
+    url: {en: /en/cv/, es: /es/cv/}
+  - key: consultancy
+    label: {en: Consultancy, es: Consultoría}
+    url: {en: /en/consultancy/, es: /es/consultoria/}
+  - key: contact
+    label: {en: Contact, es: Contacto}
+    url: {en: /en/contact/, es: /es/contacto/}
+# Publications
+pub_type_label:
+  book: {en: Book, es: Libro}
+  article: {en: Journal Article, es: Artículo}
+  chapter: {en: Book Chapter, es: Capítulo de libro}
+# Types that share the badge and the filter of another type.
+pub_type_group:
+  book: book
+  edited_volume: book
+  article: article
+  chapter: chapter
+  encyclopedia_entry: chapter
+why_it_matters:
+  en: "Why it matters:"
+  es: "Por qué importa:"
+and_word:
+  en: and
+  es: y
+# English lists use a serial comma ("A, B, and C"); Spanish does not.
+serial_comma:
+  en: true
+  es: false
+eds_suffix:
+  en: (eds.)
+  es: (eds.)
+view_mode_label:
+  en: View mode
+  es: Modo de vista
+view_themes:
+  en: Research Themes
+  es: Temas de investigación
+view_list:
+  en: All Publications
+  es: Todas las publicaciones
+filter_pubs_label:
+  en: Filter publications
+  es: Filtrar publicaciones
+filter_all:
+  en: All
+  es: Todo
+filter_books:
+  en: Books
+  es: Libros
+filter_articles:
+  en: Articles
+  es: Artículos
+filter_chapters:
+  en: Chapters
+  es: Capítulos
+theme_path:
+  en: /en/publications/theme/
+  es: /es/publicaciones/tema/
+publication_count:
+  one: {en: publication, es: publicación}
+  other: {en: publications, es: publicaciones}
+back_to_publications:
+  en: ← All publications
+  es: ← Todas las publicaciones
+# Media
+filter_media_label:
+  en: Filter media
+  es: Filtrar medios
+media_format:
+  press: {en: Press, es: Prensa}
+  radio: {en: Radio, es: Radio}
+  podcast: {en: Podcast, es: Podcast}
+  opinion: {en: Opinion, es: Opinión}
+media_theme:
+  far_right: {en: Far-right politics, es: Política de extrema derecha}
+  protest: {en: Protest, es: Protesta}
+  democracy: {en: Democracy, es: Democracia}
+# Homepage
+news_type:
+  media: {en: Media, es: Medios}
+  publication: {en: Publication, es: Publicación}
+news_label:
+  en: Recent news and updates
+  es: Noticias y actualizaciones recientes
+news_heading:
+  en: News & Updates
+  es: Noticias y novedades
+news_more:
+  en: All media coverage →
+  es: Toda la cobertura mediática →
+research_heading:
+  en: Research
+  es: Investigación
+# Current work
+wip_status:
+  under_review: {en: Under review, es: En revisión}
+  working_paper: {en: Working paper, es: Documento de trabajo}
+# Contact
+contact_send:
+  en: Send message
+  es: Enviar mensaje

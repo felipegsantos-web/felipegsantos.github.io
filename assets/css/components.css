@@ -675,3 +675,35 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
 .consult-track__intro{font-size:var(--tx-sm);color:var(--text-muted);max-width:65ch}
 .consult-track{padding-bottom:var(--sp8);border-bottom:1px solid var(--border)}
 .consult-track:last-child{border-bottom:none}
+
+/* ── Former inline styles ─────────────────────────────────────
+   Spacing helpers use !important to keep the precedence the inline
+   style="" attributes had. */
+.mt-sp3{margin-top:var(--sp3)!important}
+.mt-sp4{margin-top:var(--sp4)!important}
+.mt-sp6{margin-top:var(--sp6)!important}
+.mt-sp8{margin-top:var(--sp8)!important}
+.mt-sp12{margin-top:var(--sp12)!important}
+.mb-sp12{margin-bottom:var(--sp12)!important}
+.mb-sp16{margin-bottom:var(--sp16)!important}
+.pb-sp16{padding-bottom:var(--sp16)!important}
+
+.page-header--plain{border-bottom:none;margin-bottom:var(--sp8)}
+.page-title--nowrap{white-space:nowrap}
+.cv-pointer{font-size:var(--tx-base);color:var(--text-muted);line-height:1.7;margin-top:var(--sp4)}
+.form-botcheck{display:none}
+.contact-email-link--inherit{font-size:inherit}
+.contact-form__fallback--sm{font-size:var(--tx-sm)}
+
+/* Theme pages: back link and heading with the theme's icon */
+.page-back-link{display:inline-flex;align-items:center;gap:var(--sp2);font-size:var(--tx-sm);color:var(--accent);text-decoration:none;margin-bottom:var(--sp4)}
+.theme-page-heading{display:flex;align-items:center;gap:var(--sp4);margin-bottom:var(--sp4)}
+.theme-page-heading__art{width:72px;height:72px;flex-shrink:0}
+.theme-page-heading .page-title{margin-bottom:0}
+
+/* Accent colour of each research theme (cards use var(--theme-color)) */
+.theme--care{--theme-color:#0F6B6F}
+.theme--farright{--theme-color:#A35C45}
+.theme--protest{--theme-color:#2E6DA4}
+.theme--movementparties{--theme-color:#6B4E9A}
+.theme--democracy{--theme-color:#8A6A1E}

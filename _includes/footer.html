@@ -1,0 +1,17 @@
+{%- include vars.html -%}
+{%- assign position_key = "position_" | append: L %}
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-brand">
+      <div class="footer-brand__info">
+        <p class="footer-brand__name">{{ profile.name }}</p>
+        <p class="footer-brand__role">{{ profile[position_key] }}</p>
+      </div>
+      <div class="footer-social" role="list" aria-label="{{ I.profiles_label[L] }}">
+        {%- for p in profile.profiles %}
+        <a href="{{ p.url }}" class="footer-social__link"{% unless p.id == "email" %} target="_blank" rel="noopener"{% endunless %} aria-label="{{ p.label }}" role="listitem">{% include icon.html name=p.id %}</a>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</footer>

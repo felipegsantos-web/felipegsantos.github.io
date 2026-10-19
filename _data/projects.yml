@@ -1,0 +1,35 @@
+# "Current work" page: funded projects and working papers. Status labels are in i18n.yml.
+projects:
+- name: INTERFACED
+  funder: Horizon Europe
+  years: 2023–2026
+  host_en: City St George's, University of London, United Kingdom
+  host_es: City St George's, University of London, Reino Unido
+  desc_en: INTERFACED investigates how digital technologies transform political participation and civic engagement in European democracies, with a focus on how online and hybrid protest repertoires interact with formal political institutions.
+  desc_es: INTERFACED investiga cómo las tecnologías digitales transforman la participación política y el compromiso cívico en las democracias europeas, con foco en cómo los repertorios de protesta en línea e híbridos interactúan con las instituciones políticas formales.
+- name: TakePart
+  funder: NextGenerationEU
+  years: 2023–2025
+  host_en: Babeş-Bolyai University, Romania
+  host_es: Universidad Babeş-Bolyai, Rumanía
+  desc_en: TakePart examines political participation and democratic resilience in Central and Eastern Europe, with particular attention to how citizens respond to democratic backsliding and the strategies of opposition actors.
+  desc_es: TakePart examina la participación política y la resiliencia democrática en Europa Central y Oriental, con especial atención a cómo los ciudadanos responden al retroceso democrático y a las estrategias de los actores de la oposición.
+working_papers:
+- status: under_review
+  title: Digital Protest Repertoires and Political Participation in Post-Pandemic Europe
+  authors:
+  - Felipe G. Santos
+  - Dan Mercea
+  - Mathias Hoffmann
+  summary_en: Examines how pandemic-era shifts in protest repertoires — toward online and hybrid forms — have reshaped patterns of political participation across European democracies.
+  summary_es: Examina cómo los cambios en los repertorios de protesta durante la pandemia —hacia formas en línea e híbridas— han transformado los patrones de participación política en las democracias europeas.
+  why_en: Provides the first large-scale comparative evidence that the pandemic durably changed how Europeans protest — with lasting implications for democracy.
+  why_es: Aporta la primera evidencia comparada a gran escala de que la pandemia transformó de forma duradera las formas de protesta en Europa.
+- status: working_paper
+  title: 'Authoritarian Nostalgia and Democratic Backsliding: Survey Evidence from Southern Europe'
+  authors:
+  - Felipe G. Santos
+  summary_en: Uses original survey data to investigate the relationship between nostalgia for authoritarian regimes and declining support for democratic institutions in Portugal and Spain.
+  summary_es: Utiliza datos de encuesta originales para investigar la relación entre la nostalgia por regímenes autoritarios y el declive del apoyo a las instituciones democráticas en Portugal y España.
+  why_en: Connects long historical memories of authoritarianism to current threats to democracy — a critical but understudied dimension of democratic erosion in Southern Europe.
+  why_es: Conecta memorias históricas del autoritarismo con las amenazas actuales a la democracia, una dimensión crítica pero poco estudiada de la erosión democrática en Europa del Sur.

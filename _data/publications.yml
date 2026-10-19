@@ -1,0 +1,480 @@
+# Publications. One entry per work; the EN and ES lists and the theme pages are generated from this file.
+# Strings may contain inline HTML (<em>, &amp;) exactly as shown on the site.
+- id: 2024-social-movements-that-care
+  type: book
+  status: published
+  year: 2024
+  authors:
+  - Felipe G. Santos
+  title: 'Social Movements that Care: Empathy, Solidarity, and Empowerment in the Fight Against Evictions'
+  venue: Palgrave Macmillan, London
+  publisher: Palgrave Macmillan
+  url: https://link.springer.com/book/10.1007/978-3-031-74296-5
+  themes:
+  - care
+  keywords:
+  - care
+  - movements
+  - housing
+  summary_en: This book offers an original analysis of how Spain's Platform of People Affected by Mortgages (PAH) built one of the most effective social movements of the 21st century. Drawing on extensive ethnographic fieldwork, in-depth interviews, and original surveys, it argues that care — in the forms of empathy, solidarity, and collective empowerment — was not a byproduct of activism but a deliberate political strategy. The book develops a theory of the 'politics of care' in social movement contexts and traces how the PAH transformed passive beneficiaries into active political agents.
+  summary_es: Este libro ofrece un análisis original de cómo la Plataforma de Afectados por la Hipoteca (PAH) construyó uno de los movimientos sociales más eficaces del siglo XXI. A partir de un trabajo de campo etnográfico exhaustivo, entrevistas en profundidad y encuestas originales, sostiene que el cuidado —en sus formas de empatía, solidaridad y empoderamiento colectivo— no era un subproducto del activismo sino una estrategia política deliberada.
+  why_en: 'Reframes how we understand social movement success: not as a function of resources or opportunities alone, but of the emotional and relational infrastructure movements build among their members.'
+  why_es: 'Reformula cómo entendemos el éxito de los movimientos sociales: no solo en función de recursos u oportunidades, sino de la infraestructura emocional y relacional que construyen.'
+  oa_url: ''
+- id: 2022-pah-10-anos
+  type: edited_volume
+  status: published
+  year: 2022
+  authors:
+  - Felipe G. Santos
+  - Gabriele D'adda
+  - Montserrat Emperador Badimon
+  - Ezequiel Ramón Pinat
+  - Eduard Sala Barceló
+  - Luis Sanmartín Cava
+  title: 'La Plataforma de Afectados por la Hipoteca: 10 Años de Lucha por el Derecho a la Vivienda'
+  venue: Bellaterra Editorial, Manresa
+  publisher: Bellaterra Editorial
+  url: https://www.bellaterra.coop/es/libros/la-plataforma-de-afectados-por-la-hipoteca
+  themes:
+  - care
+  keywords:
+  - movements
+  - housing
+  - spain
+  summary_en: An edited volume marking ten years of the PAH, Spain's landmark housing rights movement. Contributions from academics, activists, and legal scholars document the movement's strategies for blocking evictions, its legislative campaigns, its organisational model, and its political legacy. The volume combines academic analysis with first-person testimonies from activists and affected families.
+  summary_es: Volumen editado que marca diez años de la PAH, el movimiento de derechos de vivienda más importante de España. Las contribuciones de académicos, activistas y juristas documentan las estrategias del movimiento para frenar desahucios, sus campañas legislativas y su legado político.
+  why_en: The definitive scholarly and activist record of a movement that stopped over 27,000 evictions and inspired housing movements across Europe and Latin America.
+  why_es: El registro definitivo académico y activista de un movimiento que paró más de 27.000 desahucios e inspiró movimientos de vivienda en Europa y Latinoamérica.
+  oa_url: ''
+- id: 2026-foot-in-parliament-foot-on-the-streets
+  type: article
+  status: published
+  year: 2026
+  authors:
+  - Felipe G. Santos
+  - Mathias Hoffmann
+  - Dan Mercea
+  title: 'One foot in parliament, one on the streets: Studying the fluid relation between individual participation and party evaluations of protest'
+  venue: Party Politics
+  doi: 10.1177/13540688251413043
+  url: https://doi.org/10.1177/13540688251413043
+  themes:
+  - movementparties
+  - protest
+  keywords:
+  - protest
+  - participation
+  - parties
+  summary_en: This article examines the relationship between individual protest participation and how that participation shapes evaluations of political parties that endorse street politics. Using survey data from five European countries, we show that protesters do not simply evaluate parties that validate their actions more positively — the relationship is conditional on ideological alignment, party credibility, and the type of protest involved. The findings challenge simple accounts of movement-party linkages.
+  summary_es: Este artículo examina la relación entre la participación individual en protestas y cómo esta da forma a las evaluaciones de los partidos políticos que respaldan la política callejera. Usando datos de encuesta de cinco países europeos, mostramos que los manifestantes no simplemente evalúan más positivamente a los partidos que validan sus acciones.
+  why_en: Reveals that the bridge between street movements and electoral politics is more complex — and more fragile — than political observers assume.
+  why_es: Revela que el puente entre los movimientos callejeros y la política electoral es más complejo y frágil de lo que los observadores políticos asumen.
+  oa_url: ''
+- id: 2025-united-for-hungary
+  type: article
+  status: published
+  year: 2025
+  authors:
+  - Felipe G. Santos
+  - Bálint Mikola
+  title: 'Opposition electoral strategies against democratic backsliding: the United for Hungary coalition and its 2022 primaries'
+  venue: Democratization
+  doi: 10.1080/13510347.2025.2522194
+  url: https://doi.org/10.1080/13510347.2025.2522194
+  themes:
+  - democracy
+  keywords:
+  - democracy
+  - elections
+  summary_en: How do opposition parties respond to democratic backsliding? This article analyses the United for Hungary coalition's strategy in the 2022 elections — the most significant attempt to unseat Viktor Orbán since his 2010 election victory. We examine how a heterogeneous opposition coalition formed, ran joint primaries, and ultimately failed, drawing lessons for opposition strategies under competitive authoritarianism.
+  summary_es: ¿Cómo responden los partidos de oposición al retroceso democrático? Este artículo analiza la estrategia de la coalición Unidos por Hungría en las elecciones de 2022, el intento más significativo de desbancar a Viktor Orbán.
+  why_en: One of the first systematic analyses of opposition coalition-building under backsliding conditions — with direct lessons for democracies under pressure across Europe.
+  why_es: Uno de los primeros análisis sistemáticos de la construcción de coaliciones de oposición bajo condiciones de retroceso democrático.
+  oa_url: ''
+- id: 2025-protest-relational-field
+  type: article
+  status: published
+  year: 2025
+  authors:
+  - Felipe G. Santos
+  - Mathias Hoffmann
+  - Dan Mercea
+  title: 'Protest as a relational field: An analysis of brokerage positions within and across contentious episodes and the individuals occupying them'
+  venue: International Journal of Sociology
+  doi: 10.1080/00207659.2025.2458419
+  url: https://doi.org/10.1080/00207659.2025.2458419
+  themes:
+  - protest
+  keywords:
+  - protest
+  - networks
+  summary_en: This article conceptualises the protest field as a relational space structured by brokerage — the capacity of specific individuals and organisations to connect otherwise disconnected protest networks. Drawing on network analysis of protest participation data, we identify the structural positions of brokers within and across contentious episodes and examine the social and biographical characteristics of those who occupy them.
+  summary_es: Este artículo conceptualiza el campo de la protesta como un espacio relacional estructurado por el corretaje, la capacidad de individuos y organizaciones específicos para conectar redes de protesta que de otro modo estarían desconectadas.
+  why_en: Introduces a network perspective to explain why some activists become hubs of mobilization — a key mechanism in understanding how protests scale up or die out.
+  why_es: Introduce una perspectiva de redes para explicar por qué algunos activistas se convierten en nodos de movilización.
+  oa_url: ''
+- id: 2024-policy-over-protest
+  type: article
+  status: published
+  year: 2024
+  authors:
+  - Felipe G. Santos
+  - Dan Mercea
+  title: 'Policy over Protest: Experimental Evidence on the Drivers of Support for Movement Parties'
+  venue: Perspectives on Politics
+  doi: 10.1017/S1537592724001439
+  url: https://doi.org/10.1017/S1537592724001439
+  themes:
+  - movementparties
+  keywords:
+  - movement
+  - parties
+  - elections
+  summary_en: What drives electoral support for movement parties — their policy positions or their protest activities? Using conjoint and vignette survey experiments across five European countries, this article shows that voters primarily respond to policy content, not protest tactics. Party credibility as a governing actor matters more than whether it endorses street politics. These findings reframe debates about the electoral appeal of movement parties and challenge assumptions that protest activities function as electoral signals.
+  summary_es: '¿Qué impulsa el apoyo electoral a los partidos de movimiento: sus posiciones de política pública o sus actividades de protesta? Usando experimentos de encuesta conjoint y viñetas en cinco países europeos, este artículo muestra que los votantes responden principalmente al contenido de las políticas, no a las tácticas de protesta.'
+  why_en: Settles a longstanding debate in the literature by showing, with experimental evidence, that voters care more about what movement parties stand for than how they protest.
+  why_es: Resuelve un debate prolongado en la literatura mostrando, con evidencia experimental, que a los votantes les importa más lo que los partidos de movimiento defienden que cómo protestan.
+  oa_url: ''
+- id: 2024-protest-styles
+  type: article
+  status: published
+  year: 2024
+  authors:
+  - Felipe G. Santos
+  - Mathias Hoffmann
+  - Dan Mercea
+  title: 'Protesting at the intersection of individual characteristics and obstacles to participation: An analysis of the in-person, online and pivoting styles'
+  venue: Journal of European Public Policy
+  doi: 10.1080/13501763.2024.2418962
+  url: https://doi.org/10.1080/13501763.2024.2418962
+  themes:
+  - protest
+  keywords:
+  - protest
+  - participation
+  - digital
+  summary_en: Who protests online, who protests in person, and who pivots between both? This article analyses the individual characteristics and structural barriers that shape protest style — distinguishing between in-person-only, online-only, and hybrid (pivoting) protesters. Using survey data from post-pandemic Europe, we find that digital protest is not simply a substitute for in-person mobilisation but a distinct and complementary form of political action with different social bases.
+  summary_es: ¿Quién protesta en línea, quién lo hace en persona y quién alterna entre ambas? Este artículo analiza las características individuales y las barreras estructurales que determinan el estilo de protesta.
+  why_en: Shows that online protest has its own social logic — it is not just a fallback for those who cannot attend in person — with major implications for understanding political inequality in participation.
+  why_es: Demuestra que la protesta en línea tiene su propia lógica social, con importantes implicaciones para comprender la desigualdad política en la participación.
+  oa_url: ''
+- id: 2024-actual-potential-non-participants
+  type: article
+  status: published
+  year: 2024
+  authors:
+  - Felipe G. Santos
+  - Dan Mercea
+  - Mathias Hoffmann
+  title: 'Actual, Potential, and Non-Participants: Advancing the Differential Analysis of Protest Participation'
+  venue: Political Studies
+  doi: 10.1177/00323217241297905
+  url: https://doi.org/10.1177/00323217241297905
+  themes:
+  - protest
+  keywords:
+  - protest
+  - participation
+  summary_en: Existing research on protest participation treats non-participants as a uniform category. This article disaggregates non-participation into 'potential participants' — those who would protest under the right conditions — and genuine non-participants. Using latent class analysis of large-scale survey data, we show that this distinction has major consequences for understanding political inequality, the limits of mobilisation, and the conditions under which protest can expand.
+  summary_es: La investigación existente sobre participación en protestas trata a los no participantes como una categoría uniforme. Este artículo desagrega la no participación en 'participantes potenciales' y no participantes genuinos.
+  why_en: Reveals a large, previously invisible population of latent protesters — people who could be mobilised but haven't been — with significant implications for social movement strategy.
+  why_es: Revela una gran población de manifestantes potenciales invisibles hasta ahora, con importantes implicaciones para la estrategia de los movimientos sociales.
+  oa_url: ''
+- id: 2024-vox-top-down-cso
+  type: article
+  status: published
+  year: 2024
+  authors:
+  - Felipe G. Santos
+  title: 'Far-right strategies to co-opt progressive politics: Vox''s Top-Down Civil Society Organizations in Spain'
+  venue: Social Movement Studies
+  doi: 10.1080/14742837.2024.2359652
+  url: https://doi.org/10.1080/14742837.2024.2359652
+  themes:
+  - farright
+  keywords:
+  - far-right
+  - spain
+  - vox
+  summary_en: Spain's far-right party Vox has constructed an ecosystem of nominally independent civil society organizations to simulate grassroots support, advance culture-war agendas, and occupy spaces traditionally held by progressive actors. This article analyses the organisational strategies, funding networks, and discursive repertoires of these top-down organizations, showing how they mimic the forms of civil society while serving partisan political goals — a strategy the article terms 'astroturf counter-mobilisation'.
+  summary_es: El partido de extrema derecha español Vox ha construido un ecosistema de organizaciones de la sociedad civil nominalmente independientes para simular apoyo popular, avanzar en agendas de guerra cultural y ocupar espacios tradicionalmente ocupados por actores progresistas.
+  why_en: Documents a new right-wing playbook for undermining civil society from within — a strategy now being replicated across Europe and beyond.
+  why_es: Documenta un nuevo manual derechista para socavar la sociedad civil desde dentro, una estrategia que se está replicando en toda Europa.
+  oa_url: ''
+- id: 2024-protesting-the-lockdown
+  type: article
+  status: published
+  year: 2024
+  authors:
+  - Felipe G. Santos
+  - Dan Mercea
+  - Michael Saker
+  title: 'Protesting the lockdown: Geo-indexing a movement publicly opposing Covid-19 policies on Facebook'
+  venue: Social Movement Studies
+  doi: 10.1080/14742837.2024.2336957
+  url: https://doi.org/10.1080/14742837.2024.2336957
+  themes:
+  - protest
+  keywords:
+  - protest
+  - covid
+  - digital
+  summary_en: Using a novel geo-indexing methodology applied to Facebook data, this article maps the spatial and temporal spread of anti-lockdown mobilisation in the UK. It identifies the geographic clusters, organisational networks, and framing strategies of groups opposing Covid-19 restrictions, and analyses how a diffuse, online-first movement translated — or failed to translate — into physical protest.
+  summary_es: Usando una novedosa metodología de geoindexación aplicada a datos de Facebook, este artículo mapea la difusión espacial y temporal de la movilización anti-confinamiento en el Reino Unido.
+  why_en: Develops a replicable digital-methods toolkit for tracking online social movements — applicable well beyond the Covid context.
+  why_es: Desarrolla un conjunto de herramientas de métodos digitales replicables para rastrear movimientos sociales en línea.
+  oa_url: ''
+- id: 2024-young-democrats-protest-voters
+  type: article
+  status: published
+  year: 2024
+  authors:
+  - Felipe G. Santos
+  - Dan Mercea
+  title: 'Young democrats, critical citizens, and protest voters: Studying the profiles of movement party supporters'
+  venue: Acta Politica
+  doi: 10.1057/s41269-023-00321-7
+  url: https://doi.org/10.1057/s41269-023-00321-7
+  themes:
+  - movementparties
+  keywords:
+  - movement
+  - parties
+  - voters
+  summary_en: Who supports movement parties? This article develops a typology of movement party supporters — distinguishing between ideologically aligned young democrats, critical citizens sceptical of all parties, and protest voters using movement parties as an expressive outlet. Using cluster analysis of survey data, we show that these profiles have distinct implications for party stability, voter loyalty, and democratic quality.
+  summary_es: ¿Quién apoya a los partidos de movimiento? Este artículo desarrolla una tipología de sus simpatizantes, distinguiendo entre jóvenes demócratas ideológicamente alineados, ciudadanos críticos y votantes de protesta.
+  why_en: Explains why movement party electoral support is often volatile — the coalition of supporters is internally fragmented and driven by very different motivations.
+  why_es: 'Explica por qué el apoyo electoral a los partidos de movimiento suele ser volátil: la coalición de simpatizantes está fragmentada internamente.'
+  oa_url: ''
+- id: 2024-how-activists-build-power
+  type: article
+  status: published
+  year: 2024
+  authors:
+  - Felipe G. Santos
+  title: 'How Activists Build Power: Passive Beneficiary Involvement and Empowerment in the Platform of Those Affected by Mortgages'
+  venue: European Societies
+  doi: 10.1080/14616696.2023.2214199
+  url: https://doi.org/10.1080/14616696.2023.2214199
+  themes:
+  - care
+  keywords:
+  - movements
+  - empowerment
+  - housing
+  summary_en: This article analyses how the PAH transformed people facing eviction — initially passive beneficiaries of the movement's legal assistance — into politically active agents. Through a longitudinal analysis of activist trajectories, it identifies the mechanisms through which participation in movement activities generates political efficacy, social solidarity, and sustained commitment to collective action.
+  summary_es: Este artículo analiza cómo la PAH transformó a personas que enfrentaban desahucios —inicialmente beneficiarios pasivos de la asistencia legal del movimiento— en agentes políticamente activos.
+  why_en: Provides micro-level evidence of how social movements generate political capacity among the most marginalized — a key contribution to theories of participation and empowerment.
+  why_es: Aporta evidencia a nivel micro de cómo los movimientos sociales generan capacidad política entre los más marginados.
+  oa_url: ''
+- id: 2023-campo-movimientos-sociales-espana
+  type: article
+  status: published
+  year: 2023
+  authors:
+  - Felipe G. Santos
+  - Gomer Betancor
+  title: La configuración del campo de estudio de los movimientos sociales en España (1980–2020)
+  venue: Revista Española de Sociología
+  doi: 10.22325/fes/res.2023.145
+  url: https://doi.org/10.22325/fes/res.2023.145
+  themes:
+  - care
+  - protest
+  keywords:
+  - sociology
+  - spain
+  - movements
+  summary_en: A bibliometric and thematic analysis of the field of social movement studies in Spain from 1980 to 2020. The article maps the intellectual evolution of the field, identifying its key paradigms, dominant objects of study, institutional centres, and scholars — and documenting the field's increasing dialogue with international social movement theory.
+  summary_es: Un análisis bibliométrico y temático del campo de estudio de los movimientos sociales en España de 1980 a 2020. El artículo mapea la evolución intelectual del campo, identificando sus principales paradigmas y objetos de estudio dominantes.
+  why_en: The first comprehensive map of social movement scholarship in Spain — an essential reference for scholars working in or on the Iberian context.
+  why_es: El primer mapa comprehensivo de la investigación sobre movimientos sociales en España.
+  oa_url: ''
+- id: 2022-big-data-news-repositories
+  type: article
+  status: published
+  year: 2022
+  authors:
+  - Felipe G. Santos
+  - Matthias Hoffmann
+  - Christina Neumayer
+  - Dan Mercea
+  title: 'Lifting the veil on the use of big data news repositories: A documentation and critical discussion of a protest event analysis'
+  venue: Communication Methods and Measures
+  doi: 10.1080/19312458.2022.2128099
+  url: https://doi.org/10.1080/19312458.2022.2128099
+  themes:
+  - protest
+  keywords:
+  - methods
+  - big
+  - data
+  summary_en: Big data news repositories are increasingly used to analyse protest events, but their methodological implications are rarely made transparent. This article provides a systematic documentation of a protest event analysis using a major commercial news repository, critically examines the biases, gaps, and limitations it introduces, and proposes best practices for researchers using similar data sources.
+  summary_es: Los repositorios de noticias de big data se utilizan cada vez más para analizar eventos de protesta, pero sus implicaciones metodológicas rara vez se hacen transparentes. Este artículo proporciona una documentación sistemática de un análisis de eventos de protesta.
+  why_en: A methodological contribution with wide applicability — essential reading for any researcher using news data to study collective action.
+  why_es: Una contribución metodológica de amplia aplicabilidad, de lectura obligada para cualquier investigador que use datos de noticias para estudiar la acción colectiva.
+  oa_url: ''
+- id: 2022-anti-gender-european-parliament
+  type: article
+  status: published
+  year: 2022
+  authors:
+  - Felipe G. Santos
+  - Dorit Geva
+  title: 'Populist Strategy in the European Parliament: How the Anti-Gender Movement Sabotaged Deliberation about Sexual Health and Reproductive Rights'
+  venue: European Journal of Cultural and Political Sociology
+  doi: 10.1080/23254823.2022.2113417
+  url: https://doi.org/10.1080/23254823.2022.2113417
+  themes:
+  - farright
+  keywords:
+  - far-right
+  - anti-gender
+  - europe
+  summary_en: This article analyses how far-right and conservative groups in the European Parliament systematically disrupted deliberations on sexual health and reproductive rights through procedural obstruction, amendment flooding, and coordinated discursive strategies. Drawing on a dataset of parliamentary debates and voting records, it documents how anti-gender actors translated a broader cultural mobilisation into concrete legislative outcomes.
+  summary_es: Este artículo analiza cómo los grupos de extrema derecha y conservadores en el Parlamento Europeo perturbaron sistemáticamente las deliberaciones sobre salud sexual y derechos reproductivos.
+  why_en: Shows how anti-democratic strategies operate at the supranational level — the European Parliament as a battlefield in the culture war against gender equality.
+  why_es: 'Muestra cómo las estrategias antidemocráticas operan a nivel supranacional: el Parlamento Europeo como campo de batalla en la guerra cultural contra la igualdad de género.'
+  oa_url: ''
+- id: 2021-far-right-schools
+  type: article
+  status: published
+  year: 2021
+  authors:
+  - Felipe G. Santos
+  - Dorit Geva
+  title: Europe's Far-Right Schools and Their Project for International Order
+  venue: International Affairs
+  doi: 10.1093/ia/iiab112
+  url: https://doi.org/10.1093/ia/iiab112
+  themes:
+  - farright
+  keywords:
+  - far-right
+  - education
+  - europe
+  summary_en: Europe's far-right parties have created a network of training schools and ideological academies to form a new political elite and advance an alternative vision of international order — one premised on civilisational nationalism, opposition to liberal internationalism, and the defence of traditional values against 'globalist' institutions. This article analyses four such schools, their curricula, their funding, their transnational networks, and the vision of world order they promote.
+  summary_es: Los partidos de extrema derecha de Europa han creado una red de escuelas de formación y academias ideológicas para formar una nueva élite política y promover una visión alternativa del orden internacional.
+  why_en: Exposes the long-term intellectual infrastructure of the European far right — revealing that its challenge to liberal democracy is not just electoral but organisational and ideational.
+  why_es: Expone la infraestructura intelectual a largo plazo de la extrema derecha europea, revelando que su desafío a la democracia liberal no es solo electoral sino organizacional e ideacional.
+  oa_url: ''
+- id: 2020-politics-of-care
+  type: article
+  status: published
+  year: 2020
+  authors:
+  - Felipe G. Santos
+  title: 'Social Movements and the Politics of Care: Empathy, Solidarity and Eviction Blockades'
+  venue: Social Movement Studies
+  doi: 10.1080/14742837.2019.1665504
+  url: https://doi.org/10.1080/14742837.2019.1665504
+  themes:
+  - care
+  keywords:
+  - movements
+  - care
+  - housing
+  summary_en: This article introduces the concept of the 'politics of care' to the social movement literature, drawing on in-depth ethnographic fieldwork with Spain's PAH. It argues that empathy and solidarity — typically understood as emotional dimensions of activism — function as strategic political tools that enable social movements to build power, sustain commitment, and generate political transformation among participants.
+  summary_es: Este artículo introduce el concepto de 'política del cuidado' en la literatura sobre movimientos sociales, a partir de un trabajo de campo etnográfico en la PAH.
+  why_en: The original theoretical statement of the 'politics of care' argument — foundational for the 2024 book and cited widely in the care and movements literature.
+  why_es: La declaración teórica original del argumento de la 'política del cuidado', fundacional para el libro de 2024.
+  oa_url: ''
+- id: 2022-care-and-social-movements
+  type: encyclopedia_entry
+  status: published
+  year: 2022
+  authors:
+  - Felipe G. Santos
+  title: Care and Social Movements
+  venue: In Snow et al. (eds.), <em>The Wiley Blackwell Encyclopedia of Social and Political Movements (2nd ed.)</em>. Wiley-Blackwell.
+  editors:
+  - Snow et al.
+  book_title: The Wiley Blackwell Encyclopedia of Social and Political Movements (2nd ed.)
+  publisher: Wiley-Blackwell
+  doi: 10.1002/9780470674871.wbespm533
+  url: https://doi.org/10.1002/9780470674871.wbespm533
+  themes:
+  - care
+  keywords:
+  - movements
+  - care
+  summary_en: An encyclopaedia entry synthesising the emerging literature on care and social movements — tracing the concept's origins in feminist theory, its application to movement contexts, and the key debates about how care shapes collective action, activist well-being, and movement sustainability.
+  summary_es: Entrada de enciclopedia que sintetiza la literatura emergente sobre los cuidados y los movimientos sociales.
+  why_en: The authoritative reference entry on this topic in the leading reference work in the field.
+  why_es: La entrada de referencia autorizada sobre este tema en la obra de referencia líder en el campo.
+  oa_url: ''
+- id: 2022-transversalidad-pah
+  type: chapter
+  status: published
+  year: 2022
+  authors:
+  - Felipe G. Santos
+  - Montserrat Emperador Badimon
+  title: 'La transversalidad puesta en práctica: Cuidados e inteligencia colectiva en la PAH'
+  venue: In Betancor &amp; Razquin (eds.), <em>Diez años construyendo ciudadanía en movimiento(s)</em>. Bellaterra.
+  editors:
+  - Betancor
+  - Razquin
+  book_title: Diez años construyendo ciudadanía en movimiento(s)
+  publisher: Bellaterra
+  url: https://www.bellaterra.coop/es/libros/diez-anos-construyendo-ciudadania-en-movimiento-s
+  themes:
+  - care
+  keywords:
+  - movements
+  - housing
+  - spain
+  summary_en: This chapter analyses how the PAH's practice of transversality — its organisational commitment to crossing class, ethnic, and political boundaries — operated in practice through specific caring routines and collective intelligence mechanisms. Drawing on participant observation and interviews, it shows how these practices enabled the movement to build an unusually broad social coalition.
+  summary_es: Este capítulo analiza cómo la práctica de transversalidad de la PAH operó en la práctica a través de rutinas de cuidado y mecanismos de inteligencia colectiva.
+  why_en: A detailed account of how political values translate into organisational practices — relevant for activists and scholars of movement building alike.
+  why_es: Un relato detallado de cómo los valores políticos se traducen en prácticas organizativas.
+  oa_url: ''
+- id: 2022-cuidados-primer-desahucio
+  type: chapter
+  status: published
+  year: 2022
+  authors:
+  - Felipe G. Santos
+  title: 'Cuidados y derecho a la vivienda: Cómo la PAH paró su primer desahucio'
+  venue: In Santos et al. (eds.), <em>La Plataforma de Afectados Por la Hipoteca</em>. Bellaterra Editorial.
+  editors:
+  - Santos et al.
+  book_title: La Plataforma de Afectados Por la Hipoteca
+  publisher: Bellaterra Editorial
+  url: https://www.bellaterra.coop/es/libros/la-plataforma-de-afectados-por-la-hipoteca
+  themes:
+  - care
+  keywords:
+  - movements
+  - housing
+  summary_en: A narrative reconstruction of the PAH's first successful eviction blockade — the founding moment that defined the movement's identity, tactics, and emotional culture. The chapter uses this single event to trace the role of care, embodied presence, and collective solidarity in enabling ordinary people to confront the state and financial institutions.
+  summary_es: Una reconstrucción narrativa del primer desahucio bloqueado exitosamente por la PAH, el momento fundacional que definió la identidad, las tácticas y la cultura emocional del movimiento.
+  why_en: A rare micro-sociological account of a founding movement moment — showing how a single act of collective care catalysed a decade of political transformation.
+  why_es: Un raro relato microsociológico de un momento fundacional del movimiento.
+  oa_url: ''
+- id: 2024-methodological-pluralism
+  type: chapter
+  status: ''
+  year: 2024
+  authors:
+  - Santos, F. G.
+  title: Methodological Pluralism in the Study of Political Participation
+  venue: 'In: Bruter, M. &amp; Harrison, S. (eds.), Handbook of Political Participation. Routledge.'
+  venue_es: 'En: Bruter, M. y Harrison, S. (eds.), Handbook of Political Participation. Routledge.'
+  editors:
+  - Bruter, M.
+  - Harrison, S.
+  book_title: Handbook of Political Participation
+  publisher: Routledge
+  url: ''
+  themes:
+  - protest
+  keywords:
+  - methodology
+  - participation
+  summary_en: Argues for methodological pluralism in the study of political participation, drawing on the complementarity of quantitative, qualitative, and mixed-methods approaches to capture the full range of participatory acts.
+  summary_es: Defiende el pluralismo metodológico en el estudio de la participación política, argumentando la complementariedad de enfoques cuantitativos, cualitativos y mixtos para capturar la gama completa de actos participativos.
+  why_en: Addresses the methodological fragmentation in participation research and proposes an integrative framework.
+  why_es: Aborda la fragmentación metodológica en la investigación sobre participación y propone un marco integrador.
+  oa_url: ''

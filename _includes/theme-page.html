@@ -1,0 +1,19 @@
+{%- include vars.html -%}
+{%- assign theme = site.data.themes | where: "slug", page.theme | first -%}
+{%- assign k_name = "name_" | append: L -%}
+{%- assign k_summary = "summary_" | append: L -%}
+<main id="main-content">
+  <div class="container">
+    <div class="page-header">
+      <a href="{{ I.nav[1].url[L] }}" class="page-back-link">{{ I.back_to_publications[L] }}</a>
+      <div class="theme-page-heading">
+        <div class="theme-page-heading__art">{{ theme.art }}</div>
+        <h1 class="page-title">{{ theme[k_name] }}</h1>
+      </div>
+      <p class="page-intro">{{ theme[k_summary] }}</p>
+    </div>
+    <div class="pub-list mt-sp8">
+      {%- include pub-list.html theme_slug=page.theme %}
+    </div>
+  </div>
+</main>
