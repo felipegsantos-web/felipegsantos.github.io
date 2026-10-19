@@ -87,7 +87,8 @@
   - years: '2017'
     role_en: Junior Researcher Fellowship
     role_es: Beca de investigador junior
-    org: Hungarian Government
+    org_en: Hungarian Government
+    org_es: Gobierno de Hungría
   - years: '2017'
     role_en: Short Research Grant
     role_es: Ayuda de investigación de corta duración
@@ -103,7 +104,8 @@
   - years: '2013'
     role_en: European Neighbourhood Policy Scholarship
     role_es: Beca de la Política Europea de Vecindad
-    org: European Commission
+    org_en: European Commission
+    org_es: Comisión Europea
 - id: service
   title_en: Professional Service
   title_es: Actividad profesional
