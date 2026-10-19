@@ -37,7 +37,6 @@
 .pub-entry__actions{display:flex;gap:var(--sp2);flex-wrap:wrap;align-items:center}
 .pub-list{display:flex;flex-direction:column;gap:var(--sp3)}
 
-/* ── Working papers / WIP section ──────────────────────────── */
 
 /* ── Media items ────────────────────────────────────────────── */
 .media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp5)}
@@ -88,7 +87,6 @@
   color:var(--teal);text-decoration:none}
 .work-card__link:hover{color:var(--teal-hover);text-decoration:underline}
 
-/* ── Consultancy cards ──────────────────────────────────────── */
 
 /* ── CV sections ────────────────────────────────────────────── */
 .cv-section{padding-block:clamp(var(--sp8),4vw,var(--sp16));
@@ -430,7 +428,6 @@
 .contact-affiliation__name{font-weight:600;color:var(--text);margin-bottom:2px}
 .contact-affiliation__detail{font-size:var(--tx-xs);color:var(--text-muted)}
 
-/* ── Consultancy page ────────────────────────────────────────── */
 .approach-section,.collab-section,.contact-cta-section{
   background:var(--surface);border:1px solid var(--border);
   border-radius:var(--r-lg);padding:var(--sp6) var(--sp8)}
@@ -623,7 +620,6 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
 .theme-pub-section__heading{font-size:var(--tx-xl);margin-bottom:var(--sp3)}
 .theme-pub-section__desc{font-size:var(--tx-sm);color:var(--text-muted);margin-bottom:var(--sp6);max-width:62ch}
 
-/* ── Consultancy two-track layout ──────────────────────────── */
 
 /* ── Former inline styles ─────────────────────────────────────
    Spacing helpers use !important to keep the precedence the inline

@@ -1,37 +1,34 @@
 # Funded projects (research page and CV "Grants and projects"). Newest first within each status.
-# `status`: current | past. Only facts that a source gives are filled in; a missing field is simply not shown.
-# Sources: title, funder, host, role and dates from Felipe's CV (19 October 2026); descriptions, TakePart years and
-# ProDem grant number from docs/publications-content.md (section 4).
+# `status`: current | past. Shown: name, official title, funder, years, role. No host institution or grant number.
+# Only facts that a source gives are filled in; a missing field is simply not shown.
+# Sources: title, funder, role and dates from Felipe's CV (19 October 2026); descriptions and TakePart years from
+# docs/publications-content.md (section 4).
 projects:
 - id: interfaced
   name: INTERFACED
   title: "Interfaces for Democratic Participation: Deliberation, Mobilization, and Contestation Since the Onset of the Covid-19 Pandemic"
   funder: Horizon Europe
-  host: City St George's, University of London
   status: current
   url: https://www.interfaced.eu/
-  description_en: "INTERFACED (Interfaces for Democratic Participation: Deliberation, Mobilization, and Contestation Since the Onset of the Covid-19 Pandemic) studies how people have taken part in politics since the pandemic, a period of declining trust in democracy and science and growing social divisions. It examines how citizens interact with political institutions and whether these channels allow real participation in decision-making, using surveys, experiments and fieldwork in eight European countries and Tunisia. Funded by Horizon Europe and led by City St George's, University of London."
-  description_es: "INTERFACED (Interfaces for Democratic Participation: Deliberation, Mobilization, and Contestation Since the Onset of the Covid-19 Pandemic) estudia cómo ha participado la ciudadanía en política desde la pandemia, un periodo de pérdida de confianza en la democracia y la ciencia y de divisiones sociales crecientes. Analiza cómo se relaciona la ciudadanía con las instituciones políticas y si esos cauces permiten una participación real en la toma de decisiones, mediante encuestas, experimentos y trabajo de campo en ocho países europeos y Túnez. Financiado por Horizon Europe y coordinado por City St George's, University of London."
+  description_en: "INTERFACED (Interfaces for Democratic Participation: Deliberation, Mobilization, and Contestation Since the Onset of the Covid-19 Pandemic) studies how people have taken part in politics since the pandemic, a period of declining trust in democracy and science and growing social divisions. It examines how citizens interact with political institutions and whether these channels allow real participation in decision-making, using surveys, experiments and fieldwork in eight European countries and Tunisia. Funded by Horizon Europe."
+  description_es: "INTERFACED (Interfaces for Democratic Participation: Deliberation, Mobilization, and Contestation Since the Onset of the Covid-19 Pandemic) estudia cómo ha participado la ciudadanía en política desde la pandemia, un periodo de pérdida de confianza en la democracia y la ciencia y de divisiones sociales crecientes. Analiza cómo se relaciona la ciudadanía con las instituciones políticas y si esos cauces permiten una participación real en la toma de decisiones, mediante encuestas, experimentos y trabajo de campo en ocho países europeos y Túnez. Financiado por Horizon Europe."
 - id: takepart
   name: TakePart
   title: "Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation"
   funder: NextGenerationEU
-  host_en: Babeș-Bolyai University, Cluj-Napoca
-  host_es: Universidad Babeș-Bolyai, Cluj-Napoca
   years_en: 2023 to 2026
   years_es: 2023 a 2026
   role_en: Work package leader
   role_es: Responsable de paquete de trabajo
   status: past
   url: https://takepart.ro/
-  description_en: "TakePart (Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation) starts from a paradox: traditional civic engagement is declining, while social movements use social media to drive collective action. The project studies how movements turn online interactions into offline activism across Europe. Hosted by Babeș-Bolyai University, led by Dan Mercea and funded by the European Union (NextGenerationEU) and the Romanian Government through Romania's National Recovery and Resilience Plan, 2023 to 2026."
-  description_es: "TakePart (Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation) parte de una paradoja: el compromiso cívico tradicional disminuye, mientras los movimientos sociales usan las redes sociales para impulsar la acción colectiva. El proyecto estudia cómo los movimientos convierten las interacciones online en activismo presencial en Europa. Con sede en la Universidad Babeș-Bolyai, dirigido por Dan Mercea y financiado por la Unión Europea (NextGenerationEU) y el Gobierno de Rumanía a través del Plan Nacional de Recuperación y Resiliencia, 2023 a 2026."
+  description_en: "TakePart (Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation) starts from a paradox: traditional civic engagement is declining, while social movements use social media to drive collective action. The project studies how movements turn online interactions into offline activism across Europe. Led by Dan Mercea and funded by the European Union (NextGenerationEU) and the Romanian Government through Romania's National Recovery and Resilience Plan, 2023 to 2026."
+  description_es: "TakePart (Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation) parte de una paradoja: el compromiso cívico tradicional disminuye, mientras los movimientos sociales usan las redes sociales para impulsar la acción colectiva. El proyecto estudia cómo los movimientos convierten las interacciones online en activismo presencial en Europa. Dirigido por Dan Mercea y financiado por la Unión Europea (NextGenerationEU) y el Gobierno de Rumanía a través del Plan Nacional de Recuperación y Resiliencia, 2023 a 2026."
 - id: readjust
   name: READJUST Climate
   title: "READJUST Climate: Reasons, Emotions, and Attitudes Towards Climate Change, Mitigation and Justice"
   funder_en: European Climate Foundation
   funder_es: Fundación Europea del Clima
-  host: City St George's, University of London
   years_en: June 2023 to December 2024
   years_es: junio de 2023 a diciembre de 2024
   role: Co-PI
@@ -41,14 +38,11 @@ projects:
   title: "Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe"
   funder_en: Volkswagen Foundation
   funder_es: Fundación Volkswagen
-  grant: "98144"
   status: past
-  description_en: "ProDem (Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe), funded by the Volkswagen Foundation (grant 98144). Its outputs include the edited book <em>Protest and Democracy</em> (Routledge, 2025) and a six-country survey of 10,347 people (2022)."
-  description_es: "ProDem (Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe), financiado por la Fundación Volkswagen (subvención 98144). Entre sus resultados están el libro colectivo <em>Protest and Democracy</em> (Routledge, 2025) y una encuesta en seis países a 10.347 personas (2022)."
+  description_en: "ProDem (Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe), funded by the Volkswagen Foundation. Its outputs include the edited book <em>Protest and Democracy</em> (Routledge, 2025) and a six-country survey of 10,347 people (2022)."
+  description_es: "ProDem (Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe), financiado por la Fundación Volkswagen. Entre sus resultados están el libro colectivo <em>Protest and Democracy</em> (Routledge, 2025) y una encuesta en seis países a 10.347 personas (2022)."
 - id: mobilise
   name: MOBILISE
   funder_en: Open Research Area (ORA) scheme
   funder_es: Programa Open Research Area (ORA)
-  host_en: University of Manchester
-  host_es: Universidad de Manchester
   status: past

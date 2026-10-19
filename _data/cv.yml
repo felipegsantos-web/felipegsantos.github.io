@@ -25,33 +25,33 @@
     role_en: PhD in Political Sciences, <em>summa cum laude</em>
     role_es: Doctorado en Ciencias Políticas, <em>summa cum laude</em>
     org_en: Central European University, Budapest, Hungary
-    org_es: Universidad Centroeuropea (CEU), Budapest, Hungría
+    org_es: Central European University, Budapest, Hungría
     bullets_en:
     - Winner of the 2021 Young Scholar Award of the European Sociological Association
     - Winner of the Outstanding Dissertation Award of CEU's Doctoral School
     - "Defence committee: Béla Greskovits, Erin Jenne and Donatella della Porta"
     bullets_es:
-    - Premio Young Scholar 2021 de la Asociación Europea de Sociología
-    - Premio a la Mejor Tesis Doctoral de la Escuela de Doctorado de la CEU
+    - Premio Young Scholar 2021 de la European Sociological Association
+    - Premio a la Mejor Tesis Doctoral de la Doctoral School de Central European University
     - "Tribunal de tesis: Béla Greskovits, Erin Jenne y Donatella della Porta"
   - from: 2013-08
     to: 2014-06
     role_en: MA in European Political and Administrative Studies
     role_es: Máster en Estudios Políticos y Administrativos Europeos
     org_en: College of Europe, Bruges, Belgium
-    org_es: Colegio de Europa, Brujas, Bélgica
+    org_es: College of Europe, Brujas, Bélgica
   - from: 2011-09
     to: 2013-07
     role_en: MS in International Relations
     role_es: Máster en Relaciones Internacionales
     org_en: Institute for Social and European Studies, Corvinus University, Kőszeg, Hungary
-    org_es: Instituto de Estudios Sociales y Europeos, Universidad Corvinus, Kőszeg, Hungría
+    org_es: Institute for Social and European Studies, Corvinus University, Kőszeg, Hungría
   - from: 2005-09
     to: 2011-06
     role_en: ‘Licenciatura’ (BA + MS) in Business Management
     role_es: Licenciatura en Administración y Dirección de Empresas
     org_en: University of A Coruña, Spain
-    org_es: Universidad de A Coruña, España
+    org_es: University of A Coruña, España
 - id: awards
   title_en: Awards and grants
   title_es: Premios y ayudas
@@ -59,13 +59,11 @@
   - years: '2021'
     role_en: Young Scholar Award
     role_es: Premio Young Scholar
-    org_en: European Sociological Association
-    org_es: Asociación Europea de Sociología
+    org: European Sociological Association
   - years: '2020'
     role_en: Outstanding Dissertation Award
     role_es: Premio a la Mejor Tesis Doctoral
-    org_en: Doctoral School of Political Sciences, Public Policy and International Relations, Central European University
-    org_es: Escuela de Doctorado de Ciencias Políticas, Políticas Públicas y Relaciones Internacionales, Universidad Centroeuropea (CEU)
+    org: Doctoral School of Political Sciences, Public Policy and International Relations, Central European University
   - years: '2020'
     role_en: Funding for the publication of <em>La Plataforma de Afectadas por la Hipoteca. Una década de lucha por la vivienda digna 2009-2019</em>
     role_es: Ayuda para la publicación de <em>La Plataforma de Afectadas por la Hipoteca. Una década de lucha por la vivienda digna 2009-2019</em>
@@ -73,18 +71,15 @@
   - years: '2019'
     role_en: Write-Up Grant
     role_es: Beca de redacción
-    org_en: Central European University
-    org_es: Universidad Centroeuropea (CEU)
+    org: Central European University
   - years: '2018'
     role_en: Doctoral Research Support Grant
     role_es: Ayuda de apoyo a la investigación doctoral
-    org_en: Central European University
-    org_es: Universidad Centroeuropea (CEU)
+    org: Central European University
   - years: '2018'
     role_en: Scholarship for Conference Participation
     role_es: Beca para participar en congresos
-    org_en: University of Cambridge
-    org_es: Universidad de Cambridge
+    org: University of Cambridge
   - years: '2018'
     role_en: Visiting Researcher Fellowship
     role_es: Beca de investigador visitante
@@ -92,32 +87,27 @@
   - years: '2017'
     role_en: Junior Researcher Fellowship
     role_es: Beca de investigador junior
-    org_en: Hungarian Government
-    org_es: Gobierno de Hungría
+    org: Hungarian Government
   - years: '2017'
     role_en: Short Research Grant
     role_es: Ayuda de investigación de corta duración
-    org_en: Central European University
-    org_es: Universidad Centroeuropea (CEU)
+    org: Central European University
   - years: '2015'
     role_en: Grant for Attendance to Winter School
     role_es: Ayuda para asistir a una escuela de invierno
-    org_en: Central European University
-    org_es: Universidad Centroeuropea (CEU)
+    org: Central European University
   - years: '2014'
     role_en: Full Doctoral Fellowship
     role_es: Beca doctoral completa
-    org_en: Central European University
-    org_es: Universidad Centroeuropea (CEU)
+    org: Central European University
   - years: '2013'
     role_en: European Neighbourhood Policy Scholarship
     role_es: Beca de la Política Europea de Vecindad
-    org_en: European Commission
-    org_es: Comisión Europea
+    org: European Commission
 - id: service
   title_en: Professional Service
   title_es: Actividad profesional
   entries:
   - role_en: Referee
     role_es: Revisor
-    org: Cambridge University Press, <em>West European Politics</em>, <em>Social Forces</em>, <em>European Societies</em>, <em>International Affairs</em>, <em>Social Movement Studies</em>, <em>Mobilization</em>, <em>Social Science History</em>, <em>Employee Relations</em>, <em>Sociology Compass</em>, <em>Partecipazione e Conflitto</em>
+    org: Cambridge University Press, <em>West European Politics</em>, <em>Social Forces</em>, <em>European Societies</em>, <em>International Affairs</em>, <em>Social Movement Studies</em>, <em>Mobilization</em>, <em>Social Science History</em>, <em>European Journal of Politics and Gender</em>, <em>Employee Relations</em>, <em>Sociology Compass</em>, <em>Partecipazione e Conflitto</em>

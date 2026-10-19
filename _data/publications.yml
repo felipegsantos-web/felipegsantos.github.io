@@ -234,9 +234,9 @@
   - spain
   - vox
   summary_en: 'This profile examines four organisations created and led by Vox members: the trade union Solidaridad, the urban group Mi Barrio Seguro, the environmental group Nostra Terra and the women''s organisation AMPI. Presenting themselves as grassroots groups, they let the party recast labour rights, urban policy, the environment and women''s rights from a far-right perspective, and connect its electoral and non-electoral activity.'
-  summary_es: 'Este perfil analiza cuatro organizaciones creadas y dirigidas por miembros de Vox: el sindicato Solidaridad, el colectivo urbano Mi Barrio Seguro, el grupo ecologista Nostra Terra y la organización de mujeres AMPI. Presentándose como grupos de base, permiten al partido reformular desde la extrema derecha cuestiones como los derechos laborales, la política urbana, el medio ambiente y los derechos de las mujeres, y conectar su actividad electoral y no electoral.'
+  summary_es: 'Este perfil analiza cuatro organizaciones creadas y dirigidas por miembros de Vox: el sindicato Solidaridad, el colectivo urbano Mi Barrio Seguro, el grupo ecologista Nostra Terra y la organización de mujeres AMPI. Presentándose como grupos de base, permiten al partido reformular desde la ultraderecha cuestiones como los derechos laborales, la política urbana, el medio ambiente y los derechos de las mujeres, y conectar su actividad electoral y no electoral.'
   why_en: 'It documents a strategy that differs both from infiltrating existing civil society and from becoming a movement party: a far-right party creating its own organisations on issues associated with the left.'
-  why_es: 'Documenta una estrategia distinta tanto de la infiltración en la sociedad civil existente como de la conversión en partido-movimiento: un partido de extrema derecha que crea sus propias organizaciones en temas asociados a la izquierda.'
+  why_es: 'Documenta una estrategia distinta tanto de la infiltración en la sociedad civil existente como de la conversión en partido-movimiento: un partido de ultraderecha que crea sus propias organizaciones en temas asociados a la izquierda.'
   oa_url: ''
 - id: 2024-young-democrats-protest-voters
   type: article
@@ -259,7 +259,7 @@
   - parties
   - voters
   summary_en: Using nationally representative surveys in six European countries, the article identifies four types of movement party (green/left-libertarian, far-right, centrist and eclectic) and compares their voters. The only trait these voters share is the belief that protest has influence. Green/left-libertarian voters reflect a generational divide, far-right voters resemble protest voters, and centrist and eclectic voters fit the profile of critical citizens.
-  summary_es: Con encuestas representativas en seis países europeos, el artículo identifica cuatro tipos de partido-movimiento (verde o libertario de izquierdas, de extrema derecha, centrista y ecléctico) y compara a sus votantes. Lo único que comparten es la creencia en la influencia de las protestas. Los votantes verdes y libertarios de izquierdas reflejan una brecha generacional, los de extrema derecha se parecen a los votantes de protesta, y los centristas y eclécticos encajan en el perfil de ciudadanos críticos.
+  summary_es: Con encuestas representativas en seis países europeos, el artículo identifica cuatro tipos de partido-movimiento (verde o libertario de izquierdas, de ultraderecha, centrista y ecléctico) y compara a sus votantes. Lo único que comparten es la creencia en la influencia de las protestas. Los votantes verdes y libertarios de izquierdas reflejan una brecha generacional, los de ultraderecha se parecen a los votantes de protesta, y los centristas y eclécticos encajan en el perfil de ciudadanos críticos.
   why_en: It questions whether "movement party" is a useful category for understanding voting behaviour, since the electorates of these parties have very different motivations.
   why_es: Cuestiona la utilidad de la categoría de partido-movimiento para entender el voto, ya que sus electorados tienen motivaciones muy distintas.
   oa_url: ''
@@ -299,6 +299,7 @@
   venue: European Societies
   volume: 26
   issue: 1
+  pages: 34-62
   doi: 10.1080/14616696.2023.2214199
   url: https://doi.org/10.1080/14616696.2023.2214199
   themes:
@@ -408,9 +409,9 @@
   - education
   - europe
   summary_en: Through two far-right institutions of higher education, Hungary's National University of Public Service and the Institute of Social Sciences, Economics and Politics (ISSEP) in France and Spain, the article identifies a project it calls "globalist illiberalism". It accepts global markets and institutions, while defending national sovereignty on cultural matters and a radicalised vision of Christianity.
-  summary_es: A través de dos instituciones de educación superior vinculadas a la extrema derecha, la Universidad Nacional de la Función Pública de Hungría y el Instituto de Ciencias Sociales, Económicas y Políticas (ISSEP) en Francia y España, el artículo identifica un proyecto que denomina "iliberalismo globalista". Este acepta los mercados y las instituciones globales, a la vez que defiende la soberanía nacional en lo cultural y una visión radicalizada del cristianismo.
+  summary_es: A través de dos instituciones de educación superior vinculadas a la ultraderecha, la Universidad Nacional de la Función Pública de Hungría y el Instituto de Ciencias Sociales, Económicas y Políticas (ISSEP) en Francia y España, el artículo identifica un proyecto que denomina "iliberalismo globalista". Este acepta los mercados y las instituciones globales, a la vez que defiende la soberanía nacional en lo cultural y una visión radicalizada del cristianismo.
   why_en: It shows that parts of Europe's far right aim to transform the international order rather than reject it, and that higher education is one of the ways they pursue this.
-  why_es: Muestra que parte de la extrema derecha europea aspira a transformar el orden internacional y no a rechazarlo, y que la educación superior es una de las vías con las que lo persigue.
+  why_es: Muestra que parte de la ultraderecha europea aspira a transformar el orden internacional y no a rechazarlo, y que la educación superior es una de las vías con las que lo persigue.
   oa_url: ''
 - id: 2020-politics-of-care
   type: article

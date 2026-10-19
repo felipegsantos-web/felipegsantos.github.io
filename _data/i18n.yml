@@ -131,7 +131,7 @@ media_format:
   podcast: {en: Podcast, es: Podcast}
   opinion: {en: Opinion, es: Opinión}
 media_theme:
-  far_right: {en: Far-right politics, es: Política de extrema derecha}
+  far_right: {en: Far-right politics, es: Política de ultraderecha}
   protest: {en: Protest, es: Protesta}
   democracy: {en: Democracy, es: Democracia}
 # Homepage
@@ -164,12 +164,6 @@ projects_past:
 project_funder:
   en: Funder
   es: Financiación
-project_grant:
-  en: Grant
-  es: Subvención
-project_host:
-  en: Host
-  es: Institución
 project_role:
   en: Role
   es: Función
