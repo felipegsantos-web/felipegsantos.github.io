@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ page.lang }}">
+<head>
+{%- include head.html %}
+</head>
+{%- if page.theme %}
+{% include citation-meta.html %}
+{%- endif %}
+<body>
+{%- include header.html %}
+{{ content }}
+{%- include footer.html %}
+{%- if page.contact_form %}
+{% include contact-form-script.html %}
+{%- endif %}
+<script src="{{ rel }}assets/js/site.js"></script>
+</body>
+</html>

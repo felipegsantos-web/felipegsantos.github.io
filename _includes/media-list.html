@@ -1,0 +1,15 @@
+{%- include vars.html -%}
+{%- assign k_title = "title_" | append: L -%}
+{%- for m in site.data.media -%}
+<article class="media-entry" data-media="{{ m.format }}">
+      <div class="media-entry__meta-top">
+        <span class="media-badge media-badge--{{ m.format }}">{{ I.media_format[m.format][L] }}</span>
+        <span class="media-entry__outlet">{{ m.outlet }}</span>
+        <span class="media-entry__date">{{ m.date }}</span>
+      </div>
+      <h3 class="media-entry__title">
+        <a href="{{ m.url }}" target="_blank" rel="noopener" data-track="Media Click">{{ m[k_title] }}</a>
+      </h3>
+      <p class="media-entry__topic">{{ I.media_theme[m.theme][L] }}</p>
+    </article>
+{% endfor -%}

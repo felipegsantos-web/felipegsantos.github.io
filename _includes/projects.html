@@ -1,0 +1,14 @@
+{%- include vars.html -%}
+{%- assign k_host = "host_" | append: L -%}
+{%- assign k_desc = "desc_" | append: L -%}
+{%- for p in site.data.projects.projects -%}
+<div class="project-card">
+      <div class="project-card__header">
+        <h3 class="project-card__name">{{ p.name }}</h3>
+        <span class="project-card__funder">{{ p.funder }}</span>
+        <span class="project-card__years">{{ p.years }}</span>
+      </div>
+      <p class="project-card__host">{{ p[k_host] }}</p>
+      <p class="project-card__desc">{{ p[k_desc] }}</p>
+    </div>
+{% endfor -%}

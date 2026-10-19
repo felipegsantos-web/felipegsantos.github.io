@@ -1,0 +1,13 @@
+{%- include vars.html -%}
+{%- for sec in site.data.cv -%}
+{%- assign k_title = "title_" | append: L %}
+        <section id="{{ sec.id }}" class="cv-section">
+          <h2 class="cv-section__heading">{{ sec[k_title] }}</h2>
+          <div class="cv-entries">
+            {%- for e in sec.entries %}
+            {%- assign k_years = "years_" | append: L %}{% assign k_role = "role_" | append: L %}{% assign k_org = "org_" | append: L %}{% assign k_detail = "detail_" | append: L %}
+            <div class="cv-entry"><div class="cv-entry__years">{{ e[k_years] | default: e.years }}</div><div class="cv-entry__body"><p class="cv-entry__role">{{ e[k_role] | default: e.role }}</p><p class="cv-entry__org">{{ e[k_org] | default: e.org }}</p>{% assign detail = e[k_detail] | default: e.detail %}{% if detail %}<p class="cv-entry__detail">{{ detail }}</p>{% endif %}</div></div>
+            {%- endfor %}
+          </div>
+        </section>
+{% endfor -%}

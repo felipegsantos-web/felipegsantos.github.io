@@ -1,0 +1,48 @@
+{%- include vars.html %}
+<a class="skip-link" href="#main-content">{{ I.skip_link[L] }}</a>
+<header class="site-header" role="banner">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/{{ L }}/" class="site-logo" aria-label="{{ I.logo_label[L] }}">
+        <span class="site-logo__name">{{ profile.name }}</span>
+      </a>
+      <nav class="site-nav" aria-label="{{ I.nav_label[L] }}">
+        <ul class="site-nav__list" role="list">{% for item in I.nav %}<li><a href="{{ item.url[L] }}" class="site-nav__link">{{ item.label[L] }}</a></li>
+{% endfor %}</ul>
+      </nav>
+      <div class="header-controls">
+        <div class="lang-toggle" role="group" aria-label="{{ I.lang_group_label[L] }}">
+          {%- if L == "en" %}
+          <a href="#" class="lang-toggle__btn active" data-lang-btn="en" aria-label="{{ I.lang_en_label[L] }}" aria-current="true">EN</a>
+          <a href="/es/" class="lang-toggle__btn" data-lang-btn="es" aria-label="{{ I.lang_es_label[L] }}" aria-current="false">ES</a>
+          {%- else %}
+          <a href="/en/" class="lang-toggle__btn" data-lang-btn="en" aria-label="{{ I.lang_en_label[L] }}" aria-current="false">EN</a>
+          <a href="#" class="lang-toggle__btn active" data-lang-btn="es" aria-label="{{ I.lang_es_label[L] }}" aria-current="true">ES</a>
+          {%- endif %}
+        </div>
+        <button class="theme-toggle" data-theme-toggle aria-label="{{ I.theme_toggle_label[L] }}">
+          {% include icon.html name="moon" %}
+        </button>
+        <button class="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="{{ I.menu_open_label[L] }}">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav" aria-label="{{ I.mobile_nav_label[L] }}">
+  <ul class="mobile-nav__list" role="list">{% for item in I.nav %}<li><a href="{{ item.url[L] }}" class="mobile-nav__link">{{ item.label[L] }}</a></li>
+{% endfor %}</ul>
+  <div class="mobile-nav__controls">
+    {%- if L == "en" %}
+    <a href="#" class="lang-toggle__btn active" data-lang-btn="en" aria-label="{{ I.lang_en_label[L] }}">EN</a>
+    <a href="/es/" class="lang-toggle__btn" data-lang-btn="es" aria-label="{{ I.lang_es_label[L] }}">ES</a>
+    {%- else %}
+    <a href="/en/" class="lang-toggle__btn" data-lang-btn="en" aria-label="{{ I.lang_en_label[L] }}">EN</a>
+    <a href="#" class="lang-toggle__btn active" data-lang-btn="es" aria-label="{{ I.lang_es_label[L] }}">ES</a>
+    {%- endif %}
+    <button class="theme-toggle" data-theme-toggle aria-label="{{ I.theme_toggle_mobile_label[L] }}">
+      {% include icon.html name="moon" %}
+    </button>
+  </div>
+</nav>

@@ -1,0 +1,9 @@
+{%- comment -%}All publications, or only those of `theme_slug` when given.{%- endcomment -%}
+{%- if include.theme_slug -%}
+  {%- assign list = site.data.publications | where_exp: "p", "p.themes contains include.theme_slug" -%}
+{%- else -%}
+  {%- assign list = site.data.publications -%}
+{%- endif -%}
+{%- for pub in list -%}
+{% include pub-card.html pub=pub %}
+{% endfor -%}

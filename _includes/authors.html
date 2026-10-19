@@ -1,0 +1,20 @@
+{%- comment -%}
+  Author line. `names` = list of names; `edited` = true adds "(eds.)".
+  The site owner is highlighted (a <span class="pub-entry__me"> or, with `strong=true`, a <strong>).
+  English: "A and B", "A, B, and C". Spanish: "A y B", "A, B y C".
+{%- endcomment -%}
+{%- include vars.html -%}
+{%- assign n = include.names | size -%}
+{%- for a in include.names -%}
+  {%- if a == profile.name -%}
+    {%- if include.strong -%}<strong>{{ a }}</strong>{%- else -%}<span class='pub-entry__me'>{{ a }}</span>{%- endif -%}
+  {%- else -%}{{ a }}{%- endif -%}
+  {%- unless forloop.last -%}
+    {%- assign left = n | minus: forloop.index -%}
+    {%- if left > 1 -%}{{ ', ' }}
+    {%- elsif n > 2 and I.serial_comma[L] -%}{{ ', ' }}{{ I.and_word[L] }}{{ ' ' }}
+    {%- else -%}{{ ' ' }}{{ I.and_word[L] }}{{ ' ' }}
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- if include.edited -%}{{ ' ' }}{{ I.eds_suffix[L] }}{%- endif -%}

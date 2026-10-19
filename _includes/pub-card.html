@@ -1,0 +1,21 @@
+{%- comment -%}One publication (`pub`). Used by the full list and the theme pages.{%- endcomment -%}
+{%- include vars.html -%}
+{%- assign group = I.pub_type_group[pub.type] -%}
+{%- assign k_summary = "summary_" | append: L -%}
+{%- assign k_why = "why_" | append: L -%}
+{%- assign venue = pub.venue -%}
+{%- if L == "es" and pub.venue_es %}{% assign venue = pub.venue_es %}{% endif -%}
+{%- assign edited = false -%}
+{%- if pub.type == "edited_volume" %}{% assign edited = true %}{% endif %}
+<article class="pub-entry" data-pub="{{ group }}{% for k in pub.keywords %} {{ k }}{% endfor %}" data-themes="{{ pub.themes | join: ' ' }}">
+      <div class="pub-entry__meta-top">
+        <span class="type-badge type-badge--{{ group }}">{{ I.pub_type_label[group][L] }}</span>
+        <span class="pub-entry__year">{{ pub.year }}</span>
+      </div>
+      <h3 class="pub-entry__title">
+        {% if pub.url != "" %}<a href="{{ pub.url }}" target="_blank" rel="noopener" data-track="Publication Click">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+      </h3>
+      <p class="pub-entry__authors">{% include authors.html names=pub.authors edited=edited %}</p>
+      <p class="pub-entry__venue">{% if pub.type == "article" %}<em>{{ venue }}</em>{% else %}{{ venue }}{% endif %}</p>
+      <p class="pub-entry__abstract">{{ pub[k_summary] }}</p><p class="pub-entry__why"><span class="pub-entry__why-label">{{ I.why_it_matters[L] }}</span> {{ pub[k_why] }}</p>
+    </article>

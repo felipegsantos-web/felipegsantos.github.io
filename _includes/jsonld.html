@@ -1,0 +1,15 @@
+{%- comment -%}
+  Structured data. Which block a page gets is set in its front matter:
+  `jsonld: person` (English homepage), `jsonld: publications` (English publications list) or `theme:` (theme pages).
+  The Spanish homepage and publications list have none today.
+{%- endcomment -%}
+{%- if page.jsonld == "person" %}
+{%- assign sameas = profile.profiles | where_exp: "p", "p.id != 'email'" %}
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": {{ profile.name | jsonify }}, "url": {{ site.url | append: page.url | jsonify }}, "image": {{ site.url | append: profile.image | jsonify }}, "jobTitle": {{ profile.position_en | jsonify }}, "affiliation": [{% for a in profile.affiliations %}{"@type": "Organization", "name": {{ a | jsonify }}}{% unless forloop.last %}, {% endunless %}{% endfor %}], "sameAs": [{% for p in sameas %}{{ p.url | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}], "knowsAbout": {{ profile.knows_about | jsonify }}}</script>
+{%- elsif page.jsonld == "publications" %}
+{%- assign parts = site.data.publications -%}
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": {{ page.title | jsonify }}, "description": {{ page.jsonld_description | jsonify }}, "url": {{ site.url | append: page.url | jsonify }}, "author": {"@type": "Person", "name": {{ profile.name | jsonify }}}, "hasPart": [{% include jsonld-parts.html %}]}</script>
+{%- elsif page.theme %}
+{%- assign parts = site.data.publications | where_exp: "p", "p.themes contains page.theme" -%}
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": {{ page_title | jsonify }}, "description": {{ page_description | jsonify }}, "url": {{ site.url | append: page.url | jsonify }}, "author": {"@type": "Person", "name": {{ profile.name | jsonify }}}, "hasPart": [{% include jsonld-parts.html identifiers=true %}]}</script>
+{%- endif -%}

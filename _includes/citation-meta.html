@@ -1,0 +1,11 @@
+{%- comment -%}Google Scholar tags for the publications of a theme page. They have always been emitted after </head>; kept as they are.{%- endcomment -%}
+{%- include vars.html -%}
+{%- assign cite_pubs = site.data.publications | where_exp: "p", "p.themes contains page.theme" -%}
+{%- for pub in cite_pubs %}
+<meta name="citation_title" content="{{ pub.title }}">
+<meta name="citation_author" content="{{ profile.name }}">
+<meta name="citation_publication_date" content="{{ pub.year }}">
+{%- if pub.doi %}
+<meta name="citation_doi" content="{{ pub.doi }}">
+{%- endif %}
+{%- endfor %}
