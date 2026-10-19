@@ -1,0 +1,40 @@
+# Who the site is about, as it appears today. PR 2 and PR 3 extend this file.
+name: Felipe G. Santos
+position_en: Research Fellow in Political Sociology
+position_es: Investigador en Sociología Política
+email: f.santos@citystgeorges.ac.uk
+orcid: 0000-0001-7006-2088
+twitter: "@feligsantos"
+image: /images/Perfil.png
+# Profiles shown as icons in the footer and the homepage hero, in this order.
+profiles:
+  - id: email
+    label: Email
+    url: mailto:f.santos@citystgeorges.ac.uk
+    track: Email Click
+  - id: scholar
+    label: Google Scholar
+    url: https://scholar.google.es/citations?user=wA7Yb2gAAAAJ
+    track: Scholar Click
+  - id: orcid
+    label: ORCID
+    url: https://orcid.org/0000-0001-7006-2088
+    track: ORCID Click
+  - id: researchgate
+    label: ResearchGate
+    url: https://www.researchgate.net/profile/Felipe-G-Santos
+    track: ResearchGate Click
+  - id: linkedin
+    label: LinkedIn
+    url: https://www.linkedin.com/in/felipegsantos/
+    track: LinkedIn Click
+# Used for the Person JSON-LD on the English homepage.
+affiliations:
+  - City St George's, University of London, United Kingdom
+  - Babeş-Bolyai University
+knows_about:
+  - Social Movements
+  - Political Participation
+  - Far-Right Politics
+  - Democratic Backsliding
+  - Housing Rights

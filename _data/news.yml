@@ -1,0 +1,20 @@
+# Homepage "News & Updates", newest first. `link` is the linked text; `rest_*` is what follows it (inline HTML allowed).
+# `type`: media | publication (labels in i18n.yml).
+- type: media
+  date: '2026'
+  url: https://elpais.com/espana/2026-04-15/el-movimiento-contra-el-aborto-y-contra-los-derechos-lgtbiq-pierde-con-orban-su-modelo-a-seguir.html
+  link: El País
+  rest_en: ' — Commentary on how Orbán’s fall weakens the anti-abortion and anti-LGBTQ+ movement’s main international reference.'
+  rest_es: ' — Comentario sobre cómo la caída de Orbán deja sin su principal referente al movimiento antiaborto y contra los derechos LGTBIQ+.'
+- type: media
+  date: '2025'
+  url: https://elpais.com/espana/2025-10-11/la-creciente-red-de-grupos-derechistas-que-ya-junta-a-pp-y-vox-mientras-sus-lideres-discuten.html
+  link: El País
+  rest_en: ' — Commentary on the growing network of right-wing organisations linking PP and Vox despite their leaders’ public disputes.'
+  rest_es: ' — Comentario sobre la creciente red de grupos derechistas que une a PP y Vox pese a la disputa pública entre sus líderes.'
+- type: publication
+  date: '2026'
+  url: https://doi.org/10.1177/13540688251413043
+  link: One foot in parliament, one on the streets
+  rest_en: ' (with Hoffmann &amp; Mercea) — <em>Party Politics</em>.'
+  rest_es: ' (con Hoffmann y Mercea) — <em>Party Politics</em>.'
