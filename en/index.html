@@ -2,7 +2,7 @@
 layout: default
 lang: en
 ref: home
-title: "Felipe G. Santos — Political Sociologist"
+title: "Felipe G. Santos · Political Sociologist"
 description: "Research Fellow in Political Sociology at City St George's, University of London, United Kingdom. I study social movements, the far right, and democratic change in Europe."
 jsonld: person
 ---
@@ -20,9 +20,7 @@ jsonld: person
                alt="{{ I.hero_photo_alt[L] }}"
                class="hero-photo" width="320" height="380" loading="eager">
           <div class="footer-social mt-sp4">
-            {%- for p in profile.profiles %}
-            <a href="{{ p.url }}"{% unless p.id == "email" %} target="_blank" rel="noopener"{% endunless %} class="footer-social__link" aria-label="{{ p.label }}" data-track="{{ p.track }}">{% include icon.html name=p.id %}</a>
-            {%- endfor %}
+            {%- include profile-icons.html %}
           </div>
 
         </div>
@@ -31,18 +29,10 @@ jsonld: person
         <div class="hero-bio">
           <h1 class="hero-bio__name">Felipe G. Santos</h1>
           <p class="hero-bio__text">
-            I study why people take to the streets, how the far right builds power, and
-            what holds democracies together, or pulls them apart. My work combines
-            large-scale surveys, survey experiments, and ethnography to understand
-            how citizens think about democracy and political participation in Europe
-            at a time of deep uncertainty.
+            {{ profile.intro_en }}
           </p>
           <p class="hero-bio__text">
-            I am currently a Research Fellow on the
-            <a href="https://www.interfaced.eu/" target="_blank" rel="noopener" class="inline-link"><strong>INTERFACED</strong></a> project
-            (Horizon Europe, City St George's, University of London) and the
-            <a href="https://takepart.ro/" target="_blank" rel="noopener" class="inline-link"><strong>TakePart</strong></a> project
-            (NextGenerationEU, Babeş-Bolyai University).
+            {% include current-post.html %}
           </p>
           
         </div>

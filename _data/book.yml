@@ -1,0 +1,63 @@
+# The book page (/en/publications/social-movements-that-care/ and the Spanish pair). Source: docs/publications-content.md, section 6.
+# The publication entry is `2024-social-movements-that-care` in publications.yml (title, year, link).
+subtitle: Empathy, Solidarity, and Empowerment in the Fight Against Evictions
+publisher_en: Palgrave Macmillan, Cham (Springer Nature Switzerland), 2024
+publisher_es: Palgrave Macmillan, Cham (Springer Nature Switzerland), 2024
+isbn_print: 978-3-031-74295-8
+isbn_ebook: 978-3-031-74296-5
+doi: 10.1007/978-3-031-74296-5
+publisher_url: https://link.springer.com/book/10.1007/978-3-031-74296-5
+cover:
+  file: /images/social-movements-that-care.webp
+  width: 400
+  height: 565
+  credit_en: Cover illustration by Pablo Pino
+  credit_es: Ilustración de cubierta de Pablo Pino
+  alt_en: "Cover of Social Movements that Care: green cover showing a building and a crowd holding blank banners and signs."
+  alt_es: "Cubierta de Social Movements that Care: fondo verde con un edificio y una multitud con pancartas y carteles en blanco."
+about_en:
+  - "Why do the people hit hardest by a grievance often fail to mobilise, while others with no direct stake join in? This book answers that question through the Platform of Those Affected by Mortgages (PAH), the largest housing organisation in Spain."
+  - "Based on a year of participant observation in PAH Barcelona (2017 to 2018), 71 interviews with members across Spain and press coverage from 2009 to 2016, it develops a theory of mobilisation grounded in the ethics of care. People facing eviction are often held back by shame, guilt and fear. The PAH helped them overcome this through three forms of care: emotional care, which turned the feelings of eviction into feelings of contention; identity care, which helped them become activists; and participatory care, which made taking part easy and safe. Activists without housing problems, moved by empathy, started this process and sustained it."
+  - "The book argues that the same logic of care can explain the mobilisation of other groups whose grievances make collective action difficult."
+about_es:
+  - "¿Por qué quienes más sufren un agravio a menudo no se movilizan, mientras que otras personas sin un interés directo sí lo hacen? El libro responde a esta pregunta a través de la Plataforma de Afectados por la Hipoteca (PAH), la mayor organización por la vivienda de España."
+  - "A partir de un año de observación participante en la PAH de Barcelona (2017 a 2018), 71 entrevistas con miembros de toda España y la cobertura de prensa entre 2009 y 2016, desarrolla una teoría de la movilización basada en la ética del cuidado. Las personas amenazadas de desahucio suelen quedar paralizadas por la vergüenza, la culpa y el miedo. La PAH les ayudó a superarlo mediante tres formas de cuidado: el cuidado emocional, que transformó los sentimientos del desahucio en sentimientos de contestación; el cuidado identitario, que les ayudó a convertirse en activistas; y el cuidado participativo, que hizo que participar fuera fácil y seguro. Activistas sin problemas de vivienda, movidos por la empatía, iniciaron y sostuvieron este proceso."
+  - "El libro sostiene que esta misma lógica del cuidado puede explicar la movilización de otros grupos cuyos agravios dificultan la acción colectiva."
+# Chapter titles stay in English on both pages.
+contents:
+  - Housing Crisis, Care, and Empowerment
+  - Caring Movements and Care in Movements
+  - "The Origins of PAH: Empathy and Solidarity Mobilization"
+  - "From Immobilized to Empowered: Beneficiary Mobilization in PAH"
+  - "Emotional Care: From the Sentiments of Eviction to the Feelings of Contention"
+  - Identity Care and Becoming Activists
+  - Facilitating Commitment Through Participatory Care
+  - Care, Solidarity, Coalitions, and Power
+# Quoted exactly as printed in the book, in English on both pages (the dashes in the Tronto quote are in the original).
+endorsements:
+  - text: "Based on a most insightful analysis of one of the most inspiring and consequential networks of activists against house evictions in Spain, this book originally investigates the practices of care developed in order to overcome the immobilising effects of some grievances and emotions. Adopting a relational, strategic and dynamic perspective, it shows the empowering effects of affective care, identity care and participation care."
+    who: Donatella della Porta
+    role: Professor of Political Science and Director of the Center on Social Movement Studies (COSMOS), Scuola Normale Superiore
+  - text: "How do grievances lead to grassroots mobilisation? This excellent book offers a new theoretical explanation which is unusual in social movement studies: there is a fundamental \"logic of care\" when solidarity early-risers politicise the grievances of those more affected by social injustice, and mobilise together. The case of the anti-home evictions struggles in Spain, led by the PAH (Platform for People Affected by Mortgages) provides a solid empirical ground for this argument. This book also helps understand how the PAH overcame the risks of being a mere assistance-based or self-help organisation, with an exemplar autonomous and caring way of organising. And they impressively did so in the midst of a dramatic wave of housing dispossession for the impoverished working class, while facing brutal post-2008 austerity policies. A must-read for housing and social movement scholars and activists!"
+    who: Miguel A. Martínez
+    role: Professor in Sociology, Institute for Housing and Urban Research, Uppsala University
+  - text: "Felipe G. Santos has written a compelling account of the ways in which Platform for those Affected by Mortgages (PAH)—a highly impactful social movement in Spain—organizes for successful contentious politics through care. As a participant observer, he shows how different forms of care help to transform \"debtors of good faith\" from their initial grievances to solidarity. This is one of the best books I have read about how caring makes social movements successful."
+    who: Joan C. Tronto
+    role_html: Professor Emerita, University of Minnesota, author of <em>Moral Boundaries</em> and <em>Caring Democracy</em>
+# Entries of publications.yml linked under "Related work".
+related:
+  - 2020-politics-of-care
+  - 2024-how-activists-build-power
+  - 2022-care-and-social-movements
+  - 2022-cuidados-primer-desahucio
+labels:
+  about: {en: About the book, es: Sobre el libro}
+  contents: {en: Contents, es: Índice}
+  endorsements: {en: Endorsements, es: Valoraciones}
+  related: {en: Related work, es: Trabajos relacionados}
+  details: {en: Details, es: Datos}
+  author: {en: Author, es: Autor}
+  publisher: {en: Publisher, es: Editorial}
+  print: {en: ISBN (print), es: ISBN (impreso)}
+  ebook: {en: ISBN (eBook), es: ISBN (eBook)}
+  publisher_page: {en: View on the publisher's site →, es: Ver en la web de la editorial →}

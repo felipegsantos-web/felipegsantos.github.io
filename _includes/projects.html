@@ -1,14 +1,30 @@
+{%- comment -%}Project cards of one `status` (current | past), in file order. Only the fields a project has are shown.{%- endcomment -%}
 {%- include vars.html -%}
+{%- assign k_funder = "funder_" | append: L -%}
 {%- assign k_host = "host_" | append: L -%}
-{%- assign k_desc = "desc_" | append: L -%}
-{%- for p in site.data.projects.projects -%}
+{%- assign k_years = "years_" | append: L -%}
+{%- assign k_role = "role_" | append: L -%}
+{%- assign k_desc = "description_" | append: L -%}
+{%- assign list = site.data.projects.projects | where: "status", include.status -%}
+{%- for p in list -%}
+{%- assign funder = p[k_funder] | default: p.funder -%}
+{%- assign host = p[k_host] | default: p.host -%}
+{%- assign years = p[k_years] | default: p.years -%}
+{%- assign role = p[k_role] | default: p.role -%}
 <div class="project-card">
       <div class="project-card__header">
         <h3 class="project-card__name">{{ p.name }}</h3>
-        <span class="project-card__funder">{{ p.funder }}</span>
-        <span class="project-card__years">{{ p.years }}</span>
+        {%- if funder %}<span class="project-card__funder">{{ funder }}</span>{% endif %}
+        {%- if years %}<span class="project-card__years">{{ years }}</span>{% endif %}
       </div>
-      <p class="project-card__host">{{ p[k_host] }}</p>
+      {%- if p[k_desc] == nil and p.title %}
+      <p class="project-card__title">{{ p.title }}</p>
+      {%- endif %}
+      {%- if host or role or p.grant %}
+      <p class="project-card__host">{% if host %}{{ host }}{% endif %}{% if role %}{% if host %} · {% endif %}{{ I.project_role[L] }}: {{ role }}{% endif %}{% if p.grant %}{% if host or role %} · {% endif %}{{ I.project_grant[L] }}: {{ p.grant }}{% endif %}</p>
+      {%- endif %}
+      {%- if p[k_desc] %}
       <p class="project-card__desc">{{ p[k_desc] }}</p>
+      {%- endif %}
     </div>
 {% endfor -%}

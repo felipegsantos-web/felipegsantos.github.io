@@ -1,13 +1,26 @@
 {%- include vars.html -%}
-{%- for sec in site.data.cv -%}
-{%- assign k_title = "title_" | append: L %}
+{%- assign k_title = "title_" | append: L -%}{%- assign k_years = "years_" | append: L -%}{%- assign k_role = "role_" | append: L -%}{%- assign k_org = "org_" | append: L -%}{%- assign k_detail = "detail_" | append: L -%}{%- assign k_bullets = "bullets_" | append: L -%}
+{%- assign k_dep = "department_" | append: L -%}{%- assign k_inst = "institution_" | append: L -%}{%- assign k_place = "place_" | append: L -%}{%- assign k_funder = "funder_" | append: L -%}{%- assign k_host = "host_" | append: L -%}
+{%- for sec in site.data.cv %}
         <section id="{{ sec.id }}" class="cv-section">
           <h2 class="cv-section__heading">{{ sec[k_title] }}</h2>
           <div class="cv-entries">
-            {%- for e in sec.entries %}
-            {%- assign k_years = "years_" | append: L %}{% assign k_role = "role_" | append: L %}{% assign k_org = "org_" | append: L %}{% assign k_detail = "detail_" | append: L %}
-            <div class="cv-entry"><div class="cv-entry__years">{{ e[k_years] | default: e.years }}</div><div class="cv-entry__body"><p class="cv-entry__role">{{ e[k_role] | default: e.role }}</p><p class="cv-entry__org">{{ e[k_org] | default: e.org }}</p>{% assign detail = e[k_detail] | default: e.detail %}{% if detail %}<p class="cv-entry__detail">{{ detail }}</p>{% endif %}</div></div>
+            {%- if sec.source == "posts" %}
+            {%- assign posts = profile.posts | where: "status", sec.status %}
+            {%- for e in posts %}
+            <div class="cv-entry"><div class="cv-entry__years">{% include date-range.html from=e.from to=e.to %}</div><div class="cv-entry__body"><p class="cv-entry__role">{{ e[k_role] }}</p><p class="cv-entry__org">{{ e[k_dep] }}, {{ e[k_inst] | default: e.institution }}, {{ e[k_place] }}</p><p class="cv-entry__detail">{{ e.funding }}</p></div></div>
             {%- endfor %}
+            {%- elsif sec.source == "projects" %}
+            {%- for p in site.data.projects.projects %}
+            {%- assign funder = p[k_funder] | default: p.funder %}{% assign host = p[k_host] | default: p.host %}{% assign role = p[k_role] | default: p.role %}{% assign years = p[k_years] | default: p.years %}
+            <div class="cv-entry"><div class="cv-entry__years">{{ years }}</div><div class="cv-entry__body"><p class="cv-entry__role">{{ p.name }}{% if role %} ({{ role }}){% endif %}</p>{% if p.title %}<p class="cv-entry__org">{{ p.title }}</p>{% endif %}{% if funder or host or p.grant %}<p class="cv-entry__detail">{% if funder %}{{ I.project_funder[L] }}: {{ funder }}{% endif %}{% if host %}{% if funder %} · {% endif %}{{ I.project_host[L] }}: {{ host }}{% endif %}{% if p.grant %}{% if funder or host %} · {% endif %}{{ I.project_grant[L] }}: {{ p.grant }}{% endif %}</p>{% endif %}</div></div>
+            {%- endfor %}
+            {%- else %}
+            {%- for e in sec.entries %}
+            {%- assign bullets = e[k_bullets] %}
+            <div class="cv-entry"><div class="cv-entry__years">{% if e.from %}{% include date-range.html from=e.from to=e.to %}{% else %}{{ e[k_years] | default: e.years }}{% endif %}</div><div class="cv-entry__body"><p class="cv-entry__role">{{ e[k_role] | default: e.role }}</p>{% assign org = e[k_org] | default: e.org %}{% if org %}<p class="cv-entry__org">{{ org }}</p>{% endif %}{% assign detail = e[k_detail] | default: e.detail %}{% if detail %}<p class="cv-entry__detail">{{ detail }}</p>{% endif %}{% if bullets %}<ul class="cv-list">{% for b in bullets %}<li>{{ b }}</li>{% endfor %}</ul>{% endif %}</div></div>
+            {%- endfor %}
+            {%- endif %}
           </div>
         </section>
 {% endfor -%}

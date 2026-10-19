@@ -2,47 +2,17 @@
 layout: default
 lang: es
 ref: contact
-title: "Contacto — Felipe G. Santos"
+title: "Contacto · Felipe G. Santos"
 description: "Contacta con Felipe G. Santos, Investigador en Sociología Política."
-contact_form: true
 ---
 {% include vars.html %}
 <main id="main-content">
   <div class="container">
     <div class="page-header">
       <h1 class="page-title">Contacto</h1>
-      <p class="page-intro">Estoy disponible para periodistas, investigadores, estudiantes y cualquier persona interesada en mi trabajo, así como para oportunidades de consultoría y colaboración.</p>
+      <p class="page-intro">Escríbeme si eres periodista, investigador o estudiante.</p>
     </div>
-    <div class="contact-layout contact-layout--form">
-      <div class="contact-main">
-        <section class="contact-card" aria-labelledby="form-heading">
-          <h2 class="contact-card__heading" id="form-heading">Enviar un mensaje</h2>
-          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST"
-                novalidate class="contact-form" data-track="Contact Form">
-            <input type="hidden" name="access_key" value="eaa2ef01-b4ca-49e9-bad2-b42723f441d4">
-            <input type="hidden" name="subject" value="Website enquiry — felipegsantos.com">
-            <input type="hidden" name="redirect" value="false">
-            <input class="form-botcheck" type="checkbox" name="botcheck" tabindex="-1" aria-hidden="true">
-            <div class="form-field">
-              <label class="form-label" for="cf-name">Nombre</label>
-              <input class="form-input" type="text" id="cf-name" name="name" required autocomplete="name">
-            </div>
-            <div class="form-field">
-              <label class="form-label" for="cf-email">Correo electrónico</label>
-              <input class="form-input" type="email" id="cf-email" name="email" required autocomplete="email">
-            </div>
-            <div class="form-field">
-              <label class="form-label" for="cf-message">Mensaje</label>
-              <textarea class="form-input form-textarea" id="cf-message" name="message" required rows="5"></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary form-submit" data-sending="Enviando…">Enviar mensaje</button>
-            <p class="form-feedback form-feedback--success" role="status" aria-live="polite" hidden>Gracias — tu mensaje ha sido enviado.</p>
-            <p class="form-feedback form-feedback--error" role="alert" hidden>Algo salió mal. Por favor escribe directamente al correo.</p>
-          </form>
-          <p class="contact-form__fallback contact-form__fallback--sm">También puedes escribir directamente: <a href="mailto:&#102;&#46;&#115;&#97;&#110;&#116;&#111;&#115;&#64;&#99;&#105;&#116;&#121;&#115;&#116;&#103;&#101;&#111;&#114;&#103;&#101;&#115;&#46;&#97;&#99;&#46;&#117;&#107;" class="contact-email-link contact-email-link--inherit" data-track="Email Click">&#102;&#46;&#115;&#97;&#110;&#116;&#111;&#115;&#64;&#99;&#105;&#116;&#121;&#115;&#116;&#103;&#101;&#111;&#114;&#103;&#101;&#115;&#46;&#97;&#99;&#46;&#117;&#107;</a></p>
-        </section>
-      </div>
-    </div>
+    <p class="contact-email"><a href="mailto:{{ profile.email }}" class="contact-email-link" data-goatcounter-click="email">{{ profile.email }}</a></p>
   </div>
   <div class="pb-sp16"></div>
 </main>

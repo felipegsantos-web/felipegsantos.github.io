@@ -2,20 +2,39 @@
 {%- include vars.html -%}
 {%- assign group = I.pub_type_group[pub.type] -%}
 {%- assign k_summary = "summary_" | append: L -%}
+{%- assign k_list = "summary_list_" | append: L -%}
 {%- assign k_why = "why_" | append: L -%}
 {%- assign venue = pub.venue -%}
 {%- if L == "es" and pub.venue_es %}{% assign venue = pub.venue_es %}{% endif -%}
+{%- assign badge = I.pub_type_name[pub.type][L] | default: I.pub_type_label[group][L] -%}
 {%- assign edited = false -%}
 {%- if pub.type == "edited_volume" %}{% assign edited = true %}{% endif %}
-<article class="pub-entry" data-pub="{{ group }}{% for k in pub.keywords %} {{ k }}{% endfor %}" data-themes="{{ pub.themes | join: ' ' }}">
+<article class="pub-entry" id="pub-{{ pub.id }}" data-pub="{{ group }}{% for k in pub.keywords %} {{ k }}{% endfor %}" data-themes="{{ pub.themes | join: ' ' }}">
       <div class="pub-entry__meta-top">
-        <span class="type-badge type-badge--{{ group }}">{{ I.pub_type_label[group][L] }}</span>
+        <span class="type-badge type-badge--{{ group }}">{{ badge }}</span>
         <span class="pub-entry__year">{{ pub.year }}</span>
       </div>
       <h3 class="pub-entry__title">
-        {% if pub.url != "" %}<a href="{{ pub.url }}" target="_blank" rel="noopener" data-track="Publication Click">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+        {% if pub.url != "" %}<a href="{{ pub.url }}" target="_blank" rel="noopener" data-goatcounter-click="publication-{{ pub.id }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
       </h3>
       <p class="pub-entry__authors">{% include authors.html names=pub.authors edited=edited %}</p>
-      <p class="pub-entry__venue">{% if pub.type == "article" %}<em>{{ venue }}</em>{% else %}{{ venue }}{% endif %}</p>
-      <p class="pub-entry__abstract">{{ pub[k_summary] }}</p><p class="pub-entry__why"><span class="pub-entry__why-label">{{ I.why_it_matters[L] }}</span> {{ pub[k_why] }}</p>
+      <p class="pub-entry__venue">{% if pub.type == "article" or pub.type == "profile" %}<em>{{ venue }}</em>{% else %}{{ venue }}{% endif %}</p>
+      {%- if pub[k_summary] %}
+      <p class="pub-entry__abstract">{{ pub[k_summary] }}</p>
+      {%- if pub[k_list] %}
+      <ul class="pub-entry__list">{% for item in pub[k_list] %}<li>{{ item }}</li>{% endfor %}</ul>
+      {%- endif %}
+      {%- endif %}
+      {%- if pub.version_of %}
+      {%- assign src = site.data.publications | where: "id", pub.version_of | first %}
+      {%- assign src_theme = src.themes | first %}
+      <p class="pub-entry__abstract">{{ I.version_of.before[L] }}<a href="{{ I.theme_path[L] }}{{ src_theme }}/#pub-{{ src.id }}" class="inline-link">{{ I.version_of.link[L] }} <em>{{ src.venue }}</em> ({{ src.year }})</a>.</p>
+      {%- endif %}
+      {%- if pub[k_why] and pub[k_why] != "" %}
+      <p class="pub-entry__why"><span class="pub-entry__why-label">{{ I.why_it_matters[L] }}</span> {{ pub[k_why] }}</p>
+      {%- endif %}
+      {%- if pub.page %}
+      {%- assign pubs_nav = I.nav | where: "key", "publications" | first %}
+      <p class="pub-entry__more"><a href="{{ pubs_nav.url[L] }}{{ pub.page }}/" class="inline-link">{{ I.book_page_label[L] }}</a></p>
+      {%- endif %}
     </article>

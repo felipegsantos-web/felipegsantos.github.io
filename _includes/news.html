@@ -1,9 +1,9 @@
 {%- include vars.html -%}
 {%- assign k_rest = "rest_" | append: L -%}
 {%- for n in site.data.news -%}
-{%- if n.type == "media" %}{% assign css = "media" %}{% assign track = "Media Click" %}{% else %}{% assign css = "pub" %}{% assign track = "Publication Click" %}{% endif -%}
+{%- if n.type == "media" %}{% assign css = "media" %}{% else %}{% assign css = "pub" %}{% endif -%}
 <div class="news-item">
           <div class="news-item__meta"><span class="news-item__type news-item__type--{{ css }}">{{ I.news_type[n.type][L] }}</span><span class="news-item__date">{{ n.date }}</span></div>
-          <p class="news-item__text"><a href="{{ n.url }}" target="_blank" rel="noopener" data-track="{{ track }}">{{ n.link }}</a>{{ n[k_rest] }}</p>
+          <p class="news-item__text"><a href="{{ n.url }}" target="_blank" rel="noopener" data-goatcounter-click="{{ n.type }}-{{ n.ref }}">{{ n.link }}</a>{{ n[k_rest] }}</p>
         </div>
 {% endfor -%}

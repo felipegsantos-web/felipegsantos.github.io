@@ -154,12 +154,6 @@ document.querySelectorAll('[data-copy-citation]').forEach(function(btn){
   })
 });
 
-/* ── Analytics ─────────────────────────────────────────────── */
-window.trackEvent=function(name,props){if(typeof window.plausible==='function')window.plausible(name,{props:props||{}})};
-document.querySelectorAll('a[data-track]').forEach(function(a){
-  a.addEventListener('click',function(){window.trackEvent(a.dataset.track,{url:a.dataset.trackLabel||a.href,lang:currentLang})})
-});
-
 })();
 
 /* ── Publication view toggle (theme / flat list) ────────────── */

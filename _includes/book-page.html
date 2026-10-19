@@ -1,0 +1,64 @@
+{%- include vars.html -%}
+{%- assign b = site.data.book -%}
+{%- assign pub = site.data.publications | where: "id", "2024-social-movements-that-care" | first -%}
+{%- assign pubs_nav = I.nav | where: "key", "publications" | first -%}
+{%- assign k_about = "about_" | append: L -%}{%- assign k_pub = "publisher_" | append: L -%}{%- assign k_credit = "credit_" | append: L -%}{%- assign k_alt = "alt_" | append: L -%}
+<main id="main-content">
+  <div class="container">
+    <div class="page-header">
+      <a href="{{ pubs_nav.url[L] }}" class="page-back-link">{{ I.back_to_publications[L] }}</a>
+      <h1 class="page-title">{{ pub.title | split: ": " | first }}</h1>
+      <p class="page-intro">{{ b.subtitle }}</p>
+    </div>
+    <div class="book-layout">
+      <figure class="book-cover">
+        <img src="{{ rel }}{{ b.cover.file | remove_first: '/' }}" alt="{{ b.cover[k_alt] }}" width="{{ b.cover.width }}" height="{{ b.cover.height }}" loading="eager">
+        <figcaption>{{ b.cover[k_credit] }}</figcaption>
+      </figure>
+      <div class="book-main">
+        <section class="book-section" aria-labelledby="book-about-h">
+          <h2 class="section-heading" id="book-about-h">{{ b.labels.about[L] }}</h2>
+          {%- for para in b[k_about] %}
+          <p class="book-text">{{ para }}</p>
+          {%- endfor %}
+        </section>
+        <section class="book-section" aria-labelledby="book-details-h">
+          <h2 class="section-heading" id="book-details-h">{{ b.labels.details[L] }}</h2>
+          <dl class="book-details">
+            <div><dt>{{ b.labels.author[L] }}</dt><dd>{{ profile.name }}</dd></div>
+            <div><dt>{{ b.labels.publisher[L] }}</dt><dd>{{ b[k_pub] }}</dd></div>
+            <div><dt>{{ b.labels.print[L] }}</dt><dd>{{ b.isbn_print }}</dd></div>
+            <div><dt>{{ b.labels.ebook[L] }}</dt><dd>{{ b.isbn_ebook }}</dd></div>
+            <div><dt>DOI</dt><dd>{{ b.doi }}</dd></div>
+          </dl>
+          <p class="book-text"><a href="{{ b.publisher_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="publication-{{ pub.id }}">{{ b.labels.publisher_page[L] }}</a></p>
+        </section>
+        <section class="book-section" aria-labelledby="book-contents-h">
+          <h2 class="section-heading" id="book-contents-h">{{ b.labels.contents[L] }}</h2>
+          <ol class="book-contents">
+            {%- for c in b.contents %}<li>{{ c }}</li>{% endfor %}
+          </ol>
+        </section>
+        <section class="book-section" aria-labelledby="book-endorsements-h">
+          <h2 class="section-heading" id="book-endorsements-h">{{ b.labels.endorsements[L] }}</h2>
+          {%- for e in b.endorsements %}
+          <blockquote class="book-quote" lang="en">
+            <p>{{ e.text }}</p>
+            <footer>{{ e.who }}, {% if e.role_html %}{{ e.role_html }}{% else %}{{ e.role }}{% endif %}</footer>
+          </blockquote>
+          {%- endfor %}
+        </section>
+        <section class="book-section" aria-labelledby="book-related-h">
+          <h2 class="section-heading" id="book-related-h">{{ b.labels.related[L] }}</h2>
+          <ul class="book-related">
+            {%- for id in b.related %}
+            {%- assign rp = site.data.publications | where: "id", id | first %}
+            <li><a href="{{ I.theme_path[L] }}{{ rp.themes | first }}/#pub-{{ rp.id }}" class="inline-link">{{ rp.title }}</a> ({{ rp.year }})</li>
+            {%- endfor %}
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="pb-sp16"></div>
+</main>

@@ -1,6 +1,15 @@
 # Media coverage, newest first (the order shown on the site).
 # `date` is the year, as displayed. `language` is the language of the linked piece (inferred from the outlet/URL; the site does not show it).
 # `format`: press | radio | podcast | opinion. `theme`: far_right | protest | democracy (labels in i18n.yml).
+- id: 2026-the-world
+  outlet: The World (PRX)
+  date: '2026'
+  format: radio
+  theme: far_right
+  language: en
+  url: https://theworld.org/segments/2026/09/09/spains-far-right-polls-closer-to-power-than-ever
+  title_en: 'Radio interview: Spain’s far right polls closer to power than ever'
+  title_es: 'Entrevista de radio: la extrema derecha española, más cerca que nunca del poder según las encuestas'
 - id: 2026-el-pais
   outlet: El País
   date: '2026'
@@ -152,8 +161,8 @@
   theme: protest
   language: en
   url: https://www.theguardian.com/commentisfree/2020/apr/20/the-global-pandemic-has-spawned-new-forms-of-activism-and-theyre-flourishing
-  title_en: The global pandemic has spawned new forms of activism — and they're flourishing
-  title_es: La pandemia mundial ha dado lugar a nuevas formas de activismo — y están floreciendo
+  title_en: The global pandemic has spawned new forms of activism, and they're flourishing
+  title_es: La pandemia mundial ha dado lugar a nuevas formas de activismo, y están floreciendo
 - id: 2020-el-pais-agenda-publica
   outlet: El País / Agenda Pública
   date: '2020'

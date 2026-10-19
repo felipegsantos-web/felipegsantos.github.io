@@ -1,37 +1,89 @@
-# Who the site is about, as it appears today. PR 2 and PR 3 extend this file.
+# Who the site is about. `email` is the only place the address is written; templates build every mailto: link from it.
 name: Felipe G. Santos
+# Other spellings of the name that appear in publication author lists (highlighted like `name`).
+name_variants:
+  - Felipe González Santos
 position_en: Research Fellow in Political Sociology
 position_es: Investigador en Sociología Política
-email: f.santos@citystgeorges.ac.uk
+email: f.santos@city.ac.uk
 orcid: 0000-0001-7006-2088
 twitter: "@feligsantos"
 image: /images/Perfil.png
+# First paragraph of the homepage.
+intro_en: >-
+  I study why people take to the streets, how the far right builds power, and
+  what holds democracies together, or pulls them apart. My work combines
+  cross-national surveys and survey experiments with social media and network
+  analysis, interviews and ethnography.
+intro_es: >-
+  Investigo por qué la gente sale a la calle, cómo la extrema derecha construye
+  poder y qué mantiene unidas a las democracias, o las destruye. Mi trabajo
+  combina encuestas comparadas y experimentos de encuesta con datos de redes
+  sociales, análisis de redes, entrevistas y etnografía.
 # Profiles shown as icons in the footer and the homepage hero, in this order.
+# The email entry has no url: it is built from `email`. `id` also names the analytics event (profile-<id>; email for the address).
 profiles:
   - id: email
     label: Email
-    url: mailto:f.santos@citystgeorges.ac.uk
-    track: Email Click
   - id: scholar
     label: Google Scholar
     url: https://scholar.google.es/citations?user=wA7Yb2gAAAAJ
-    track: Scholar Click
   - id: orcid
     label: ORCID
     url: https://orcid.org/0000-0001-7006-2088
-    track: ORCID Click
   - id: researchgate
     label: ResearchGate
     url: https://www.researchgate.net/profile/Felipe-G-Santos
-    track: ResearchGate Click
   - id: linkedin
     label: LinkedIn
     url: https://www.linkedin.com/in/felipegsantos/
-    track: LinkedIn Click
-# Used for the Person JSON-LD on the English homepage.
+# Posts, newest first. `from` / `to` are YYYY-MM; no `to` means the post is current.
+# `project` is the id of an entry in projects.yml. `funding` is the programme shown next to the post.
+# Dates: December 2020 and August 2019 to December 2020 as given by Felipe; Babeș-Bolyai to July 2026 as given by Felipe (the CV PDF still says "Present").
+posts:
+  - id: city
+    status: current
+    role_en: Postdoctoral Research Fellow
+    role_es: Investigador postdoctoral
+    department_en: Department of Sociology and Criminology
+    department_es: Departamento de Sociología y Criminología
+    institution: City St George's, University of London
+    place_en: London, UK
+    place_es: Londres, Reino Unido
+    project: interfaced
+    funding: INTERFACED, Horizon Europe
+    from: 2020-12
+  - id: babes-bolyai
+    status: past
+    role_en: Postdoctoral Research Fellow
+    role_es: Investigador postdoctoral
+    department_en: Faculty of Political, Administrative and Communication Sciences
+    department_es: Facultad de Ciencias Políticas, Administrativas y de la Comunicación
+    institution_en: Babeș-Bolyai University
+    institution_es: Universidad Babeș-Bolyai
+    place_en: Cluj-Napoca, Romania
+    place_es: Cluj-Napoca, Rumanía
+    project: takepart
+    funding: TakePart, NextGenerationEU
+    from: 2023-08
+    to: 2026-07
+  - id: manchester
+    status: past
+    role_en: Postdoctoral Research Associate
+    role_es: Investigador postdoctoral asociado
+    department_en: School of Social Sciences
+    department_es: Escuela de Ciencias Sociales
+    institution_en: University of Manchester
+    institution_es: Universidad de Manchester
+    place_en: Manchester, UK
+    place_es: Mánchester, Reino Unido
+    project: mobilise
+    funding: MOBILISE, Open Research Area
+    from: 2019-08
+    to: 2020-12
+# Used for the Person JSON-LD on the English homepage: current affiliation only.
 affiliations:
   - City St George's, University of London, United Kingdom
-  - Babeş-Bolyai University
 knows_about:
   - Social Movements
   - Political Participation

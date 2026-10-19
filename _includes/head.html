@@ -3,7 +3,7 @@
   {%- assign theme = site.data.themes | where: "slug", page.theme | first -%}
   {%- assign k_name = "name_" | append: L -%}
   {%- assign k_desc = "description_" | append: L -%}
-  {%- capture page_title %}{{ theme[k_name] }} — {{ profile.name }}{% endcapture -%}
+  {%- capture page_title %}{{ theme[k_name] }} · {{ profile.name }}{% endcapture -%}
   {%- assign page_description = theme[k_desc] -%}
 {%- else -%}
   {%- assign page_title = page.title -%}
@@ -41,9 +41,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ rel }}assets/css/tokens.css?v=20260423d">
-<link rel="stylesheet" href="{{ rel }}assets/css/base.css?v=20260423d">
-<link rel="stylesheet" href="{{ rel }}assets/css/layout.css?v=20260423d">
-<link rel="stylesheet" href="{{ rel }}assets/css/components.css?v=20260423e">
-<script defer data-domain="felipegsantos.com" src="https://plausible.io/js/script.outbound-links.js"></script>
+<link rel="stylesheet" href="{{ rel }}assets/css/tokens.css?v=20261019">
+<link rel="stylesheet" href="{{ rel }}assets/css/base.css?v=20261019">
+<link rel="stylesheet" href="{{ rel }}assets/css/layout.css?v=20261019">
+<link rel="stylesheet" href="{{ rel }}assets/css/components.css?v=20261019">
 {%- include jsonld.html %}

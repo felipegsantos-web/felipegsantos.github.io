@@ -1,0 +1,9 @@
+{%- comment -%}One sentence on the current post and its project, built from profile.posts (status current) and projects.yml.{%- endcomment -%}
+{%- include vars.html -%}
+{%- assign post = profile.posts | where: "status", "current" | first -%}
+{%- assign proj = site.data.projects.projects | where: "id", post.project | first -%}
+{%- assign k_role = "role_" | append: L -%}{%- assign k_dep = "department_" | append: L -%}
+{%- assign role = post[k_role] -%}
+{%- if L == "es" %}{% assign role = role | downcase %}{% endif -%}
+{%- capture link %}<a href="{{ proj.url }}" target="_blank" rel="noopener" class="inline-link"><strong>{{ proj.name }}</strong></a>{% endcapture -%}
+{{- I.current_post_sentence[L] | replace: "%role%", role | replace: "%department%", post[k_dep] | replace: "%institution%", post.institution | replace: "%project%", link | replace: "%funder%", proj.funder -}}
