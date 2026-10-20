@@ -31,7 +31,8 @@
             <div><dt>{{ b.labels.ebook[L] }}</dt><dd>{{ pub.isbn_ebook }}</dd></div>
             <div><dt>DOI</dt><dd>{{ pub.doi }}</dd></div>
           </dl>
-          <p class="book-text"><a href="{{ b.publisher_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="publication-{{ pub.id }}">{{ b.labels.publisher_page[L] }}</a>{% if pub.oa_url %} · <a href="{{ pub.oa_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="open-access-{{ pub.id }}">{{ I.open_access_label[L] }}</a>{% endif %}</p>
+          <p class="book-text"><a href="{{ b.publisher_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="publication-{{ pub.id }}">{{ b.labels.publisher_page[L] }}</a>{% if pub.oa_url %} · <a href="{{ pub.oa_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="open-access-{{ pub.id }}">{{ I.open_access_label[L] }}</a>{% endif %}{% if pub.pdf %}</p>
+          <p class="book-text"><a href="{{ pub.pdf }}" class="btn btn--primary" download data-goatcounter-click="download-{{ pub.id }}">{% include icon.html name="download" %} {{ I.download_pdf_label[L] }}</a>{% endif %}</p>
         </section>
         <section class="book-section" aria-labelledby="book-contents-h">
           <h2 class="section-heading" id="book-contents-h">{{ b.labels.contents[L] }}</h2>

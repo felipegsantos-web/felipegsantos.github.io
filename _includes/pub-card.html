@@ -19,8 +19,8 @@
       </h3>
       <p class="pub-entry__authors">{% include authors.html names=pub.authors edited=edited %}</p>
       <p class="pub-entry__venue">{% if pub.type == "article" or pub.type == "profile" %}<em>{{ venue }}</em>{% else %}{{ venue }}{% endif %}</p>
-      {%- if pub.doi or pub.oa_url %}
-      <p class="pub-entry__links">{% if pub.doi %}<span>DOI <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener" class="inline-link">{{ pub.doi }}</a></span>{% endif %}{% if pub.oa_url %}<span><a href="{{ pub.oa_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="open-access-{{ pub.id }}">{{ I.open_access_label[L] }}</a>{% if pub.oa_version == "accepted" %} ({{ I.oa_version_note.accepted[L] }}){% endif %}</span>{% endif %}</p>
+      {%- if pub.doi or pub.oa_url or pub.pdf %}
+      <p class="pub-entry__links">{% if pub.doi %}<span>DOI <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener" class="inline-link">{{ pub.doi }}</a></span>{% endif %}{% if pub.oa_url %}<span><a href="{{ pub.oa_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="open-access-{{ pub.id }}">{{ I.open_access_label[L] }}</a>{% if pub.oa_version == "accepted" %} ({{ I.oa_version_note.accepted[L] }}){% endif %}</span>{% endif %}{% if pub.pdf %}<a href="{{ pub.pdf }}" class="pub-entry__download" download data-goatcounter-click="download-{{ pub.id }}">{% include icon.html name="download" %} {{ I.download_pdf_label[L] }}</a>{% endif %}</p>
       {%- endif %}
       {%- if pub[k_summary] %}
       <p class="pub-entry__abstract">{{ pub[k_summary] }}</p>
