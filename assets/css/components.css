@@ -215,9 +215,6 @@
 .hero-news__heading{font-size:var(--tx-sm);font-weight:700;letter-spacing:.07em;
   text-transform:uppercase;color:var(--text-faint);margin-bottom:var(--sp4)}
 .news-feed{display:flex;flex-direction:column;gap:0}
-.news-feed__more{display:inline-block;margin-top:var(--sp4);font-size:var(--tx-xs);
-  font-weight:600;color:var(--teal);text-decoration:none}
-.news-feed__more:hover{text-decoration:underline}
 
 /* ── Focus strip (research areas row) ──────────────────────── */
 .focus-strip{padding-block:var(--sp5);background:var(--surface);
