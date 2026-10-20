@@ -30,6 +30,9 @@ menu_open_label:
 menu_close_label:
   en: Close menu
   es: Cerrar menú
+footer_role:
+  en: Political Sociologist
+  es: Sociólogo político
 profiles_label:
   en: Academic profiles
   es: Perfiles académicos

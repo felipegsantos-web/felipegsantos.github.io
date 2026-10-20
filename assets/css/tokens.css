@@ -1,5 +1,6 @@
 /* ============================================================
-   FONTS: self-hosted WOFF2, Latin subset (scripts/build_fonts.py), SIL OFL 1.1 (assets/fonts/OFL-*.txt)
+   FONTS: self-hosted WOFF2, Latin subset (scripts/build_fonts.py), SIL OFL 1.1 (assets/fonts/OFL-*.txt).
+   Playfair Display declares a Reserved Font Name, so the subset is renamed "Playfair Display Subset"; Inter declares none.
    ============================================================ */
 @font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;
   src:url('../fonts/inter-latin-400.woff2') format('woff2')}
@@ -7,11 +8,11 @@
   src:url('../fonts/inter-latin-500.woff2') format('woff2')}
 @font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;
   src:url('../fonts/inter-latin-600.woff2') format('woff2')}
-@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600;font-display:swap;
+@font-face{font-family:'Playfair Display Subset';font-style:normal;font-weight:600;font-display:swap;
   src:url('../fonts/playfair-display-latin-600.woff2') format('woff2')}
-@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:swap;
+@font-face{font-family:'Playfair Display Subset';font-style:normal;font-weight:700;font-display:swap;
   src:url('../fonts/playfair-display-latin-700.woff2') format('woff2')}
-@font-face{font-family:'Playfair Display';font-style:italic;font-weight:600;font-display:swap;
+@font-face{font-family:'Playfair Display Subset';font-style:italic;font-weight:600;font-display:swap;
   src:url('../fonts/playfair-display-latin-600-italic.woff2') format('woff2')}
 
 /* ============================================================
@@ -105,7 +106,7 @@
 
   --w-narrow:640px; --w-default:960px; --w-wide:1180px;
 
-  --font-display:'Playfair Display',Georgia,serif;
+  --font-display:'Playfair Display Subset',Georgia,serif;
   --font-body:'Inter','Helvetica Neue',Arial,sans-serif;
 }
 

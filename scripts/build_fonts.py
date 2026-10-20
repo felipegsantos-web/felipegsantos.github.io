@@ -7,6 +7,8 @@ Each weight in use is cut out of the variable font (Inter at its text optical si
 Latin: Basic Latin and Latin-1 (all Spanish letters), Latin Extended-A (Hungarian and Romanian names),
 U+0218 to U+021B (the comma-below letters in "Babeș-Bolyai"), general punctuation, the euro sign and the
 two arrows the site uses. Weights: see the css in assets/css/tokens.css.
+The Playfair Display license reserves that name, so its subsets are renamed "Playfair Display Subset" (name table and @font-face).
+Inter's license declares no Reserved Font Name; its files keep the name.
 
 Usage: python3 scripts/build_fonts.py SOURCE_DIR   (needs: pip install fonttools brotli)
 """
@@ -47,6 +49,11 @@ def main(src, dest):
         opts.layout_features = subset.Options().layout_features + ["tnum"]  # tnum: tabular-nums in dates and years
         opts.name_IDs = [0, 1, 2, 3, 4, 6, 13, 14]  # keep the copyright and license notices
         opts.notdef_outline = True
+        if "Playfair" in name:  # its OFL declares the Reserved Font Name "Playfair Display": a subset must not carry it
+            for rec in font["name"].names:
+                if rec.nameID in (1, 3, 4, 6, 16, 21):
+                    text = rec.toUnicode().replace("Playfair Display", "Playfair Display Subset").replace("PlayfairDisplay", "PlayfairDisplaySubset")
+                    rec.string = text
         sub = subset.Subsetter(opts)
         sub.populate(unicodes=unicodes())
         sub.subset(font)

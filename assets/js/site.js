@@ -121,10 +121,14 @@ makeFilter('media-search','media-clear','[data-media]',[{id:'media-filter-year',
       btns.forEach(function(b){b.classList.remove('active');b.setAttribute('aria-pressed','false')});
       btn.classList.add('active');btn.setAttribute('aria-pressed','true');
       var f=btn.dataset.filter;
+      var shown=0;
       document.querySelectorAll('.pub-entry').forEach(function(el){
         if(f==='all'){el.hidden=false}
         else{el.hidden=!((el.dataset.pub||'').includes(f))}
-      })
+        if(!el.hidden)shown++
+      });
+      var live=document.getElementById('pub-count');
+      if(live)live.textContent=shown+' '+(shown===1?live.dataset.one:live.dataset.other)
     })
   })
 })();
