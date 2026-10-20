@@ -8,7 +8,7 @@
             {%- if sec.source == "posts" %}
             {%- assign posts = profile.posts | where: "status", sec.status %}
             {%- for e in posts %}
-            <div class="cv-entry"><div class="cv-entry__years">{% include date-range.html from=e.from to=e.to %}</div><div class="cv-entry__body"><p class="cv-entry__role">{{ e[k_role] }}</p><p class="cv-entry__org">{{ e.department_en }}, {{ e.institution_en | default: e.institution }}, {{ e[k_place] }}{% if e.cv_projects %} ({% for id in e.cv_projects %}{% assign cp = site.data.projects.projects | where: "id", id | first %}{{ cp.name }}{% unless forloop.last %}; {% endunless %}{% endfor %}){% endif %}</p>{% unless e.cv_projects %}<p class="cv-entry__detail">{{ e.funding }}</p>{% endunless %}</div></div>
+            <div class="cv-entry"><div class="cv-entry__years">{% include date-range.html from=e.from to=e.to %}</div><div class="cv-entry__body"><p class="cv-entry__role">{{ e[k_role] }}</p><p class="cv-entry__org">{{ e.department_en }}, {{ e.institution_en | default: e.institution }}, {{ e[k_place] }}{% if e.cv_projects %} ({% for id in e.cv_projects %}{% assign cp = site.data.projects.projects | where: "id", id | first %}{{ cp.name }}{% unless forloop.last %}; {% endunless %}{% endfor %}){% endif %}</p></div></div>
             {%- endfor %}
             {%- elsif sec.source == "projects" %}
             {%- for p in site.data.projects.projects %}
