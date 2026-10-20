@@ -1,0 +1,4 @@
+{%- comment -%}Years as "2023 to 2026" (Spanish "2023 a 2026"), the same form as the CV date ranges. `value` is "2023-2026" or a single year.{%- endcomment -%}
+{%- include vars.html -%}
+{%- assign yr = include.value | split: "-" -%}
+{%- if yr.size == 2 and yr[0] != yr[1] -%}{{- yr[0] }} {{ I.date_to[L] }} {{ yr[1] -}}{%- else -%}{{- yr[0] -}}{%- endif -%}
