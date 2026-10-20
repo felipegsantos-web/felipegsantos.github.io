@@ -9,7 +9,7 @@ Bilingual (English/Spanish) academic website of Felipe G. Santos, built with [Je
 Content lives in `_data/` and the pages are templates, so a new publication, media item or news item is a change to one YAML file. Both languages and the five theme pages are generated from the same entries.
 
 ```
-_data/          content: publications, themes, media, news, projects, cv, profile, i18n
+_data/          content: publications, themes, media, news, projects, cv, book, profile, i18n
 _layouts/       the page layout
 _includes/      head, header, footer, cards, lists, icons
 en/  es/        one page per URL (front matter + a few includes)
@@ -18,7 +18,7 @@ images/ documents/   photo and CV PDF
 index.html      language router at / (static, not processed by Jekyll)
 sitemap.xml  llms.txt  robots.txt   static files
 scripts/        checks that run in CI
-docs/           historical notes
+docs/           historical notes and publications-content.md (verified publication content, the source for publication data)
 ```
 
 Every page has `lang` and `ref` in its front matter. `ref` pairs a page with its translation, and the `hreflang` tags are generated from that pair.
@@ -52,15 +52,21 @@ Add an entry to `_data/publications.yml`, newest first (the list keeps file orde
   oa_url: ""
 ```
 
-Optional fields: `venue_es` (if the Spanish line differs), `editors`, `book_title`, `publisher`, `volume`, `issue`, `pages`. `edited_volume` adds "(eds.)" after the authors.
+Optional fields: `venue_es` (if the Spanish line differs), `book_title`, `publisher`, `volume`, `issue`, `pages`, `online` (online-first date when it differs from `year`), `summary_list_en` / `summary_list_es` (bullet list after the summary), `page` (slug of a dedicated page under the publications section), `version_of` (id of the article a chapter reproduces; shows a linked line). `year` is the year of the issue or volume. Leave `why_en` / `why_es` out when there is no "Why it matters" line. `edited_volume` adds "(eds.)" ("(coords.)" in Spanish) after the authors; `type: profile` shows a Profile badge. Author names that differ from `name` in `profile.yml` (e.g. as printed in a book) go in `name_variants` so they are still highlighted.
+
+`python3 scripts/print_publications.py` prints authors, year, venue, volume, issue and pages for every work, to compare with `docs/publications-content.md`.
 
 ### A media item
 
 Add an entry at the top of `_data/media.yml`: `outlet`, `date` (year), `format` (press, radio, podcast, opinion), `theme` (far_right, protest, democracy), `language` of the piece, `url`, `title_en`, `title_es`.
 
+### A project
+
+Add an entry to `_data/projects.yml` with `status: current` or `past` (newest first within each). Only fill in what a source gives: `title`, `funder`, `host`, `years`, `role`, `grant`, `description_en` / `description_es`. The research page and the CV section "Grants and projects" are generated from it. The posts shown on the CV and the homepage sentence come from `posts` in `_data/profile.yml`; the email address is `email` in the same file and is the only place it is written.
+
 ### A news item
 
-Add an entry at the top of `_data/news.yml` (the homepage shows them in file order). `link` is the linked text; `rest_en` / `rest_es` is the text after it.
+Add an entry at the top of `_data/news.yml` (the homepage shows them in file order). `ref` is the id of the media or publication entry it points to (used for the analytics event name). `link` is the linked text; `rest_en` / `rest_es` is the text after it.
 
 Interface strings (navigation, buttons, filter labels) are in `_data/i18n.yml`. A new research theme needs an entry in `_data/themes.yml`, a `.theme--<slug>` colour in `assets/css/components.css`, and two page files like `en/publications/theme/care/index.html` (they only contain front matter).
 
@@ -94,6 +100,12 @@ The repository's Pages source must be set to **GitHub Actions** (Settings → Pa
 | `main` | Production. Every push is built and deployed. |
 | `migracion-jekyll` | The Jekyll migration (PR 1 of 4). |
 | `legacy-site-archive`, `redesign-bilingual-2026`, `feature/discoverability-content-updates`, `code-reference` | Older branches kept as history. They are not sources for the current site. |
+
+## Analytics
+
+[GoatCounter](https://www.goatcounter.com/) counts page views (`https://felipegsantos.goatcounter.com`); the script is loaded once, in `_layouts/default.html`. There are no cookies and no other analytics. Clicks are counted with `data-goatcounter-click` on the link, with stable names: `cv-download`, `email`, `publication-<id>`, `media-<id>` (ids from `publications.yml` and `media.yml`) and `profile-<site>` (the profile icons). The root redirect page (`index.html`) is not instrumented. Search Console is verified by DNS, so no verification tag is needed.
+
+There is no contact form: the contact page shows the email address only.
 
 ## Design
 

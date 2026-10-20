@@ -3,8 +3,8 @@ skip_link:
   en: Skip to main content
   es: Ir al contenido principal
 logo_label:
-  en: Felipe G. Santos — Home
-  es: Felipe G. Santos — Inicio
+  en: Felipe G. Santos · Home
+  es: Felipe G. Santos · Inicio
 nav_label:
   en: Main navigation
   es: Navegación principal
@@ -33,13 +33,13 @@ profiles_label:
   en: Academic profiles
   es: Perfiles académicos
 hero_photo_alt:
-  en: Felipe G. Santos — Research Fellow in Political Sociology
-  es: Felipe G. Santos — Research Fellow in Political Sociology
-# Main navigation, in order. `url` is per language.
+  en: Felipe G. Santos, Research Fellow in Political Sociology
+  es: Felipe G. Santos, Research Fellow in Political Sociology
+# Main navigation, in order. `url` is per language. `key` is how templates look an item up.
 nav:
-  - key: home
-    label: {en: Home, es: Inicio}
-    url: {en: /en/, es: /es/}
+  - key: research
+    label: {en: Research, es: Investigación}
+    url: {en: /en/current-work/, es: /es/trabajo-actual/}
   - key: publications
     label: {en: Publications, es: Publicaciones}
     url: {en: /en/publications/, es: /es/publicaciones/}
@@ -49,9 +49,6 @@ nav:
   - key: cv
     label: {en: CV, es: CV}
     url: {en: /en/cv/, es: /es/cv/}
-  - key: consultancy
-    label: {en: Consultancy, es: Consultoría}
-    url: {en: /en/consultancy/, es: /es/consultoria/}
   - key: contact
     label: {en: Contact, es: Contacto}
     url: {en: /en/contact/, es: /es/contacto/}
@@ -60,6 +57,9 @@ pub_type_label:
   book: {en: Book, es: Libro}
   article: {en: Journal Article, es: Artículo}
   chapter: {en: Book Chapter, es: Capítulo de libro}
+# Types whose badge text differs from their group's.
+pub_type_name:
+  profile: {en: Profile, es: Perfil}
 # Types that share the badge and the filter of another type.
 pub_type_group:
   book: book
@@ -67,19 +67,27 @@ pub_type_group:
   article: article
   chapter: chapter
   encyclopedia_entry: chapter
+  profile: article
 why_it_matters:
   en: "Why it matters:"
   es: "Por qué importa:"
 and_word:
   en: and
   es: y
+# "A version of the article published in Acta Politica (2025)." The link wraps `link`, the journal and the year.
+version_of:
+  before: {en: "A version of the ", es: "Versión del "}
+  link: {en: article published in, es: artículo publicado en}
+book_page_label:
+  en: About the book →
+  es: Sobre el libro →
 # English lists use a serial comma ("A, B, and C"); Spanish does not.
 serial_comma:
   en: true
   es: false
 eds_suffix:
   en: (eds.)
-  es: (eds.)
+  es: (coords.)
 view_mode_label:
   en: View mode
   es: Modo de vista
@@ -123,7 +131,7 @@ media_format:
   podcast: {en: Podcast, es: Podcast}
   opinion: {en: Opinion, es: Opinión}
 media_theme:
-  far_right: {en: Far-right politics, es: Política de extrema derecha}
+  far_right: {en: Far-right politics, es: Política de ultraderecha}
   protest: {en: Protest, es: Protesta}
   democracy: {en: Democracy, es: Democracia}
 # Homepage
@@ -142,11 +150,32 @@ news_more:
 research_heading:
   en: Research
   es: Investigación
-# Current work
-wip_status:
-  under_review: {en: Under review, es: En revisión}
-  working_paper: {en: Working paper, es: Documento de trabajo}
-# Contact
-contact_send:
-  en: Send message
-  es: Enviar mensaje
+# Homepage sentence about the current post, filled from profile.yml (posts) and projects.yml.
+current_post_sentence:
+  en: "I am a %role% in the %department% at %institution%, working on %project% (%funder%)."
+  es: "Soy %role% en el %department% de %institution%, y trabajo en el proyecto %project% (%funder%)."
+# Research page and CV
+projects_current:
+  en: Current
+  es: En curso
+projects_past:
+  en: Past
+  es: Anteriores
+project_funder:
+  en: Funder
+  es: Financiación
+project_role:
+  en: Role
+  es: Función
+date_to:
+  en: to
+  es: a
+date_present:
+  en: present
+  es: la actualidad
+months:
+  en: [January, February, March, April, May, June, July, August, September, October, November, December]
+  es: [enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre]
+date_month_year:
+  en: "%month% %year%"
+  es: "%month% de %year%"

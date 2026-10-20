@@ -2,7 +2,7 @@
 layout: default
 lang: en
 ref: cv
-title: "CV — Felipe G. Santos"
+title: "CV · Felipe G. Santos"
 description: "Academic curriculum vitae of Felipe G. Santos, Research Fellow in Political Sociology."
 ---
 {% include vars.html %}
@@ -11,7 +11,7 @@ description: "Academic curriculum vitae of Felipe G. Santos, Research Fellow in 
   <div class="container">
     <div class="page-header cv-page-header">
       <h1 class="page-title">Curriculum Vitae</h1>
-      <a href="{{ rel }}documents/CV.pdf" class="btn btn--primary cv-download-btn mt-sp3" download data-track="CV Download">
+      <a href="{{ rel }}documents/CV.pdf" class="btn btn--primary cv-download-btn mt-sp3" download data-goatcounter-click="cv-download">
         {% include icon.html name="download" %}
         Download PDF
       </a>
@@ -29,7 +29,7 @@ description: "Academic curriculum vitae of Felipe G. Santos, Research Fellow in 
             <p class="cv-contact__role">{{ profile[position_key] }}</p>
           </div>
           <div class="cv-contact__links">
-            <a href="mailto:{{ profile.email }}" class="cv-contact__link">{% include icon.html name="email" %} {{ profile.email }}</a>
+            <a href="mailto:{{ profile.email }}" class="cv-contact__link" data-goatcounter-click="email">{% include icon.html name="email" %} {{ profile.email }}</a>
             <a href="{{ scholar.url }}" target="_blank" rel="noopener" class="cv-contact__link">{% include icon.html name="scholar" %} {{ scholar.label }}</a>
             <a href="{{ orcid.url }}" target="_blank" rel="noopener" class="cv-contact__link">{% include icon.html name="orcid" %} {{ profile.orcid }}</a>
           </div>
@@ -38,7 +38,7 @@ description: "Academic curriculum vitae of Felipe G. Santos, Research Fellow in 
         <section id="publications" class="cv-section">
           <h2 class="cv-section__heading">Publications</h2>
           <p class="cv-pointer">
-            For a full list of publications — including books, journal articles, and book chapters — please visit the
+            For a full list of publications (books, journal articles and book chapters), please visit the
             <a href="/en/publications/" class="inline-link">Publications page</a>.
           </p>
         </section>

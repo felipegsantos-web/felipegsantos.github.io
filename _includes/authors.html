@@ -6,7 +6,7 @@
 {%- include vars.html -%}
 {%- assign n = include.names | size -%}
 {%- for a in include.names -%}
-  {%- if a == profile.name -%}
+  {%- if a == profile.name or profile.name_variants contains a -%}
     {%- if include.strong -%}<strong>{{ a }}</strong>{%- else -%}<span class='pub-entry__me'>{{ a }}</span>{%- endif -%}
   {%- else -%}{{ a }}{%- endif -%}
   {%- unless forloop.last -%}

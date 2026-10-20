@@ -1,69 +1,115 @@
-# CV sections (the "Publications" section is a static pointer and lives in the page).
+# CV page sections, in order. Source: Felipe's CV PDF (19 October 2026) and the fixed dates in profile.yml.
+# `source: posts` takes the posts of that `status` from profile.yml; `source: projects` lists projects.yml (facts only).
+# Other sections list `entries`. Dates are `from` / `to` as YYYY-MM (no `to` = present), or a free `years` text.
 # A field without suffix applies to both languages; `field_en` / `field_es` override it. Inline HTML allowed.
-- id: positions
-  title_en: Academic Positions
-  title_es: Posiciones académicas
-  entries:
-  - years_en: 2021 – present
-    years_es: 2021 – actualidad
-    role_en: Postdoctoral Research Fellow
-    role_es: Investigador Postdoctoral
-    org_en: City St George's, University of London, United Kingdom
-    org_es: City St George's, University of London, Reino Unido
-    detail_en: Department of Sociology; INTERFACED project (Horizon Europe)
-    detail_es: Departamento de Sociología; proyecto INTERFACED (Horizon Europe)
-  - years_en: 2023 – present
-    years_es: 2023 – actualidad
-    role_en: Postdoctoral Research Fellow
-    role_es: Investigador Postdoctoral
-    org: Babeş-Bolyai University, Romania
-    detail: TakePart project — NextGenerationEU
+- id: current-position
+  title_en: Current Position
+  title_es: Puesto actual
+  source: posts
+  status: current
+- id: past-experience
+  title_en: Past Experience
+  title_es: Experiencia previa
+  source: posts
+  status: past
+- id: projects
+  title_en: Grants and projects
+  title_es: Proyectos y financiación
+  source: projects
 - id: education
   title_en: Education
   title_es: Formación
   entries:
-  - years: 2014 – 2020
+  - from: 2014-09
+    to: 2020-04
     role_en: PhD in Political Sciences, <em>summa cum laude</em>
-    role_es: PhD en Ciencias Políticas, <em>summa cum laude</em>
-    org: Central European University, Budapest
-    detail_en: 'Winner: ESA Young Scholar Award 2021; CEU Outstanding Dissertation Award 2020'
-    detail_es: Premio Joven Erudito ESA 2021; Premio a la Mejor Tesis Doctoral de la CEU 2020
-  - years: 2013 – 2014
+    role_es: Doctorado en Ciencias Políticas, <em>summa cum laude</em>
+    org_en: Central European University, Budapest, Hungary
+    org_es: Central European University, Budapest, Hungría
+    bullets_en:
+    - Winner of the 2021 Young Scholar Award of the European Sociological Association
+    - Winner of the Outstanding Dissertation Award of CEU's Doctoral School
+    - "Defence committee: Béla Greskovits, Erin Jenne and Donatella della Porta"
+    bullets_es:
+    - Premio Young Scholar 2021 de la European Sociological Association
+    - Premio a la Mejor Tesis Doctoral de la Doctoral School de Central European University
+    - "Tribunal de tesis: Béla Greskovits, Erin Jenne y Donatella della Porta"
+  - from: 2013-08
+    to: 2014-06
     role_en: MA in European Political and Administrative Studies
-    role_es: MA en Estudios Políticos y Administrativos Europeos
-    org: College of Europe, Bruges
-  - years: 2011 – 2013
+    role_es: Máster en Estudios Políticos y Administrativos Europeos
+    org_en: College of Europe, Bruges, Belgium
+    org_es: College of Europe, Brujas, Bélgica
+  - from: 2011-09
+    to: 2013-07
     role_en: MS in International Relations
-    role_es: MS en Relaciones Internacionales
-    org_en: Institute for Social and European Studies, Corvinus University, Koszeg
-    org_es: Instituto de Estudios Sociales y Europeos, Universidad Corvinus, Kőszeg
-  - years: 2005 – 2011
+    role_es: Máster en Relaciones Internacionales
+    org_en: Institute for Social and European Studies, Corvinus University, Kőszeg, Hungary
+    org_es: Institute for Social and European Studies, Corvinus University, Kőszeg, Hungría
+  - from: 2005-09
+    to: 2011-06
     role_en: ‘Licenciatura’ (BA + MS) in Business Management
     role_es: Licenciatura en Administración y Dirección de Empresas
     org_en: University of A Coruña, Spain
-    org_es: Universidad de A Coruña, España
+    org_es: University of A Coruña, España
 - id: awards
-  title_en: Awards & Honors
-  title_es: Premios y reconocimientos
+  title_en: Awards and grants
+  title_es: Premios y ayudas
   entries:
   - years: '2021'
-    role: ESA Young Scholar Award
+    role_en: Young Scholar Award
+    role_es: Premio Young Scholar
     org: European Sociological Association
   - years: '2020'
-    role: Outstanding Dissertation Award
+    role_en: Outstanding Dissertation Award
+    role_es: Premio a la Mejor Tesis Doctoral
+    org: Doctoral School of Political Sciences, Public Policy and International Relations, Central European University
+  - years: '2020'
+    role_en: Funding for the publication of <em>La Plataforma de Afectadas por la Hipoteca. Una década de lucha por la vivienda digna 2009-2019</em>
+    role_es: Ayuda para la publicación de <em>La Plataforma de Afectadas por la Hipoteca. Una década de lucha por la vivienda digna 2009-2019</em>
+    org: Fundación Betiko
+  - years: '2019'
+    role_en: Write-Up Grant
+    role_es: Beca de redacción
     org: Central European University
+  - years: '2018'
+    role_en: Doctoral Research Support Grant
+    role_es: Ayuda de apoyo a la investigación doctoral
+    org: Central European University
+  - years: '2018'
+    role_en: Scholarship for Conference Participation
+    role_es: Beca para participar en congresos
+    org: University of Cambridge
+  - years: '2018'
+    role_en: Visiting Researcher Fellowship
+    role_es: Beca de investigador visitante
+    org: Bard College
+  - years: '2017'
+    role_en: Junior Researcher Fellowship
+    role_es: Beca de investigador junior
+    org_en: Hungarian Government
+    org_es: Gobierno de Hungría
+  - years: '2017'
+    role_en: Short Research Grant
+    role_es: Ayuda de investigación de corta duración
+    org: Central European University
+  - years: '2015'
+    role_en: Grant for Attendance to Winter School
+    role_es: Ayuda para asistir a una escuela de invierno
+    org: Central European University
+  - years: '2014'
+    role_en: Full Doctoral Fellowship
+    role_es: Beca doctoral completa
+    org: Central European University
+  - years: '2013'
+    role_en: European Neighbourhood Policy Scholarship
+    role_es: Beca de la Política Europea de Vecindad
+    org_en: European Commission
+    org_es: Comisión Europea
 - id: service
   title_en: Professional Service
   title_es: Actividad profesional
   entries:
-  - years_en: Ongoing
-    years_es: Continuo
-    role_en: Board Member
-    role_es: Miembro del consejo
-    org_en: Social Movements Research Network, Council for European Studies (CES)
-    org_es: Red de Investigación sobre Movimientos Sociales, Consejo de Estudios Europeos (CES)
-  - years_en: Ongoing
-    years_es: Continuo
-    role_en: Peer Reviewer
-    role_es: Revisor de pares
-    org: <em>West European Politics</em>, <em>European Societies</em>, <em>Mobilization</em>, <em>International Affairs</em>, <em>Social Movement Studies</em>, <em>Social Science History</em>, <em>Political Studies</em>, <em>Employee Relations</em>, <em>Sociology Compass</em>
+  - role_en: Referee
+    role_es: Revisor
+    org: Cambridge University Press, <em>West European Politics</em>, <em>Social Forces</em>, <em>European Societies</em>, <em>International Affairs</em>, <em>Social Movement Studies</em>, <em>Mobilization</em>, <em>Social Science History</em>, <em>European Journal of Politics and Gender</em>, <em>Employee Relations</em>, <em>Sociology Compass</em>, <em>Partecipazione e Conflitto</em>

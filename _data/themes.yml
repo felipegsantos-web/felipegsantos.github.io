@@ -2,41 +2,41 @@
 # `summary` is the text on the cards and under the heading on the theme page; `description` is the meta description.
 - slug: care
   name_en: Care, Empowerment & Social Movements
-  summary_en: How solidarity, empathy, and mutual care operate as political resources within social movements fighting for housing rights and social justice.
-  description_en: How solidarity, empathy, and mutual care operate as political resources within social movements fighting for housing rights and social justice.
+  summary_en: How empathy, solidarity and care help movements mobilise people facing eviction.
+  description_en: How empathy, solidarity and care help movements mobilise people facing eviction.
   name_es: Cuidados, Empoderamiento y Movimientos Sociales
-  summary_es: Cómo la solidaridad, la empatía y el cuidado mutuo funcionan como recursos políticos dentro de los movimientos sociales que luchan por los derechos a la vivienda.
-  description_es: Cómo la solidaridad, la empatía y el cuidado mutuo funcionan como recursos políticos dentro de los movimientos sociales que luchan por los derechos a la viviend
+  summary_es: Cómo la empatía, la solidaridad y el cuidado ayudan a los movimientos a movilizar a personas amenazadas de desahucio.
+  description_es: Cómo la empatía, la solidaridad y el cuidado ayudan a los movimientos a movilizar a personas amenazadas de desahucio.
   art: <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="40" cy="44" rx="28" ry="22" fill="#0F6B6F" opacity="0.18"/><path d="M40 20 C28 20 18 30 18 40 C18 52 30 62 40 68 C50 62 62 52 62 40 C62 30 52 20 40 20Z" fill="#0F6B6F" opacity="0.55"/></svg>
 - slug: farright
   name_en: The Far Right in Europe
-  summary_en: Far-right parties, educational institutions, anti-gender movements, and civil society strategies — how the radical right builds power and contests liberal democracy.
-  description_en: Far-right parties, educational institutions, anti-gender movements, and civil society strategies — how the radical right builds power and contests liberal democ
-  name_es: La Extrema Derecha en Europa
-  summary_es: Partidos de extrema derecha, instituciones educativas, movimientos antigénero y estrategias en la sociedad civil — cómo la derecha radical construye poder.
-  description_es: Partidos de extrema derecha, instituciones educativas, movimientos antigénero y estrategias en la sociedad civil — cómo la derecha radical construye poder.
+  summary_en: 'Far-right parties, educational institutions, anti-gender movements and civil society strategies: how the radical right builds power and contests liberal democracy, in Spain and across Europe.'
+  description_en: 'Far-right parties, educational institutions, anti-gender movements and civil society strategies: how the radical right builds power and contests liberal democracy, in Spain and across Europe.'
+  name_es: La Ultraderecha en Europa
+  summary_es: 'Partidos de ultraderecha, instituciones educativas, movimientos antigénero y estrategias en la sociedad civil: cómo la ultraderecha construye poder y cuestiona la democracia liberal, en España y en el conjunto de Europa.'
+  description_es: 'Partidos de ultraderecha, instituciones educativas, movimientos antigénero y estrategias en la sociedad civil: cómo la ultraderecha construye poder y cuestiona la democracia liberal, en España y en el conjunto de Europa.'
   art: <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="14" y="14" width="52" height="52" rx="4" fill="#A35C45" opacity="0.15"/><polygon points="40,12 68,64 12,64" fill="#A35C45" opacity="0.55"/></svg>
 - slug: protest
   name_en: Protest & Political Participation
-  summary_en: Who protests, how, and why — from in-person demonstrations to digital activism. Individual-level analysis of protest participation across European contexts.
-  description_en: Who protests, how, and why — from in-person demonstrations to digital activism. Individual-level analysis of protest participation across European contexts.
+  summary_en: 'Who protests, how and why: in person, online or both, and how protests connect people and issues across Europe.'
+  description_en: 'Who protests, how and why: in person, online or both, and how protests connect people and issues across Europe.'
   name_es: Protesta y Participación Política
-  summary_es: Quién protesta, cómo y por qué — desde manifestaciones presenciales hasta el activismo digital. Análisis a nivel individual de la participación en protestas.
-  description_es: Quién protesta, cómo y por qué — desde manifestaciones presenciales hasta el activismo digital. Análisis a nivel individual de la participación en protestas.
+  summary_es: 'Quién protesta, cómo y por qué: en persona, online o de ambas formas, y cómo las protestas conectan a personas y temas en toda Europa.'
+  description_es: 'Quién protesta, cómo y por qué: en persona, online o de ambas formas, y cómo las protestas conectan a personas y temas en toda Europa.'
   art: <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="40" cy="40" r="26" fill="#2E6DA4" opacity="0.15"/><rect x="20" y="36" width="40" height="8" rx="4" fill="#2E6DA4" opacity="0.55"/><rect x="34" y="16" width="12" height="48" rx="4" fill="#2E6DA4" opacity="0.35"/></svg>
 - slug: movementparties
   name_en: Electoral & Non-Electoral Politics
-  summary_en: How protest movements and electoral politics interact — through movement parties, protest voters, and the fluid boundary between the street and the ballot box.
-  description_en: How protest movements and electoral politics interact — through movement parties, protest voters, and the fluid boundary between the street and the ballot box.
+  summary_en: 'How protest movements and electoral politics interact: through movement parties, protest voters, and the fluid boundary between the street and the ballot box.'
+  description_en: 'How protest movements and electoral politics interact: through movement parties, protest voters, and the fluid boundary between the street and the ballot box.'
   name_es: Política Electoral y No Electoral
-  summary_es: Cómo los movimientos de protesta y la política electoral interactúan — a través de partidos de movimiento, votantes de protesta y el límite fluido entre la calle y las urnas.
-  description_es: Cómo los movimientos de protesta y la política electoral interactúan — a través de partidos de movimiento, votantes de protesta y el límite fluido entre la call
+  summary_es: 'Cómo interactúan los movimientos de protesta y la política electoral: a través de los partidos-movimiento, los votantes de protesta y el límite fluido entre la calle y las urnas.'
+  description_es: 'Cómo interactúan los movimientos de protesta y la política electoral: a través de los partidos-movimiento, los votantes de protesta y el límite fluido entre la calle y las urnas.'
   art: <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="40" cy="40" rx="30" ry="18" fill="#6B4E9A" opacity="0.15"/><path d="M14 50 Q40 18 66 50" stroke="#6B4E9A" stroke-width="5" fill="none" opacity="0.6" stroke-linecap="round"/></svg>
 - slug: democracy
   name_en: Democratic Quality & Backsliding
-  summary_en: Opposition strategies, electoral coalitions, and the attitudes of citizens under democratic erosion — with comparative research on Hungary, Spain, and Southern Europe.
-  description_en: 'Opposition strategies, electoral coalitions, and the attitudes of citizens under democratic erosion — with comparative research on Hungary, Spain, and Southern '
+  summary_en: How opposition parties and voters respond to democratic backsliding, with research on Hungary.
+  description_en: How opposition parties and voters respond to democratic backsliding, with research on Hungary.
   name_es: Calidad Democrática y Retroceso Democrático
-  summary_es: Estrategias de la oposición, coaliciones electorales y actitudes de los ciudadanos ante la erosión democrática — con investigación comparada en Hungría, España y Europa del Sur.
-  description_es: 'Estrategias de la oposición, coaliciones electorales y actitudes de los ciudadanos ante la erosión democrática — con investigación comparada en Hungría, España '
+  summary_es: Cómo responden los partidos de la oposición y sus votantes al retroceso democrático, con investigación sobre Hungría.
+  description_es: Cómo responden los partidos de la oposición y sus votantes al retroceso democrático, con investigación sobre Hungría.
   art: <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="12" y="44" width="12" height="24" rx="2" fill="#8A6A1E" opacity="0.55"/><rect x="34" y="28" width="12" height="40" rx="2" fill="#8A6A1E" opacity="0.45"/><rect x="56" y="36" width="12" height="32" rx="2" fill="#8A6A1E" opacity="0.35"/></svg>

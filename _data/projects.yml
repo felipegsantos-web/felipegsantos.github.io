@@ -1,35 +1,45 @@
-# "Current work" page: funded projects and working papers. Status labels are in i18n.yml.
+# Funded projects (research page and CV "Grants and projects"). Newest first within each status.
+# `status`: current | past. Shown: name, official title, funder, years, role. No host institution or grant number.
+# Only facts that a source gives are filled in; a missing field is simply not shown.
+# Sources: title, funder, role and dates from Felipe's CV (19 October 2026); descriptions and TakePart years from
+# docs/publications-content.md (section 4).
 projects:
-- name: INTERFACED
+- id: interfaced
+  name: INTERFACED
+  title: "Interfaces for Democratic Participation: Deliberation, Mobilization, and Contestation Since the Onset of the Covid-19 Pandemic"
   funder: Horizon Europe
-  years: 2023–2026
-  host_en: City St George's, University of London, United Kingdom
-  host_es: City St George's, University of London, Reino Unido
-  desc_en: INTERFACED investigates how digital technologies transform political participation and civic engagement in European democracies, with a focus on how online and hybrid protest repertoires interact with formal political institutions.
-  desc_es: INTERFACED investiga cómo las tecnologías digitales transforman la participación política y el compromiso cívico en las democracias europeas, con foco en cómo los repertorios de protesta en línea e híbridos interactúan con las instituciones políticas formales.
-- name: TakePart
+  status: current
+  url: https://www.interfaced.eu/
+  description_en: "INTERFACED (Interfaces for Democratic Participation: Deliberation, Mobilization, and Contestation Since the Onset of the Covid-19 Pandemic) studies how people have taken part in politics since the pandemic, a period of declining trust in democracy and science and growing social divisions. It examines how citizens interact with political institutions and whether these channels allow real participation in decision-making, using surveys, experiments and fieldwork in eight European countries and Tunisia. Funded by Horizon Europe."
+  description_es: "INTERFACED (Interfaces for Democratic Participation: Deliberation, Mobilization, and Contestation Since the Onset of the Covid-19 Pandemic) estudia cómo ha participado la ciudadanía en política desde la pandemia, un periodo de pérdida de confianza en la democracia y la ciencia y de divisiones sociales crecientes. Analiza cómo se relaciona la ciudadanía con las instituciones políticas y si esos cauces permiten una participación real en la toma de decisiones, mediante encuestas, experimentos y trabajo de campo en ocho países europeos y Túnez. Financiado por Horizon Europe."
+- id: takepart
+  name: TakePart
+  title: "Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation"
   funder: NextGenerationEU
-  years: 2023–2025
-  host_en: Babeş-Bolyai University, Romania
-  host_es: Universidad Babeş-Bolyai, Rumanía
-  desc_en: TakePart examines political participation and democratic resilience in Central and Eastern Europe, with particular attention to how citizens respond to democratic backsliding and the strategies of opposition actors.
-  desc_es: TakePart examina la participación política y la resiliencia democrática en Europa Central y Oriental, con especial atención a cómo los ciudadanos responden al retroceso democrático y a las estrategias de los actores de la oposición.
-working_papers:
-- status: under_review
-  title: Digital Protest Repertoires and Political Participation in Post-Pandemic Europe
-  authors:
-  - Felipe G. Santos
-  - Dan Mercea
-  - Mathias Hoffmann
-  summary_en: Examines how pandemic-era shifts in protest repertoires — toward online and hybrid forms — have reshaped patterns of political participation across European democracies.
-  summary_es: Examina cómo los cambios en los repertorios de protesta durante la pandemia —hacia formas en línea e híbridas— han transformado los patrones de participación política en las democracias europeas.
-  why_en: Provides the first large-scale comparative evidence that the pandemic durably changed how Europeans protest — with lasting implications for democracy.
-  why_es: Aporta la primera evidencia comparada a gran escala de que la pandemia transformó de forma duradera las formas de protesta en Europa.
-- status: working_paper
-  title: 'Authoritarian Nostalgia and Democratic Backsliding: Survey Evidence from Southern Europe'
-  authors:
-  - Felipe G. Santos
-  summary_en: Uses original survey data to investigate the relationship between nostalgia for authoritarian regimes and declining support for democratic institutions in Portugal and Spain.
-  summary_es: Utiliza datos de encuesta originales para investigar la relación entre la nostalgia por regímenes autoritarios y el declive del apoyo a las instituciones democráticas en Portugal y España.
-  why_en: Connects long historical memories of authoritarianism to current threats to democracy — a critical but understudied dimension of democratic erosion in Southern Europe.
-  why_es: Conecta memorias históricas del autoritarismo con las amenazas actuales a la democracia, una dimensión crítica pero poco estudiada de la erosión democrática en Europa del Sur.
+  years_en: 2023 to 2026
+  years_es: 2023 a 2026
+  role_en: Work package leader
+  role_es: Responsable de paquete de trabajo
+  status: past
+  url: https://takepart.ro/
+  description_en: "TakePart (Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation) starts from a paradox: traditional civic engagement is declining, while social movements use social media to drive collective action. The project studies how movements turn online interactions into offline activism across Europe. Led by Dan Mercea and funded by the European Union (NextGenerationEU) and the Romanian Government through Romania's National Recovery and Resilience Plan, 2023 to 2026."
+  description_es: "TakePart (Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation) parte de una paradoja: el compromiso cívico tradicional disminuye, mientras los movimientos sociales usan las redes sociales para impulsar la acción colectiva. El proyecto estudia cómo los movimientos convierten las interacciones online en activismo presencial en Europa. Dirigido por Dan Mercea y financiado por la Unión Europea (NextGenerationEU) y el Gobierno de Rumanía a través del Plan Nacional de Recuperación y Resiliencia, 2023 a 2026."
+- id: readjust
+  name: READJUST Climate
+  title: "READJUST Climate: Reasons, Emotions, and Attitudes Towards Climate Change, Mitigation and Justice"
+  funder: European Climate Foundation
+  years_en: June 2023 to December 2024
+  years_es: junio de 2023 a diciembre de 2024
+  role: Co-PI
+  status: past
+- id: prodem
+  name: ProDem
+  title: "Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe"
+  funder: Volkswagen Foundation
+  status: past
+  description_en: "ProDem (Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe), funded by the Volkswagen Foundation. Its outputs include the edited book <em>Protest and Democracy</em> (Routledge, 2025) and a six-country survey of 10,347 people (2022)."
+  description_es: "ProDem (Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe), financiado por la Volkswagen Foundation. Entre sus resultados están el libro colectivo <em>Protest and Democracy</em> (Routledge, 2025) y una encuesta en seis países a 10.347 personas (2022)."
+- id: mobilise
+  name: MOBILISE
+  funder: Open Research Area (ORA) scheme
+  status: past

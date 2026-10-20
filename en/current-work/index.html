@@ -2,29 +2,28 @@
 layout: default
 lang: en
 ref: current-work
-title: "Current Research — Felipe G. Santos"
-description: "Felipe G. Santos's ongoing research projects and working papers in political sociology."
+title: "Research · Felipe G. Santos"
+description: "Funded research projects of Felipe G. Santos in political sociology, current and past."
 ---
 {% include vars.html %}
 <main id="main-content">
   <div class="container">
     <div class="page-header">
-      <h1 class="page-title page-title--nowrap">Current Research</h1>
-      <p class="page-intro">Ongoing funded projects and papers currently in preparation or under review.</p>
+      <h1 class="page-title page-title--nowrap">Research</h1>
+      <p class="page-intro">Funded research projects, current and past.</p>
     </div>
 
-    <section aria-labelledby="projects-h">
-      <h2 class="section-heading" id="projects-h">Ongoing Projects</h2>
+    <section aria-labelledby="projects-current-h">
+      <h2 class="section-heading" id="projects-current-h">{{ I.projects_current[L] }}</h2>
       <div class="project-list mt-sp6">
-        {% include projects.html %}
+        {% include projects.html status="current" %}
       </div>
     </section>
 
-    <section class="mt-sp12" aria-labelledby="wip-h">
-      <h2 class="section-heading" id="wip-h">Working Papers</h2>
-      <p class="section-intro">Papers currently under review or in revision.</p>
-      <div class="wip-list mt-sp6">
-        {% include working-papers.html %}
+    <section class="mt-sp12" aria-labelledby="projects-past-h">
+      <h2 class="section-heading" id="projects-past-h">{{ I.projects_past[L] }}</h2>
+      <div class="project-list mt-sp6">
+        {% include projects.html status="past" %}
       </div>
     </section>
 

@@ -2,8 +2,8 @@
 layout: default
 lang: es
 ref: home
-title: "Felipe G. Santos — Sociólogo Político"
-description: "Investigador en Sociología Política en City St George's, University of London, Reino Unido. Investigo movimientos sociales, extrema derecha y cambio democrático en Europa."
+title: "Felipe G. Santos · Sociólogo Político"
+description: "Investigador en Sociología Política en City St George's, University of London, Reino Unido. Investigo movimientos sociales, ultraderecha y cambio democrático en Europa."
 ---
 {% include vars.html %}
 <main id="main-content">
@@ -19,9 +19,7 @@ description: "Investigador en Sociología Política en City St George's, Univers
                alt="{{ I.hero_photo_alt[L] }}"
                class="hero-photo" width="320" height="380" loading="eager">
           <div class="footer-social mt-sp4">
-            {%- for p in profile.profiles %}
-            <a href="{{ p.url }}"{% unless p.id == "email" %} target="_blank" rel="noopener"{% endunless %} class="footer-social__link" aria-label="{{ p.label }}" data-track="{{ p.track }}">{% include icon.html name=p.id %}</a>
-            {%- endfor %}
+            {%- include profile-icons.html %}
           </div>
 
         </div>
@@ -30,18 +28,10 @@ description: "Investigador en Sociología Política en City St George's, Univers
         <div class="hero-bio">
           <h1 class="hero-bio__name">Felipe G. Santos</h1>
           <p class="hero-bio__text">
-            Investigo por qué la gente sale a la calle, cómo la extrema derecha construye
-            poder y qué mantiene unidas a las democracias, o las destruye. Mi trabajo
-            combina encuestas a gran escala, experimentos de encuesta y etnografía para
-            entender cómo los ciudadanos piensan sobre la democracia y la participación
-            política en Europa en un momento de profunda incertidumbre.
+            {{ profile.intro_es }}
           </p>
           <p class="hero-bio__text">
-            Soy investigador en el proyecto
-            <a href="https://www.interfaced.eu/" target="_blank" rel="noopener" class="inline-link"><strong>INTERFACED</strong></a>
-            (Horizon Europe, City St George's, University of London) y el proyecto
-            <a href="https://takepart.ro/" target="_blank" rel="noopener" class="inline-link"><strong>TakePart</strong></a>
-            (NextGenerationEU, Universidad Babeş-Bolyai).
+            {% include current-post.html %}
           </p>
           
         </div>
