@@ -7,9 +7,9 @@
         <span class="media-entry__outlet">{{ m.outlet }}</span>
         <span class="media-entry__date">{{ m.date }}</span>
       </div>
-      <h3 class="media-entry__title">
+      <h2 class="media-entry__title">
         <a href="{{ m.url }}" target="_blank" rel="noopener" data-goatcounter-click="media-{{ m.id }}">{{ m[k_title] }}</a>
-      </h3>
+      </h2>
       <p class="media-entry__topic">{{ I.media_theme[m.theme][L] }}</p>
     </article>
 {% endfor -%}

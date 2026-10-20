@@ -1,5 +1,5 @@
-{%- comment -%}The profile icon links (footer and homepage hero). `listitem=true` adds role="listitem". The email link is built from profile.email.{%- endcomment -%}
+{%- comment -%}The profile icon links (footer and homepage hero), as <li> items: put them in a <ul class="footer-social">. The email link is built from profile.email.{%- endcomment -%}
 {%- include vars.html -%}
 {%- for p in profile.profiles %}
-<a href="{% if p.id == 'email' %}mailto:{{ profile.email }}{% else %}{{ p.url }}{% endif %}"{% unless p.id == "email" %} target="_blank" rel="noopener"{% endunless %} class="footer-social__link" aria-label="{{ p.label }}"{% if include.listitem %} role="listitem"{% endif %} data-goatcounter-click="{% if p.id == 'email' %}email{% else %}profile-{{ p.id }}{% endif %}">{% include icon.html name=p.id %}</a>
+<li><a href="{% if p.id == 'email' %}mailto:{{ profile.email }}{% else %}{{ p.url }}{% endif %}"{% unless p.id == "email" %} target="_blank" rel="noopener"{% endunless %} class="footer-social__link" aria-label="{{ p.label }}" data-goatcounter-click="{% if p.id == 'email' %}email{% else %}profile-{{ p.id }}{% endif %}">{% include icon.html name=p.id %}</a></li>
 {%- endfor %}

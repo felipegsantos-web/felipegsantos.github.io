@@ -1,4 +1,20 @@
 /* ============================================================
+   FONTS: self-hosted WOFF2, Latin subset (scripts/build_fonts.py), SIL OFL 1.1 (assets/fonts/OFL-*.txt)
+   ============================================================ */
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;
+  src:url('../fonts/inter-latin-400.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;
+  src:url('../fonts/inter-latin-500.woff2') format('woff2')}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;
+  src:url('../fonts/inter-latin-600.woff2') format('woff2')}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600;font-display:swap;
+  src:url('../fonts/playfair-display-latin-600.woff2') format('woff2')}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:swap;
+  src:url('../fonts/playfair-display-latin-700.woff2') format('woff2')}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:600;font-display:swap;
+  src:url('../fonts/playfair-display-latin-600-italic.woff2') format('woff2')}
+
+/* ============================================================
    DESIGN TOKENS — Felipe G. Santos Academic Website
    ============================================================ */
 :root {
@@ -10,13 +26,13 @@
   /* Text */
   --text:         #1A1410;
   --text-secondary: #5C534C;
-  --text-muted:   #9A8C80;
+  --text-muted:   #75685D;
   --text-inv:     #EDE6D8;
 
   /* Accent (rust/terra) */
   --accent:       #A0462B;
   --accent-hover: #7F3522;
-  --accent-soft:  #E8C9BF;
+  --accent-soft:  #EFD9D2;
 
   /* Borders */
   --border:       #DDD4C8;
@@ -24,7 +40,7 @@
 
   /* Semantic */
   --success:      #56735F;
-  --info:         #5C728A;
+  --info:         #54687E;
   --error:        #8B2C1F;
 
   /* Focus */
@@ -56,7 +72,7 @@
   --pub-article-bg: #E0EEF5;
   --pub-chapter:  #A0462B;
   --pub-chapter-bg: #F5EBE7;
-  --pub-review:   #8A6A1E;
+  --pub-review:   #80621C;
   --pub-review-bg:#F5EEE0;
   --pub-wip:      #5C728A;
   --pub-wip-bg:   #E4EDF5;
@@ -102,13 +118,13 @@
   /* Text */
   --text:         #EDE6D8;
   --text-secondary: #B8AC9C;
-  --text-muted:   #988B7D;
+  --text-muted:   #9D9284;
   --text-inv:     #1A1410;
 
   /* Accent */
-  --accent:       #D2764F;
+  --accent:       #D98967;
   --accent-hover: #E89068;
-  --accent-soft:  #4A2B20;
+  --accent-soft:  #482A1F;
 
   /* Borders */
   --border:       #3A322C;

@@ -1,0 +1,11 @@
+{%- comment -%}EN/ES switch. The current language is plain text with aria-current; the other one links to the same page in that language (`url_en` and `url_es` are set in head.html from the `ref` pair). The visible text comes first in each accessible name (WCAG 2.5.3).{%- endcomment -%}
+{%- include vars.html -%}
+{%- assign codes = "en,es" | split: "," -%}
+{%- for code in codes -%}
+{%- assign target = url_en -%}{%- if code == "es" -%}{%- assign target = url_es -%}{%- endif -%}
+{%- if code == L and page.bilingual != true -%}
+<span class="lang-toggle__btn active" aria-current="true">{{ code | upcase }}<span class="sr-only"> ({{ I.lang_name[code] }})</span></span>
+{%- else -%}
+<a href="{{ target }}" class="lang-toggle__btn" lang="{{ code }}" hreflang="{{ code }}" data-lang-btn="{{ code }}">{{ code | upcase }}<span class="sr-only"> ({{ I.lang_name[code] }})</span></a>
+{%- endif -%}
+{%- endfor -%}

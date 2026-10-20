@@ -20,7 +20,7 @@ jobs:
       LANG: C.UTF-8
       LC_ALL: C.UTF-8
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           # _plugins/last_modified.rb reads dates from the git history for <lastmod> in sitemap.xml
           fetch-depth: 0
@@ -30,9 +30,15 @@ jobs:
           ruby-version: "3.3"
           bundler-cache: true
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: scripts/a11y/package-lock.json
 
       - name: Install Python dependencies
         run: pip install beautifulsoup4 pyyaml
@@ -58,9 +64,19 @@ jobs:
       - name: Theme answer texts
         run: python3 scripts/check_theme_answers.py
 
+      - name: Contrast of every text and background pair
+        run: python3 scripts/check_contrast.py
+
+      - name: Accessibility (axe, WCAG 2.2 AA, both themes, both widths)
+        working-directory: scripts/a11y
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+          node axe.mjs ../../_site
+
       - name: Upload site
         if: github.event_name != 'pull_request'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
@@ -76,4 +92,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

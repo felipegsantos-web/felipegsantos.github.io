@@ -19,16 +19,15 @@ jsonld: person
           <img src="{{ rel }}{{ profile.image | remove_first: '/' }}"
                alt="{{ profile.name }}, {{ profile[position_key] }}"
                class="hero-photo" width="{{ profile.image_width }}" height="{{ profile.image_height }}" fetchpriority="high">
-          <div class="footer-social mt-sp4">
+          <ul class="footer-social mt-sp4" role="list" aria-label="{{ I.profiles_label[L] }}">
             {%- include profile-icons.html %}
-          </div>
+          </ul>
 
         </div>
 
         <!-- Col 2: Bio text -->
         <div class="hero-bio">
           <h1 class="hero-bio__name">{{ profile.name }}</h1>
-          <p class="hero-bio__aka">{{ I.also_published_as[L] | replace: "%name%", profile.name | replace: "%variant%", profile.name_variants[0] }}</p>
           <p class="hero-bio__text">
             {{ profile.intro_es }}
           </p>

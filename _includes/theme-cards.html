@@ -4,7 +4,7 @@
 {%- for theme in site.data.themes -%}
 {%- assign n = site.data.publications | where_exp: "p", "p.themes contains theme.slug" | size -%}
 {%- if n == 1 %}{% assign noun = I.publication_count.one[L] %}{% else %}{% assign noun = I.publication_count.other[L] %}{% endif %}
-<a href="{{ I.theme_path[L] }}{{ theme.slug }}/" class="theme-entry-card theme--{{ theme.slug }}" aria-label="{{ theme[k_name] }}">
+<a href="{{ I.theme_path[L] }}{{ theme.slug }}/" class="theme-entry-card theme--{{ theme.slug }}">
   <div class="theme-entry-card__art">{{ theme.art }}</div>
   <div class="theme-entry-card__body">
     <h3 class="theme-entry-card__name">{{ theme[k_name] }}</h3>
