@@ -28,7 +28,6 @@ jsonld: person
           <div>
             <p class="cv-contact__name">{{ profile.name }}</p>
             <p class="cv-contact__role">{{ profile[position_key] }}</p>
-            <p class="cv-contact__aka">{{ I.also_published_as[L] | replace: "%name%", profile.name_variants[0] }}</p>
           </div>
           <div class="cv-contact__links">
             <a href="mailto:{{ profile.email }}" class="cv-contact__link" data-goatcounter-click="email">{% include icon.html name="email" %} {{ profile.email }}</a>

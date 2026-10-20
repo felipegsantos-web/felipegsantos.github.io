@@ -33,9 +33,6 @@ menu_close_label:
 profiles_label:
   en: Academic profiles
   es: Perfiles académicos
-also_published_as:
-  en: "Also published as %name%."
-  es: "%name% (%variant%)"
 # Main navigation, in order. `url` is per language. `key` is how templates look an item up.
 nav:
   - key: research
