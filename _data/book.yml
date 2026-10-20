@@ -58,3 +58,8 @@ labels:
   print: {en: ISBN (print), es: ISBN (impreso)}
   ebook: {en: ISBN (eBook), es: ISBN (eBook)}
   publisher_page: {en: View on the publisher's site →, es: Ver en la web de la editorial →}
+# Highlight block (homepage and top of the Publications page, _includes/book-card.html).
+# The label "Book" / "Libro" is `pub_type_label.book` in i18n.yml; the link to the book page reuses labels.about; the PDF link and the publisher line come from the publication entry.
+highlight:
+  sentence_en: "Why do the people hit hardest by a grievance often fail to mobilize, while others with no direct stake join in? A theory of mobilization based on care, built on a year of fieldwork with Spain's Platform of Those Affected by Mortgages (PAH)."
+  sentence_es: "¿Por qué quienes más sufren un agravio a menudo no se movilizan, mientras otras personas sin un interés directo sí lo hacen? Una teoría de la movilización basada en el cuidado, a partir de un año de trabajo de campo con la Plataforma de Afectados por la Hipoteca (PAH)."

@@ -15,6 +15,8 @@ jsonld_description: "Books, journal articles, and book chapters by Felipe G. San
       <p class="page-intro">Explore my research by theme, or browse the full publication list.</p>
     </div>
 
+    {% include book-card.html variant="publications" %}
+
     <!-- View toggle: by-theme vs flat list -->
     <div class="pub-view-toggle" role="group" aria-label="{{ I.view_mode_label[L] }}">
       <button class="view-btn active" data-view="theme" aria-pressed="true">{{ I.view_themes[L] }}</button>
