@@ -166,8 +166,8 @@ research_heading:
   es: Investigación
 # Homepage sentence about the current post, filled from profile.yml (posts) and projects.yml.
 current_post_sentence:
-  en: "I am a %role% in the %department% at %institution%, working on %project% (%funder%)."
-  es: "Soy %role% en el %department% de %institution%, y trabajo en el proyecto %project% (%funder%)."
+  en: "I am a %role% in the %department% at %institution%, working on %project%."
+  es: "Soy %role% en el %department% de %institution%, y trabajo en el proyecto %project%."
 # Research page and CV
 projects_current:
   en: Current
@@ -175,12 +175,6 @@ projects_current:
 projects_past:
   en: Past
   es: Anteriores
-project_funder:
-  en: Funder
-  es: Financiación
-project_role:
-  en: Role
-  es: Función
 date_to:
   en: to
   es: a

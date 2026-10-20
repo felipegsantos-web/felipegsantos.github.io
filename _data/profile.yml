@@ -85,7 +85,7 @@ other_profiles:
     label: City Research Online (City author page)
     url: https://openaccess.city.ac.uk/view/creators_id/f=2Esantos.html
 # Posts, newest first. `from` / `to` are YYYY-MM; no `to` means the post is current.
-# `project` is the id of an entry in projects.yml. `funding` is the programme shown next to the post.
+# `project` is the id of an entry in projects.yml. `cv_projects` lists the projects the post has covered (shown on the CV); `funding` is shown on the CV for posts without it.
 # Dates: December 2020 and August 2019 to December 2020 as given by Felipe; Babeș-Bolyai to July 2026 as given by Felipe (the CV PDF still says "Present").
 posts:
   - id: city
@@ -98,7 +98,7 @@ posts:
     place_en: London, UK
     place_es: Londres, Reino Unido
     project: interfaced
-    funding: INTERFACED, Horizon Europe
+    cv_projects: [prodem, interfaced]
     from: 2020-12
   - id: babes-bolyai
     status: past
