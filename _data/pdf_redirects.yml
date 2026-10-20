@@ -1,0 +1,20 @@
+# Old PDF paths and where they moved (PDF file names start with the work's `year`). GitHub Pages cannot redirect files,
+# so 404.html reads this list at build time and redirects a visit to an old path. scripts/check_pdf_redirects.py checks it against _site.
+- old: /documents/publications/2022-pah-10-anos.pdf
+  new: /documents/publications/2021-pah-10-anos.pdf
+- old: /documents/publications/2025-united-for-hungary.pdf
+  new: /documents/publications/2026-united-for-hungary.pdf
+- old: /documents/publications/2024-policy-over-protest.pdf
+  new: /documents/publications/2025-policy-over-protest.pdf
+- old: /documents/publications/2024-protest-styles.pdf
+  new: /documents/publications/2025-protest-styles.pdf
+- old: /documents/publications/2024-actual-potential-non-participants.pdf
+  new: /documents/publications/2025-actual-potential-non-participants.pdf
+- old: /documents/publications/2024-vox-top-down-cso.pdf
+  new: /documents/publications/2025-vox-top-down-cso.pdf
+- old: /documents/publications/2024-young-democrats-protest-voters.pdf
+  new: /documents/publications/2025-young-democrats-protest-voters.pdf
+- old: /documents/publications/2024-methodological-pluralism.pdf
+  new: /documents/publications/2025-methodological-pluralism.pdf
+- old: /documents/publications/2022-cuidados-primer-desahucio.pdf
+  new: /documents/publications/2021-cuidados-primer-desahucio.pdf

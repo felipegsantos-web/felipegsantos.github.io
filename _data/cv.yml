@@ -27,12 +27,8 @@
     org_en: Central European University, Budapest, Hungary
     org_es: Central European University, Budapest, Hungría
     bullets_en:
-    - Winner of the 2021 Young Scholar Award of the European Sociological Association
-    - Winner of the Outstanding Dissertation Award of CEU's Doctoral School
     - "Defense committee: Béla Greskovits, Erin Jenne and Donatella della Porta"
     bullets_es:
-    - Premio Young Scholar 2021 de la European Sociological Association
-    - Premio a la Mejor Tesis Doctoral de la Doctoral School de Central European University
     - "Tribunal de tesis: Béla Greskovits, Erin Jenne y Donatella della Porta"
   - from: 2013-08
     to: 2014-06
@@ -51,7 +47,7 @@
     role_en: ‘Licenciatura’ (BA + MS) in Business Management
     role_es: Licenciatura en Administración y Dirección de Empresas
     org_en: University of A Coruña, Spain
-    org_es: University of A Coruña, España
+    org_es: Universidade da Coruña, España
 - id: awards
   title_en: Awards and grants
   title_es: Premios y ayudas
@@ -94,7 +90,7 @@
     role_es: Ayuda de investigación de corta duración
     org: Central European University
   - years: '2015'
-    role_en: Grant for Attendance to Winter School
+    role_en: Winter School attendance grant
     role_es: Ayuda para asistir a una escuela de invierno
     org: Central European University
   - years: '2014'

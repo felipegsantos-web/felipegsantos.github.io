@@ -41,7 +41,7 @@ jobs:
           cache-dependency-path: scripts/a11y/package-lock.json
 
       - name: Install Python dependencies
-        run: pip install beautifulsoup4 pyyaml
+        run: pip install beautifulsoup4 pyyaml pypdf
 
       - name: Build
         run: |
@@ -60,6 +60,12 @@ jobs:
 
       - name: JSON-LD against _data
         run: python3 scripts/check_jsonld.py _site
+
+      - name: PDF titles, authors and subjects against _data
+        run: python3 scripts/pdf_metadata.py --check
+
+      - name: Old PDF paths redirect to files that exist
+        run: python3 scripts/check_pdf_redirects.py _site
 
       - name: Theme answer texts
         run: python3 scripts/check_theme_answers.py

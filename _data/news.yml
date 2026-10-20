@@ -1,22 +1,14 @@
-# Homepage "News & Updates", newest first. `link` is the linked text; `rest_*` is what follows it (inline HTML allowed).
+# Homepage "News & Updates", newest first.
 # `type`: media | publication (labels in i18n.yml). `ref` is the id of the media or publication entry (analytics event name).
+# Media items take outlet, role, date, headline and link from media.yml through `ref`; they have no other fields.
+# Publication items give their own `date` (YYYY-MM), `url`, `link` (the linked text) and `rest_*` (what follows it, inline HTML allowed).
 - type: media
   ref: 2026-the-world
-  date: '2026'
-  url: https://theworld.org/segments/2026/09/09/spains-far-right-polls-closer-to-power-than-ever
-  link: The World (PRX)
-  rest_en: ': Commentary on polls showing a PP and Vox coalition within reach.'
-  rest_es: ': Comentario sobre las encuestas que sitúan al alcance una coalición de PP y Vox.'
 - type: media
   ref: 2026-el-pais
-  date: '2026'
-  url: https://elpais.com/espana/2026-04-15/el-movimiento-contra-el-aborto-y-contra-los-derechos-lgtbiq-pierde-con-orban-su-modelo-a-seguir.html
-  link: El País
-  rest_en: ': Commentary on how Orbán’s fall weakens the anti-abortion and anti-LGBTQ+ movement’s main international reference.'
-  rest_es: ': Comentario sobre cómo la caída de Orbán deja sin su principal referente al movimiento antiaborto y contra los derechos LGTBIQ+.'
 - type: publication
   ref: 2026-foot-in-parliament-foot-on-the-streets
-  date: '2026'
+  date: '2026-01'
   url: https://doi.org/10.1177/13540688251413043
   link: One foot in parliament, one on the streets
   rest_en: ' (with Hoffmann and Mercea): <em>Party Politics</em>.'

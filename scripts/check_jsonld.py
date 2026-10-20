@@ -4,6 +4,7 @@
 Usage: python3 scripts/check_jsonld.py [SITE_DIR]   (default: _site)
 
 * every block is valid JSON;
+* volume, issue and pagination match publications.yml;
 * each publication block has the authors (or editors) of publications.yml, in the same order, with Felipe as {"@id": ".../#person"};
 * the Person is defined at most once per page (references by @id do not count);
 * the homepages and CV pages (EN and ES) define it exactly once, and no other page does.
@@ -73,6 +74,15 @@ def main():
                 ok = g == {"@id": PERSON} if w in me else g.get("name") == w and g.get("@type") == "Person"
                 if not ok:
                     errors.append(f"{rel}: {pub['id']} author {g!r} does not match {w!r}")
+            nodes = list(walk(b))
+            vol = next((n.get("volumeNumber") for n in nodes if n.get("@type") == "PublicationVolume"), None)
+            iss = next((n.get("issueNumber") for n in nodes if n.get("@type") == "PublicationIssue"), None)
+            if pub["type"] in ("article", "profile") and (vol, iss) != (
+                str(pub["volume"]) if "volume" in pub else None, str(pub["issue"]) if "issue" in pub else None
+            ):
+                errors.append(f"{rel}: {pub['id']} volume/issue {vol}/{iss} do not match the data")
+            if b.get("pagination") != pub.get("pages"):
+                errors.append(f"{rel}: {pub['id']} pagination {b.get('pagination')!r} does not match the data")
             same = [u for u in (pub.get("oa_url"), pub.get("pdf") and "https://www.felipegsantos.com" + pub["pdf"]) if u]
             if bool(same) != bool(b.get("isAccessibleForFree")) or (same and b.get("sameAs") != same):
                 errors.append(f"{rel}: {pub['id']} open-access fields do not match the data")

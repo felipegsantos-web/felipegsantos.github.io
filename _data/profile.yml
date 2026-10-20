@@ -37,14 +37,27 @@ description_es: >-
 # First paragraph of the homepage.
 intro_en: >-
   I study why people take to the streets, how the far right builds power, and
-  what holds democracies together, or pulls them apart. My work combines
-  cross-national surveys and survey experiments with social media and network
-  analysis, interviews and ethnography.
+  how attitudes toward democracy shape political participation. My work
+  combines cross-national surveys and survey experiments with social media and
+  network analysis, interviews and ethnography.
 intro_es: >-
   Investigo por qué la gente sale a la calle, cómo la ultraderecha construye
-  poder y qué mantiene unidas a las democracias, o las destruye. Mi trabajo
-  combina encuestas comparadas y experimentos de encuesta con datos de redes
-  sociales, análisis de redes, entrevistas y etnografía.
+  poder y cómo las actitudes hacia la democracia condicionan la participación
+  política. Mi trabajo combina encuestas comparadas y experimentos de encuesta
+  con datos de redes sociales, análisis de redes, entrevistas y etnografía.
+# "For media" block on the contact pages: languages, then a short list of topics.
+media_languages_en: Interviews in Spanish, English, Italian and French.
+media_languages_es: Entrevistas en español, inglés, italiano y francés.
+media_topics_en:
+  - Political participation
+  - Democracy and democratic backsliding
+  - Far-right politics
+  - Anti-gender and anti-feminist movements
+media_topics_es:
+  - Participación política
+  - Democracia y retroceso democrático
+  - La ultraderecha
+  - Movimientos antigénero y antifeministas
 # Profiles shown as icons in the footer and the homepage hero, in this order.
 # The email entry has no url: it is built from `email`. `id` also names the analytics event (profile-<id>; email for the address).
 profiles:

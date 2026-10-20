@@ -21,7 +21,14 @@
         {% if pub.url != "" %}<a href="{{ pub.url }}" target="_blank" rel="noopener" data-goatcounter-click="publication-{{ pub.id }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
       </h3>
       <p class="pub-entry__authors">{% include authors.html names=pub.authors edited=edited %}</p>
-      <p class="pub-entry__venue"{{ venue_lang }}>{% if pub.type == "article" or pub.type == "profile" %}<em>{{ venue }}</em>{% else %}{{ venue }}{% endif %}</p>
+      {%- if pub.type == "article" or pub.type == "profile" %}
+      {%- comment -%}Journal, volume(issue), pages: "Journal, 32(8), 1958-1985." Without a volume the article is online first. The words are in the page language, so only the journal name carries `lang`.{%- endcomment -%}
+      {%- capture issue_part %}{% if pub.issue %}({{ pub.issue }}){% endif %}{% endcapture -%}
+      {%- capture volume_part %}{% if pub.volume %}, {{ pub.volume }}{{ issue_part }}{% if pub.pages %}, {{ pub.pages }}{% endif %}{% else %}, {{ I.online_first[L] }}{% endif %}{% endcapture -%}
+      <p class="pub-entry__venue"><em{{ venue_lang }}>{{ venue }}</em>{{ volume_part }}.</p>
+      {%- else %}
+      <p class="pub-entry__venue"{{ venue_lang }}>{{ venue }}</p>
+      {%- endif %}
       {%- if pub.doi or pub.oa_url or pub.pdf %}
       <p class="pub-entry__links">{% if pub.doi %}<span>DOI <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener" class="inline-link">{{ pub.doi }}</a></span>{% endif %}{% if pub.pdf %}<a href="{{ pub.pdf }}" class="pub-entry__download" download data-goatcounter-click="pdf-{{ pub.id }}">{% include icon.html name="download" %} {{ I.pdf_label[pub.pdf_version][L] }}<span class="sr-only"{{ title_lang }}>: {{ pub.title | strip_html }}</span></a>{% elsif pub.oa_url %}<span><a href="{{ pub.oa_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="open-access-{{ pub.id }}">{{ I.open_access_label[L] }}<span class="sr-only"{{ title_lang }}>: {{ pub.title | strip_html }}</span></a>{% if pub.oa_version == "accepted" %} ({{ I.oa_version_note.accepted[L] }}){% endif %}</span>{% endif %}</p>
       {%- endif %}

@@ -325,15 +325,19 @@
   box-shadow:var(--shadow-sm)}
 .media-entry__meta-top{display:flex;align-items:center;gap:var(--sp3);
   flex-wrap:wrap;margin-bottom:var(--sp2)}
-.media-entry__outlet{font-size:var(--tx-xs);font-weight:700;
+.media-entry__role,.media-entry__outlet{font-size:var(--tx-xs);font-weight:700;
   text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted)}
-.media-entry__date{font-size:var(--tx-xs);color:var(--text-faint);
+.media-entry__role{color:var(--accent)}
+.media-entry__lang{font-size:.65rem;font-weight:700;letter-spacing:.06em;padding:.15em .5em;
+  border:1px solid var(--border-strong);border-radius:var(--r-full);color:var(--text-muted);text-decoration:none;cursor:help}
+.media-entry__date{font-size:var(--tx-xs);color:var(--text-muted);
   font-variant-numeric:tabular-nums;margin-left:auto}
 .media-entry__title{font-size:var(--tx-base);font-weight:600;color:var(--text);
   line-height:1.4;margin-bottom:var(--sp1)}
 .media-entry__title a{color:inherit;text-decoration:none}
 .media-entry__title a:hover{color:var(--teal);text-decoration:underline}
-.media-entry__topic{font-size:var(--tx-xs);color:var(--text-muted)}
+.media-entry__gloss,.media-entry__with{font-size:var(--tx-xs);color:var(--text-muted);line-height:1.5;margin:0}
+.media-entry__gloss+.media-entry__with{margin-top:var(--sp1)}
 .media-list{display:flex;flex-direction:column;gap:var(--sp3)}
 
 /* Media format badges */
@@ -597,7 +601,20 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
 
 
 /* ── Theme entry cards (publications page) ─────────────────── */
-.theme-entry-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--sp5)}
+/* Phone: one column. Tablet: two, a card alone on the last row spans both. Desktop: six columns, three cards of 2 per row; a last row of two cards spans 3 each, of one card spans 6. Works for any number of themes. */
+.theme-entry-grid{display:grid;grid-template-columns:1fr;gap:var(--sp5)}
+@media(min-width:600px){
+  .theme-entry-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .theme-entry-card:last-child:nth-child(odd){grid-column:1/-1}
+}
+@media(min-width:900px){
+  .theme-entry-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .theme-entry-card,.theme-entry-card:last-child:nth-child(odd){grid-column:span 2}
+  .theme-entry-card:nth-child(3n+1):nth-last-child(2),
+  .theme-entry-card:nth-child(3n+2):last-child{grid-column:span 3}
+  .theme-entry-card:nth-child(3n+1):last-child{grid-column:span 6}
+}
+.theme-entry-card:nth-child(3n+1):last-child .theme-entry-card__summary{max-width:70ch}
 .theme-entry-card{display:flex;gap:var(--sp4);padding:var(--sp5);background:var(--surface);
   border:1px solid var(--border);border-radius:var(--r-lg);text-decoration:none;color:inherit;
   transition:border-color var(--ease),box-shadow var(--ease);
@@ -664,7 +681,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
 .book-contents{padding-left:var(--sp6);margin-top:var(--sp3);display:flex;flex-direction:column;gap:var(--sp2);font-size:var(--tx-sm);color:var(--text-muted)}
 .book-quote{margin:var(--sp4) 0 0;padding:var(--sp4) var(--sp5);border-left:4px solid var(--teal);background:var(--surface);border-radius:var(--r-md);max-width:70ch}
 .book-quote p{font-size:var(--tx-sm);color:var(--text-muted);line-height:1.7}
-.book-quote footer{margin-top:var(--sp3);font-size:var(--tx-xs);font-weight:600;color:var(--text)}
+.book-quote footer,.book-quote figcaption{margin-top:var(--sp3);font-size:var(--tx-xs);font-weight:600;color:var(--text)}
+.book-quote blockquote{margin:0}
 @media(max-width:720px){.book-layout{grid-template-columns:1fr}.book-cover{max-width:240px}}
 /* PR 3: links row under a publication, name-variant line, theme answers */
 .pub-entry__links{display:flex;flex-wrap:wrap;gap:var(--sp1) var(--sp4);font-size:var(--tx-sm);color:var(--text-muted);margin-bottom:var(--sp3)}
@@ -706,3 +724,9 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
   .hero-book{grid-column:1;grid-row:3;margin-top:0}
   .hero-news{grid-column:1;grid-row:4}
 }
+
+/* ── Contact: "For media" block ── */
+.contact-media{margin-top:var(--sp8);padding-top:var(--sp6);border-top:1px solid var(--border);max-width:70ch}
+.contact-media__heading{font-size:var(--tx-xs);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:var(--sp3)}
+.contact-media__languages{font-size:var(--tx-base);color:var(--text);margin-bottom:var(--sp3)}
+.contact-media__topics{padding-left:var(--sp5);display:flex;flex-direction:column;gap:var(--sp1);font-size:var(--tx-base);color:var(--text-muted)}

@@ -1,24 +1,24 @@
 # Answer paragraphs for the theme pages: a lead paragraph (120 to 180 words) and two or three questions, each answered in two to four sentences.
 # Sources: only the summaries and "why it matters" lines in publications.yml, which come from docs/publications-content.md (checked against the PDFs), and the book page text in book.yml.
 # Links point to the publication card on the same theme page (#pub-<id>). `sources` lists the publications each text relies on; scripts/check_theme_answers.py checks the word counts, the links and the sources.
-# DRAFTS for Felipe to review.
+# Reviewed and approved by Felipe on 20 October 2026.
 protest:
-  sources: [2024-actual-potential-non-participants, 2024-protest-styles, 2025-protest-relational-field, 2024-protesting-the-lockdown]
+  sources: [2025-actual-potential-non-participants, 2025-protest-styles, 2025-protest-relational-field, 2024-protesting-the-lockdown]
   intro_en: >-
     Felipe G. Santos studies who takes part in protest and how. With co-authors, he shows that participation is better described as a gradient than as a split
     between protesters and non-protesters, with some factors raising the likelihood of each step from non-participation to potential and actual participation
-    (<a href="#pub-2024-actual-potential-non-participants">Mercea, Santos and Hoffmann, 2025</a>). In a 2022 survey of 10,347 people in six European countries,
+    (<a href="#pub-2025-actual-potential-non-participants">Mercea, Santos and Hoffmann, 2025</a>). In a 2022 survey of 10,347 people in six European countries,
     he distinguishes in-person, online and pivoting styles of protest, and finds that online support can be an alternative for people who face obstacles to
-    joining protests (<a href="#pub-2024-protest-styles">Santos, Hoffmann and Mercea, 2025</a>). Survey data from six European countries also reveal two
+    joining protests (<a href="#pub-2025-protest-styles">Santos, Hoffmann and Mercea, 2025</a>). Survey data from six European countries also reveal two
     brokerage positions that link protest episodes, coordinators and boundary spanners (<a href="#pub-2025-protest-relational-field">Hoffmann, Santos and
     Mercea, 2025</a>). A study of 53,289 Facebook posts from groups opposing Covid-19 restrictions shows how online communication gives meaning to physical
     places (<a href="#pub-2024-protesting-the-lockdown">Mercea, Saker and Santos, 2024</a>).
   intro_es: >-
     Felipe G. Santos estudia quién participa en las protestas y de qué manera. Junto con otros autores, muestra que la participación se describe mejor como un
     gradiente que como una división entre manifestantes y no manifestantes, con factores que aumentan la probabilidad de cada paso, de la no participación a
-    la participación potencial y a la efectiva (<a href="#pub-2024-actual-potential-non-participants">Mercea, Santos y Hoffmann, 2025</a>). Con una encuesta de
+    la participación potencial y a la efectiva (<a href="#pub-2025-actual-potential-non-participants">Mercea, Santos y Hoffmann, 2025</a>). Con una encuesta de
     2022 a 10.347 personas en seis países europeos, distingue entre estilos de protesta presencial, online y alterno, y observa que el apoyo online puede ser
-    una alternativa para quienes encuentran obstáculos para acudir a una protesta (<a href="#pub-2024-protest-styles">Santos, Hoffmann y Mercea, 2025</a>). Los
+    una alternativa para quienes encuentran obstáculos para acudir a una protesta (<a href="#pub-2025-protest-styles">Santos, Hoffmann y Mercea, 2025</a>). Los
     datos de encuesta de seis países europeos revelan además dos posiciones de intermediación que conectan episodios de protesta, los coordinadores y los que
     cruzan fronteras (<a href="#pub-2025-protest-relational-field">Hoffmann, Santos y Mercea, 2025</a>). El análisis de 53.289 publicaciones de Facebook de
     grupos contrarios a las restricciones por la Covid-19 muestra cómo la comunicación online dota de significado a lugares físicos (<a
@@ -26,27 +26,27 @@ protest:
   questions:
     - q_en: Who protests online, in person, or both?
       q_es: ¿Quién protesta online, en persona o de ambas formas?
-      sources: [2024-protest-styles]
+      sources: [2025-protest-styles]
       a_en: >-
-        <a href="#pub-2024-protest-styles">Santos, Hoffmann and Mercea</a> use a 2022 survey of 10,347 people in six European countries to distinguish three styles:
+        <a href="#pub-2025-protest-styles">Santos, Hoffmann and Mercea</a> use a 2022 survey of 10,347 people in six European countries to distinguish three styles:
         in-person, online, and pivoting between the two. The in-person style prevails among older, less frequent social media users, and the pivoting style among
         younger, more biographically available media omnivores. The online style is more common among people without social contacts who facilitate participation.
         The authors read online protest as a response to specific obstacles, not as a weaker version of taking to the streets.
       a_es: >-
-        <a href="#pub-2024-protest-styles">Santos, Hoffmann y Mercea</a> distinguen tres estilos con una encuesta de 2022 a 10.347 personas en seis países europeos:
+        <a href="#pub-2025-protest-styles">Santos, Hoffmann y Mercea</a> distinguen tres estilos con una encuesta de 2022 a 10.347 personas en seis países europeos:
         presencial, online y uno que alterna entre ambos. El estilo presencial predomina entre personas mayores que usan menos las redes sociales, y el alterno entre
         jóvenes con más disponibilidad biográfica y un consumo de medios variado. El estilo online es más habitual entre quienes carecen de contactos que faciliten
         su participación. Para los autores, la protesta online responde a obstáculos concretos y no es una versión débil de salir a la calle.
     - q_en: What separates people who might protest from people who do?
       q_es: ¿Qué diferencia a quienes podrían protestar de quienes lo hacen?
-      sources: [2024-actual-potential-non-participants]
+      sources: [2025-actual-potential-non-participants]
       a_en: >-
-        <a href="#pub-2024-actual-potential-non-participants">Mercea, Santos and Hoffmann</a> replace the split between protesters and non-protesters with a gradient
+        <a href="#pub-2025-actual-potential-non-participants">Mercea, Santos and Hoffmann</a> replace the split between protesters and non-protesters with a gradient
         from non-participation through potential participation to actual participation. Using survey data from six European countries (10,347 respondents), they find
         that some factors raise the likelihood of each step in a linear way. Others set both protesters and potential protesters apart from non-participants without
         telling protesters and potential protesters apart. The path into protest is therefore punctuated rather than linear.
       a_es: >-
-        <a href="#pub-2024-actual-potential-non-participants">Mercea, Santos y Hoffmann</a> sustituyen la división entre manifestantes y no manifestantes por un
+        <a href="#pub-2025-actual-potential-non-participants">Mercea, Santos y Hoffmann</a> sustituyen la división entre manifestantes y no manifestantes por un
         gradiente que va de la no participación a la participación potencial y a la efectiva. Con datos de encuesta de seis países europeos (10.347 personas),
         encuentran que algunos factores aumentan de forma lineal la probabilidad de avanzar en cada paso. Otros distinguen a manifestantes y manifestantes
         potenciales de quienes no participan, pero no a los dos primeros entre sí. El camino hacia la protesta avanza, por tanto, a saltos y no de forma lineal.
@@ -64,22 +64,22 @@ protest:
         sobre un mismo tema, y los que cruzan fronteras, que conectan episodios sobre temas distintos. La inserción en redes activistas es el mejor predictor de ambas
         posiciones, aunque cada una se asocia a un tipo distinto de inserción.
 movementparties:
-  sources: [2024-young-democrats-protest-voters, 2024-policy-over-protest, 2026-foot-in-parliament-foot-on-the-streets, 2025-movement-parties-democratic-quality]
+  sources: [2025-young-democrats-protest-voters, 2025-policy-over-protest, 2026-foot-in-parliament-foot-on-the-streets, 2025-movement-parties-democratic-quality]
   intro_en: >-
     Felipe G. Santos studies how protest and electoral politics connect. Using nationally representative surveys in six European countries, he identifies four
     types of movement party (green/left-libertarian, far-right, centrist and eclectic) and finds that the only trait their voters share is the belief that protest
-    has influence (<a href="#pub-2024-young-democrats-protest-voters">Santos and Mercea, 2025</a>). A preregistered conjoint experiment in six countries shows that
+    has influence (<a href="#pub-2025-young-democrats-protest-voters">Santos and Mercea, 2025</a>). A preregistered conjoint experiment in six countries shows that
     movement party voters favor neither institutional outsiders nor candidates who take part in protests, and that candidates' policy positions matter most
-    (<a href="#pub-2024-policy-over-protest">Mercea and Santos, 2025</a>). The link between parties and protest also reaches beyond movement parties: voters are more
+    (<a href="#pub-2025-policy-over-protest">Mercea and Santos, 2025</a>). The link between parties and protest also reaches beyond movement parties: voters are more
     likely to join protests their party supports and to stay away from those it criticizes (<a href="#pub-2026-foot-in-parliament-foot-on-the-streets">Santos,
     Hoffmann and Mercea, 2026</a>). The concluding chapter of <em>Protest and Democracy</em> argues that democratic quality cannot be understood without
     considering participation outside institutions (<a href="#pub-2025-movement-parties-democratic-quality">Paxton and others, 2025</a>).
   intro_es: >-
     Felipe G. Santos estudia cómo se conectan la protesta y la política electoral. Con encuestas representativas en seis países europeos, identifica cuatro tipos de
     partido-movimiento (verde o libertario de izquierdas, de ultraderecha, centrista y ecléctico) y observa que lo único que comparten sus votantes es la creencia en
-    la influencia de las protestas (<a href="#pub-2024-young-democrats-protest-voters">Santos y Mercea, 2025</a>). Un experimento conjoint prerregistrado en seis países
+    la influencia de las protestas (<a href="#pub-2025-young-democrats-protest-voters">Santos y Mercea, 2025</a>). Un experimento conjoint prerregistrado en seis países
     muestra que los votantes de los partidos-movimiento no prefieren ni a candidatos ajenos a las instituciones ni a quienes participan en protestas, y que lo que más
-    pesa son las posiciones políticas de los candidatos (<a href="#pub-2024-policy-over-protest">Mercea y Santos, 2025</a>). El vínculo entre partidos y protesta
+    pesa son las posiciones políticas de los candidatos (<a href="#pub-2025-policy-over-protest">Mercea y Santos, 2025</a>). El vínculo entre partidos y protesta
     también va más allá de los partidos-movimiento: los votantes son más propensos a sumarse a las protestas que su partido apoya y a evitar las que critica (<a
     href="#pub-2026-foot-in-parliament-foot-on-the-streets">Santos, Hoffmann y Mercea, 2026</a>). El capítulo de conclusiones de <em>Protest and Democracy</em>
     sostiene que la calidad democrática no puede entenderse sin la participación fuera de las instituciones (<a
@@ -87,29 +87,29 @@ movementparties:
   questions:
     - q_en: Who votes for movement parties?
       q_es: ¿Quién vota a los partidos-movimiento?
-      sources: [2024-young-democrats-protest-voters]
+      sources: [2025-young-democrats-protest-voters]
       a_en: >-
-        <a href="#pub-2024-young-democrats-protest-voters">Santos and Mercea</a> compare the voters of four types of movement party in six European countries:
+        <a href="#pub-2025-young-democrats-protest-voters">Santos and Mercea</a> compare the voters of four types of movement party in six European countries:
         green/left-libertarian, far-right, centrist and eclectic. The only trait these voters share is the belief that protest has influence. Green/left-libertarian
         voters reflect a generational divide, far-right voters resemble protest voters, and centrist and eclectic voters fit the profile of critical citizens. The
         authors therefore question whether "movement party" is a useful category for understanding voting behavior, since these electorates have very different
         motivations.
       a_es: >-
-        <a href="#pub-2024-young-democrats-protest-voters">Santos y Mercea</a> comparan a los votantes de cuatro tipos de partido-movimiento en seis países europeos:
+        <a href="#pub-2025-young-democrats-protest-voters">Santos y Mercea</a> comparan a los votantes de cuatro tipos de partido-movimiento en seis países europeos:
         verde o libertario de izquierdas, de ultraderecha, centrista y ecléctico. Lo único que comparten es la creencia en la influencia de las protestas. Los votantes
         verdes y libertarios de izquierdas reflejan una brecha generacional, los de ultraderecha se parecen a los votantes de protesta, y los centristas y eclécticos
         encajan en el perfil de ciudadanos críticos. Por eso los autores cuestionan la utilidad de la categoría de partido-movimiento para entender el voto, ya que sus
         electorados tienen motivaciones muy distintas.
     - q_en: What do movement party voters want?
       q_es: ¿Qué quieren los votantes de los partidos-movimiento?
-      sources: [2024-policy-over-protest]
+      sources: [2025-policy-over-protest]
       a_en: >-
-        In a preregistered conjoint experiment in Denmark, Germany, Hungary, Italy, Romania and the United Kingdom, <a href="#pub-2024-policy-over-protest">Mercea
+        In a preregistered conjoint experiment in Denmark, Germany, Hungary, Italy, Romania and the United Kingdom, <a href="#pub-2025-policy-over-protest">Mercea
         and Santos</a> find that movement party voters favor neither candidates who are institutional outsiders nor candidates who take part in protests. Candidates'
         policy positions are the most important driver of the vote. These voters also prefer candidates who are anti-elitist or who want to keep the current political
         system running smoothly. The authors conclude that support for movement parties rests on demand for decisive policy change.
       a_es: >-
-        En un experimento conjoint prerregistrado en Dinamarca, Alemania, Hungría, Italia, Rumanía y el Reino Unido, <a href="#pub-2024-policy-over-protest">Mercea y
+        En un experimento conjoint prerregistrado en Dinamarca, Alemania, Hungría, Italia, Rumanía y el Reino Unido, <a href="#pub-2025-policy-over-protest">Mercea y
         Santos</a> encuentran que los votantes de los partidos-movimiento no prefieren ni a candidatos ajenos a las instituciones ni a quienes participan en protestas.
         Lo que más pesa son las posiciones políticas de los candidatos. Estos votantes prefieren también a candidatos antielitistas o que quieren asegurar el buen
         funcionamiento del sistema político actual. Según los autores, el apoyo a estos partidos responde a la demanda de cambios políticos decididos.
@@ -127,11 +127,11 @@ movementparties:
         apoyar las que comparten que para criticar las que rechazan. Los votantes son más propensos a sumarse a las protestas que su partido apoya y a evitar las que
         critica. El vínculo entre partidos y protesta no se limita, por tanto, a los partidos-movimiento.
 farright:
-  sources: [2024-vox-top-down-cso, 2022-anti-gender-european-parliament, 2021-far-right-schools]
+  sources: [2025-vox-top-down-cso, 2022-anti-gender-european-parliament, 2021-far-right-schools]
   intro_en: >-
     Felipe G. Santos studies how far-right actors build support and influence, in Spain and across Europe. His profile in <em>Social Movement Studies</em> examines
     four organizations created and led by Vox members. Presenting themselves as grassroots groups, they let the party recast labor rights, urban policy, the
-    environment and women's rights from a far-right perspective, and connect its electoral and non-electoral activity (<a href="#pub-2024-vox-top-down-cso">Santos,
+    environment and women's rights from a far-right perspective, and connect its electoral and non-electoral activity (<a href="#pub-2025-vox-top-down-cso">Santos,
     2025</a>). With Dorit Geva, he traces the defeat of the 2013 Estrela Report on sexual and reproductive health and rights in the European Parliament, and shows how a
     populist strategy undermined deliberation through "antagonist politics" and "thin proceduralism" (<a href="#pub-2022-anti-gender-european-parliament">Santos and
     Geva, 2022</a>). Also with Geva, he studies two far-right institutions of higher education, in Hungary and in France and Spain, and identifies a project the article
@@ -141,7 +141,7 @@ farright:
     Felipe G. Santos estudia cómo la ultraderecha construye apoyos e influencia, en España y en el resto de Europa. Su perfil en <em>Social Movement Studies</em>
     analiza cuatro organizaciones creadas y dirigidas por miembros de Vox. Presentándose como grupos de base, permiten al partido reformular desde la ultraderecha
     los derechos laborales, la política urbana, el medio ambiente y los derechos de las mujeres, y conectar su actividad electoral y no electoral (<a
-    href="#pub-2024-vox-top-down-cso">Santos, 2025</a>). Junto con Dorit Geva, reconstruye la derrota del Informe Estrela de 2013 sobre salud y derechos sexuales y
+    href="#pub-2025-vox-top-down-cso">Santos, 2025</a>). Junto con Dorit Geva, reconstruye la derrota del Informe Estrela de 2013 sobre salud y derechos sexuales y
     reproductivos en el Parlamento Europeo, y muestra cómo una estrategia populista socavó la deliberación mediante una "política antagonista" y un
     "procedimentalismo mínimo" (<a href="#pub-2022-anti-gender-european-parliament">Santos y Geva, 2022</a>). También con Geva, estudia dos instituciones de educación
     superior vinculadas a la ultraderecha, en Hungría y en Francia y España, e identifica un proyecto al que el artículo llama "iliberalismo globalista", que acepta los
@@ -149,14 +149,14 @@ farright:
   questions:
     - q_en: How does Vox use civil society organizations?
       q_es: ¿Cómo usa Vox las organizaciones de la sociedad civil?
-      sources: [2024-vox-top-down-cso]
+      sources: [2025-vox-top-down-cso]
       a_en: >-
-        <a href="#pub-2024-vox-top-down-cso">Santos</a> examines four organizations created and led by Vox members: the trade union Solidaridad, the urban group Mi
+        <a href="#pub-2025-vox-top-down-cso">Santos</a> examines four organizations created and led by Vox members: the trade union Solidaridad, the urban group Mi
         Barrio Seguro, the environmental group Nostra Terra and the women's organization AMPI. Presenting themselves as grassroots groups, they let the party recast
         labor rights, urban policy, the environment and women's rights from a far-right perspective. They also connect the party's electoral and non-electoral
         activity. The profile documents a strategy that differs both from infiltrating existing civil society and from becoming a movement party.
       a_es: >-
-        <a href="#pub-2024-vox-top-down-cso">Santos</a> analiza cuatro organizaciones creadas y dirigidas por miembros de Vox: el sindicato Solidaridad, el colectivo
+        <a href="#pub-2025-vox-top-down-cso">Santos</a> analiza cuatro organizaciones creadas y dirigidas por miembros de Vox: el sindicato Solidaridad, el colectivo
         urbano Mi Barrio Seguro, el grupo ecologista Nostra Terra y la organización de mujeres AMPI. Presentándose como grupos de base, permiten al partido reformular
         desde la ultraderecha los derechos laborales, la política urbana, el medio ambiente y los derechos de las mujeres, y conectan su actividad electoral y no
         electoral. El perfil documenta una estrategia distinta tanto de la infiltración en la sociedad civil existente como de la conversión en partido-movimiento.
@@ -178,12 +178,12 @@ farright:
         Instituto de Ciencias Sociales, Económicas y Políticas (ISSEP) en Francia y España. Identifican un proyecto que denominan "iliberalismo globalista", que acepta
         los mercados y las instituciones globales a la vez que defiende la soberanía nacional en lo cultural y una visión radicalizada del cristianismo.
 democracy:
-  sources: [2025-united-for-hungary, 2025-movement-parties-democratic-quality]
+  sources: [2026-united-for-hungary, 2025-movement-parties-democratic-quality]
   intro_en: >-
     Felipe G. Santos studies how opposition parties and voters respond when democracy erodes, with research on Hungary. In an article with Bálint Mikola, he uses 31
     interviews with party elites and a nationally representative survey to study the six-party United for Hungary coalition and its 2022 open primaries. Parties joined
     the coalition for pragmatic reasons rooted in years of backsliding, and people who took part in the primaries tended to hold pro-democratic attitudes, to be
-    dissatisfied with democracy and to have experience of non-electoral participation (<a href="#pub-2025-united-for-hungary">Mikola and Santos, 2026</a>). The article
+    dissatisfied with democracy and to have experience of non-electoral participation (<a href="#pub-2026-united-for-hungary">Mikola and Santos, 2026</a>). The article
     argues that backsliding pushes opposition parties to form ideologically diverse coalitions and to take on features of social movements, and that these choices match
     what their voters want. In the concluding chapter of <em>Protest and Democracy</em>, written with colleagues, he argues that democratic quality cannot be understood
     without considering participation outside institutions, and sets out recommendations for policymakers (<a
@@ -193,21 +193,21 @@ democracy:
     artículo con Bálint Mikola, utiliza 31 entrevistas a dirigentes de partidos y una encuesta representativa para estudiar la coalición de seis partidos Unidos por
     Hungría y sus primarias abiertas de 2022. Los partidos se unieron por razones pragmáticas derivadas de años de retroceso democrático, y quienes votaron en las
     primarias tendían a tener actitudes prodemocráticas, a estar insatisfechos con la democracia y a haber participado en formas de acción no electoral (<a
-    href="#pub-2025-united-for-hungary">Mikola y Santos, 2026</a>). El artículo sostiene que el retroceso democrático empuja a la oposición a formar coaliciones
+    href="#pub-2026-united-for-hungary">Mikola y Santos, 2026</a>). El artículo sostiene que el retroceso democrático empuja a la oposición a formar coaliciones
     ideológicamente diversas y a adoptar rasgos de los movimientos sociales, y que estas decisiones responden a lo que quieren sus votantes. En el capítulo de
     conclusiones de <em>Protest and Democracy</em>, escrito con otros autores, sostiene que la calidad democrática no puede entenderse sin la participación fuera de las
     instituciones, y formula recomendaciones para responsables políticos (<a href="#pub-2025-movement-parties-democratic-quality">Paxton y otros, 2025</a>).
   questions:
     - q_en: How did the Hungarian opposition respond to democratic backsliding?
       q_es: ¿Cómo respondió la oposición húngara al retroceso democrático?
-      sources: [2025-united-for-hungary]
+      sources: [2026-united-for-hungary]
       a_en: >-
-        <a href="#pub-2025-united-for-hungary">Mikola and Santos</a> study the six-party United for Hungary coalition and its 2022 open primaries, using 31 interviews
+        <a href="#pub-2026-united-for-hungary">Mikola and Santos</a> study the six-party United for Hungary coalition and its 2022 open primaries, using 31 interviews
         with party elites and a nationally representative survey. Parties joined the coalition for pragmatic reasons rooted in years of backsliding. People who took
         part in the primaries tended to hold pro-democratic attitudes, to be dissatisfied with democracy and to have experience of non-electoral participation. The
         article argues that backsliding pushes opposition parties to form ideologically diverse coalitions and to take on features of social movements.
       a_es: >-
-        <a href="#pub-2025-united-for-hungary">Mikola y Santos</a> estudian la coalición de seis partidos Unidos por Hungría y sus primarias abiertas de 2022, con 31
+        <a href="#pub-2026-united-for-hungary">Mikola y Santos</a> estudian la coalición de seis partidos Unidos por Hungría y sus primarias abiertas de 2022, con 31
         entrevistas a dirigentes de partidos y una encuesta representativa. Los partidos se unieron por razones pragmáticas derivadas de años de retroceso democrático.
         Quienes votaron en las primarias tendían a tener actitudes prodemocráticas, a estar insatisfechos con la democracia y a haber participado en formas de acción no
         electoral. El artículo sostiene que el retroceso empuja a la oposición a formar coaliciones ideológicamente diversas y a adoptar rasgos de los movimientos sociales.
@@ -225,7 +225,7 @@ democracy:
         participación fuera de las instituciones. Formula además recomendaciones para responsables políticos, entre ellas sobre cómo los partidos establecidos y los medios
         tratan a los partidos desafiantes en el entorno digital.
 care:
-  sources: [2024-social-movements-that-care, 2020-politics-of-care, 2024-how-activists-build-power, 2022-cuidados-primer-desahucio, 2022-transversalidad-pah]
+  sources: [2024-social-movements-that-care, 2020-politics-of-care, 2024-how-activists-build-power, 2021-cuidados-primer-desahucio, 2022-transversalidad-pah]
   intro_en: >-
     Felipe G. Santos studies why people facing eviction often do not mobilize, and how movements help them to, through the Platform of Those Affected by Mortgages (PAH)
     in Spain. His book <a href="#pub-2024-social-movements-that-care"><em>Social Movements that Care</em></a> draws on a year of participant observation in PAH Barcelona,
@@ -234,7 +234,7 @@ care:
     that empathy moves unaffected people to start mobilizing, and that care work builds solidarity among those affected (<a href="#pub-2020-politics-of-care">Santos,
     2020</a>). A second article shows how PAH members developed strategies to recruit and empower people who came to the organization for help with their own
     eviction (<a href="#pub-2024-how-activists-build-power">Santos, 2024</a>). A chapter on the PAH's origins finds that none of its founders had a mortgage problem:
-    empathy moved them to act (<a href="#pub-2022-cuidados-primer-desahucio">Santos, 2021</a>).
+    empathy moved them to act (<a href="#pub-2021-cuidados-primer-desahucio">Santos, 2021</a>).
   intro_es: >-
     Felipe G. Santos estudia por qué las personas amenazadas de desahucio a menudo no se movilizan y cómo los movimientos les ayudan a hacerlo, a través de la Plataforma
     de Afectados por la Hipoteca (PAH) en España. Su libro <a href="#pub-2024-social-movements-that-care"><em>Social Movements that Care</em></a> se basa en un año de
@@ -244,7 +244,7 @@ care:
     afectadas a iniciar la movilización y que el cuidado construye solidaridad entre las afectadas (<a href="#pub-2020-politics-of-care">Santos, 2020</a>).
     Un segundo artículo muestra cómo los miembros de la PAH desarrollaron estrategias para reclutar y empoderar a quienes llegaban pidiendo ayuda
     (<a href="#pub-2024-how-activists-build-power">Santos, 2024</a>). Un capítulo sobre los orígenes de la PAH muestra que ninguna de sus fundadoras tenía un
-    problema hipotecario: fue la empatía lo que las movilizó (<a href="#pub-2022-cuidados-primer-desahucio">Santos, 2021</a>).
+    problema hipotecario: fue la empatía lo que las movilizó (<a href="#pub-2021-cuidados-primer-desahucio">Santos, 2021</a>).
   questions:
     - q_en: Why do people facing eviction often not mobilize, and what helps them do so?
       q_es: ¿Por qué las personas amenazadas de desahucio a menudo no se movilizan, y qué les ayuda a hacerlo?
@@ -261,15 +261,15 @@ care:
         añade que los miembros de la PAH desarrollaron estrategias para reclutar y empoderar a quienes llegaban a la organización buscando ayuda ante su propio desahucio.
     - q_en: What moves people who are not affected to join a cause?
       q_es: ¿Qué lleva a personas no afectadas a sumarse a una causa?
-      sources: [2020-politics-of-care, 2022-cuidados-primer-desahucio]
+      sources: [2020-politics-of-care, 2021-cuidados-primer-desahucio]
       a_en: >-
         In <a href="#pub-2020-politics-of-care">Santos's article on the politics of care</a>, empathy moves unaffected people to start mobilizing, while care work builds
-        solidarity among those affected during mobilization. A <a href="#pub-2022-cuidados-primer-desahucio">chapter on the origins of the PAH</a> gives an example: none of
+        solidarity among those affected during mobilization. A <a href="#pub-2021-cuidados-primer-desahucio">chapter on the origins of the PAH</a> gives an example: none of
         its founders had a mortgage problem, and empathy moved them to act. Collective advice assemblies and accompaniment then made people who preferred not to mobilize
         feel able to stop evictions through non-violent civil disobedience.
       a_es: >-
         En el <a href="#pub-2020-politics-of-care">artículo de Santos sobre la política del cuidado</a>, la empatía lleva a personas no afectadas a iniciar la movilización,
-        mientras que el trabajo de cuidado construye solidaridad entre las afectadas durante la movilización. Un <a href="#pub-2022-cuidados-primer-desahucio">capítulo
+        mientras que el trabajo de cuidado construye solidaridad entre las afectadas durante la movilización. Un <a href="#pub-2021-cuidados-primer-desahucio">capítulo
         sobre los orígenes de la PAH</a> lo ilustra: ninguna de las fundadoras tenía un problema hipotecario, y fue la empatía lo que las movilizó. Las asambleas de
         asesoramiento colectivo y los acompañamientos hicieron después que personas reacias a movilizarse se sintieran capaces de parar desahucios mediante la
         desobediencia civil no violenta.

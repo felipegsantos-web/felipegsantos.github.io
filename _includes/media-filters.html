@@ -1,7 +1,7 @@
 {%- include vars.html -%}
 <div class="filter-bar mt-sp6" role="group" aria-label="{{ I.filter_media_label[L] }}">
-      <button class="filter-btn active" data-media-filter="all" aria-pressed="true">{{ I.filter_all[L] }}</button>
-      {%- for f in I.media_format %}
-      <button class="filter-btn" data-media-filter="{{ f[0] }}" aria-pressed="false">{{ f[1][L] }}</button>
+      <button class="filter-btn active" data-media-filter="all" aria-pressed="true">{{ I.media_filter_all[L] }}</button>
+      {%- for r in I.media_role %}
+      <button class="filter-btn" data-media-filter="{{ r[0] }}" aria-pressed="false">{{ r[1].filter[L] }}</button>
       {%- endfor %}
     </div>

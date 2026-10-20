@@ -1,0 +1,13 @@
+{%- comment -%}Plain list of names: "A", "A and B", "A, B, and C" (Spanish: "A, B y C"). Same rules as authors.html, without highlighting.{%- endcomment -%}
+{%- include vars.html -%}
+{%- assign n = include.names | size -%}
+{%- for a in include.names -%}
+  {{- a -}}
+  {%- unless forloop.last -%}
+    {%- assign left = n | minus: forloop.index -%}
+    {%- if left > 1 -%}{{ ', ' }}
+    {%- elsif n > 2 and I.serial_comma[L] -%}{{ ', ' }}{{ I.and_word[L] }}{{ ' ' }}
+    {%- else -%}{{ ' ' }}{{ I.and_word[L] }}{{ ' ' }}
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}

@@ -38,7 +38,8 @@ endorsements:
     role: Professor in Sociology, Institute for Housing and Urban Research, Uppsala University
   - text: "Felipe G. Santos has written a compelling account of the ways in which Platform for those Affected by Mortgages (PAH)—a highly impactful social movement in Spain—organizes for successful contentious politics through care. As a participant observer, he shows how different forms of care help to transform \"debtors of good faith\" from their initial grievances to solidarity. This is one of the best books I have read about how caring makes social movements successful."
     who: Joan C. Tronto
-    role_html: Professor Emerita, University of Minnesota, author of <em>Moral Boundaries</em> and <em>Caring Democracy</em>
+    role: Professor Emerita, University of Minnesota
+    role_extra_html: author of <em>Moral Boundaries</em> and <em>Caring Democracy</em>
 labels:
   about: {en: About the book, es: Sobre el libro}
   contents: {en: Contents, es: Índice}
@@ -51,6 +52,7 @@ labels:
   publisher_page: {en: View on the publisher's site →, es: Ver en la web de la editorial →}
 # Highlight block (homepage, _includes/book-card.html).
 # The quote is shown only on the homepage, in English on both pages (a sentence from the endorsement by Joan C. Tronto above).
+# `who` names the endorsement above whose `who` and `role` give the attribution line.
 # The label "Book" / "Libro" is `pub_type_label.book` in i18n.yml; the link to the book page reuses labels.about.
 highlight:
   sentence_en: "Why do the people hit hardest by a grievance often fail to mobilize, while others with no direct stake join in? A theory of mobilization based on care, built on a year of fieldwork with Spain's Platform of Those Affected by Mortgages (PAH)."

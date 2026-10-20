@@ -13,8 +13,9 @@
     <p class="book-feature__text">{{ b.highlight[k_sentence] }}</p>
     <p class="book-feature__links"><a href="{{ pubs_nav.url[L] }}{{ pub.page }}/" class="inline-link" data-goatcounter-click="book-home">{{ b.labels.about[L] }}</a></p>
   </div>
-  <blockquote class="book-quote book-feature__quote" lang="en">
-    <p>{{ b.highlight.quote.text }}</p>
-    <footer>{{ b.highlight.quote.who }}</footer>
-  </blockquote>
+  {%- assign endorsement = b.endorsements | where: "who", b.highlight.quote.who | first %}
+  <figure class="book-quote book-feature__quote" lang="en">
+    <blockquote><p>“{{ b.highlight.quote.text }}”</p></blockquote>
+    <figcaption>{{ endorsement.who }}, {{ endorsement.role }}</figcaption>
+  </figure>
 </section>
