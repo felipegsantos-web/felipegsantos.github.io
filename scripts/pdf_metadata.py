@@ -5,17 +5,17 @@
   /Author   the authors (the editors for the edited volume) in order, separated by commas
   /Subject  the venue line as shown on the site (English page)
 
-The page content is not touched, and the XMP packet is dropped so that it cannot contradict the document information.
+The page content is not touched.
 Usage: python3 scripts/pdf_metadata.py [--check]      (--check changes nothing and fails if a /Title does not match its entry; used in CI)
-Needs: pypdf, pyyaml.
+Needs: pikepdf, pypdf, pyyaml.
 """
 import re
 import sys
 from pathlib import Path
 
 import yaml
-from pypdf import PdfReader, PdfWriter
-from pypdf.generic import NameObject
+import pikepdf
+from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -55,12 +55,13 @@ def main():
                     print(f"ERROR {path.name}: {key} is {info.get(key)!r}, expected {value!r}")
                     errors += 1
             continue
-        # An incremental update appends the changed objects and leaves the rest of the file byte for byte as it was.
-        writer = PdfWriter(path, incremental=True)
-        if NameObject("/Metadata") in writer._root_object:
-            del writer._root_object[NameObject("/Metadata")]
-        writer.add_metadata(want)
-        writer.write(path)
+        # pikepdf keeps the page content streams as they are; the XMP packet is dropped so that it cannot contradict the document information.
+        with pikepdf.open(path, allow_overwriting_input=True) as pdf:
+            if "/Metadata" in pdf.Root:
+                del pdf.Root["/Metadata"]
+            for key, value in want.items():
+                pdf.docinfo[key] = value
+            pdf.save(path, object_stream_mode=pikepdf.ObjectStreamMode.preserve, compress_streams=False, recompress_flate=False)
         print(f"{path.name}: {want['/Title'][:60]}")
     if check:
         print(f"{len(works)} works checked, {errors} problems")

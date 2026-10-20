@@ -41,7 +41,7 @@ jobs:
           cache-dependency-path: scripts/a11y/package-lock.json
 
       - name: Install Python dependencies
-        run: pip install beautifulsoup4 pyyaml pypdf
+        run: pip install beautifulsoup4 pyyaml pypdf pikepdf
 
       - name: Build
         run: |
