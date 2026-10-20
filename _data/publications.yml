@@ -1,7 +1,7 @@
 # Publications. One entry per work; the EN and ES lists and the theme pages are generated from this file.
 # Strings may contain inline HTML (<em>, &amp;) exactly as shown on the site.
 # `oa_url` is a link to a free copy (never ResearchGate); `oa_version` is `published` or `accepted`. Order of preference: the publisher's open version, City Research Online, the CEU repository.
-# `pdf` is a copy of the work served from this site (documents/publications/<id>.pdf), `pdf_version` is `published` or `accepted`. A file is published only if it carries an open licence notice (CC BY or similar) or is listed in _inputs/pdfs/allowed.txt.
+# `pdf` is a copy of the work served from this site (documents/publications/<id>.pdf), `pdf_version` is `published` or `accepted`. A file is published only if it carries an open license notice (CC BY or similar) or is listed in _inputs/pdfs/allowed.txt.
 # Order: books, articles (newest first by issue year), chapters. `year` is the year of the issue or volume; `online` is the online-first date when it differs.
 - id: 2024-social-movements-that-care
   type: book
