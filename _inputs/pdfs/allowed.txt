@@ -1,0 +1,15 @@
+# Works whose PDF is published even though the file carries no open license notice.
+# Added at the owner's request (Felipe G. Santos), one publication id per line.
+2024-actual-potential-non-participants
+2026-foot-in-parliament-foot-on-the-streets
+2020-politics-of-care
+2024-vox-top-down-cso
+2023-campo-movimientos-sociales-espana
+2024-social-movements-that-care
+2024-methodological-pluralism
+2022-care-and-social-movements
+2022-pah-10-anos
+2022-cuidados-primer-desahucio
+2022-transversalidad-pah
+2025-young-democrats-chapter
+2025-movement-parties-democratic-quality
