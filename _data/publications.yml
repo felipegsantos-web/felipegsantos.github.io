@@ -1,7 +1,7 @@
 # Publications. One entry per work; the EN and ES lists and the theme pages are generated from this file.
 # Strings may contain inline HTML (<em>, &amp;) exactly as shown on the site.
 # `oa_url` is a link to a free copy (never ResearchGate); `oa_version` is `published` or `accepted`. Order of preference: the publisher's open version, City Research Online, the CEU repository.
-# `pdf` is a copy of the work served from this site (documents/publications/<id>.pdf); it shows a "Download PDF" button.
+# `pdf` is a copy of the work served from this site (documents/publications/<id>.pdf), `pdf_version` is `published` or `accepted`. A file is published only if it carries an open licence notice (CC BY or similar) or is listed in _inputs/pdfs/allowed.txt.
 # Order: books, articles (newest first by issue year), chapters. `year` is the year of the issue or volume; `online` is the online-first date when it differs.
 - id: 2024-social-movements-that-care
   type: book
@@ -18,7 +18,6 @@
   isbn_ebook: 978-3-031-74296-5
   url: https://link.springer.com/book/10.1007/978-3-031-74296-5
   page: social-movements-that-care
-  pdf: /documents/publications/2024-social-movements-that-care.pdf
   themes:
   - care
   keywords:
@@ -78,7 +77,6 @@
   venue: Party Politics
   doi: 10.1177/13540688251413043
   url: https://doi.org/10.1177/13540688251413043
-  pdf: /documents/publications/2026-foot-in-parliament-foot-on-the-streets.pdf
   themes:
   - movementparties
   - protest
@@ -108,6 +106,7 @@
   doi: 10.1080/13510347.2025.2522194
   url: https://doi.org/10.1080/13510347.2025.2522194
   pdf: /documents/publications/2025-united-for-hungary.pdf
+  pdf_version: published
   themes:
   - democracy
   keywords:
@@ -135,6 +134,7 @@
   doi: 10.1017/S1537592724001439
   url: https://doi.org/10.1017/S1537592724001439
   pdf: /documents/publications/2024-policy-over-protest.pdf
+  pdf_version: published
   themes:
   - movementparties
   keywords:
@@ -163,6 +163,7 @@
   doi: 10.1080/00207659.2025.2458419
   url: https://doi.org/10.1080/00207659.2025.2458419
   pdf: /documents/publications/2025-protest-relational-field.pdf
+  pdf_version: published
   themes:
   - protest
   keywords:
@@ -190,6 +191,7 @@
   doi: 10.1080/13501763.2024.2418962
   url: https://doi.org/10.1080/13501763.2024.2418962
   pdf: /documents/publications/2024-protest-styles.pdf
+  pdf_version: published
   themes:
   - protest
   keywords:
@@ -217,7 +219,6 @@
   pages: 1392-1417
   doi: 10.1177/00323217241297905
   url: https://doi.org/10.1177/00323217241297905
-  pdf: /documents/publications/2024-actual-potential-non-participants.pdf
   themes:
   - protest
   keywords:
@@ -243,7 +244,6 @@
   pages: 652-660
   doi: 10.1080/14742837.2024.2359652
   url: https://doi.org/10.1080/14742837.2024.2359652
-  pdf: /documents/publications/2024-vox-top-down-cso.pdf
   themes:
   - farright
   keywords:
@@ -271,6 +271,7 @@
   doi: 10.1057/s41269-023-00321-7
   url: https://doi.org/10.1057/s41269-023-00321-7
   pdf: /documents/publications/2024-young-democrats-protest-voters.pdf
+  pdf_version: published
   themes:
   - movementparties
   keywords:
@@ -299,6 +300,7 @@
   doi: 10.1080/14742837.2024.2336957
   url: https://doi.org/10.1080/14742837.2024.2336957
   pdf: /documents/publications/2024-protesting-the-lockdown.pdf
+  pdf_version: published
   themes:
   - protest
   keywords:
@@ -325,6 +327,7 @@
   doi: 10.1080/14616696.2023.2214199
   url: https://doi.org/10.1080/14616696.2023.2214199
   pdf: /documents/publications/2024-how-activists-build-power.pdf
+  pdf_version: published
   themes:
   - care
   keywords:
@@ -351,7 +354,6 @@
   pages: a145
   doi: 10.22325/fes/res.2023.145
   url: https://doi.org/10.22325/fes/res.2023.145
-  pdf: /documents/publications/2023-campo-movimientos-sociales-espana.pdf
   themes:
   - care
   - protest
@@ -382,6 +384,7 @@
   doi: 10.1080/19312458.2022.2128099
   url: https://doi.org/10.1080/19312458.2022.2128099
   pdf: /documents/publications/2022-big-data-news-repositories.pdf
+  pdf_version: published
   themes:
   - protest
   keywords:
@@ -406,6 +409,7 @@
   doi: 10.1080/23254823.2022.2113417
   url: https://doi.org/10.1080/23254823.2022.2113417
   pdf: /documents/publications/2022-anti-gender-european-parliament.pdf
+  pdf_version: published
   themes:
   - farright
   keywords:
@@ -433,6 +437,7 @@
   doi: 10.1093/ia/iiab112
   url: https://doi.org/10.1093/ia/iiab112
   pdf: /documents/publications/2021-far-right-schools.pdf
+  pdf_version: published
   themes:
   - farright
   keywords:
@@ -455,7 +460,6 @@
   venue: Social Movement Studies
   doi: 10.1080/14742837.2019.1665504
   url: https://doi.org/10.1080/14742837.2019.1665504
-  pdf: /documents/publications/2020-politics-of-care.pdf
   themes:
   - care
   keywords:
@@ -483,7 +487,6 @@
   pages: 27-43
   doi: 10.4324/9781003532507-3
   url: https://doi.org/10.4324/9781003532507-3
-  pdf: /documents/publications/2024-methodological-pluralism.pdf
   themes:
   - protest
   keywords:
@@ -579,7 +582,6 @@
   book_title: The Wiley-Blackwell Encyclopedia of Social and Political Movements, 2nd ed.
   doi: 10.1002/9780470674871.wbespm533
   url: https://doi.org/10.1002/9780470674871.wbespm533
-  pdf: /documents/publications/2022-care-and-social-movements.pdf
   themes:
   - care
   keywords:

@@ -73,7 +73,8 @@ def main():
                 ok = g == {"@id": PERSON} if w in me else g.get("name") == w and g.get("@type") == "Person"
                 if not ok:
                     errors.append(f"{rel}: {pub['id']} author {g!r} does not match {w!r}")
-            if bool(pub.get("oa_url")) != bool(b.get("isAccessibleForFree")) or (pub.get("oa_url") and b.get("sameAs") != pub["oa_url"]):
+            same = [u for u in (pub.get("oa_url"), pub.get("pdf") and "https://www.felipegsantos.com" + pub["pdf"]) if u]
+            if bool(same) != bool(b.get("isAccessibleForFree")) or (same and b.get("sameAs") != same):
                 errors.append(f"{rel}: {pub['id']} open-access fields do not match the data")
     expected = {"/en/index.html", "/es/index.html", "/en/cv/index.html", "/es/cv/index.html"}
     if person_pages != expected:

@@ -43,5 +43,5 @@
 , "url": {{ work_url | jsonify }}
 {%- if pub.doi %}, "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": {{ pub.doi | jsonify }}}{% endif -%}
 {%- if pub[k_summary] and pub.summary_list_en == nil %}, "description": {{ pub[k_summary] | strip_html | jsonify }}{% endif -%}
-{%- if pub.oa_url %}, "isAccessibleForFree": true, "sameAs": {{ pub.oa_url | jsonify }}{% endif -%}
+{%- if pub.oa_url or pub.pdf %}, "isAccessibleForFree": true, "sameAs": [{% if pub.oa_url %}{{ pub.oa_url | jsonify }}{% endif %}{% if pub.oa_url and pub.pdf %}, {% endif %}{% if pub.pdf %}{{ site.url | append: pub.pdf | jsonify }}{% endif %}]{% endif -%}
 }</script>

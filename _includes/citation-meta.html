@@ -20,6 +20,8 @@
 {%- if cite.doi %}
 <meta name="citation_doi" content="{{ cite.doi }}">
 {%- endif %}
-{%- if cite.oa_url %}
+{%- if cite.pdf %}
+<meta name="citation_pdf_url" content="{{ site.url }}{{ cite.pdf }}">
+{%- elsif cite.oa_url %}
 <meta name="citation_pdf_url" content="{{ cite.oa_url }}">
 {%- endif %}

@@ -96,9 +96,9 @@ eds_suffix:
 open_access_label:
   en: Open access (PDF)
   es: Acceso abierto (PDF)
-download_pdf_label:
-  en: Download PDF
-  es: Descargar PDF
+pdf_label:
+  published: {en: PDF, es: PDF}
+  accepted: {en: Accepted manuscript (PDF), es: Manuscrito aceptado (PDF)}
 oa_version_note:
   accepted: {en: accepted version, es: versión aceptada}
   published: {en: published version, es: versión publicada}
