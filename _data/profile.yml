@@ -1,14 +1,40 @@
 # Who the site is about. `email` is the only place the address is written; templates build every mailto: link from it.
+# This file is the single source for the JSON-LD, llms.txt, the footer and the meta tags.
 name: Felipe G. Santos
-# Other spellings of the name that appear in publication author lists (highlighted like `name`).
+# Other spellings of the name (schema.org alternateName). They are also highlighted in publication author lists, like `name`.
+# The first one is the form shown in "Also published as ...".
 name_variants:
   - Felipe González Santos
-position_en: Research Fellow in Political Sociology
-position_es: Investigador en Sociología Política
+  - F. Gonzalez Santos
+  - F. G. Santos
+# Current job title; the organisation and department come from the current post in `posts` below.
+position_en: Postdoctoral Research Fellow
+position_es: Investigador postdoctoral
 email: f.santos@city.ac.uk
 orcid: 0000-0001-7006-2088
 twitter: "@feligsantos"
-image: /images/Perfil.png
+# Homepage photo (4:5, 400 px wide) and the 1200x630 image for og:image.
+image: /images/felipe-g-santos-400.webp
+image_width: 400
+image_height: 500
+og_image: /images/felipe-g-santos-og.jpg
+og_image_width: 1200
+og_image_height: 630
+# Canonical description. Used word for word wherever a description of Felipe is needed.
+description_en: >-
+  Felipe G. Santos (Felipe González Santos) is a political sociologist and
+  Postdoctoral Research Fellow at City St George's, University of London. He
+  studies why people protest, how far-right actors build support through civil
+  society, and how attitudes towards democracy shape political participation,
+  drawing on cross-national surveys, survey experiments and fieldwork across
+  Europe.
+description_es: >-
+  Felipe G. Santos (Felipe González Santos) es sociólogo político e
+  investigador postdoctoral en City St George's, University of London. Estudia
+  por qué la gente protesta, cómo la ultraderecha construye apoyos a través de
+  la sociedad civil y cómo las actitudes hacia la democracia condicionan la
+  participación política, con encuestas comparadas, experimentos de encuesta y
+  trabajo de campo en Europa.
 # First paragraph of the homepage.
 intro_en: >-
   I study why people take to the streets, how the far right builds power, and
@@ -27,7 +53,7 @@ profiles:
     label: Email
   - id: scholar
     label: Google Scholar
-    url: https://scholar.google.es/citations?user=wA7Yb2gAAAAJ
+    url: https://scholar.google.com/citations?user=wA7Yb2gAAAAJ
   - id: orcid
     label: ORCID
     url: https://orcid.org/0000-0001-7006-2088
@@ -37,6 +63,27 @@ profiles:
   - id: linkedin
     label: LinkedIn
     url: https://www.linkedin.com/in/felipegsantos/
+# Profiles that are not shown as icons. Together with `profiles` (minus the email) they make up `sameAs` in the JSON-LD and the profile list in llms.txt.
+# The City Research Online pages are the author pages for the three name forms used there and the City author page; each lists works that carry Felipe's ORCID.
+other_profiles:
+  - id: openalex
+    label: OpenAlex
+    url: https://openalex.org/A5079527876
+  - id: x
+    label: X
+    url: https://x.com/feligsantos
+  - id: city-research-online-santos-fg
+    label: City Research Online (Santos, F. G.)
+    url: https://openaccess.city.ac.uk/view/creators/Santos=3AF=2E_G=2E=3A=3A.html
+  - id: city-research-online-gonzalez-santos
+    label: City Research Online (Gonzalez Santos, F.)
+    url: https://openaccess.city.ac.uk/view/creators/Gonzalez_Santos=3AF=2E=3A=3A.html
+  - id: city-research-online-santos-g-f
+    label: City Research Online (Santos G., F.)
+    url: https://openaccess.city.ac.uk/view/creators/Santos_G=2E=3AF=2E=3A=3A.html
+  - id: city-research-online-city-author
+    label: City Research Online (City author page)
+    url: https://openaccess.city.ac.uk/view/creators_id/f=2Esantos.html
 # Posts, newest first. `from` / `to` are YYYY-MM; no `to` means the post is current.
 # `project` is the id of an entry in projects.yml. `funding` is the programme shown next to the post.
 # Dates: December 2020 and August 2019 to December 2020 as given by Felipe; Babeș-Bolyai to July 2026 as given by Felipe (the CV PDF still says "Present").
@@ -78,9 +125,7 @@ posts:
     funding: MOBILISE, Open Research Area
     from: 2019-08
     to: 2020-12
-# Used for the Person JSON-LD on the English homepage: current affiliation only.
-affiliations:
-  - City St George's, University of London, United Kingdom
+# `knowsAbout` in the JSON-LD.
 knows_about:
   - Social Movements
   - Political Participation

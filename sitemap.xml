@@ -1,43 +1,21 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- assign pages = site.pages | where_exp: "p", "p.lang and p.ref" | sort: "url" %}
+{%- for p in pages %}
+{%- assign pair = pages | where: "ref", p.ref | where_exp: "q", "q.lang != p.lang" | first %}
+{%- if p.lang == "en" %}{% assign url_en = p.url %}{% assign url_es = pair.url %}{% else %}{% assign url_en = pair.url %}{% assign url_es = p.url %}{% endif %}
   <url>
-    <loc>https://www.felipegsantos.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.felipegsantos.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.felipegsantos.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.felipegsantos.com/en/"/>
-    <changefreq>monthly</changefreq><priority>1.0</priority>
+    <loc>{{ site.url }}{{ p.url }}</loc>
+    {%- if p.last_modified_at %}
+    <lastmod>{{ p.last_modified_at | date_to_xmlschema }}</lastmod>
+    {%- endif %}
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ url_en }}"/>
+    <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}{{ url_es }}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ url_en }}"/>
   </url>
-  <url>
-    <loc>https://www.felipegsantos.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.felipegsantos.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.felipegsantos.com/es/"/>
-    <changefreq>monthly</changefreq><priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.felipegsantos.com/es/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.felipegsantos.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.felipegsantos.com/es/"/>
-    <changefreq>monthly</changefreq><priority>1.0</priority>
-  </url>
-  <url><loc>https://www.felipegsantos.com/en/publications/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.felipegsantos.com/es/publicaciones/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.felipegsantos.com/en/media/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/es/medios/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/en/cv/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/es/cv/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/en/current-work/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/es/trabajo-actual/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/en/contact/</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.felipegsantos.com/es/contacto/</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.felipegsantos.com/en/publications/theme/care/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/en/publications/theme/farright/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/en/publications/theme/protest/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/en/publications/theme/movementparties/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/en/publications/theme/democracy/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/es/publicaciones/tema/care/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/es/publicaciones/tema/farright/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/es/publicaciones/tema/protest/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/es/publicaciones/tema/movementparties/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.felipegsantos.com/es/publicaciones/tema/democracy/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+{%- endfor %}
 </urlset>

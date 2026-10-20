@@ -32,26 +32,31 @@ menu_open_label:
 profiles_label:
   en: Academic profiles
   es: Perfiles académicos
-hero_photo_alt:
-  en: Felipe G. Santos, Research Fellow in Political Sociology
-  es: Felipe G. Santos, Research Fellow in Political Sociology
+also_published_as:
+  en: "Also published as %name%."
+  es: "%name% (%variant%)"
 # Main navigation, in order. `url` is per language. `key` is how templates look an item up.
 nav:
   - key: research
     label: {en: Research, es: Investigación}
     url: {en: /en/current-work/, es: /es/trabajo-actual/}
+    description: {en: "Funded research projects, current and past", es: "Proyectos de investigación financiados, en curso y anteriores"}
   - key: publications
     label: {en: Publications, es: Publicaciones}
     url: {en: /en/publications/, es: /es/publicaciones/}
+    description: {en: "Publications by research theme, with summaries", es: "Publicaciones por tema de investigación, con resúmenes"}
   - key: media
     label: {en: Media, es: Medios}
     url: {en: /en/media/, es: /es/medios/}
+    description: {en: "Press, radio, podcast and opinion coverage", es: "Prensa, radio, pódcast y artículos de opinión"}
   - key: cv
     label: {en: CV, es: CV}
     url: {en: /en/cv/, es: /es/cv/}
+    description: {en: "Curriculum vitae: posts, projects, education, awards and service", es: "Currículum: puestos, proyectos, formación, premios y servicio profesional"}
   - key: contact
     label: {en: Contact, es: Contacto}
     url: {en: /en/contact/, es: /es/contacto/}
+    description: {en: "Contact details", es: "Datos de contacto"}
 # Publications
 pub_type_label:
   book: {en: Book, es: Libro}
@@ -88,6 +93,15 @@ serial_comma:
 eds_suffix:
   en: (eds.)
   es: (coords.)
+open_access_label:
+  en: Open access (PDF)
+  es: Acceso abierto (PDF)
+oa_version_note:
+  accepted: {en: accepted version, es: versión aceptada}
+  published: {en: published version, es: versión publicada}
+theme_publications_heading:
+  en: Publications on this theme
+  es: Publicaciones sobre este tema
 view_mode_label:
   en: View mode
   es: Modo de vista

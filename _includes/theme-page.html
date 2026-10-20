@@ -1,7 +1,10 @@
 {%- include vars.html -%}
 {%- assign theme = site.data.themes | where: "slug", page.theme | first -%}
 {%- assign k_name = "name_" | append: L -%}
-{%- assign k_summary = "summary_" | append: L -%}
+{%- assign answers = site.data.theme-answers[page.theme] -%}
+{%- assign k_intro = "intro_" | append: L -%}
+{%- assign k_q = "q_" | append: L -%}
+{%- assign k_a = "a_" | append: L -%}
 {%- assign pubs_nav = I.nav | where: "key", "publications" | first -%}
 <main id="main-content">
   <div class="container">
@@ -11,9 +14,18 @@
         <div class="theme-page-heading__art">{{ theme.art }}</div>
         <h1 class="page-title">{{ theme[k_name] }}</h1>
       </div>
-      <p class="page-intro">{{ theme[k_summary] }}</p>
+      <p class="theme-lead">{{ answers[k_intro] }}</p>
     </div>
-    <div class="pub-list mt-sp8">
+    <div class="theme-answers">
+      {%- for qa in answers.questions %}
+      <section class="theme-answer" aria-labelledby="q-{{ page.theme }}-{{ forloop.index }}">
+        <h2 class="theme-answer__q" id="q-{{ page.theme }}-{{ forloop.index }}">{{ qa[k_q] }}</h2>
+        <p class="theme-answer__a">{{ qa[k_a] }}</p>
+      </section>
+      {%- endfor %}
+    </div>
+    <h2 class="section-heading mt-sp8">{{ I.theme_publications_heading[L] }}</h2>
+    <div class="pub-list mt-sp4">
       {%- include pub-list.html theme_slug=page.theme %}
     </div>
   </div>

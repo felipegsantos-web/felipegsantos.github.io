@@ -1,5 +1,6 @@
 # Publications. One entry per work; the EN and ES lists and the theme pages are generated from this file.
 # Strings may contain inline HTML (<em>, &amp;) exactly as shown on the site.
+# `oa_url` is a link to a free copy (never ResearchGate); `oa_version` is `published` or `accepted`. Order of preference: the publisher's open version, City Research Online, the CEU repository.
 # Order: books, articles (newest first by issue year), chapters. `year` is the year of the issue or volume; `online` is the online-first date when it differs.
 - id: 2024-social-movements-that-care
   type: book
@@ -11,6 +12,9 @@
   venue: Palgrave Macmillan, Cham
   publisher: Palgrave Macmillan
   publisher_place: Cham
+  doi: 10.1007/978-3-031-74296-5
+  isbn_print: 978-3-031-74295-8
+  isbn_ebook: 978-3-031-74296-5
   url: https://link.springer.com/book/10.1007/978-3-031-74296-5
   page: social-movements-that-care
   themes:
@@ -23,7 +27,6 @@
   summary_es: ¿Por qué quienes más sufren un agravio a menudo no se movilizan, mientras que otras personas sin un interés directo sí lo hacen? A partir de un año de observación participante en la PAH de Barcelona, 71 entrevistas con miembros de toda España y la cobertura de prensa entre 2009 y 2016, el libro muestra cómo la Plataforma de Afectados por la Hipoteca recurrió al cuidado emocional, identitario y participativo para convertir en activistas a personas amenazadas de desahucio.
   why_en: It offers a theory of mobilisation based on care, which explains how movements recruit and empower people whose grievances discourage collective action, and how coalitions between affected and unaffected activists form.
   why_es: Propone una teoría de la movilización basada en el cuidado, que explica cómo los movimientos reclutan y empoderan a personas cuyos agravios dificultan la acción colectiva, y cómo se forman coaliciones entre activistas afectados y no afectados.
-  oa_url: ''
 - id: 2022-pah-10-anos
   type: edited_volume
   status: published
@@ -60,7 +63,6 @@
   - su impacto en el mundo académico, político y migratorio.
   why_en: It brings together academic and activist perspectives on Spain's largest housing movement, several of them written by people who took part in it.
   why_es: Reúne miradas académicas y activistas sobre el mayor movimiento por la vivienda de España, varias de ellas escritas por personas que han formado parte de él.
-  oa_url: ''
 - id: 2026-foot-in-parliament-foot-on-the-streets
   type: article
   status: published
@@ -85,7 +87,8 @@
   summary_es: Combinando las publicaciones de los partidos en redes sociales con encuestas representativas en Dinamarca, Alemania y el Reino Unido, el artículo analiza cómo valoran los partidos las protestas y si sus votantes participan en ellas. Partidos de todo tipo e ideología se pronuncian sobre las protestas, y lo hacen más para apoyar las que comparten que para criticar las que rechazan. Los votantes son más propensos a sumarse a las protestas que su partido apoya y a evitar las que critica.
   why_en: 'It shows that the link between parties and protest is not confined to movement parties: across the party system, what parties say about a protest goes hand in hand with whether their voters join it.'
   why_es: 'Muestra que el vínculo entre partidos y protesta no se limita a los partidos-movimiento: en todo el sistema de partidos, lo que un partido dice de una protesta va de la mano de la participación de sus votantes en ella.'
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/36498/3/One%20foot%20in%20parliament.pdf
+  oa_version: accepted
 - id: 2025-united-for-hungary
   type: article
   status: published
@@ -110,7 +113,8 @@
   summary_es: ¿Cómo responden los partidos de la oposición al retroceso democrático? Con 31 entrevistas a dirigentes de partidos y una encuesta representativa, el artículo estudia la coalición de seis partidos Unidos por Hungría y sus primarias abiertas de 2022. Los partidos se unieron por razones pragmáticas derivadas de años de retroceso democrático. Quienes votaron en las primarias tendían a tener actitudes prodemocráticas, a estar insatisfechos con la democracia y a haber participado en formas de acción no electoral.
   why_en: It argues that backsliding pushes opposition parties to form ideologically diverse coalitions and to take on features of social movements, and that these choices match what their voters want.
   why_es: Sostiene que el retroceso democrático empuja a la oposición a formar coaliciones ideológicamente diversas y a adoptar rasgos de los movimientos sociales, y que estas decisiones responden a lo que quieren sus votantes.
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/35460/1/Opposition%20electoral%20strategies%20against%20democratic%20backsliding%20%20the%20United%20for%20Hungary%20coalition%20and%20its%202022%20primaries.pdf
+  oa_version: published
 - id: 2024-policy-over-protest
   type: article
   status: published
@@ -136,7 +140,8 @@
   summary_es: ¿Qué impulsa el apoyo a los partidos-movimiento? Un experimento conjoint prerregistrado en Dinamarca, Alemania, Hungría, Italia, Rumanía y el Reino Unido muestra que sus votantes no prefieren ni a candidatos ajenos a las instituciones ni a quienes participan en protestas. Lo que más pesa son las posiciones políticas de los candidatos. Estos votantes prefieren también a candidatos antielitistas o que quieren asegurar el buen funcionamiento del sistema político actual.
   why_en: Contrary to earlier research, it finds that support for movement parties rests on demand for decisive policy change rather than on candidates' protest experience or outsider status.
   why_es: Frente a investigaciones anteriores, concluye que el apoyo a los partidos-movimiento responde a la demanda de cambios políticos decididos, no a la experiencia de protesta ni a la condición de outsider de los candidatos.
-  oa_url: ''
+  oa_url: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S1537592724001439
+  oa_version: published
 - id: 2025-protest-relational-field
   type: article
   status: published
@@ -161,7 +166,8 @@
   summary_es: 'Con datos de encuesta de seis países europeos, el artículo traza las redes que unen a las personas con los episodios de protesta en los que han participado. Identifica dos posiciones de intermediación: los coordinadores, que conectan episodios sobre un mismo tema, y los que cruzan fronteras, que conectan episodios sobre temas distintos. La inserción en redes activistas es el mejor predictor de ambas posiciones, aunque cada una se asocia a un tipo distinto de inserción.'
   why_en: It brings attention to the individuals who connect protest episodes, and shows how survey data can be used to study the structure of a protest field.
   why_es: Centra la atención en las personas que conectan episodios de protesta y muestra cómo los datos de encuesta permiten estudiar la estructura de un campo de protesta.
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/34611/1/HoffmannSantosMercea_Protest%20as%20a%20relational%20field%20An%20analysis%20of%20brokerage%20positions.pdf
+  oa_version: published
 - id: 2024-protest-styles
   type: article
   status: published
@@ -187,7 +193,8 @@
   summary_es: 'El artículo distingue tres estilos de participación en protestas: presencial, online y uno que alterna entre ambos. Con una encuesta de 2022 a 10.347 personas en seis países europeos, muestra que el apoyo online puede ser una alternativa para quienes encuentran obstáculos para acudir a una protesta. El estilo online es más habitual entre quienes carecen de contactos que faciliten su participación. El presencial predomina entre personas mayores que usan menos las redes sociales, y el alterno entre jóvenes con más disponibilidad biográfica y un consumo de medios variado.'
   why_en: It shows that online protest is a response to specific obstacles rather than a weaker version of taking to the streets, which matters for debates on whether civic engagement is in decline.
   why_es: Muestra que la protesta online responde a obstáculos concretos y no es una versión débil de salir a la calle, algo relevante para el debate sobre si el compromiso cívico está en declive.
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/33912/1/Santos_et.al_Protesting%20at%20the%20intersection%20of%20individual%20characteristics%20and%20obstacles%20to%20participation.pdf
+  oa_version: published
 - id: 2024-actual-potential-non-participants
   type: article
   status: published
@@ -212,7 +219,8 @@
   summary_es: En lugar de dividir a la población entre quienes protestan y quienes no, el artículo la sitúa en un gradiente que va de la no participación a la participación potencial y a la efectiva. Con datos de encuesta de seis países europeos (10.347 personas), muestra que algunos factores aumentan de forma lineal la probabilidad de avanzar en cada paso. Otros distinguen a manifestantes y manifestantes potenciales de quienes no participan, pero no a los dos primeros entre sí.
   why_en: It shows that the path into protest is punctuated rather than linear, giving a more precise account of mobilisation potential than the usual divide between participants and non-participants.
   why_es: Muestra que el camino hacia la protesta avanza a saltos y no de forma lineal, lo que permite medir el potencial de movilización con más precisión que la división habitual entre participantes y no participantes.
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/34087/1/MERCEA~1.PDF
+  oa_version: published
 - id: 2024-vox-top-down-cso
   type: profile
   status: published
@@ -237,7 +245,8 @@
   summary_es: 'Este perfil analiza cuatro organizaciones creadas y dirigidas por miembros de Vox: el sindicato Solidaridad, el colectivo urbano Mi Barrio Seguro, el grupo ecologista Nostra Terra y la organización de mujeres AMPI. Presentándose como grupos de base, permiten al partido reformular desde la ultraderecha cuestiones como los derechos laborales, la política urbana, el medio ambiente y los derechos de las mujeres, y conectar su actividad electoral y no electoral.'
   why_en: 'It documents a strategy that differs both from infiltrating existing civil society and from becoming a movement party: a far-right party creating its own organisations on issues associated with the left.'
   why_es: 'Documenta una estrategia distinta tanto de la infiltración en la sociedad civil existente como de la conversión en partido-movimiento: un partido de ultraderecha que crea sus propias organizaciones en temas asociados a la izquierda.'
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/33256/1/PROFILE%20%20Far-right%20strategies%20to%20co-opt%20progressive%20politics%20%20Vox%20s%20top-down%20civil%20society%20organizations%20in%20Spain.pdf
+  oa_version: published
 - id: 2024-young-democrats-protest-voters
   type: article
   status: published
@@ -262,7 +271,8 @@
   summary_es: Con encuestas representativas en seis países europeos, el artículo identifica cuatro tipos de partido-movimiento (verde o libertario de izquierdas, de ultraderecha, centrista y ecléctico) y compara a sus votantes. Lo único que comparten es la creencia en la influencia de las protestas. Los votantes verdes y libertarios de izquierdas reflejan una brecha generacional, los de ultraderecha se parecen a los votantes de protesta, y los centristas y eclécticos encajan en el perfil de ciudadanos críticos.
   why_en: It questions whether "movement party" is a useful category for understanding voting behaviour, since the electorates of these parties have very different motivations.
   why_es: Cuestiona la utilidad de la categoría de partido-movimiento para entender el voto, ya que sus electorados tienen motivaciones muy distintas.
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/32067/1/s41269-023-00321-7.pdf
+  oa_version: published
 - id: 2024-protesting-the-lockdown
   type: article
   status: published
@@ -288,7 +298,8 @@
   summary_es: El artículo analiza 53.289 publicaciones de 2020 en 96 grupos y páginas públicas de Facebook contrarios a las restricciones por la Covid-19. Propone el concepto de geoindexación, la práctica de dotar de significado a lugares físicos en las redes sociales, e identifica una red transnacional de publicaciones geoindexadas. La oposición se presentaba unida frente a unas medidas consideradas injustas y antidemocráticas, con un lenguaje menos conspirativo de lo esperado.
   why_en: Geo-indexing offers a way to study how online communication links protest to physical places, and how movements use those places to show their scale and cohesion.
   why_es: La geoindexación permite estudiar cómo la comunicación online vincula la protesta a lugares físicos y cómo los movimientos usan esos lugares para mostrar su tamaño y cohesión.
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/32665/8/Mercea_Protesting%20the%20lockdown%20%20geo-indexing%20a%20movement%20publicly%20opposing%20Covid-19%20policies%20on%20Facebook.pdf
+  oa_version: published
 - id: 2024-how-activists-build-power
   type: article
   status: published
@@ -312,7 +323,8 @@
   summary_es: ¿Cómo movilizan las organizaciones de los movimientos sociales a personas muy afectadas y sin poder? A partir de un año de observación participante y 71 entrevistas con miembros de la PAH, el artículo muestra cómo sus miembros desarrollaron estrategias para reclutar y empoderar a quienes llegaban a la organización buscando ayuda ante su propio desahucio.
   why_en: It moves the study of recruitment beyond individual characteristics and networks, towards what organisations do to make participation possible.
   why_es: Lleva el estudio del reclutamiento más allá de las características y redes individuales, hacia lo que hacen las organizaciones para hacer posible la participación.
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/30471/8/How%20activists%20build%20power%20passive%20beneficiary%20involvement%20and%20empowerment%20in%20the%20platform%20of%20those%20affected%20by%20mortgages.pdf
+  oa_version: published
 - id: 2023-campo-movimientos-sociales-espana
   type: article
   status: published
@@ -338,7 +350,8 @@
   summary_es: El artículo reconstruye cómo se configuró en España el estudio de los movimientos sociales como campo entre 1980 y 2020. Combina datos de publicaciones de Dialnet y Web of Science, las comunicaciones presentadas en congresos de sociología y ciencia política, y entrevistas con pioneros y pioneras del campo. El campo creció de forma paulatina y con retraso respecto a otros países europeos, impulsado por la normalización de la protesta y, sobre todo, por el ciclo del 15M.
   why_en: It gives a first systematic account of how the field took shape in Spain, and of which international theories and topics it took up or left aside.
   why_es: Ofrece una primera aproximación sistemática a cómo se formó el campo en España y a qué teorías y temas internacionales adoptó o dejó de lado.
-  oa_url: ''
+  oa_url: https://recyt.fecyt.es/index.php/res/article/download/89670/70423
+  oa_version: published
 - id: 2022-big-data-news-repositories
   type: article
   status: published
@@ -365,7 +378,8 @@
   summary_es: 'A partir de la extracción de eventos de protesta de GDELT en seis países europeos durante siete años, el artículo documenta lo que cuesta convertir un repositorio gratuito de noticias en datos útiles para la investigación: recogida adicional de datos, traducción automática neuronal, análisis de contenido con diccionarios, clasificación con aprendizaje automático y codificación manual.'
   why_en: It shows that "free" event datasets carry large hidden costs in knowledge, labour, money and computing power, and that they should not be taken at face value.
   why_es: Muestra que los conjuntos de datos de eventos "gratuitos" tienen grandes costes ocultos de conocimiento, trabajo, dinero y capacidad de cálculo, y que no deben tomarse sin examen.
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/28866/1/Hoffmann_Lifting%20the%20Veil%20on%20the%20Use%20of%20Big%20Data%20News%20Repositories%20A%20Documentation%20and%20Critical%20Discussion%20of%20A%20Protest%20Event%20Analysis.pdf
+  oa_version: published
 - id: 2022-anti-gender-european-parliament
   type: article
   status: published
@@ -387,7 +401,8 @@
   summary_es: El artículo reconstruye la derrota del Informe Estrela de 2013 sobre salud y derechos sexuales y reproductivos en el Parlamento Europeo. A partir de material público de grupos ultraconservadores y de entrevistas con personas que fueron objeto de la campaña, muestra cómo una estrategia populista socavó la deliberación mediante una "política antagonista", que polarizó a los eurodiputados de centro, y un "procedimentalismo mínimo", que usó las reglas de procedimiento para cerrar el debate.
   why_en: It shows how right-wing populist strategy works inside a parliament once known for consensus, and how procedure itself can be used to shut down deliberation.
   why_es: Muestra cómo funciona la estrategia populista de derechas dentro de un parlamento antes caracterizado por el consenso, y cómo el propio procedimiento puede servir para clausurar la deliberación.
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/28830/1/Populist%20strategy%20in%20the%20European%20parliament%20-%20PUBLISHED.pdf
+  oa_version: published
 - id: 2021-far-right-schools
   type: article
   status: published
@@ -412,7 +427,8 @@
   summary_es: A través de dos instituciones de educación superior vinculadas a la ultraderecha, la Universidad Nacional de la Función Pública de Hungría y el Instituto de Ciencias Sociales, Económicas y Políticas (ISSEP) en Francia y España, el artículo identifica un proyecto que denomina "iliberalismo globalista". Este acepta los mercados y las instituciones globales, a la vez que defiende la soberanía nacional en lo cultural y una visión radicalizada del cristianismo.
   why_en: It shows that parts of Europe's far right aim to transform the international order rather than reject it, and that higher education is one of the ways they pursue this.
   why_es: Muestra que parte de la ultraderecha europea aspira a transformar el orden internacional y no a rechazarlo, y que la educación superior es una de las vías con las que lo persigue.
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/26464/8/iiab112.pdf
+  oa_version: published
 - id: 2020-politics-of-care
   type: article
   status: published
@@ -433,7 +449,8 @@
   summary_es: ¿Por qué las personas que comparten un agravio no siempre actúan juntas, y por qué otras se suman a causas que no les benefician? Desde la ética del cuidado y a partir del caso de la PAH, el artículo sostiene tres cosas. Las personas afectadas pueden no movilizarse cuando sus necesidades emocionales, identitarias y participativas no están cubiertas. La empatía lleva a personas no afectadas a iniciar la movilización. El trabajo de cuidado construye solidaridad entre las afectadas durante la movilización.
   why_en: It brings care into the study of political solidarity in social movements, and lays the basis for the argument later developed in <em>Social Movements that Care</em>.
   why_es: Incorpora el cuidado al estudio de la solidaridad política en los movimientos sociales y sienta las bases del argumento que desarrolla después <em>Social Movements that Care</em>.
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/29169/1/Social%20Movements%20and%20the%20Politics%20of%20Care%20-%20FGS.pdf
+  oa_version: accepted
 - id: 2024-methodological-pluralism
   type: chapter
   status: published
@@ -458,7 +475,6 @@
   summary_es: El capítulo plantea cómo elegir métodos cuando los objetos de estudio son distintos. Quienes participan en protestas invitan a estudios de N grande sobre grupos transitorios, mientras que los destinatarios de la protesta y la calidad democrática suponen pocos casos, estables en el tiempo. Repasa la disputa entre la investigación de N grande y la de N pequeño. A continuación propone una tipología de diseños según el número de casos, el nivel de análisis y el carácter observacional o experimental, y presenta el enfoque de métodos mixtos del proyecto ProDem.
   why_en: It argues for choosing and combining methods according to what each research question requires, rather than treating mixed methods as a default.
   why_es: Defiende elegir y combinar métodos según lo que requiere cada pregunta de investigación, en lugar de tratar los métodos mixtos como opción por defecto.
-  oa_url: ''
 - id: 2025-young-democrats-chapter
   type: chapter
   status: published
@@ -481,7 +497,6 @@
   - movement
   - parties
   - voters
-  oa_url: ''
 - id: 2025-movement-parties-democratic-quality
   type: chapter
   status: published
@@ -509,7 +524,6 @@
   - democracy
   summary_en: The concluding chapter of <em>Protest and Democracy</em>. It brings together the book's findings on how citizens, social movements and movement parties interact in six European countries. It argues that democratic quality cannot be understood without considering participation outside institutions, and sets out recommendations for policymakers, including on how established parties and the media deal with challenger parties online.
   summary_es: El capítulo de conclusiones de <em>Protest and Democracy</em>. Reúne los hallazgos del libro sobre la interacción entre ciudadanía, movimientos sociales y partidos-movimiento en seis países europeos. Sostiene que la calidad democrática no puede entenderse sin la participación fuera de las instituciones, y formula recomendaciones para responsables políticos, entre ellas sobre cómo los partidos establecidos y los medios tratan a los partidos desafiantes en el entorno digital.
-  oa_url: ''
 - id: 2022-transversalidad-pah
   type: chapter
   status: published
@@ -534,7 +548,6 @@
   summary_es: ¿Cómo logra la PAH que participen personas sin experiencia militante previa? A partir de entrevistas con seis fundadoras y otras activistas entre 2013 y 2017, y de cientos de horas de observación de asambleas y acciones en Barcelona, el capítulo sostiene que la participación inclusiva y transversal de la PAH no es un logro consolidado. Es el resultado cambiante de un proceso de ensayo y error, basado en una dinámica de cuidados que abarca lo emocional, lo identitario y lo práctico.
   why_en: It shows how a movement can open participation to ordinary citizens instead of relying on experienced activists.
   why_es: Muestra cómo un movimiento puede abrir la participación a la ciudadanía ordinaria en lugar de depender de activistas con experiencia.
-  oa_url: ''
 - id: 2022-care-and-social-movements
   type: encyclopedia_entry
   status: published
@@ -555,7 +568,8 @@
   - care
   summary_en: A short encyclopaedia entry on care in social movements. It presents care as a logic of action, which helps explain why aggrieved groups sometimes do not mobilise and why others join to support them, and as a set of exchanges among activists aimed at meeting the needs that hinder participation.
   summary_es: Una entrada breve de enciclopedia sobre el cuidado en los movimientos sociales. Presenta el cuidado como lógica de acción, que ayuda a explicar por qué algunos grupos afectados no se movilizan y por qué otros se suman para apoyarlos, y como un conjunto de intercambios entre activistas para cubrir las necesidades que dificultan la participación.
-  oa_url: ''
+  oa_url: https://openaccess.city.ac.uk/id/eprint/28871/1/WBESPM%20-%20Care%20and%20Social%20Movements%20-%20FGS.pdf
+  oa_version: accepted
 - id: 2022-cuidados-primer-desahucio
   type: chapter
   status: published
@@ -578,4 +592,3 @@
   summary_es: 'El capítulo reconstruye los orígenes de la PAH, desde el activismo previo de sus fundadoras hasta su primer STOP Desahucios. Sostiene que una parte importante de la acción colectiva se guía por una ética de los cuidados. Ninguna de las fundadoras tenía un problema hipotecario: fue la empatía lo que las movilizó. Las asambleas de asesoramiento colectivo y los acompañamientos hicieron después que personas reacias a movilizarse se sintieran capaces de parar desahucios mediante la desobediencia civil no violenta.'
   why_en: It explains the founding of the PAH from the perspective of care, as a complement to accounts of mobilisation based on shared interests.
   why_es: Explica el nacimiento de la PAH desde la perspectiva de los cuidados, como complemento a las explicaciones de la movilización basadas en intereses compartidos.
-  oa_url: ''

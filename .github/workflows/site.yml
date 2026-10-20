@@ -21,6 +21,9 @@ jobs:
       LC_ALL: C.UTF-8
     steps:
       - uses: actions/checkout@v4
+        with:
+          # _plugins/last_modified.rb reads dates from the git history for <lastmod> in sitemap.xml
+          fetch-depth: 0
 
       - uses: ruby/setup-ruby@v1
         with:
@@ -32,7 +35,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install Python dependencies
-        run: pip install beautifulsoup4
+        run: pip install beautifulsoup4 pyyaml
 
       - name: Build
         run: |
@@ -48,6 +51,12 @@ jobs:
 
       - name: Language pairs and hreflang
         run: python3 scripts/check_hreflang.py _site
+
+      - name: JSON-LD against _data
+        run: python3 scripts/check_jsonld.py _site
+
+      - name: Theme answer texts
+        run: python3 scripts/check_theme_answers.py
 
       - name: Upload site
         if: github.event_name != 'pull_request'
