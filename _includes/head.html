@@ -22,8 +22,8 @@
 {%- else -%}
   {%- assign url_en = pair.url -%}{%- assign url_es = page.url -%}
 {%- endif -%}
-{%- if L == "en" -%}{%- assign locale = "en_GB" -%}{%- else -%}{%- assign locale = "es_ES" -%}{%- endif %}
-<script>!function(){var t=localStorage.getItem('site-theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}()</script>
+{%- if L == "en" -%}{%- assign locale = "en_US" -%}{%- else -%}{%- assign locale = "es_ES" -%}{%- endif %}
+<script>!function(){var t;try{t=localStorage.getItem('site-theme')}catch(e){}if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)}()</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page_title }}</title>

@@ -1,0 +1,5 @@
+{%- comment -%}`date` (YYYY-MM or YYYY-MM-DD) as month and year in the page language: "April 2026" / "abril de 2026". Output only; the caller wraps it in <time>.{%- endcomment -%}
+{%- include vars.html -%}
+{%- assign parts = include.date | split: "-" -%}
+{%- assign month_index = parts[1] | plus: 0 | minus: 1 -%}
+{{- I.month_year[L] | replace: "%month%", I.month_names[L][month_index] | replace: "%year%", parts[0] -}}

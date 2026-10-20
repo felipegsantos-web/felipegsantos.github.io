@@ -31,7 +31,7 @@
   summary_es: ¿Por qué quienes más sufren un agravio a menudo no se movilizan, mientras que otras personas sin un interés directo sí lo hacen? A partir de un año de observación participante en la PAH de Barcelona, 71 entrevistas con miembros de toda España y la cobertura de prensa entre 2009 y 2016, el libro muestra cómo la Plataforma de Afectados por la Hipoteca recurrió al cuidado emocional, identitario y participativo para convertir en activistas a personas amenazadas de desahucio.
   why_en: It offers a theory of mobilization based on care, which explains how movements recruit and empower people whose grievances discourage collective action, and how coalitions between affected and unaffected activists form.
   why_es: Propone una teoría de la movilización basada en el cuidado, que explica cómo los movimientos reclutan y empoderan a personas cuyos agravios dificultan la acción colectiva, y cómo se forman coaliciones entre activistas afectados y no afectados.
-- id: 2022-pah-10-anos
+- id: 2021-pah-10-anos
   type: edited_volume
   lang: es
   status: published
@@ -48,7 +48,7 @@
   publisher: Edicions Bellaterra
   publisher_place: Manresa
   url: https://www.bellaterra.coop/es/libros/la-plataforma-de-afectados-por-la-hipoteca
-  pdf: /documents/publications/2022-pah-10-anos.pdf
+  pdf: /documents/publications/2021-pah-10-anos.pdf
   pdf_version: published
   themes:
   - care
@@ -99,7 +99,7 @@
   why_es: 'Muestra que el vínculo entre partidos y protesta no se limita a los partidos-movimiento: en todo el sistema de partidos, lo que un partido dice de una protesta va de la mano de la participación de sus votantes en ella.'
   oa_url: https://openaccess.city.ac.uk/id/eprint/36498/3/One%20foot%20in%20parliament.pdf
   oa_version: accepted
-- id: 2025-united-for-hungary
+- id: 2026-united-for-hungary
   type: article
   lang: en
   status: published
@@ -115,7 +115,7 @@
   pages: 902-926
   doi: 10.1080/13510347.2025.2522194
   url: https://doi.org/10.1080/13510347.2025.2522194
-  pdf: /documents/publications/2025-united-for-hungary.pdf
+  pdf: /documents/publications/2026-united-for-hungary.pdf
   pdf_version: published
   themes:
   - democracy
@@ -128,7 +128,7 @@
   why_es: Sostiene que el retroceso democrático empuja a la oposición a formar coaliciones ideológicamente diversas y a adoptar rasgos de los movimientos sociales, y que estas decisiones responden a lo que quieren sus votantes.
   oa_url: https://openaccess.city.ac.uk/id/eprint/35460/1/Opposition%20electoral%20strategies%20against%20democratic%20backsliding%20%20the%20United%20for%20Hungary%20coalition%20and%20its%202022%20primaries.pdf
   oa_version: published
-- id: 2024-policy-over-protest
+- id: 2025-policy-over-protest
   type: article
   lang: en
   status: published
@@ -141,10 +141,10 @@
   venue: Perspectives on Politics
   volume: 23
   issue: 3
-  pages: 901 onwards
+  pages: 901-923
   doi: 10.1017/S1537592724001439
   url: https://doi.org/10.1017/S1537592724001439
-  pdf: /documents/publications/2024-policy-over-protest.pdf
+  pdf: /documents/publications/2025-policy-over-protest.pdf
   pdf_version: published
   themes:
   - movementparties
@@ -187,7 +187,7 @@
   why_es: Centra la atención en las personas que conectan episodios de protesta y muestra cómo los datos de encuesta permiten estudiar la estructura de un campo de protesta.
   oa_url: https://openaccess.city.ac.uk/id/eprint/34611/1/HoffmannSantosMercea_Protest%20as%20a%20relational%20field%20An%20analysis%20of%20brokerage%20positions.pdf
   oa_version: published
-- id: 2024-protest-styles
+- id: 2025-protest-styles
   type: article
   lang: en
   status: published
@@ -203,7 +203,7 @@
   pages: 1958-1985
   doi: 10.1080/13501763.2024.2418962
   url: https://doi.org/10.1080/13501763.2024.2418962
-  pdf: /documents/publications/2024-protest-styles.pdf
+  pdf: /documents/publications/2025-protest-styles.pdf
   pdf_version: published
   themes:
   - protest
@@ -217,7 +217,7 @@
   why_es: Muestra que la protesta online responde a obstáculos concretos y no es una versión débil de salir a la calle, algo relevante para el debate sobre si el compromiso cívico está en declive.
   oa_url: https://openaccess.city.ac.uk/id/eprint/33912/1/Santos_et.al_Protesting%20at%20the%20intersection%20of%20individual%20characteristics%20and%20obstacles%20to%20participation.pdf
   oa_version: published
-- id: 2024-actual-potential-non-participants
+- id: 2025-actual-potential-non-participants
   type: article
   lang: en
   status: published
@@ -233,7 +233,7 @@
   pages: 1392-1417
   doi: 10.1177/00323217241297905
   url: https://doi.org/10.1177/00323217241297905
-  pdf: /documents/publications/2024-actual-potential-non-participants.pdf
+  pdf: /documents/publications/2025-actual-potential-non-participants.pdf
   pdf_version: published
   themes:
   - protest
@@ -246,7 +246,7 @@
   why_es: Muestra que el camino hacia la protesta avanza a saltos y no de forma lineal, lo que permite medir el potencial de movilización con más precisión que la división habitual entre participantes y no participantes.
   oa_url: https://openaccess.city.ac.uk/id/eprint/34087/1/MERCEA~1.PDF
   oa_version: published
-- id: 2024-vox-top-down-cso
+- id: 2025-vox-top-down-cso
   type: profile
   lang: en
   status: published
@@ -261,7 +261,7 @@
   pages: 652-660
   doi: 10.1080/14742837.2024.2359652
   url: https://doi.org/10.1080/14742837.2024.2359652
-  pdf: /documents/publications/2024-vox-top-down-cso.pdf
+  pdf: /documents/publications/2025-vox-top-down-cso.pdf
   pdf_version: published
   themes:
   - farright
@@ -275,7 +275,7 @@
   why_es: 'Documenta una estrategia distinta tanto de la infiltración en la sociedad civil existente como de la conversión en partido-movimiento: un partido de ultraderecha que crea sus propias organizaciones en temas asociados a la izquierda.'
   oa_url: https://openaccess.city.ac.uk/id/eprint/33256/1/PROFILE%20%20Far-right%20strategies%20to%20co-opt%20progressive%20politics%20%20Vox%20s%20top-down%20civil%20society%20organizations%20in%20Spain.pdf
   oa_version: published
-- id: 2024-young-democrats-protest-voters
+- id: 2025-young-democrats-protest-voters
   type: article
   lang: en
   status: published
@@ -290,7 +290,7 @@
   pages: 167-188
   doi: 10.1057/s41269-023-00321-7
   url: https://doi.org/10.1057/s41269-023-00321-7
-  pdf: /documents/publications/2024-young-democrats-protest-voters.pdf
+  pdf: /documents/publications/2025-young-democrats-protest-voters.pdf
   pdf_version: published
   themes:
   - movementparties
@@ -380,7 +380,6 @@
   pdf: /documents/publications/2023-campo-movimientos-sociales-espana.pdf
   pdf_version: published
   themes:
-  - care
   - protest
   keywords:
   - sociology
@@ -433,6 +432,9 @@
   - Dorit Geva
   title: 'Populist strategy in the European Parliament: How the anti-gender movement sabotaged deliberation about sexual health and reproductive rights'
   venue: European Journal of Cultural and Political Sociology
+  volume: 9
+  issue: 4
+  pages: 475-501
   doi: 10.1080/23254823.2022.2113417
   url: https://doi.org/10.1080/23254823.2022.2113417
   pdf: /documents/publications/2022-anti-gender-european-parliament.pdf
@@ -487,6 +489,9 @@
   - Felipe G. Santos
   title: 'Social movements and the politics of care: empathy, solidarity and eviction blockades'
   venue: Social Movement Studies
+  volume: 19
+  issue: 2
+  pages: 125-143
   doi: 10.1080/14742837.2019.1665504
   url: https://doi.org/10.1080/14742837.2019.1665504
   pdf: /documents/publications/2020-politics-of-care.pdf
@@ -503,7 +508,7 @@
   why_es: Incorpora el cuidado al estudio de la solidaridad política en los movimientos sociales y sienta las bases del argumento que desarrolla después <em lang="en">Social Movements that Care</em>.
   oa_url: https://openaccess.city.ac.uk/id/eprint/29169/1/Social%20Movements%20and%20the%20Politics%20of%20Care%20-%20FGS.pdf
   oa_version: accepted
-- id: 2024-methodological-pluralism
+- id: 2025-methodological-pluralism
   type: chapter
   lang: en
   status: published
@@ -519,7 +524,7 @@
   pages: 27-43
   doi: 10.4324/9781003532507-3
   url: https://doi.org/10.4324/9781003532507-3
-  pdf: /documents/publications/2024-methodological-pluralism.pdf
+  pdf: /documents/publications/2025-methodological-pluralism.pdf
   pdf_version: published
   themes:
   - protest
@@ -546,7 +551,7 @@
   pages: 44-65
   doi: 10.4324/9781003532507-4
   url: https://doi.org/10.4324/9781003532507-4
-  version_of: 2024-young-democrats-protest-voters
+  version_of: 2025-young-democrats-protest-voters
   pdf: /documents/publications/2025-young-democrats-chapter.pdf
   pdf_version: published
   themes:
@@ -637,7 +642,7 @@
   summary_es: Una entrada breve de enciclopedia sobre el cuidado en los movimientos sociales. Presenta el cuidado como lógica de acción, que ayuda a explicar por qué algunos grupos afectados no se movilizan y por qué otros se suman para apoyarlos, y como un conjunto de intercambios entre activistas para cubrir las necesidades que dificultan la participación.
   oa_url: https://openaccess.city.ac.uk/id/eprint/28871/1/WBESPM%20-%20Care%20and%20Social%20Movements%20-%20FGS.pdf
   oa_version: accepted
-- id: 2022-cuidados-primer-desahucio
+- id: 2021-cuidados-primer-desahucio
   type: chapter
   lang: es
   status: published
@@ -651,7 +656,7 @@
   book_title: La Plataforma de Afectadas por la Hipoteca. Una década de lucha por la vivienda digna 2009-2019
   pages: 115-133
   url: https://www.bellaterra.coop/es/libros/la-plataforma-de-afectados-por-la-hipoteca
-  pdf: /documents/publications/2022-cuidados-primer-desahucio.pdf
+  pdf: /documents/publications/2021-cuidados-primer-desahucio.pdf
   pdf_version: published
   themes:
   - care

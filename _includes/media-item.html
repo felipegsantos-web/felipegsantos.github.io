@@ -1,0 +1,21 @@
+{%- include vars.html -%}
+{%- assign m = include.m -%}
+{%- assign k_gloss = "gloss_" | append: L -%}
+<article class="media-entry" data-media="{{ m.role }}">
+      <div class="media-entry__meta-top">
+        <span class="media-entry__role">{{ I.media_role[m.role].label[L] }}</span>
+        <span class="media-entry__outlet">{{ m.outlet }}</span>
+        <abbr class="media-entry__lang" title="{{ I.lang_name[m.language] }}" lang="{{ m.language }}">{{ m.language | upcase }}</abbr>
+        <time class="media-entry__date" datetime="{{ m.date }}">{% include month-year.html date=m.date %}</time>
+      </div>
+      <h2 class="media-entry__title" lang="{{ m.language }}">
+        <a href="{{ m.url }}" target="_blank" rel="noopener" data-goatcounter-click="media-{{ m.id }}">{{ m.headline }}</a>
+      </h2>
+      {%- if m.language != L or m.always_gloss %}
+      <p class="media-entry__gloss">{{ m[k_gloss] }}</p>
+      {%- endif %}
+      {%- if m.with %}
+      {%- capture with_names %}{% include list-names.html names=m.with %}{% endcapture %}
+      <p class="media-entry__with">{{ I.with_authors[L] | replace: "%names%", with_names }}</p>
+      {%- endif %}
+    </article>

@@ -4,7 +4,8 @@
     <div class="footer-brand">
       <div class="footer-brand__info">
         <p class="footer-brand__name">{{ profile.name }}</p>
-        <p class="footer-brand__role">{{ I.footer_role[L] }}</p>
+        {%- assign current_post = profile.posts | where: "status", "current" | first %}
+        <p class="footer-brand__role">{{ I.footer_role[L] }} · {{ current_post.institution }}</p>
       </div>
       <ul class="footer-social" role="list" aria-label="{{ I.profiles_label[L] }}">
         {%- include profile-icons.html %}

@@ -36,9 +36,7 @@
   {%- else -%}
 , "publisher": {"@type": "Organization", "name": {{ pub.publisher | jsonify }}}
 {%- endcase -%}
-{%- if pub.pages -%}
-  {%- if pub.pages contains "onwards" -%}, "pageStart": {{ pub.pages | split: " " | first | jsonify }}{%- else -%}, "pagination": {{ pub.pages | jsonify }}{%- endif -%}
-{%- endif -%}
+{%- if pub.pages -%}, "pagination": {{ pub.pages | jsonify }}{%- endif -%}
 {%- if pub.isbn_print %}, "isbn": {{ pub.isbn_print | jsonify }}{% endif -%}
 , "url": {{ work_url | jsonify }}
 {%- if pub.doi %}, "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": {{ pub.doi | jsonify }}}{% endif -%}

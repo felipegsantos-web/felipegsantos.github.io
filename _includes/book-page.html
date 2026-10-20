@@ -43,7 +43,7 @@
           {%- for e in b.endorsements %}
           <blockquote class="book-quote" lang="en">
             <p>{{ e.text }}</p>
-            <footer>{{ e.who }}, {% if e.role_html %}{{ e.role_html }}{% else %}{{ e.role }}{% endif %}</footer>
+            <footer>{{ e.who }}, {{ e.role }}{% if e.role_extra_html %}, {{ e.role_extra_html }}{% endif %}</footer>
           </blockquote>
           {%- endfor %}
         </section>

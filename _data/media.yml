@@ -1,174 +1,186 @@
-# Media coverage, newest first (the order shown on the site).
-# `date` is the year, as displayed. `language` is the language of the linked piece (inferred from the outlet/URL; the site does not show it).
-# `format`: press | radio | podcast | opinion. `theme`: far_right | protest | democracy (labels in i18n.yml).
+# Media coverage, newest first (the order shown on the site). Templates build everything from these fields.
+# `date`: YYYY-MM-DD, or YYYY-MM when the day is not known. `role`: quoted | guest | oped (labels in i18n.yml).
+# `headline`: exactly as published, in the language of the piece (`language`: es | en); never translated.
+# `with`: co-authors of an op-ed, or co-guests. `gloss_en` / `gloss_es`: one line on the topic, shown only when the headline's language differs from the page language, or always when `always_gloss` is true.
 - id: 2026-the-world
   outlet: The World (PRX)
-  date: '2026'
-  format: radio
-  theme: far_right
+  date: '2026-09-09'
+  role: quoted
+  headline: Spain's far-right polls closer to power than ever
   language: en
+  gloss_en: On polls showing a PP and Vox coalition within reach.
+  gloss_es: Sobre las encuestas que sitúan al alcance una coalición de PP y Vox.
   url: https://theworld.org/segments/2026/09/09/spains-far-right-polls-closer-to-power-than-ever
-  title_en: 'Radio interview: Spain’s far right polls closer to power than ever'
-  title_es: 'Entrevista de radio: la ultraderecha española, más cerca que nunca del poder según las encuestas'
 - id: 2026-el-pais
   outlet: El País
-  date: '2026'
-  format: press
-  theme: far_right
+  date: '2026-04-15'
+  role: quoted
+  headline: El movimiento contra el aborto y contra los derechos LGTBIQ+ pierde con Orbán su modelo a seguir
   language: es
+  gloss_en: On what Orbán's fall means for the anti-abortion and anti-LGBTQ+ movement.
+  gloss_es: Sobre lo que supone la caída de Orbán para el movimiento antiaborto y contra los derechos LGTBIQ+.
   url: https://elpais.com/espana/2026-04-15/el-movimiento-contra-el-aborto-y-contra-los-derechos-lgtbiq-pierde-con-orban-su-modelo-a-seguir.html
-  title_en: Commentary on how Orbán’s fall weakens the anti-abortion and anti-LGBTQ+ movement’s main international reference
-  title_es: Comentario sobre cómo la caída de Orbán deja sin referente al movimiento antiaborto y contra los derechos LGTBIQ+
 - id: 2025-el-pais
   outlet: El País
-  date: '2025'
-  format: press
-  theme: far_right
+  date: '2025-10-11'
+  role: quoted
+  headline: La creciente red de grupos derechistas que ya junta a PP y Vox mientras sus líderes se pelean
   language: es
+  gloss_en: On the growing network of right-wing groups linking PP and Vox.
+  gloss_es: Sobre la red creciente de grupos derechistas que une a PP y Vox.
   url: https://elpais.com/espana/2025-10-11/la-creciente-red-de-grupos-derechistas-que-ya-junta-a-pp-y-vox-mientras-sus-lideres-discuten.html
-  title_en: Commentary on the growing network of right-wing organizations linking PP and Vox despite their leaders’ public disputes
-  title_es: Comentario sobre la creciente red de grupos derechistas que une a PP y Vox pese a la disputa pública entre sus líderes
 - id: 2025-eldiario-es
   outlet: elDiario.es
-  date: '2025'
-  format: press
-  theme: protest
+  date: '2025-04-04'
+  role: quoted
+  headline: El país toma el pulso a la crisis de la vivienda con manifestaciones en 40 ciudades
   language: es
+  gloss_en: On housing protests in 40 Spanish cities.
+  gloss_es: Sobre las manifestaciones por la vivienda en 40 ciudades.
   url: https://www.eldiario.es/economia/pais-toma-pulso-crisis-vivienda-manifestaciones-40-ciudades_1_12192609.html
-  title_en: Commentary on housing protests across Spain
-  title_es: Comentario sobre las protestas por la vivienda en España
 - id: 2025-eldiario-es-2
-  outlet: elDiario.es
-  date: '2025'
-  format: podcast
-  theme: far_right
+  outlet: elDiario.es (Un tema al día)
+  date: '2025-03-03'
+  role: guest
+  headline: Trump, Musk y el saludo nazi
   language: es
+  gloss_en: On Trump, Musk and the Nazi salute.
+  gloss_es: Sobre Trump, Musk y el saludo nazi.
   url: https://www.eldiario.es/blog/al-dia/podcast-trump-musk-saludo-nazi_132_12090902.html
-  title_en: 'Podcast: The meaning of Elon Musk''s Nazi salute'
-  title_es: 'Pódcast: El significado del saludo nazi de Elon Musk'
 - id: 2024-cadena-ser
   outlet: Cadena SER
-  date: '2024'
-  format: radio
-  theme: far_right
+  date: '2024-11-08'
+  role: quoted
+  headline: La tragedia de Valencia, caldo de cultivo para la antipolítica
   language: es
+  gloss_en: On anti-politics and the far right after the 2024 Valencia floods.
+  gloss_es: Sobre la antipolítica y la ultraderecha tras la dana de Valencia de 2024.
   url: https://cadenaser.com/nacional/2024/11/08/la-tragedia-de-valencia-caldo-de-cultivo-para-la-antipolitica-cadena-ser/
-  title_en: 'Interview: Far-right attempts to exploit the 2024 Valencia floods'
-  title_es: 'Entrevista: Los intentos de la ultraderecha de explotar las inundaciones de Valencia de 2024'
 - id: 2024-el-pais
   outlet: El País
-  date: '2024'
-  format: press
-  theme: far_right
+  date: '2024-11-05'
+  role: quoted
+  headline: Un frenesí ultraderechista en el lodazal de la dana
   language: es
+  gloss_en: On far-right mobilization after the 2024 Valencia floods.
+  gloss_es: Sobre la movilización ultraderechista tras la dana de Valencia.
   url: https://elpais.com/espana/2024-11-05/un-frenesi-ultraderechista-en-el-lodazal-de-la-dana.html
-  title_en: Commentary on far-right mobilization after the Valencia floods
-  title_es: Comentario sobre la movilización ultraderechista tras las inundaciones de Valencia
 - id: 2024-el-pais-2
   outlet: El País
-  date: '2024'
-  format: press
-  theme: far_right
+  date: '2024-08-04'
+  role: quoted
+  headline: Los soldados españoles de la "batalla cultural"
   language: es
+  gloss_en: On Vox's top-down civil society organizations.
+  gloss_es: Sobre las organizaciones de la sociedad civil creadas desde Vox.
   url: https://elpais.com/espana/2024-08-04/los-soldados-espanoles-de-la-batalla-cultural.html
-  title_en: Research on Vox's top-down civil society organizations
-  title_es: Investigación sobre las organizaciones civiles verticales de Vox
 - id: 2024-el-pais-3
   outlet: El País
-  date: '2024'
-  format: press
-  theme: far_right
+  date: '2024-07-15'
+  role: quoted
+  headline: Abascal se coloca el cordón sanitario que nunca le puso el PP
   language: es
+  gloss_en: On Vox joining Patriots for Europe.
+  gloss_es: Sobre la adhesión de Vox a Patriotas por Europa.
   url: https://elpais.com/espana/2024-07-15/abascal-se-coloca-el-cordon-sanitario-que-nunca-le-puso-el-pp.html
-  title_en: Commentary on Vox joining Patriots for Europe
-  title_es: Comentario sobre la adhesión de Vox a Patriotas por Europa
-- id: 2024-eldiario-es
-  outlet: elDiario.es
-  date: '2024'
-  format: podcast
-  theme: far_right
+- id: 2023-eldiario-es
+  outlet: elDiario.es (Un tema al día)
+  date: '2023-11-06'
+  role: guest
+  headline: 'La nueva ultraderecha: del odio al judío al amor por Israel'
   language: es
+  gloss_en: On the European far right's shift from antisemitism to support for Israel.
+  gloss_es: Sobre el giro de la ultraderecha europea del antisemitismo al apoyo a Israel.
   url: https://www.eldiario.es/blog/al-dia/podcast-la-nueva-ultraderecha-del-odio-al-judio-al-amor-por-israel_132_10656184.html
-  title_en: 'Podcast: Europe''s far-right support for Israel'
-  title_es: 'Pódcast: El apoyo de la ultraderecha europea a Israel'
-- id: 2024-eldiario-es-2
-  outlet: elDiario.es
-  date: '2024'
-  format: podcast
-  theme: far_right
+- id: 2023-eldiario-es-2
+  outlet: elDiario.es (Un tema al día)
+  date: '2023-07-28'
+  role: guest
+  headline: Vox, la ola internacional y el muro de papeletas
   language: es
+  gloss_en: On Vox's result in the 2023 general election and the far right across Europe.
+  gloss_es: Sobre el resultado de Vox en las elecciones generales de 2023 y la ultraderecha en Europa.
   url: https://www.eldiario.es/blog/al-dia/podcast-vox-la-ola-interncional-y-el-muro-de-papeletas_132_10413459.html
-  title_en: 'Podcast: Why Vox did not achieve its European breakthrough in Spain'
-  title_es: 'Pódcast: Por qué Vox no logró su irrupción europea en España'
-- id: 2022-the-conversation
-  outlet: The Conversation
-  date: '2022'
-  format: opinion
-  theme: democracy
-  language: en
-  url: https://theconversation.com/hungary-election-triumph-for-viktor-orban-is-a-warning-to-progressive-parties-seeking-a-marriage-of-convenience-with-the-far-right-180196
-  title_en: 'Hungary: Orbán''s triumph is a warning to progressive parties (with Dan Mercea)'
-  title_es: 'Hungría: el triunfo de Orbán es una advertencia para los partidos progresistas (con Dan Mercea)'
-- id: 2022-cadena-ser
-  outlet: Cadena SER
-  date: '2022'
-  format: radio
-  theme: far_right
-  language: es
-  url: https://cadenaser.com/nacional/2022/11/04/macarena-olona-busca-su-hueco-en-la-ultraderecha-abanderando-el-movimiento-antigenero-cadena-ser/
-  title_en: 'Interview: Anti-feminism and the Spanish far-right'
-  title_es: 'Entrevista: El antifeminismo y la ultraderecha española'
 - id: 2022-cadena-ser-2
   outlet: Cadena SER
-  date: '2022'
-  format: radio
-  theme: far_right
+  date: '2022-11-29'
+  role: quoted
+  headline: 'Los satélites de Vox: cómo la ultraderecha utiliza una red de asociaciones para aparentar apoyo social a sus postulados'
   language: es
+  gloss_en: On the network of associations Vox uses to project social support.
+  gloss_es: Sobre la red de asociaciones que usa Vox para aparentar apoyo social.
   url: https://cadenaser.com/nacional/2022/11/29/los-satelites-de-vox-como-la-ultraderecha-utiliza-una-red-de-asociaciones-para-aparentar-apoyo-social-a-sus-postulados-cadena-ser/
-  title_en: 'Interview: Civil society organizations promoted by Vox'
-  title_es: 'Entrevista: Las organizaciones de la sociedad civil impulsadas por Vox'
-- id: 2022-carne-cruda-eldiario
-  outlet: Carne Cruda / elDiario
-  date: '2022'
-  format: podcast
-  theme: far_right
+- id: 2022-cadena-ser
+  outlet: Cadena SER
+  date: '2022-11-04'
+  role: quoted
+  headline: Macarena Olona busca su hueco en la ultraderecha abanderando el movimiento antifeminista
   language: es
+  gloss_en: On Macarena Olona and the anti-feminist far right.
+  gloss_es: Sobre Macarena Olona y el antifeminismo de ultraderecha.
+  url: https://cadenaser.com/nacional/2022/11/04/macarena-olona-busca-su-hueco-en-la-ultraderecha-abanderando-el-movimiento-antigenero-cadena-ser/
+- id: 2022-carne-cruda
+  outlet: Carne Cruda (elDiario.es)
+  date: '2022-09-12'
+  role: guest
+  headline: 'Pinchazos: Qué os pasa, hombres'
+  language: es
+  gloss_en: Segment on gender backlash and the anti-feminist movement.
+  gloss_es: Segmento sobre la reacción contra el feminismo y el movimiento antifeminista.
+  always_gloss: true
   url: https://www.eldiario.es/carnecruda/programas/pinchazos-pasa-hombres_132_9309200.html
-  title_en: 'Podcast: Origins and strategies of the anti-gender movement'
-  title_es: 'Pódcast: Orígenes y estrategias del movimiento antigénero'
 - id: 2022-eldiario-es
-  outlet: elDiario.es
-  date: '2022'
-  format: podcast
-  theme: far_right
+  outlet: elDiario.es (Un tema al día)
+  date: '2022-07-13'
+  role: guest
+  headline: '707 millones de tentáculos: el lobby ultraconservador en Europa'
   language: es
+  with:
+  - Nuria Alabao
+  gloss_en: On the ultraconservative lobby in Europe.
+  gloss_es: Sobre el lobby ultraconservador en Europa.
   url: https://www.eldiario.es/blog/al-dia/podcast-707-millones-tentaculos-lobby-ultraconservador-europa_132_9169314.html
-  title_en: 'Podcast: The anti-gender movement in Europe'
-  title_es: 'Pódcast: El movimiento antigénero en Europa'
-- id: 2021-chatham-house
-  outlet: Chatham House
-  date: '2021'
-  format: podcast
-  theme: far_right
+- id: 2022-the-conversation
+  outlet: The Conversation
+  date: '2022-04-05'
+  role: oped
+  headline: 'Hungary: election triumph for Viktor Orbán is a warning to progressive parties seeking a marriage of convenience with the far right'
   language: en
+  with:
+  - Dan Mercea
+  gloss_es: Sobre lo que la victoria de Orbán en 2022 advierte a los partidos progresistas.
+  url: https://theconversation.com/hungary-election-triumph-for-viktor-orban-is-a-warning-to-progressive-parties-seeking-a-marriage-of-convenience-with-the-far-right-180196
+- id: 2021-chatham-house
+  outlet: Chatham House (Undercurrents)
+  date: '2021-10-08'
+  role: guest
+  headline: 'Undercurrents: Europe''s far-right educational institutions'
+  language: en
+  with:
+  - Dorit Geva
+  gloss_es: Sobre las instituciones educativas de la ultraderecha europea.
   url: https://www.chathamhouse.org/2021/10/undercurrents-europes-far-right-educational-institutions
-  title_en: 'Undercurrents: Europe''s far-right educational institutions'
-  title_es: 'Undercurrents: Las instituciones educativas de la ultraderecha europea'
 - id: 2020-the-guardian
   outlet: The Guardian
-  date: '2020'
-  format: opinion
-  theme: protest
+  date: '2020-04-20'
+  role: oped
+  headline: The global pandemic has spawned new forms of activism – and they’re flourishing
   language: en
+  with:
+  - Erica Chenoweth
+  - Austin Choi-Fitzpatrick
+  - Jeremy Pressman
+  - Jay Ulfelder
+  gloss_es: Sobre las nuevas formas de activismo surgidas durante la pandemia.
   url: https://www.theguardian.com/commentisfree/2020/apr/20/the-global-pandemic-has-spawned-new-forms-of-activism-and-theyre-flourishing
-  title_en: The global pandemic has spawned new forms of activism, and they're flourishing
-  title_es: La pandemia mundial ha dado lugar a nuevas formas de activismo, y están floreciendo
-- id: 2020-el-pais-agenda-publica
-  outlet: El País / Agenda Pública
-  date: '2020'
-  format: opinion
-  theme: protest
+- id: 2020-agenda-publica
+  outlet: Agenda Pública
+  date: '2020-06-15'
+  role: oped
+  headline: ¿Volveremos a las calles? Disposición a protestar durante la pandemia
   language: es
+  with:
+  - Olga Onuch
+  gloss_en: On willingness to protest during the pandemic, with survey data from Argentina and Ukraine.
+  gloss_es: Sobre la disposición a protestar durante la pandemia, con datos de encuesta de Argentina y Ucrania.
   url: https://agendapublica.es/noticia/16967/volveremos-calles-disposicion-protestar-durante-pandemia
-  title_en: ¿Volveremos a las calles? Willingness to protest during the pandemic (with Olga Onuch)
-  title_es: ¿Volveremos a las calles? Disposición a protestar durante la pandemia (con Olga Onuch)

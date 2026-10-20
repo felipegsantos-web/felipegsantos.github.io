@@ -30,6 +30,7 @@ menu_open_label:
 menu_close_label:
   en: Close menu
   es: Cerrar menú
+# Footer line under the name: "%role% · %institution%" (the institution is the current post in profile.yml).
 footer_role:
   en: Political Sociologist
   es: Sociólogo político
@@ -66,6 +67,7 @@ pub_type_label:
 # Types whose badge text differs from their group's.
 pub_type_name:
   profile: {en: Profile, es: Perfil}
+  edited_volume: {en: Edited volume, es: Volumen colectivo}
 # Types that share the badge and the filter of another type.
 pub_type_group:
   book: book
@@ -74,6 +76,10 @@ pub_type_group:
   chapter: chapter
   encyclopedia_entry: chapter
   profile: article
+# Articles without a volume yet: "Party Politics, online first."
+online_first:
+  en: online first
+  es: publicación anticipada en línea
 why_it_matters:
   en: "Why it matters:"
   es: "Por qué importa:"
@@ -143,15 +149,21 @@ back_to_publications:
 filter_media_label:
   en: Filter media
   es: Filtrar medios
-media_format:
-  press: {en: Press, es: Prensa}
-  radio: {en: Radio, es: Radio}
-  podcast: {en: Podcast, es: Podcast}
-  opinion: {en: Opinion, es: Opinión}
-media_theme:
-  far_right: {en: Far-right politics, es: Política de ultraderecha}
-  protest: {en: Protest, es: Protesta}
-  democracy: {en: Democracy, es: Democracia}
+# Roles in media.yml. `label` heads each item; `filter` is the button text.
+media_role:
+  quoted: {label: {en: Quoted in, es: Citado en}, filter: {en: Quoted in, es: Citado en}}
+  guest: {label: {en: Guest on, es: Invitado en}, filter: {en: Guest on, es: Invitado en}}
+  oped: {label: {en: Op-ed, es: Artículo de opinión}, filter: {en: Op-eds, es: Artículos de opinión}}
+# "April 2026" / "abril de 2026"; used for every date shown as month and year (media, news).
+month_names:
+  en: [January, February, March, April, May, June, July, August, September, October, November, December]
+  es: [enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre]
+month_year:
+  en: "%month% %year%"
+  es: "%month% de %year%"
+with_authors:
+  en: "With %names%."
+  es: "Con %names%."
 # Homepage
 news_type:
   media: {en: Media, es: Medios}
@@ -163,8 +175,8 @@ news_heading:
   en: News & Updates
   es: Noticias y novedades
 research_heading:
-  en: Research
-  es: Investigación
+  en: Research themes
+  es: Temas de investigación
 # Homepage sentence about the current post, filled from profile.yml (posts) and projects.yml.
 current_post_sentence:
   en: "I am a %role% in the %department% at %institution%, working on %project%."
@@ -182,3 +194,6 @@ date_to:
 date_present:
   en: present
   es: la actualidad
+media_filter_all:
+  en: All
+  es: Todos

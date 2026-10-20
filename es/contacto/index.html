@@ -13,6 +13,15 @@ description: "Contacta con Felipe G. Santos, investigador postdoctoral en City S
       <p class="page-intro">Escríbeme si eres periodista, investigador o estudiante.</p>
     </div>
     <p class="contact-email"><a href="mailto:{{ profile.email }}" class="contact-email-link" data-goatcounter-click="email">{{ profile.email }}</a></p>
+    <section class="contact-media" aria-labelledby="contact-media-h">
+      <h2 class="contact-media__heading" id="contact-media-h">Para medios</h2>
+      <p class="contact-media__languages">{{ profile.media_languages_es }}</p>
+      <ul class="contact-media__topics">
+        {%- for topic in profile.media_topics_es %}
+        <li>{{ topic }}</li>
+        {%- endfor %}
+      </ul>
+    </section>
   </div>
   <div class="pb-sp16"></div>
 </main>
