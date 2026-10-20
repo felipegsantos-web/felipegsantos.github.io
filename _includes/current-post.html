@@ -6,4 +6,4 @@
 {%- assign role = post[k_role] -%}
 {%- if L == "es" %}{% assign role = role | downcase %}{% endif -%}
 {%- capture link %}<a href="{{ proj.url }}" target="_blank" rel="noopener" class="inline-link"><strong>{{ proj.name }}</strong></a>{% endcapture -%}
-{{- I.current_post_sentence[L] | replace: "%role%", role | replace: "%department%", post.department_en | replace: "%institution%", post.institution | replace: "%project%", link | replace: "%funder%", proj.funder -}}
+{{- I.current_post_sentence[L] | replace: "%role%", role | replace: "%department%", post.department_en | replace: "%institution%", post.institution | replace: "%project%", link -}}

@@ -25,7 +25,7 @@ description_en: >-
   Felipe G. Santos (Felipe González Santos) is a political sociologist and
   Postdoctoral Research Fellow at City St George's, University of London. He
   studies why people protest, how far-right actors build support through civil
-  society, and how attitudes towards democracy shape political participation,
+  society, and how attitudes toward democracy shape political participation,
   drawing on cross-national surveys, survey experiments and fieldwork across
   Europe.
 description_es: >-
@@ -85,7 +85,7 @@ other_profiles:
     label: City Research Online (City author page)
     url: https://openaccess.city.ac.uk/view/creators_id/f=2Esantos.html
 # Posts, newest first. `from` / `to` are YYYY-MM; no `to` means the post is current.
-# `project` is the id of an entry in projects.yml. `funding` is the programme shown next to the post.
+# `project` is the id of an entry in projects.yml. `cv_projects` lists the projects the post has covered (shown by name on the CV; funders appear only in "Grants and projects").
 # Dates: December 2020 and August 2019 to December 2020 as given by Felipe; Babeș-Bolyai to July 2026 as given by Felipe (the CV PDF still says "Present").
 posts:
   - id: city
@@ -98,7 +98,7 @@ posts:
     place_en: London, UK
     place_es: Londres, Reino Unido
     project: interfaced
-    funding: INTERFACED, Horizon Europe
+    cv_projects: [prodem, interfaced]
     from: 2020-12
   - id: babes-bolyai
     status: past
@@ -110,7 +110,7 @@ posts:
     place_en: Cluj-Napoca, Romania
     place_es: Cluj-Napoca, Rumanía
     project: takepart
-    funding: TakePart, NextGenerationEU
+    cv_projects: [takepart]
     from: 2023-08
     to: 2026-07
   - id: manchester
@@ -123,7 +123,7 @@ posts:
     place_en: Manchester, UK
     place_es: Mánchester, Reino Unido
     project: mobilise
-    funding: MOBILISE, Open Research Area
+    cv_projects: [mobilise]
     from: 2019-08
     to: 2020-12
 # `knowsAbout` in the JSON-LD.

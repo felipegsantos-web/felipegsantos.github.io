@@ -1,45 +1,52 @@
-# Funded projects (research page and CV "Grants and projects"). Newest first within each status.
-# `status`: current | past. Shown: name, official title, funder, years, role. No host institution or grant number.
-# Only facts that a source gives are filled in; a missing field is simply not shown.
-# Sources: title, funder, role and dates from Felipe's CV (19 October 2026); descriptions and TakePart years from
-# docs/publications-content.md (section 4).
+# Projects (research page and CV "Grants and projects"). In the order shown: current first, then past, newest first.
+# `status`: current | past. Shown on the research page: name, tag (`tag_*`), years, official title, description.
+# Shown on the CV: name, tag, years and title (no description). No roles, host institutions, grant numbers or outputs.
+# The funder appears only in the tag, never in the description. Official titles keep their original spelling.
 projects:
 - id: interfaced
   name: INTERFACED
-  title: "Interfaces for Democratic Participation: Deliberation, Mobilization, and Contestation Since the Onset of the Covid-19 Pandemic"
-  funder: Horizon Europe
   status: current
+  years: 2025-2028
+  tag_en: Funded by Horizon Europe
+  tag_es: Financiado por Horizon Europe
+  title: "Interfaces for Democratic Participation: Deliberation, Mobilization, and Contestation Since the Onset of the Covid-19 Pandemic"
   url: https://www.interfaced.eu/
-  description_en: "INTERFACED (Interfaces for Democratic Participation: Deliberation, Mobilization, and Contestation Since the Onset of the Covid-19 Pandemic) studies how people have taken part in politics since the pandemic, a period of declining trust in democracy and science and growing social divisions. It examines how citizens interact with political institutions and whether these channels allow real participation in decision-making, using surveys, experiments and fieldwork in eight European countries and Tunisia. Funded by Horizon Europe."
-  description_es: "INTERFACED (Interfaces for Democratic Participation: Deliberation, Mobilization, and Contestation Since the Onset of the Covid-19 Pandemic) estudia cómo ha participado la ciudadanía en política desde la pandemia, un periodo de pérdida de confianza en la democracia y la ciencia y de divisiones sociales crecientes. Analiza cómo se relaciona la ciudadanía con las instituciones políticas y si esos cauces permiten una participación real en la toma de decisiones, mediante encuestas, experimentos y trabajo de campo en ocho países europeos y Túnez. Financiado por Horizon Europe."
+  description_en: "INTERFACED studies how people have taken part in politics since the Covid-19 pandemic, a period of declining trust in democracy and science and of growing social divisions. It examines how citizens interact with political institutions and whether these channels give them a real say in decision-making. The project combines surveys, experiments and fieldwork in eight European countries and Tunisia."
+  description_es: "INTERFACED estudia cómo ha participado la ciudadanía en política desde la pandemia de Covid-19, un periodo de pérdida de confianza en la democracia y la ciencia y de divisiones sociales crecientes. Analiza cómo se relaciona la ciudadanía con las instituciones políticas y si esos cauces le dan una voz real en la toma de decisiones. El proyecto combina encuestas, experimentos y trabajo de campo en ocho países europeos y Túnez."
 - id: takepart
   name: TakePart
-  title: "Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation"
-  funder: NextGenerationEU
-  years_en: 2023 to 2026
-  years_es: 2023 a 2026
-  role_en: Work package leader
-  role_es: Responsable de paquete de trabajo
   status: past
+  years: 2023-2026
+  tag_en: Funded by NextGenerationEU
+  tag_es: Financiado por NextGenerationEU
+  title: "Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation"
   url: https://takepart.ro/
-  description_en: "TakePart (Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation) starts from a paradox: traditional civic engagement is declining, while social movements use social media to drive collective action. The project studies how movements turn online interactions into offline activism across Europe. Led by Dan Mercea and funded by the European Union (NextGenerationEU) and the Romanian Government through Romania's National Recovery and Resilience Plan, 2023 to 2026."
-  description_es: "TakePart (Social Learning to Take Part in Social Movements: Understanding the Social Transformation of Civic Participation) parte de una paradoja: el compromiso cívico tradicional disminuye, mientras los movimientos sociales usan las redes sociales para impulsar la acción colectiva. El proyecto estudia cómo los movimientos convierten las interacciones online en activismo presencial en Europa. Dirigido por Dan Mercea y financiado por la Unión Europea (NextGenerationEU) y el Gobierno de Rumanía a través del Plan Nacional de Recuperación y Resiliencia, 2023 a 2026."
+  description_en: "TakePart studies how social movements turn online interactions into offline activism. It examines how people learn through social media to take part in collective action, and which messages lead them from support online to protest in the street. The project combines surveys and survey experiments in the United Kingdom, Germany, Spain, Hungary and Romania."
+  description_es: "TakePart estudia cómo los movimientos sociales convierten las interacciones online en activismo presencial. Analiza cómo las personas aprenden a través de las redes sociales a participar en la acción colectiva, y qué mensajes las llevan del apoyo online a la protesta en la calle. El proyecto combina encuestas y experimentos de encuesta en el Reino Unido, Alemania, España, Hungría y Rumanía."
 - id: readjust
   name: READJUST Climate
-  title: "READJUST Climate: Reasons, Emotions, and Attitudes Towards Climate Change, Mitigation and Justice"
-  funder: European Climate Foundation
-  years_en: June 2023 to December 2024
-  years_es: junio de 2023 a diciembre de 2024
-  role: Co-PI
   status: past
+  years: 2023-2024
+  tag_en: Funded by the European Climate Foundation
+  tag_es: Financiado por la European Climate Foundation
+  title: "Reasons, Emotions and Attitudes Towards Climate Change, Mitigation and Justice"
+  description_en: "READJUST Climate studies what mobilizes and demobilizes different social groups around climate change in Central and Eastern Europe. It examines the attitudes, values, lifestyles and political engagement of people who support, doubt or reject climate policies, and tests which ways of framing the climate crisis build support for climate action. The project combines nationally representative surveys, survey experiments and social media analysis."
+  description_es: "READJUST Climate estudia qué moviliza y desmoviliza a distintos grupos sociales en torno al cambio climático en Europa Central y del Este. Analiza las actitudes, los valores, los estilos de vida y la participación política de quienes apoyan, dudan de o rechazan las políticas climáticas, y pone a prueba qué formas de presentar la crisis climática aumentan el apoyo a la acción climática. El proyecto combina encuestas representativas, experimentos de encuesta y análisis de redes sociales."
 - id: prodem
   name: ProDem
-  title: "Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe"
-  funder: Volkswagen Foundation
   status: past
-  description_en: "ProDem (Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe), funded by the Volkswagen Foundation. Its outputs include the edited book <em>Protest and Democracy</em> (Routledge, 2025) and a six-country survey of 10,347 people (2022)."
-  description_es: "ProDem (Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe), financiado por la Volkswagen Foundation. Entre sus resultados están el libro colectivo <em>Protest and Democracy</em> (Routledge, 2025) y una encuesta en seis países a 10.347 personas (2022)."
+  years: 2020-2023
+  tag_en: Funded by the Volkswagen Foundation
+  tag_es: Financiado por la Volkswagen Foundation
+  title: "Protest and Democracy: How Movement Parties, Social Movements and Active Citizens are Reshaping Europe"
+  description_en: "ProDem studies how movement parties, social movements and active citizens are reshaping democracy in Europe. It examines who takes part in protest, how parties relate to protest and to their voters, and what these interactions mean for the quality of democracy. The project combines surveys, survey experiments, social media data and protest event analysis in Denmark, Germany, Hungary, Italy, Romania and the United Kingdom."
+  description_es: "ProDem estudia cómo los partidos-movimiento, los movimientos sociales y la ciudadanía activa están transformando la democracia en Europa. Analiza quién participa en las protestas, cómo se relacionan los partidos con la protesta y con sus votantes, y qué suponen estas interacciones para la calidad democrática. El proyecto combina encuestas, experimentos de encuesta, datos de redes sociales y análisis de eventos de protesta en Dinamarca, Alemania, Hungría, Italia, Rumanía y el Reino Unido."
 - id: mobilise
   name: MOBILISE
-  funder: Open Research Area (ORA) scheme
   status: past
+  years: 2019-2020
+  tag_en: Funded by the Open Research Area (ORA) scheme
+  tag_es: Financiado por el Open Research Area (ORA) scheme
+  title: "Determinants of \"Mobilisation\" at Home & Abroad: Analysing the Micro-Foundations of Out-Migration & Mass Protest"
+  description_en: "MOBILISE studies why, when the state fails to meet people's economic or political needs, some people protest while others emigrate. It examines how these two choices relate to each other in Ukraine, Poland, Morocco, Argentina and Belarus, and follows migrants from these countries to Germany, the United Kingdom and Spain. The project combines panel surveys, migrant and protest surveys, focus groups, life-history interviews and social media analysis."
+  description_es: "MOBILISE estudia por qué, cuando el Estado no responde a las necesidades económicas o políticas de la ciudadanía, unas personas protestan y otras emigran. Analiza cómo se relacionan ambas decisiones en Ucrania, Polonia, Marruecos, Argentina y Bielorrusia, y sigue a sus migrantes en Alemania, el Reino Unido y España. El proyecto combina encuestas de panel, encuestas a migrantes y a manifestantes, grupos focales, entrevistas de historia de vida y análisis de redes sociales."

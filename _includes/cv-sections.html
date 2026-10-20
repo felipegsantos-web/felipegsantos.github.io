@@ -1,6 +1,6 @@
 {%- include vars.html -%}
 {%- assign k_title = "title_" | append: L -%}{%- assign k_years = "years_" | append: L -%}{%- assign k_role = "role_" | append: L -%}{%- assign k_org = "org_" | append: L -%}{%- assign k_detail = "detail_" | append: L -%}{%- assign k_bullets = "bullets_" | append: L -%}
-{%- assign k_place = "place_" | append: L -%}
+{%- assign k_place = "place_" | append: L -%}{%- assign k_tag = "tag_" | append: L -%}
 {%- for sec in site.data.cv %}
         <section id="{{ sec.id }}" class="cv-section">
           <h2 class="cv-section__heading">{{ sec[k_title] }}</h2>
@@ -8,12 +8,11 @@
             {%- if sec.source == "posts" %}
             {%- assign posts = profile.posts | where: "status", sec.status %}
             {%- for e in posts %}
-            <div class="cv-entry"><div class="cv-entry__years">{% include date-range.html from=e.from to=e.to %}</div><div class="cv-entry__body"><p class="cv-entry__role">{{ e[k_role] }}</p><p class="cv-entry__org">{{ e.department_en }}, {{ e.institution_en | default: e.institution }}, {{ e[k_place] }}</p><p class="cv-entry__detail">{{ e.funding }}</p></div></div>
+            <div class="cv-entry"><div class="cv-entry__years">{% include date-range.html from=e.from to=e.to %}</div><div class="cv-entry__body"><p class="cv-entry__role">{{ e[k_role] }}</p><p class="cv-entry__org">{{ e.department_en }}, {{ e.institution_en | default: e.institution }}, {{ e[k_place] }}{% if e.cv_projects %} ({% for id in e.cv_projects %}{% assign cp = site.data.projects.projects | where: "id", id | first %}{{ cp.name }}{% unless forloop.last %}; {% endunless %}{% endfor %}){% endif %}</p></div></div>
             {%- endfor %}
             {%- elsif sec.source == "projects" %}
             {%- for p in site.data.projects.projects %}
-            {%- assign funder = p.funder %}{% assign role = p[k_role] | default: p.role %}{% assign years = p[k_years] | default: p.years %}
-            <div class="cv-entry"><div class="cv-entry__years">{{ years }}</div><div class="cv-entry__body"><p class="cv-entry__role">{{ p.name }}{% if role %} ({{ role }}){% endif %}</p>{% if p.title %}<p class="cv-entry__org">{{ p.title }}</p>{% endif %}{% if funder %}<p class="cv-entry__detail">{{ I.project_funder[L] }}: {{ funder }}</p>{% endif %}</div></div>
+            <div class="cv-entry"><div class="cv-entry__years">{{ p.years }}</div><div class="cv-entry__body"><p class="cv-entry__role">{{ p.name }} <span class="project-card__funder">{{ p[k_tag] }}</span></p><p class="cv-entry__org">{{ p.title | escape }}</p></div></div>
             {%- endfor %}
             {%- else %}
             {%- for e in sec.entries %}
