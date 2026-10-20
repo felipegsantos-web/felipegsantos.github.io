@@ -12,7 +12,7 @@ layout: null
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ profile.name }}</title>
-<meta name="description" content="{{ profile.description_en }}">
+<meta name="description" content="{{ profile.meta_description_en }}">
 <meta name="author" content="{{ profile.name }}">
 <link rel="canonical" href="{{ site.url }}/en/">
 <link rel="alternate" hreflang="en" href="{{ site.url }}/en/">
@@ -22,7 +22,7 @@ layout: null
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2" sizes="32x32">
 <link rel="preload" href="assets/fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/playfair-display-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/tokens.css?v=20261022">
+<link rel="stylesheet" href="assets/css/tokens.css?v=20261023">
 <style>
   /* Dark values of assets/css/tokens.css, applied by the system setting (this page has no theme toggle) */
   @media (prefers-color-scheme:dark){:root{
@@ -53,13 +53,14 @@ layout: null
   .profiles a{color:var(--text-secondary);text-decoration:none;border-bottom:1px dotted var(--text-secondary)}
   .profiles a:hover{color:var(--accent)}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", {% capture person_node %}{% include jsonld-person-node.html lang="en" %}{% endcapture %}{{ person_node | strip | remove_first: "{" }}</script>
 </head>
 <body>
 <main class="root-card">
   <h1>{{ profile.name }}</h1>
   <p class="role">{{ profile.position_en }} · {{ profile.posts[0].institution }}</p>
-  <p class="bio">{{ profile.description_en }}</p>
-  <p class="bio" lang="es">{{ profile.description_es }}</p>
+  <p class="bio">{{ profile.bio_en }}</p>
+  <p class="bio" lang="es">{{ profile.bio_es }}</p>
   <nav aria-label="Language selection">
     <div class="lang-links">
       <a href="/en/" class="lang-link lang-link--en" hreflang="en">
