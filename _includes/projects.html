@@ -8,7 +8,7 @@
       <div class="project-card__header">
         <h3 class="project-card__name">{{ p.name }}</h3>
         <span class="project-card__funder">{{ p[k_tag] }}</span>
-        <span class="project-card__years">{{ p.years }}</span>
+        <span class="project-card__years">{% include years.html value=p.years %}</span>
       </div>
       <p class="project-card__title">{{ p.title | escape }}</p>
       <p class="project-card__desc">{{ p[k_desc] }}</p>

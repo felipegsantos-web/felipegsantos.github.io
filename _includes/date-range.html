@@ -1,13 +1,9 @@
-{%- comment -%}"December 2020 to present". `from` and `to` are YYYY-MM; an empty `to` means present.{%- endcomment -%}
+{%- comment -%}"2020 to present", or just "2020" when it starts and ends in the same year. `from` and `to` are YYYY-MM (only the year is shown); an empty `to` means present.{%- endcomment -%}
 {%- include vars.html -%}
-{%- assign f = include.from | split: "-" -%}
-{%- assign fm = f[1] | plus: 0 | minus: 1 -%}
-{%- capture start %}{{ I.date_month_year[L] | replace: "%month%", I.months[L][fm] | replace: "%year%", f[0] }}{% endcapture -%}
+{%- assign start = include.from | split: "-" | first -%}
 {%- if include.to and include.to != "" -%}
-  {%- assign t = include.to | split: "-" -%}
-  {%- assign tm = t[1] | plus: 0 | minus: 1 -%}
-  {%- capture finish %}{{ I.date_month_year[L] | replace: "%month%", I.months[L][tm] | replace: "%year%", t[0] }}{% endcapture -%}
+  {%- assign finish = include.to | split: "-" | first -%}
 {%- else -%}
   {%- assign finish = I.date_present[L] -%}
 {%- endif -%}
-{{- start }} {{ I.date_to[L] }} {{ finish -}}
+{%- if start == finish -%}{{- start -}}{%- else -%}{{- start }} {{ I.date_to[L] }} {{ finish -}}{%- endif -%}

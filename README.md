@@ -13,7 +13,8 @@ _data/          content: publications, themes, media, news, projects, cv, book, 
 _layouts/       the page layout
 _includes/      head, header, footer, cards, lists, icons
 en/  es/        one page per URL (front matter + a few includes)
-assets/         css, js, favicons
+assets/         css, js, fonts (self-hosted WOFF2), favicons
+404.html        the not-found page (bilingual, noindex)
 images/ documents/   photo and CV PDF
 index.html      language router at / (plain links to /en/ and /es/ for readers without JavaScript)
 sitemap.xml  llms.txt   generated from the pages and _data/ (lastmod from git, see _plugins/last_modified.rb)
@@ -101,6 +102,8 @@ The repository's Pages source must be set to **GitHub Actions** (Settings → Pa
 3. `python3 scripts/check_hreflang.py`: every English page has a Spanish pair and the `hreflang` tags are reciprocal; `x-default` is the English version of the same page.
 4. `python3 scripts/check_jsonld.py _site`: every JSON-LD block parses, publication blocks have the authors of `_data/publications.yml` in order, and the Person is defined once on the homepages and CV pages only.
 5. `python3 scripts/check_theme_answers.py`: word counts, sentence counts and links of `_data/theme-answers.yml`.
+6. `python3 scripts/check_contrast.py`: every text/background pair of the stylesheets, in both themes (4.5:1 for text, 3:1 for icons and focus rings).
+7. `scripts/a11y/axe.mjs` (axe with Playwright and Chromium): every page of `_site`, in both themes at 1280 and 375 px, plus the open mobile menu and the publications list view. It fails on any violation of the axe tags `wcag2a`, `wcag2aa`, `wcag21a`, `wcag21aa` and `wcag22aa`, on a page without exactly one `h1` or with a skipped heading level, and on any focusable element without a visible, unclipped focus indicator. Locally: `cd scripts/a11y && npm ci && npx playwright install chromium && node axe.mjs ../../_site`.
 
 `scripts/paridad.py OLD_DIR _site` compares two builds page by page (text, metadata, JSON-LD, links and images). It was used to check the migration to Jekyll against the previous static HTML.
 
@@ -122,5 +125,6 @@ There is no contact form: the contact page shows the email address only.
 
 - Light/dark theme: system preference or the header toggle; the choice is stored in `localStorage` (`site-theme`).
 - Language: the `site_lang` cookie (365 days) set by the language toggle; the root router uses it.
-- Fonts: Playfair Display (headings) and Inter (body), from Google Fonts.
+- Fonts: Playfair Display (headings: 600, 700, 600 italic) and Inter (body: 400, 500, 600), self-hosted as Latin-subset WOFF2 in `assets/fonts/` (SIL OFL 1.1, licenses alongside), `font-display: swap`, the two fonts visible on load preloaded. Nothing is requested from Google. `python3 scripts/build_fonts.py SOURCE_DIR` rebuilds the files from the official variable fonts (see the script for the sources and the character ranges; it needs `pip install fonttools brotli`).
+- Accessibility target: WCAG 2.2 AA. Colour pairs are in `assets/css/tokens.css`; after changing a colour run `python3 scripts/check_contrast.py`.
 - Colours are defined in `assets/css/tokens.css`.

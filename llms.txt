@@ -9,8 +9,6 @@ layout: null
 
 > {{ profile.description_en }}
 
-Also published as: {{ profile.name_variants | join: ", " }}.
-
 ## Main pages (English)
 
 - [Home]({{ site.url }}/en/): Introduction, research themes and recent news

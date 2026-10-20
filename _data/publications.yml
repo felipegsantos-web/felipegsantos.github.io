@@ -1,10 +1,12 @@
 # Publications. One entry per work; the EN and ES lists and the theme pages are generated from this file.
 # Strings may contain inline HTML (<em>, &amp;) exactly as shown on the site.
 # `oa_url` is a link to a free copy (never ResearchGate); `oa_version` is `published` or `accepted`. Order of preference: the publisher's open version, City Research Online, the CEU repository.
+# `lang` is the language of the work (`en` or `es`): titles and venues in the other language than the page get a `lang` attribute.
 # `pdf` is a copy of the work served from this site (documents/publications/<id>.pdf), `pdf_version` is `published` or `accepted`. A file is published only if it carries an open license notice (CC BY or similar) or is listed in _inputs/pdfs/allowed.txt (the owner's allow-list; every work now has a PDF).
 # Order: books, articles (newest first by issue year), chapters. `year` is the year of the issue or volume; `online` is the online-first date when it differs.
 - id: 2024-social-movements-that-care
   type: book
+  lang: en
   status: published
   year: 2024
   authors:
@@ -32,6 +34,7 @@
   why_es: Propone una teoría de la movilización basada en el cuidado, que explica cómo los movimientos reclutan y empoderan a personas cuyos agravios dificultan la acción colectiva, y cómo se forman coaliciones entre activistas afectados y no afectados.
 - id: 2022-pah-10-anos
   type: edited_volume
+  lang: es
   status: published
   year: 2021
   authors:
@@ -70,6 +73,7 @@
   why_es: Reúne miradas académicas y activistas sobre el mayor movimiento por la vivienda de España, varias de ellas escritas por personas que han formado parte de él.
 - id: 2026-foot-in-parliament-foot-on-the-streets
   type: article
+  lang: en
   status: published
   year: 2026
   online: '2026'
@@ -98,6 +102,7 @@
   oa_version: accepted
 - id: 2025-united-for-hungary
   type: article
+  lang: en
   status: published
   year: 2026
   online: July 2025
@@ -126,6 +131,7 @@
   oa_version: published
 - id: 2024-policy-over-protest
   type: article
+  lang: en
   status: published
   year: 2025
   online: '2024'
@@ -155,6 +161,7 @@
   oa_version: published
 - id: 2025-protest-relational-field
   type: article
+  lang: en
   status: published
   year: 2025
   authors:
@@ -183,6 +190,7 @@
   oa_version: published
 - id: 2024-protest-styles
   type: article
+  lang: en
   status: published
   year: 2025
   authors:
@@ -212,6 +220,7 @@
   oa_version: published
 - id: 2024-actual-potential-non-participants
   type: article
+  lang: en
   status: published
   year: 2025
   authors:
@@ -240,6 +249,7 @@
   oa_version: published
 - id: 2024-vox-top-down-cso
   type: profile
+  lang: en
   status: published
   year: 2025
   online: May 2024
@@ -268,6 +278,7 @@
   oa_version: published
 - id: 2024-young-democrats-protest-voters
   type: article
+  lang: en
   status: published
   year: 2025
   online: January 2024
@@ -296,6 +307,7 @@
   oa_version: published
 - id: 2024-protesting-the-lockdown
   type: article
+  lang: en
   status: published
   year: 2024
   authors:
@@ -325,6 +337,7 @@
   oa_version: published
 - id: 2024-how-activists-build-power
   type: article
+  lang: en
   status: published
   year: 2024
   authors:
@@ -352,6 +365,7 @@
   oa_version: published
 - id: 2023-campo-movimientos-sociales-espana
   type: article
+  lang: es
   status: published
   year: 2023
   authors:
@@ -381,6 +395,7 @@
   oa_version: published
 - id: 2022-big-data-news-repositories
   type: article
+  lang: en
   status: published
   year: 2022
   authors:
@@ -411,6 +426,7 @@
   oa_version: published
 - id: 2022-anti-gender-european-parliament
   type: article
+  lang: en
   status: published
   year: 2022
   authors:
@@ -436,6 +452,7 @@
   oa_version: published
 - id: 2021-far-right-schools
   type: article
+  lang: en
   status: published
   year: 2021
   authors:
@@ -464,6 +481,7 @@
   oa_version: published
 - id: 2020-politics-of-care
   type: article
+  lang: en
   status: published
   year: 2020
   authors:
@@ -483,11 +501,12 @@
   summary_en: Why do people who share a grievance not always act together, and why do others join causes that do not benefit them? Developing a perspective based on the ethics of care and applying it to the PAH, the article argues three things. Aggrieved people may not mobilize when their emotional, identity and participatory needs go unmet. Empathy moves unaffected people to start mobilizing. Care work builds solidarity among those affected during mobilization.
   summary_es: ¿Por qué las personas que comparten un agravio no siempre actúan juntas, y por qué otras se suman a causas que no les benefician? Desde la ética del cuidado y a partir del caso de la PAH, el artículo sostiene tres cosas. Las personas afectadas pueden no movilizarse cuando sus necesidades emocionales, identitarias y participativas no están cubiertas. La empatía lleva a personas no afectadas a iniciar la movilización. El trabajo de cuidado construye solidaridad entre las afectadas durante la movilización.
   why_en: It brings care into the study of political solidarity in social movements, and lays the basis for the argument later developed in <em>Social Movements that Care</em>.
-  why_es: Incorpora el cuidado al estudio de la solidaridad política en los movimientos sociales y sienta las bases del argumento que desarrolla después <em>Social Movements that Care</em>.
+  why_es: Incorpora el cuidado al estudio de la solidaridad política en los movimientos sociales y sienta las bases del argumento que desarrolla después <em lang="en">Social Movements that Care</em>.
   oa_url: https://openaccess.city.ac.uk/id/eprint/29169/1/Social%20Movements%20and%20the%20Politics%20of%20Care%20-%20FGS.pdf
   oa_version: accepted
 - id: 2024-methodological-pluralism
   type: chapter
+  lang: en
   status: published
   year: 2025
   authors:
@@ -495,7 +514,7 @@
   - Claudius Wagemann
   title: Methodological pluralism in the study of political participation
   venue: 'In C. Wagemann, T. Burean, D. Mercea, L. Mosca and C. Neumayer (eds.), <em>Protest and Democracy: How Movement Parties, Social Movements and Active Citizens Are Reshaping Europe</em>. Routledge, pp. 27-43.'
-  venue_es: 'En C. Wagemann, T. Burean, D. Mercea, L. Mosca and C. Neumayer (eds.), <em>Protest and Democracy: How Movement Parties, Social Movements and Active Citizens Are Reshaping Europe</em>. Routledge, pp. 27-43.'
+  venue_es: 'En C. Wagemann, T. Burean, D. Mercea, L. Mosca and C. Neumayer (eds.), <em lang="en">Protest and Democracy: How Movement Parties, Social Movements and Active Citizens Are Reshaping Europe</em>. Routledge, pp. 27-43.'
   publisher: Routledge
   book_title: Protest and Democracy
   pages: 27-43
@@ -514,6 +533,7 @@
   why_es: Defiende elegir y combinar métodos según lo que requiere cada pregunta de investigación, en lugar de tratar los métodos mixtos como opción por defecto.
 - id: 2025-young-democrats-chapter
   type: chapter
+  lang: en
   status: published
   year: 2025
   authors:
@@ -521,7 +541,7 @@
   - Dan Mercea
   title: 'Young democrats, critical citizens and protest voters: studying the profiles of movement party supporters'
   venue: In C. Wagemann et al. (eds.), <em>Protest and Democracy</em>. Routledge, pp. 44-65.
-  venue_es: En C. Wagemann et al. (eds.), <em>Protest and Democracy</em>. Routledge, pp. 44-65.
+  venue_es: En C. Wagemann et al. (eds.), <em lang="en">Protest and Democracy</em>. Routledge, pp. 44-65.
   publisher: Routledge
   book_title: Protest and Democracy
   pages: 44-65
@@ -538,6 +558,7 @@
   - voters
 - id: 2025-movement-parties-democratic-quality
   type: chapter
+  lang: en
   status: published
   year: 2025
   authors:
@@ -548,7 +569,7 @@
   - Felipe G. Santos
   title: On movement parties and democratic quality
   venue: In C. Wagemann et al. (eds.), <em>Protest and Democracy</em>. Routledge, pp. 161-167.
-  venue_es: En C. Wagemann et al. (eds.), <em>Protest and Democracy</em>. Routledge, pp. 161-167.
+  venue_es: En C. Wagemann et al. (eds.), <em lang="en">Protest and Democracy</em>. Routledge, pp. 161-167.
   publisher: Routledge
   book_title: Protest and Democracy
   pages: 161-167
@@ -564,16 +585,17 @@
   - parties
   - democracy
   summary_en: The concluding chapter of <em>Protest and Democracy</em>. It brings together the book's findings on how citizens, social movements and movement parties interact in six European countries. It argues that democratic quality cannot be understood without considering participation outside institutions, and sets out recommendations for policymakers, including on how established parties and the media deal with challenger parties online.
-  summary_es: El capítulo de conclusiones de <em>Protest and Democracy</em>. Reúne los hallazgos del libro sobre la interacción entre ciudadanía, movimientos sociales y partidos-movimiento en seis países europeos. Sostiene que la calidad democrática no puede entenderse sin la participación fuera de las instituciones, y formula recomendaciones para responsables políticos, entre ellas sobre cómo los partidos establecidos y los medios tratan a los partidos desafiantes en el entorno digital.
+  summary_es: El capítulo de conclusiones de <em lang="en">Protest and Democracy</em>. Reúne los hallazgos del libro sobre la interacción entre ciudadanía, movimientos sociales y partidos-movimiento en seis países europeos. Sostiene que la calidad democrática no puede entenderse sin la participación fuera de las instituciones, y formula recomendaciones para responsables políticos, entre ellas sobre cómo los partidos establecidos y los medios tratan a los partidos desafiantes en el entorno digital.
 - id: 2022-transversalidad-pah
   type: chapter
+  lang: es
   status: published
   year: 2022
   authors:
   - Felipe González Santos
   - Montserrat Emperador Badimon
   title: 'La transversalidad puesta en práctica: cuidados e inteligencia colectiva en la PAH'
-  venue: 'In A. Razquin and G. Betancor (coords.), <em>Diez años construyendo ciudadanía en movimiento(s): El 15M y otras luchas hermanas</em>. Edicions Bellaterra, pp. 141-150.'
+  venue: 'In A. Razquin and G. Betancor (coords.), <em lang="es">Diez años construyendo ciudadanía en movimiento(s): El 15M y otras luchas hermanas</em>. Edicions Bellaterra, pp. 141-150.'
   venue_es: 'En A. Razquin y G. Betancor (coords.), <em>Diez años construyendo ciudadanía en movimiento(s): El 15M y otras luchas hermanas</em>. Edicions Bellaterra, pp. 141-150.'
   publisher: Edicions Bellaterra
   book_title: 'Diez años construyendo ciudadanía en movimiento(s): El 15M y otras luchas hermanas'
@@ -593,19 +615,20 @@
   why_es: Muestra cómo un movimiento puede abrir la participación a la ciudadanía ordinaria en lugar de depender de activistas con experiencia.
 - id: 2022-care-and-social-movements
   type: encyclopedia_entry
+  lang: en
   status: published
   year: 2022
   authors:
   - Felipe G. Santos
   title: Care and Social Movements
   venue: In D. A. Snow, D. della Porta, B. Klandermans and D. McAdam (eds.), <em>The Wiley-Blackwell Encyclopedia of Social and Political Movements</em>, 2nd ed. Wiley.
-  venue_es: En D. A. Snow, D. della Porta, B. Klandermans y D. McAdam (eds.), <em>The Wiley-Blackwell Encyclopedia of Social and Political Movements</em>, 2.ª ed. Wiley.
+  venue_es: En D. A. Snow, D. della Porta, B. Klandermans y D. McAdam (eds.), <em lang="en">The Wiley-Blackwell Encyclopedia of Social and Political Movements</em>, 2.ª ed. Wiley.
   publisher: Wiley
   book_title: The Wiley-Blackwell Encyclopedia of Social and Political Movements, 2nd ed.
   doi: 10.1002/9780470674871.wbespm533
   url: https://doi.org/10.1002/9780470674871.wbespm533
   pdf: /documents/publications/2022-care-and-social-movements.pdf
-  pdf_version: accepted
+  pdf_version: published
   themes:
   - care
   keywords:
@@ -617,12 +640,13 @@
   oa_version: accepted
 - id: 2022-cuidados-primer-desahucio
   type: chapter
+  lang: es
   status: published
   year: 2021
   authors:
   - Felipe González Santos
   title: 'Cuidados y derecho a la vivienda: Orígenes de la Plataforma de Afectadas por la Hipoteca hasta su primer STOP Desahucios'
-  venue: In G. D'Adda et al. (coords.), <em>La Plataforma de Afectadas por la Hipoteca. Una década de lucha por la vivienda digna 2009-2019</em>. Edicions Bellaterra, pp. 115-133.
+  venue: In G. D'Adda et al. (coords.), <em lang="es">La Plataforma de Afectadas por la Hipoteca. Una década de lucha por la vivienda digna 2009-2019</em>. Edicions Bellaterra, pp. 115-133.
   venue_es: En G. D'Adda et al. (coords.), <em>La Plataforma de Afectadas por la Hipoteca. Una década de lucha por la vivienda digna 2009-2019</em>. Edicions Bellaterra, pp. 115-133.
   publisher: Edicions Bellaterra
   book_title: La Plataforma de Afectadas por la Hipoteca. Una década de lucha por la vivienda digna 2009-2019

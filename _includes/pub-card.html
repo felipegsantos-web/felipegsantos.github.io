@@ -7,6 +7,9 @@
 {%- assign venue = pub.venue -%}
 {%- if L == "es" and pub.venue_es %}{% assign venue = pub.venue_es %}{% endif -%}
 {%- assign badge = I.pub_type_name[pub.type][L] | default: I.pub_type_label[group][L] -%}
+{%- comment -%}`lang` marks the title and the venue where they are not in the language of the page. The venue is in the page language whenever the entry has a `venue_es`; otherwise it is a name (journal, publisher) in the language of the work.{%- endcomment -%}
+{%- assign title_lang = "" -%}{%- if pub.lang != L %}{% capture title_lang %} lang="{{ pub.lang }}"{% endcapture %}{% endif -%}
+{%- assign venue_lang = "" -%}{%- unless pub.venue_es %}{%- if pub.lang != L %}{% capture venue_lang %} lang="{{ pub.lang }}"{% endcapture %}{% endif %}{% endunless -%}
 {%- assign edited = false -%}
 {%- if pub.type == "edited_volume" %}{% assign edited = true %}{% endif %}
 <article class="pub-entry" id="pub-{{ pub.id }}" data-pub="{{ group }}{% for k in pub.keywords %} {{ k }}{% endfor %}" data-themes="{{ pub.themes | join: ' ' }}">
@@ -14,13 +17,13 @@
         <span class="type-badge type-badge--{{ group }}">{{ badge }}</span>
         <span class="pub-entry__year">{{ pub.year }}</span>
       </div>
-      <h3 class="pub-entry__title">
+      <h3 class="pub-entry__title"{{ title_lang }}>
         {% if pub.url != "" %}<a href="{{ pub.url }}" target="_blank" rel="noopener" data-goatcounter-click="publication-{{ pub.id }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
       </h3>
       <p class="pub-entry__authors">{% include authors.html names=pub.authors edited=edited %}</p>
-      <p class="pub-entry__venue">{% if pub.type == "article" or pub.type == "profile" %}<em>{{ venue }}</em>{% else %}{{ venue }}{% endif %}</p>
+      <p class="pub-entry__venue"{{ venue_lang }}>{% if pub.type == "article" or pub.type == "profile" %}<em>{{ venue }}</em>{% else %}{{ venue }}{% endif %}</p>
       {%- if pub.doi or pub.oa_url or pub.pdf %}
-      <p class="pub-entry__links">{% if pub.doi %}<span>DOI <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener" class="inline-link">{{ pub.doi }}</a></span>{% endif %}{% if pub.pdf %}<a href="{{ pub.pdf }}" class="pub-entry__download" download data-goatcounter-click="pdf-{{ pub.id }}">{% include icon.html name="download" %} {{ I.pdf_label[pub.pdf_version][L] }}</a>{% elsif pub.oa_url %}<span><a href="{{ pub.oa_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="open-access-{{ pub.id }}">{{ I.open_access_label[L] }}</a>{% if pub.oa_version == "accepted" %} ({{ I.oa_version_note.accepted[L] }}){% endif %}</span>{% endif %}</p>
+      <p class="pub-entry__links">{% if pub.doi %}<span>DOI <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener" class="inline-link">{{ pub.doi }}</a></span>{% endif %}{% if pub.pdf %}<a href="{{ pub.pdf }}" class="pub-entry__download" download data-goatcounter-click="pdf-{{ pub.id }}">{% include icon.html name="download" %} {{ I.pdf_label[pub.pdf_version][L] }}<span class="sr-only"{{ title_lang }}>: {{ pub.title | strip_html }}</span></a>{% elsif pub.oa_url %}<span><a href="{{ pub.oa_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="open-access-{{ pub.id }}">{{ I.open_access_label[L] }}<span class="sr-only"{{ title_lang }}>: {{ pub.title | strip_html }}</span></a>{% if pub.oa_version == "accepted" %} ({{ I.oa_version_note.accepted[L] }}){% endif %}</span>{% endif %}</p>
       {%- endif %}
       {%- if pub[k_summary] %}
       <p class="pub-entry__abstract">{{ pub[k_summary] }}</p>
@@ -31,7 +34,7 @@
       {%- if pub.version_of %}
       {%- assign src = site.data.publications | where: "id", pub.version_of | first %}
       {%- assign src_theme = src.themes | first %}
-      <p class="pub-entry__abstract">{{ I.version_of.before[L] }}<a href="{{ I.theme_path[L] }}{{ src_theme }}/#pub-{{ src.id }}" class="inline-link">{{ I.version_of.link[L] }} <em>{{ src.venue }}</em> ({{ src.year }})</a>.</p>
+      <p class="pub-entry__abstract">{{ I.version_of.before[L] }}<a href="{{ I.theme_path[L] }}{{ src_theme }}/#pub-{{ src.id }}" class="inline-link">{{ I.version_of.link[L] }} <em{% if src.lang != L %} lang="{{ src.lang }}"{% endif %}>{{ src.venue }}</em> ({{ src.year }})</a>.</p>
       {%- endif %}
       {%- if pub[k_why] and pub[k_why] != "" %}
       <p class="pub-entry__why"><span class="pub-entry__why-label">{{ I.why_it_matters[L] }}</span> {{ pub[k_why] }}</p>

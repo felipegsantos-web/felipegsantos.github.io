@@ -12,7 +12,7 @@
             {%- endfor %}
             {%- elsif sec.source == "projects" %}
             {%- for p in site.data.projects.projects %}
-            <div class="cv-entry"><div class="cv-entry__years">{{ p.years }}</div><div class="cv-entry__body"><p class="cv-entry__role">{{ p.name }} <span class="project-card__funder">{{ p[k_tag] }}</span></p><p class="cv-entry__org">{{ p.title | escape }}</p></div></div>
+            <div class="cv-entry"><div class="cv-entry__years">{% include years.html value=p.years %}</div><div class="cv-entry__body"><p class="cv-entry__role">{{ p.name }} <span class="project-card__funder">{{ p[k_tag] }}</span></p><p class="cv-entry__org">{{ p.title | escape }}</p></div></div>
             {%- endfor %}
             {%- else %}
             {%- for e in sec.entries %}

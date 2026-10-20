@@ -2,7 +2,6 @@
 # This file is the single source for the JSON-LD, llms.txt, the footer and the meta tags.
 name: Felipe G. Santos
 # Other spellings of the name (schema.org alternateName). They are also highlighted in publication author lists, like `name`.
-# The first one is the form shown in "Also published as ...".
 name_variants:
   - Felipe González Santos
   - F. Gonzalez Santos

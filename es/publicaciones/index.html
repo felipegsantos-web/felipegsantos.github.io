@@ -17,8 +17,8 @@ jsonld_description: "Libros, artículos y capítulos de Felipe G. Santos."
 
     <!-- View toggle: by-theme vs flat list -->
     <div class="pub-view-toggle" role="group" aria-label="{{ I.view_mode_label[L] }}">
-      <button class="view-btn active" data-view="theme">{{ I.view_themes[L] }}</button>
-      <button class="view-btn" data-view="list">{{ I.view_list[L] }}</button>
+      <button class="view-btn active" data-view="theme" aria-pressed="true">{{ I.view_themes[L] }}</button>
+      <button class="view-btn" data-view="list" aria-pressed="false">{{ I.view_list[L] }}</button>
     </div>
 
     <!-- THEME OVERVIEW VIEW -->
@@ -33,6 +33,7 @@ jsonld_description: "Libros, artículos y capítulos de Felipe G. Santos."
 
     <!-- FLAT LIST VIEW (hidden by default) -->
     <div id="view-list" hidden>
+      <h2 class="sr-only">{{ I.view_list[L] }}</h2>
       {% include pub-filters.html %}
       <div class="pub-list" id="pub-list">
         {% include pub-list.html %}

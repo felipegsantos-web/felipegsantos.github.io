@@ -1,3 +1,7 @@
-{%- comment -%}Sets `rel`: the "../" prefix that reaches the site root from this page (pages link to assets relatively).{%- endcomment -%}
-{%- assign rel_depth = page.url | split: "/" | size | minus: 1 -%}
-{%- capture rel %}{% for i in (1..rel_depth) %}../{% endfor %}{% endcapture -%}
+{%- comment -%}Sets `rel`: the "../" prefix that reaches the site root from this page (pages link to assets relatively). The 404 page is served from any path, so it links to the assets from the root.{%- endcomment -%}
+{%- if page.bilingual -%}
+  {%- assign rel = "/" -%}
+{%- else -%}
+  {%- assign rel_depth = page.url | split: "/" | size | minus: 1 -%}
+  {%- capture rel %}{% for i in (1..rel_depth) %}../{% endfor %}{% endcapture -%}
+{%- endif -%}

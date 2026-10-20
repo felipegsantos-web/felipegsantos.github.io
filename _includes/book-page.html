@@ -7,7 +7,7 @@
   <div class="container">
     <div class="page-header">
       <a href="{{ pubs_nav.url[L] }}" class="page-back-link">{{ I.back_to_publications[L] }}</a>
-      <h1 class="page-title">{{ pub.title | split: ": " | first }}</h1>
+      <h1 class="page-title"{% if pub.lang != L %} lang="{{ pub.lang }}"{% endif %}>{{ pub.title | split: ": " | first }}</h1>
       <p class="page-intro">{{ b.subtitle }}</p>
     </div>
     <div class="book-layout">
@@ -53,7 +53,7 @@
           <ul class="book-related">
             {%- for id in b.related %}
             {%- assign rp = site.data.publications | where: "id", id | first %}
-            <li><a href="{{ I.theme_path[L] }}{{ rp.themes | first }}/#pub-{{ rp.id }}" class="inline-link">{{ rp.title }}</a> ({{ rp.year }})</li>
+            <li><a href="{{ I.theme_path[L] }}{{ rp.themes | first }}/#pub-{{ rp.id }}" class="inline-link"{% if rp.lang != L %} lang="{{ rp.lang }}"{% endif %}>{{ rp.title }}</a> ({{ rp.year }})</li>
             {%- endfor %}
           </ul>
         </section>

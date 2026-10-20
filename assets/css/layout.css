@@ -32,12 +32,13 @@
 /* ── Header controls ────────────────────────────────────────── */
 .header-controls{display:flex;align-items:center;gap:var(--sp3)}
 .lang-toggle{display:flex;align-items:center;gap:2px;
-  border:1px solid var(--border);border-radius:var(--r-full);overflow:hidden}
-.lang-toggle__btn{padding:.3em .75em;background:transparent;color:var(--text-muted);
+  border:1px solid var(--border);border-radius:var(--r-full)}
+.lang-toggle__btn{display:inline-block;border-radius:var(--r-full);padding:.3em .75em;background:transparent;color:var(--text-muted);
   cursor:pointer;border:none;font-size:var(--tx-xs);font-weight:700;
   font-family:var(--font-body);letter-spacing:.05em;text-transform:uppercase;
   text-decoration:none;transition:background var(--ease),color var(--ease)}
 .lang-toggle__btn.active,.lang-toggle__btn:hover{background:var(--teal);color:var(--text-inv)}
+span.lang-toggle__btn{cursor:default}
 .theme-toggle{display:flex;align-items:center;justify-content:center;
   width:32px;height:32px;border-radius:var(--r-full);border:1px solid var(--border);
   background:transparent;color:var(--text-muted);cursor:pointer;flex-shrink:0;
@@ -73,7 +74,7 @@
 .footer-brand__name{font-family:var(--font-display);font-size:var(--tx-lg);
   font-weight:700;color:var(--text);margin:0}
 .footer-brand__role{font-size:var(--tx-sm);color:var(--text-muted);margin:0}
-.footer-social{display:flex;gap:var(--sp3);flex-wrap:wrap;align-items:center}
+.footer-social{display:flex;gap:var(--sp3);flex-wrap:wrap;align-items:center;list-style:none}
 .footer-social__link{display:flex;align-items:center;justify-content:center;
   width:32px;height:32px;border-radius:var(--r-full);border:1px solid var(--border);
   color:var(--text-muted);text-decoration:none;

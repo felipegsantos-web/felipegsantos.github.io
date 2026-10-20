@@ -14,27 +14,28 @@ mobile_nav_label:
 lang_group_label:
   en: Language selector
   es: Selector de idioma
-lang_en_label:
-  en: Switch to English
-  es: Switch to English
-lang_es_label:
-  en: Cambiar a español
-  es: Cambiar a español
-theme_toggle_label:
+# Language names are keyed by language code (not by page language): each is written in its own language.
+lang_name:
+  en: English
+  es: Español
+theme_to_dark_label:
   en: Switch to dark mode
   es: Cambiar a modo oscuro
-theme_toggle_mobile_label:
-  en: Switch theme
-  es: Cambiar tema
+theme_to_light_label:
+  en: Switch to light mode
+  es: Cambiar a modo claro
 menu_open_label:
   en: Open menu
   es: Abrir menú
+menu_close_label:
+  en: Close menu
+  es: Cerrar menú
+footer_role:
+  en: Political Sociologist
+  es: Sociólogo político
 profiles_label:
   en: Academic profiles
   es: Perfiles académicos
-also_published_as:
-  en: "Also published as %name%."
-  es: "%name% (%variant%)"
 # Main navigation, in order. `url` is per language. `key` is how templates look an item up.
 nav:
   - key: research
@@ -181,9 +182,3 @@ date_to:
 date_present:
   en: present
   es: la actualidad
-months:
-  en: [January, February, March, April, May, June, July, August, September, October, November, December]
-  es: [enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre]
-date_month_year:
-  en: "%month% %year%"
-  es: "%month% de %year%"

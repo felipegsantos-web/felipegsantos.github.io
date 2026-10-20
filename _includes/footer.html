@@ -1,15 +1,14 @@
 {%- include vars.html -%}
-{%- assign position_key = "position_" | append: L %}
 <footer class="site-footer" role="contentinfo">
   <div class="container">
     <div class="footer-brand">
       <div class="footer-brand__info">
         <p class="footer-brand__name">{{ profile.name }}</p>
-        <p class="footer-brand__role">{{ profile[position_key] }}</p>
+        <p class="footer-brand__role">{{ I.footer_role[L] }}</p>
       </div>
-      <div class="footer-social" role="list" aria-label="{{ I.profiles_label[L] }}">
-        {%- include profile-icons.html listitem=true %}
-      </div>
+      <ul class="footer-social" role="list" aria-label="{{ I.profiles_label[L] }}">
+        {%- include profile-icons.html %}
+      </ul>
     </div>
   </div>
 </footer>
