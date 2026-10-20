@@ -1,15 +1,13 @@
 # The book page (/en/publications/social-movements-that-care/ and the Spanish pair). Source: docs/publications-content.md, section 6.
 # The publication entry is `2024-social-movements-that-care` in publications.yml (title, year, link).
 subtitle: Empathy, Solidarity, and Empowerment in the Fight Against Evictions
-publisher_en: Palgrave Macmillan, Cham (Springer Nature Switzerland), 2024
-publisher_es: Palgrave Macmillan, Cham (Springer Nature Switzerland), 2024
+publisher_en: Palgrave Macmillan
+publisher_es: Palgrave Macmillan
 publisher_url: https://link.springer.com/book/10.1007/978-3-031-74296-5
 cover:
   file: /images/social-movements-that-care.webp
   width: 400
   height: 565
-  credit_en: Cover illustration by Pablo Pino
-  credit_es: Ilustración de cubierta de Pablo Pino
   alt_en: "Cover of Social Movements that Care: green cover showing a building and a crowd holding blank banners and signs."
   alt_es: "Cubierta de Social Movements that Care: fondo verde con un edificio y una multitud con pancartas y carteles en blanco."
 about_en:
@@ -41,17 +39,10 @@ endorsements:
   - text: "Felipe G. Santos has written a compelling account of the ways in which Platform for those Affected by Mortgages (PAH)—a highly impactful social movement in Spain—organizes for successful contentious politics through care. As a participant observer, he shows how different forms of care help to transform \"debtors of good faith\" from their initial grievances to solidarity. This is one of the best books I have read about how caring makes social movements successful."
     who: Joan C. Tronto
     role_html: Professor Emerita, University of Minnesota, author of <em>Moral Boundaries</em> and <em>Caring Democracy</em>
-# Entries of publications.yml linked under "Related work".
-related:
-  - 2020-politics-of-care
-  - 2024-how-activists-build-power
-  - 2022-care-and-social-movements
-  - 2022-cuidados-primer-desahucio
 labels:
   about: {en: About the book, es: Sobre el libro}
   contents: {en: Contents, es: Índice}
   endorsements: {en: Endorsements, es: Valoraciones}
-  related: {en: Related work, es: Trabajos relacionados}
   details: {en: Details, es: Datos}
   author: {en: Author, es: Autor}
   publisher: {en: Publisher, es: Editorial}
@@ -59,7 +50,11 @@ labels:
   ebook: {en: ISBN (eBook), es: ISBN (eBook)}
   publisher_page: {en: View on the publisher's site →, es: Ver en la web de la editorial →}
 # Highlight block (homepage and top of the Publications page, _includes/book-card.html).
+# The quote is shown only on the homepage, in English on both pages (a sentence from the endorsement by Joan C. Tronto above).
 # The label "Book" / "Libro" is `pub_type_label.book` in i18n.yml; the link to the book page reuses labels.about; the PDF link and the publisher line come from the publication entry.
 highlight:
   sentence_en: "Why do the people hit hardest by a grievance often fail to mobilize, while others with no direct stake join in? A theory of mobilization based on care, built on a year of fieldwork with Spain's Platform of Those Affected by Mortgages (PAH)."
   sentence_es: "¿Por qué quienes más sufren un agravio a menudo no se movilizan, mientras otras personas sin un interés directo sí lo hacen? Una teoría de la movilización basada en el cuidado, a partir de un año de trabajo de campo con la Plataforma de Afectados por la Hipoteca (PAH)."
+  quote:
+    text: "This is one of the best books I have read about how caring makes social movements successful."
+    who: Joan C. Tronto

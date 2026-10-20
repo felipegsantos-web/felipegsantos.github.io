@@ -655,7 +655,6 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
 .book-layout{display:grid;grid-template-columns:240px 1fr;gap:var(--sp8);align-items:start;margin-top:var(--sp6)}
 .book-cover{margin:0}
 .book-cover img{width:100%;height:auto;border-radius:var(--r-md);box-shadow:var(--shadow-md)}
-.book-cover figcaption{font-size:var(--tx-xs);color:var(--text-faint);margin-top:var(--sp2)}
 .book-section{margin-bottom:var(--sp8)}
 .book-text{font-size:var(--tx-base);color:var(--text-muted);line-height:1.7;margin-top:var(--sp3);max-width:70ch}
 .book-details{display:grid;gap:var(--sp2);margin-top:var(--sp3)}
@@ -666,7 +665,6 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
 .book-quote{margin:var(--sp4) 0 0;padding:var(--sp4) var(--sp5);border-left:4px solid var(--teal);background:var(--surface);border-radius:var(--r-md);max-width:70ch}
 .book-quote p{font-size:var(--tx-sm);color:var(--text-muted);line-height:1.7}
 .book-quote footer{margin-top:var(--sp3);font-size:var(--tx-xs);font-weight:600;color:var(--text)}
-.book-related{padding-left:var(--sp5);margin-top:var(--sp3);display:flex;flex-direction:column;gap:var(--sp2);font-size:var(--tx-sm);color:var(--text-muted)}
 @media(max-width:720px){.book-layout{grid-template-columns:1fr}.book-cover{max-width:240px}}
 /* PR 3: links row under a publication, name-variant line, theme answers */
 .pub-entry__links{display:flex;flex-wrap:wrap;gap:var(--sp1) var(--sp4);font-size:var(--tx-sm);color:var(--text-muted);margin-bottom:var(--sp3)}
@@ -683,14 +681,28 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
 /* ── Book highlight (homepage and top of the Publications page) ── */
 .book-feature{display:grid;grid-template-columns:1fr;justify-items:start;gap:var(--sp4);padding:var(--sp5) var(--sp6);
   background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);margin-bottom:var(--sp6)}
-.book-feature--home{margin-top:var(--sp6)}
+.book-feature--home{margin-bottom:0}
 .book-feature__cover{width:160px;height:auto;border-radius:var(--r-md);box-shadow:var(--shadow-md)}
 .book-feature__body{min-width:0}
 .book-feature__label{margin-bottom:var(--sp2)}
 .book-feature__title{font-family:var(--font-display);font-size:var(--tx-lg);font-weight:700;color:var(--text);line-height:1.3}
+.book-feature--home .book-feature__title{font-size:var(--tx-base)}
 .book-feature__text,.book-feature__venue{font-size:var(--tx-sm);color:var(--text-muted);line-height:1.6;margin-top:var(--sp3);max-width:none}
+.book-feature--home .book-feature__text{max-width:65ch}
 .book-feature__links{display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp2) var(--sp4);margin-top:var(--sp3);font-size:var(--tx-sm);font-weight:600}
+.book-feature__quote{margin:0;max-width:none;background:var(--bg-alt)}
 @media(min-width:640px){
   .book-feature{grid-template-columns:auto 1fr;align-items:start;gap:var(--sp5)}
   .book-feature__cover{width:120px}
+  .book-feature__quote{grid-column:2}
+}
+@media(min-width:900px){
+  .book-feature--home{grid-template-columns:auto minmax(0,1fr) minmax(0,20rem);gap:var(--sp6)}
+  .book-feature--home .book-feature__quote{grid-column:3;align-self:center}
+}
+/* Homepage band: the space above equals the hero's own bottom padding; stacked, it sits between bio and news */
+.hero-book{grid-column:1/-1;grid-row:2;margin-top:calc(clamp(var(--sp10),6vw,var(--sp20)) - var(--sp8))}
+@media(max-width:860px){
+  .hero-book{grid-column:1;grid-row:3;margin-top:0}
+  .hero-news{grid-column:1;grid-row:4}
 }

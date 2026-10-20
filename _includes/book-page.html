@@ -2,7 +2,7 @@
 {%- assign b = site.data.book -%}
 {%- assign pub = site.data.publications | where: "id", "2024-social-movements-that-care" | first -%}
 {%- assign pubs_nav = I.nav | where: "key", "publications" | first -%}
-{%- assign k_about = "about_" | append: L -%}{%- assign k_pub = "publisher_" | append: L -%}{%- assign k_credit = "credit_" | append: L -%}{%- assign k_alt = "alt_" | append: L -%}
+{%- assign k_about = "about_" | append: L -%}{%- assign k_pub = "publisher_" | append: L -%}{%- assign k_alt = "alt_" | append: L -%}
 <main id="main-content">
   <div class="container">
     <div class="page-header">
@@ -13,7 +13,6 @@
     <div class="book-layout">
       <figure class="book-cover">
         <img src="{{ rel }}{{ b.cover.file | remove_first: '/' }}" alt="{{ b.cover[k_alt] }}" width="{{ b.cover.width }}" height="{{ b.cover.height }}" loading="eager">
-        <figcaption>{{ b.cover[k_credit] }}</figcaption>
       </figure>
       <div class="book-main">
         <section class="book-section" aria-labelledby="book-about-h">
@@ -31,7 +30,7 @@
             <div><dt>{{ b.labels.ebook[L] }}</dt><dd>{{ pub.isbn_ebook }}</dd></div>
             <div><dt>DOI</dt><dd>{{ pub.doi }}</dd></div>
           </dl>
-          <p class="book-text"><a href="{{ b.publisher_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="publication-{{ pub.id }}">{{ b.labels.publisher_page[L] }}</a>{% if pub.pdf %} · <a href="{{ pub.pdf }}" class="inline-link" download data-goatcounter-click="pdf-{{ pub.id }}">{{ I.pdf_label[pub.pdf_version][L] }}</a>{% elsif pub.oa_url %} · <a href="{{ pub.oa_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="open-access-{{ pub.id }}">{{ I.open_access_label[L] }}</a>{% endif %}</p>
+          <p class="book-text"><a href="{{ b.publisher_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="publication-{{ pub.id }}">{{ b.labels.publisher_page[L] }}</a></p>
         </section>
         <section class="book-section" aria-labelledby="book-contents-h">
           <h2 class="section-heading" id="book-contents-h">{{ b.labels.contents[L] }}</h2>
@@ -47,15 +46,6 @@
             <footer>{{ e.who }}, {% if e.role_html %}{{ e.role_html }}{% else %}{{ e.role }}{% endif %}</footer>
           </blockquote>
           {%- endfor %}
-        </section>
-        <section class="book-section" aria-labelledby="book-related-h">
-          <h2 class="section-heading" id="book-related-h">{{ b.labels.related[L] }}</h2>
-          <ul class="book-related">
-            {%- for id in b.related %}
-            {%- assign rp = site.data.publications | where: "id", id | first %}
-            <li><a href="{{ I.theme_path[L] }}{{ rp.themes | first }}/#pub-{{ rp.id }}" class="inline-link"{% if rp.lang != L %} lang="{{ rp.lang }}"{% endif %}>{{ rp.title }}</a> ({{ rp.year }})</li>
-            {%- endfor %}
-          </ul>
         </section>
       </div>
     </div>
