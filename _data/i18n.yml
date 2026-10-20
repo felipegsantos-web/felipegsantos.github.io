@@ -179,9 +179,3 @@ date_to:
 date_present:
   en: present
   es: la actualidad
-months:
-  en: [January, February, March, April, May, June, July, August, September, October, November, December]
-  es: [enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre]
-date_month_year:
-  en: "%month% %year%"
-  es: "%month% de %year%"
