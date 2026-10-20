@@ -54,7 +54,7 @@ nav:
   - key: cv
     label: {en: CV, es: CV}
     url: {en: /en/cv/, es: /es/cv/}
-    description: {en: "Curriculum vitae: posts, projects, education, awards and service", es: "Currículum: puestos, proyectos, formación, premios y servicio profesional"}
+    description: {en: "Curriculum vitae: posts, projects, education and awards", es: "Currículum: puestos, proyectos, formación y premios"}
   - key: contact
     label: {en: Contact, es: Contacto}
     url: {en: /en/contact/, es: /es/contacto/}

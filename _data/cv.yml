@@ -30,24 +30,6 @@
     - "Defense committee: Béla Greskovits, Erin Jenne and Donatella della Porta"
     bullets_es:
     - "Tribunal de tesis: Béla Greskovits, Erin Jenne y Donatella della Porta"
-  - from: 2013-08
-    to: 2014-06
-    role_en: MA in European Political and Administrative Studies
-    role_es: Máster en Estudios Políticos y Administrativos Europeos
-    org_en: College of Europe, Bruges, Belgium
-    org_es: College of Europe, Brujas, Bélgica
-  - from: 2011-09
-    to: 2013-07
-    role_en: MS in International Relations
-    role_es: Máster en Relaciones Internacionales
-    org_en: Institute for Social and European Studies, Corvinus University, Kőszeg, Hungary
-    org_es: Institute for Social and European Studies, Corvinus University, Kőszeg, Hungría
-  - from: 2005-09
-    to: 2011-06
-    role_en: ‘Licenciatura’ (BA + MS) in Business Management
-    role_es: Licenciatura en Administración y Dirección de Empresas
-    org_en: University of A Coruña, Spain
-    org_es: Universidade da Coruña, España
 - id: awards
   title_en: Awards and grants
   title_es: Premios y ayudas
@@ -60,52 +42,3 @@
     role_en: Outstanding Dissertation Award
     role_es: Premio a la Mejor Tesis Doctoral
     org: Doctoral School of Political Sciences, Public Policy and International Relations, Central European University
-  - years: '2020'
-    role_en: Funding for the publication of <em>La Plataforma de Afectadas por la Hipoteca. Una década de lucha por la vivienda digna 2009-2019</em>
-    role_es: Ayuda para la publicación de <em>La Plataforma de Afectadas por la Hipoteca. Una década de lucha por la vivienda digna 2009-2019</em>
-    org: Fundación Betiko
-  - years: '2019'
-    role_en: Write-Up Grant
-    role_es: Beca de redacción
-    org: Central European University
-  - years: '2018'
-    role_en: Doctoral Research Support Grant
-    role_es: Ayuda de apoyo a la investigación doctoral
-    org: Central European University
-  - years: '2018'
-    role_en: Scholarship for Conference Participation
-    role_es: Beca para participar en congresos
-    org: University of Cambridge
-  - years: '2018'
-    role_en: Visiting Researcher Fellowship
-    role_es: Beca de investigador visitante
-    org: Bard College
-  - years: '2017'
-    role_en: Junior Researcher Fellowship
-    role_es: Beca de investigador junior
-    org_en: Hungarian Government
-    org_es: Gobierno de Hungría
-  - years: '2017'
-    role_en: Short Research Grant
-    role_es: Ayuda de investigación de corta duración
-    org: Central European University
-  - years: '2015'
-    role_en: Winter School attendance grant
-    role_es: Ayuda para asistir a una escuela de invierno
-    org: Central European University
-  - years: '2014'
-    role_en: Full Doctoral Fellowship
-    role_es: Beca doctoral completa
-    org: Central European University
-  - years: '2013'
-    role_en: European Neighbourhood Policy Scholarship
-    role_es: Beca de la Política Europea de Vecindad
-    org_en: European Commission
-    org_es: Comisión Europea
-- id: service
-  title_en: Professional Service
-  title_es: Actividad profesional
-  entries:
-  - role_en: Referee
-    role_es: Revisor
-    org: Cambridge University Press, <em>West European Politics</em>, <em>Social Forces</em>, <em>European Societies</em>, <em>International Affairs</em>, <em>Social Movement Studies</em>, <em>Mobilization</em>, <em>Social Science History</em>, <em>European Journal of Politics and Gender</em>, <em>Employee Relations</em>, <em>Sociology Compass</em>, <em>Partecipazione e Conflitto</em>
