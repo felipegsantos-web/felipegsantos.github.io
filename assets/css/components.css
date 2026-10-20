@@ -441,20 +441,12 @@
   .media-featured-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:860px){
-  .hero-grid{grid-template-columns:1fr;grid-template-rows:auto}
-  .hero-photo-wrap{grid-column:1;grid-row:1;align-items:center;justify-content:center}
-  .hero-bio{grid-column:1;grid-row:2}
-  .hero-news{grid-column:1;grid-row:3}
   .hero-photo{max-width:220px}
   .cv-layout{grid-template-columns:1fr}
   .cv-sidebar{position:static}
   .contact-layout{grid-template-columns:1fr}
 }
 @media(max-width:640px){
-  .hero-grid{grid-template-columns:1fr}
-  .hero-photo-wrap{grid-column:1;grid-row:1;align-items:center}
-  .hero-bio{grid-column:1;grid-row:2}
-  .hero-news{grid-column:1;grid-row:3}
   .hero-photo{max-width:180px}
   .hero-photo__social{margin-top:var(--sp3)}
   .pub-preview-list{grid-template-columns:1fr}
@@ -586,16 +578,10 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
 }
 @media(max-width:860px){
   .themes-grid{grid-template-columns:repeat(2,1fr)}
-  .hero-grid{grid-template-columns:1fr;grid-template-rows:auto}
-  .hero-photo-wrap{order:0;grid-column:1;grid-row:1;align-items:center;justify-content:center}
-  .hero-bio{grid-column:1;grid-row:2}
-  .hero-news{grid-column:1;grid-row:3}
   .hero-photo{max-width:220px}
 }
 @media(max-width:640px){
   .themes-grid{grid-template-columns:1fr}
-  .hero-grid{grid-template-columns:1fr}
-  .hero-photo-wrap{order:0;align-items:center}
   .hero-photo{max-width:180px}
 }
 
@@ -718,11 +704,26 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
   .book-feature--home{grid-template-columns:auto minmax(0,1fr) minmax(0,20rem);gap:var(--sp6)}
   .book-feature--home .book-feature__quote{grid-column:3;align-self:center}
 }
-/* Homepage band: the space above equals the hero's own bottom padding; stacked, it sits between bio and news */
-.hero-book{grid-column:1/-1;grid-row:2;margin-top:calc(clamp(var(--sp10),6vw,var(--sp20)) - var(--sp8))}
+/* Homepage hero: grid areas. The source order is name, photo, intro, news, book band (the reading order on phones).
+   Wide screens: photo | name above intro | news, with the band below; the photo and the news span the two rows and the
+   second row takes the extra height, so the name stays right above the intro. The band's top space equals the hero's own
+   bottom padding. Up to 860px everything stacks in source order. */
+.hero-grid{--hero-gap:var(--sp8);column-gap:var(--hero-gap);row-gap:0;
+  grid-template-rows:auto 1fr auto;
+  grid-template-areas:"photo name news" "photo bio news" "book book book"}
+.hero-grid>.hero-bio__name{grid-area:name}
+.hero-grid>.hero-photo-wrap{grid-area:photo}
+.hero-grid>.hero-bio{grid-area:bio}
+.hero-grid>.hero-news{grid-area:news}
+.hero-grid>.hero-book{grid-area:book;margin-top:calc(clamp(var(--sp10),6vw,var(--sp20)) - var(--sp8) + var(--hero-gap))}
+@media(max-width:1100px){
+  .hero-grid{--hero-gap:var(--sp6)}
+}
 @media(max-width:860px){
-  .hero-book{grid-column:1;grid-row:3;margin-top:0}
-  .hero-news{grid-column:1;grid-row:4}
+  .hero-grid{grid-template-columns:1fr;grid-template-rows:none;grid-template-areas:none;row-gap:var(--sp6)}
+  .hero-grid>.hero-bio__name,.hero-grid>.hero-photo-wrap,.hero-grid>.hero-bio,.hero-grid>.hero-news,.hero-grid>.hero-book{grid-area:auto}
+  .hero-grid>.hero-bio__name{margin-bottom:0}
+  .hero-grid>.hero-book{margin-top:0}
 }
 
 /* ── Contact: "For media" block ── */
@@ -730,3 +731,19 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
 .contact-media__heading{font-size:var(--tx-xs);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:var(--sp3)}
 .contact-media__languages{font-size:var(--tx-base);color:var(--text);margin-bottom:var(--sp3)}
 .contact-media__topics{padding-left:var(--sp5);display:flex;flex-direction:column;gap:var(--sp1);font-size:var(--tx-base);color:var(--text-muted)}
+
+/* ── Phones: media card dates on their own line; CV section menu ── */
+.cv-jump{display:none}
+.cv-jump__summary{display:flex;align-items:center;justify-content:space-between;gap:var(--sp3);cursor:pointer;list-style:none;
+  min-height:44px;padding:var(--sp2) var(--sp4);border:1px solid var(--border-strong);border-radius:var(--r-md);
+  background:var(--surface);color:var(--text);font-size:var(--tx-sm);font-weight:600}
+.cv-jump__summary::-webkit-details-marker{display:none}
+.cv-jump__summary::after{content:"";width:.5rem;height:.5rem;border-right:2px solid currentColor;border-bottom:2px solid currentColor;
+  transform:rotate(45deg) translateY(-2px);flex-shrink:0}
+.cv-jump__details[open] .cv-jump__summary::after{transform:rotate(-135deg)}
+.cv-jump__details[open] .cv-sidebar__list{margin-top:var(--sp2)}
+@media(max-width:640px){
+  .media-entry__date{flex-basis:100%;margin-left:0}
+  .cv-sidebar{display:none}
+  .cv-jump{display:block}
+}

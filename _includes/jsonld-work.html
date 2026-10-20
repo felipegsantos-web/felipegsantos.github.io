@@ -1,7 +1,7 @@
 {%- comment -%}
   One publication (`pub`) as its own JSON-LD block. Authors keep the order of publications.yml; Felipe is a reference to the Person defined on the profile pages.
   Type: article and profile -> ScholarlyArticle; book and edited volume -> Book; chapters and encyclopaedia entries -> Chapter.
-  `editor` replaces `author` for the edited volume.
+  `editor` replaces `author` for the edited volume. `isbn_print` is the ISBN of the work (books) or of the book that contains it (chapters: inside `isPartOf`).
 {%- endcomment -%}
 {%- include vars.html -%}
 {%- assign person_id = site.url | append: "/#person" -%}
@@ -32,12 +32,12 @@
     {%- endif -%}
 , "isPartOf": {{ part_of }}
   {%- when "chapter", "encyclopedia_entry" -%}
-, "isPartOf": {"@type": "Book", "name": {{ pub.book_title | jsonify }}, "publisher": {"@type": "Organization", "name": {{ pub.publisher | jsonify }}}}
+, "isPartOf": {"@type": "Book", "name": {{ pub.book_title | jsonify }}, "publisher": {"@type": "Organization", "name": {{ pub.publisher | jsonify }}}{% if pub.isbn_print %}, "isbn": {{ pub.isbn_print | jsonify }}{% endif %}}
   {%- else -%}
 , "publisher": {"@type": "Organization", "name": {{ pub.publisher | jsonify }}}
 {%- endcase -%}
 {%- if pub.pages -%}, "pagination": {{ pub.pages | jsonify }}{%- endif -%}
-{%- if pub.isbn_print %}, "isbn": {{ pub.isbn_print | jsonify }}{% endif -%}
+{%- if pub.isbn_print and ld_type == "Book" %}, "isbn": {{ pub.isbn_print | jsonify }}{% endif -%}
 , "url": {{ work_url | jsonify }}
 {%- if pub.doi %}, "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": {{ pub.doi | jsonify }}}{% endif -%}
 {%- if pub[k_summary] and pub.summary_list_en == nil %}, "description": {{ pub[k_summary] | strip_html | jsonify }}{% endif -%}

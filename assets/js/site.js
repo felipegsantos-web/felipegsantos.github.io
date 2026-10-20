@@ -173,4 +173,9 @@ document.querySelectorAll('[data-copy-citation]').forEach(function(btn){
       if(viewList)viewList.hidden=(v!=='list');
     });
   });
+/* ── CV page (phones): the section menu closes after a link is used ── */
+document.querySelectorAll('.cv-jump a').forEach(function(a){
+  a.addEventListener('click',function(){var d=a.closest('details');if(d)d.removeAttribute('open')})
+});
+
 })();

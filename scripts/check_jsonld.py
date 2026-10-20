@@ -6,8 +6,10 @@ Usage: python3 scripts/check_jsonld.py [SITE_DIR]   (default: _site)
 * every block is valid JSON;
 * volume, issue and pagination match publications.yml;
 * each publication block has the authors (or editors) of publications.yml, in the same order, with Felipe as {"@id": ".../#person"};
-* the Person is defined at most once per page (references by @id do not count);
-* the homepages and CV pages (EN and ES) define it exactly once, and no other page does.
+* every page, the root page and the 404 page included, defines the Person (@id .../#person) exactly once, with the alternateName list of profile.yml
+  (references by @id do not count);
+* the media pages (EN and ES) have an ItemList with one item per entry of media.yml, in the same order, with the type, publisher and
+  author or mentions that the entry's role calls for.
 """
 import json
 import re
@@ -36,13 +38,43 @@ def walk(node):
             yield from walk(v)
 
 
+MEDIA_TYPES = {"quoted": "NewsArticle", "guest": "PodcastEpisode", "oped": "OpinionNewsArticle"}
+
+
+def check_media(block, media):
+    """Problems of a media ItemList against media.yml."""
+    items = block.get("itemListElement", [])
+    if len(items) != len(media) or block.get("numberOfItems") != len(media):
+        return [f"ItemList has {len(items)} items (numberOfItems {block.get('numberOfItems')}), media.yml has {len(media)}"]
+    errors = []
+    for pos, (it, m) in enumerate(zip(items, media), 1):
+        node = it.get("item", {})
+        want = {
+            "@type": MEDIA_TYPES[m["role"]], "headline": m["headline"], "url": m["url"], "datePublished": str(m["date"]),
+            "inLanguage": m["language"], "publisher": {"@type": "Organization", "name": m["outlet"]},
+        }
+        for k, v in want.items():
+            if node.get(k) != v:
+                errors.append(f"media item {pos} ({m['id']}): {k} is {node.get(k)!r}, expected {v!r}")
+        if it.get("position") != pos:
+            errors.append(f"media item {pos} ({m['id']}): position {it.get('position')}")
+        if m["role"] == "oped":
+            authors = [{"@id": PERSON}] + [{"@type": "Person", "name": w} for w in m.get("with", [])]
+            if node.get("author") != authors or "mentions" in node:
+                errors.append(f"media item {pos} ({m['id']}): author {node.get('author')!r}, expected {authors!r}")
+        elif node.get("mentions") != {"@id": PERSON} or "author" in node:
+            errors.append(f"media item {pos} ({m['id']}): mentions {node.get('mentions')!r}")
+    return errors
+
+
 def main():
     site = Path(sys.argv[1] if len(sys.argv) > 1 else "_site")
     pubs = {p["id"]: p for p in yaml.safe_load((ROOT / "_data/publications.yml").read_text(encoding="utf-8"))}
     profile = yaml.safe_load((ROOT / "_data/profile.yml").read_text(encoding="utf-8"))
     me = {profile["name"], *profile["name_variants"]}
     errors, n_blocks, n_works = [], 0, 0
-    person_pages = set()
+    media = yaml.safe_load((ROOT / "_data/media.yml").read_text(encoding="utf-8"))
+    media_pages = set()
     for path in sorted(site.rglob("*.html")):
         rel = "/" + path.relative_to(site).as_posix()
         try:
@@ -52,10 +84,14 @@ def main():
             continue
         n_blocks += len(data)
         defs = [n for b in data for n in walk(b) if n.get("@type") == "Person" and n.get("@id") == PERSON]
-        if len(defs) > 1:
-            errors.append(f"{rel}: the Person is defined {len(defs)} times")
-        if defs:
-            person_pages.add(rel)
+        if len(defs) != 1:
+            errors.append(f"{rel}: the Person is defined {len(defs)} times, expected once")
+        elif defs[0].get("alternateName") != profile["name_variants"]:
+            errors.append(f"{rel}: the Person's alternateName {defs[0].get('alternateName')!r} does not match profile.yml")
+        for b in data:
+            if b.get("@type") == "ItemList":
+                media_pages.add(rel)
+                errors.extend(f"{rel}: {e}" for e in check_media(b, media))
         for b in data:
             m = re.match(r"https://www\.felipegsantos\.com/#work-(.+)", b.get("@id", ""))
             if not m:
@@ -83,12 +119,16 @@ def main():
                 errors.append(f"{rel}: {pub['id']} volume/issue {vol}/{iss} do not match the data")
             if b.get("pagination") != pub.get("pages"):
                 errors.append(f"{rel}: {pub['id']} pagination {b.get('pagination')!r} does not match the data")
+            if pub.get("isbn_print"):
+                got_isbn = b.get("isbn") if b.get("@type") == "Book" else (b.get("isPartOf") or {}).get("isbn")
+                if got_isbn != pub["isbn_print"]:
+                    errors.append(f"{rel}: {pub['id']} isbn {got_isbn!r} does not match the data")
             same = [u for u in (pub.get("oa_url"), pub.get("pdf") and "https://www.felipegsantos.com" + pub["pdf"]) if u]
             if bool(same) != bool(b.get("isAccessibleForFree")) or (same and b.get("sameAs") != same):
                 errors.append(f"{rel}: {pub['id']} open-access fields do not match the data")
-    expected = {"/en/index.html", "/es/index.html", "/en/cv/index.html", "/es/cv/index.html"}
-    if person_pages != expected:
-        errors.append(f"Person defined on {sorted(person_pages)}, expected {sorted(expected)}")
+    expected = {"/en/media/index.html", "/es/medios/index.html"}
+    if media_pages != expected:
+        errors.append(f"media ItemList on {sorted(media_pages)}, expected {sorted(expected)}")
     for e in errors:
         print("ERROR", e)
     print(f"{n_blocks} JSON-LD blocks, {n_works} publication blocks checked, {len(errors)} problems")

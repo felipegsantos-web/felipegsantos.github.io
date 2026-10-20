@@ -1,0 +1,4 @@
+{%- comment -%}The <li> links to the CV sections (the sidebar on wide screens, the "Jump to section" menu on phones): every section of cv.yml, then `publications_label`.{%- endcomment -%}
+{%- include vars.html -%}
+{%- assign k_title = "title_" | append: L -%}
+{%- for sec in site.data.cv %}<li><a href="#{{ sec.id }}" class="cv-sidebar__link">{{ sec[k_title] }}</a></li>{% endfor -%}<li><a href="#publications" class="cv-sidebar__link">{{ include.publications_label }}</a></li>
