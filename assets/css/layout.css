@@ -111,7 +111,7 @@ span.lang-toggle__btn{cursor:default}
 @media(max-width:900px){
   .site-logo__role{display:none}
 }
-@media(max-width:700px){
+@media(max-width:860px){
   .site-nav{display:none}
   .mobile-menu-btn{display:flex}
 

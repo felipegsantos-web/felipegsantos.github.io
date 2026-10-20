@@ -1,27 +1,20 @@
-{%- comment -%}Book highlight, used on the homepage (`variant="home"`) and at the top of the Publications page (`variant="publications"`). Text: _data/book.yml (highlight, cover, labels) and the book's entry in publications.yml.{%- endcomment -%}
+{%- comment -%}Book band on the homepage. Text: _data/book.yml (highlight, cover, labels) and the book's entry in publications.yml.{%- endcomment -%}
 {%- include vars.html -%}
 {%- assign b = site.data.book -%}
 {%- assign pub = site.data.publications | where: "id", "2024-social-movements-that-care" | first -%}
 {%- assign pubs_nav = I.nav | where: "key", "publications" | first -%}
 {%- assign k_alt = "alt_" | append: L -%}{%- assign k_sentence = "sentence_" | append: L -%}
 {%- assign title_lang = "" -%}{%- if pub.lang != L %}{% capture title_lang %} lang="{{ pub.lang }}"{% endcapture %}{% endif -%}
-<section class="book-feature book-feature--{{ include.variant }}" aria-labelledby="book-feature-{{ include.variant }}-h">
+<section class="book-feature book-feature--home" aria-labelledby="book-feature-home-h">
   <img class="book-feature__cover" src="{{ rel }}{{ b.cover.file | remove_first: '/' }}" alt="{{ b.cover[k_alt] }}" width="{{ b.cover.width }}" height="{{ b.cover.height }}" loading="lazy">
   <div class="book-feature__body">
     <p class="book-feature__label"><span class="type-badge type-badge--book">{{ I.pub_type_label.book[L] }}</span></p>
-    <h2 class="book-feature__title" id="book-feature-{{ include.variant }}-h"{{ title_lang }}>{{ pub.title }}</h2>
-    {%- if include.variant == "home" %}
+    <h2 class="book-feature__title" id="book-feature-home-h"{{ title_lang }}>{{ pub.title }}</h2>
     <p class="book-feature__text">{{ b.highlight[k_sentence] }}</p>
     <p class="book-feature__links"><a href="{{ pubs_nav.url[L] }}{{ pub.page }}/" class="inline-link" data-goatcounter-click="book-home">{{ b.labels.about[L] }}</a></p>
-    {%- else %}
-    <p class="book-feature__venue">{{ pub.venue }}, {{ pub.year }}</p>
-    <p class="book-feature__links"><a href="{{ pubs_nav.url[L] }}{{ pub.page }}/" class="inline-link" data-goatcounter-click="book-publications">{{ b.labels.about[L] }}</a>{% if pub.pdf %}<a href="{{ pub.pdf }}" class="pub-entry__download" download data-goatcounter-click="pdf-{{ pub.id }}">{% include icon.html name="download" %} {{ I.pdf_label[pub.pdf_version][L] }}<span class="sr-only"{{ title_lang }}>: {{ pub.title | strip_html }}</span></a>{% endif %}</p>
-    {%- endif %}
   </div>
-  {%- if include.variant == "home" %}
   <blockquote class="book-quote book-feature__quote" lang="en">
     <p>{{ b.highlight.quote.text }}</p>
     <footer>{{ b.highlight.quote.who }}</footer>
   </blockquote>
-  {%- endif %}
 </section>

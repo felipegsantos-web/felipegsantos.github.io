@@ -678,7 +678,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
 .pub-entry__download:hover{background:var(--accent);color:var(--bg)}
 .pub-entry__download svg{width:14px;height:14px}
 
-/* ── Book highlight (homepage and top of the Publications page) ── */
+/* ── Book band (homepage) ── */
 .book-feature{display:grid;grid-template-columns:1fr;justify-items:start;gap:var(--sp4);padding:var(--sp5) var(--sp6);
   background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);margin-bottom:var(--sp6)}
 .book-feature--home{margin-bottom:0}
@@ -687,7 +687,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
 .book-feature__label{margin-bottom:var(--sp2)}
 .book-feature__title{font-family:var(--font-display);font-size:var(--tx-lg);font-weight:700;color:var(--text);line-height:1.3}
 .book-feature--home .book-feature__title{font-size:var(--tx-base)}
-.book-feature__text,.book-feature__venue{font-size:var(--tx-sm);color:var(--text-muted);line-height:1.6;margin-top:var(--sp3);max-width:none}
+.book-feature__text{font-size:var(--tx-sm);color:var(--text-muted);line-height:1.6;margin-top:var(--sp3);max-width:none}
 .book-feature--home .book-feature__text{max-width:65ch}
 .book-feature__links{display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp2) var(--sp4);margin-top:var(--sp3);font-size:var(--tx-sm);font-weight:600}
 .book-feature__quote{margin:0;max-width:none;background:var(--bg-alt)}
