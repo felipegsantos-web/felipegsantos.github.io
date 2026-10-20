@@ -667,3 +667,16 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offse
 .book-quote footer{margin-top:var(--sp3);font-size:var(--tx-xs);font-weight:600;color:var(--text)}
 .book-related{padding-left:var(--sp5);margin-top:var(--sp3);display:flex;flex-direction:column;gap:var(--sp2);font-size:var(--tx-sm);color:var(--text-muted)}
 @media(max-width:720px){.book-layout{grid-template-columns:1fr}.book-cover{max-width:240px}}
+/* PR 3: links row under a publication, name-variant line, theme answers */
+.pub-entry__links{display:flex;flex-wrap:wrap;gap:var(--sp1) var(--sp4);font-size:var(--tx-sm);color:var(--text-muted);margin-bottom:var(--sp3)}
+.hero-bio__aka{font-size:var(--tx-sm);color:var(--text-muted);margin:calc(-1 * var(--sp2)) 0 var(--sp3)}
+.cv-contact__aka{font-size:var(--tx-xs);color:var(--text-muted);margin-top:var(--sp1)}
+.theme-lead{font-size:var(--tx-base);color:var(--text-muted);line-height:1.75;max-width:70ch;margin-top:var(--sp3)}
+.theme-lead a,.theme-answer a{color:var(--accent);text-decoration:none}
+.theme-lead a:hover,.theme-answer a:hover{text-decoration:underline}
+.theme-answers{margin-top:var(--sp8);display:flex;flex-direction:column;gap:var(--sp6);max-width:70ch}
+.theme-answer__q{font-family:var(--font-display);font-size:var(--tx-lg);font-weight:600;color:var(--text);line-height:1.3;margin-bottom:var(--sp2)}
+.theme-answer__a{font-size:var(--tx-base);color:var(--text-muted);line-height:1.7}
+.pub-entry__download{display:inline-flex;align-items:center;gap:var(--sp2);padding:.3rem .75rem;border:1px solid var(--accent);border-radius:var(--r-md);color:var(--accent);font-weight:600;text-decoration:none;line-height:1.4}
+.pub-entry__download:hover{background:var(--accent);color:var(--bg)}
+.pub-entry__download svg{width:14px;height:14px}

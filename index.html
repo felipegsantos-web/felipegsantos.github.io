@@ -1,15 +1,23 @@
+---
+layout: null
+---
+{%- assign profile = site.data.profile -%}
+{%- assign scholar = profile.profiles | where: "id", "scholar" | first -%}
+{%- assign orcid = profile.profiles | where: "id", "orcid" | first -%}
+{%- assign rg = profile.profiles | where: "id", "researchgate" | first -%}
+{%- assign li = profile.profiles | where: "id", "linkedin" | first -%}
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Felipe G. Santos</title>
-<meta name="description" content="Felipe G. Santos is a Research Fellow in Political Sociology at City St George's, University of London. He studies social movements, far-right politics, political participation, and democratic change in Europe.">
-<meta name="author" content="Felipe G. Santos">
-<link rel="canonical" href="https://www.felipegsantos.com/en/">
-<link rel="alternate" hreflang="en" href="https://www.felipegsantos.com/en/">
-<link rel="alternate" hreflang="es" href="https://www.felipegsantos.com/es/">
-<link rel="alternate" hreflang="x-default" href="https://www.felipegsantos.com/en/">
+<title>{{ profile.name }}</title>
+<meta name="description" content="{{ profile.description_en }}">
+<meta name="author" content="{{ profile.name }}">
+<link rel="canonical" href="{{ site.url }}/en/">
+<link rel="alternate" hreflang="en" href="{{ site.url }}/en/">
+<link rel="alternate" hreflang="es" href="{{ site.url }}/es/">
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/en/">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=2">
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2" sizes="32x32">
 <style>
@@ -35,17 +43,10 @@
 </head>
 <body>
 <main class="root-card">
-  <h1>Felipe G. Santos</h1>
-  <p class="role">Research Fellow · Political Sociology · City St George's, University of London, United Kingdom</p>
-  <p class="bio">
-    I study social movements, political participation, far-right politics, and democratic change
-    in Europe. My work spans ethnography, surveys, and comparative methods, from housing
-    movements and civil society to democratic backsliding and protest repertoires.
-    <!--es-->
-    Investigo movimientos sociales, participación política, ultraderecha y cambio democrático
-    en Europa.
-    <!--/es-->
-  </p>
+  <h1>{{ profile.name }}</h1>
+  <p class="role">{{ profile.position_en }} · {{ profile.posts[0].institution }}</p>
+  <p class="bio">{{ profile.description_en }}</p>
+  <p class="bio" lang="es">{{ profile.description_es }}</p>
   <nav aria-label="Language selection">
     <div class="lang-links">
       <a href="/en/" class="lang-link lang-link--en" hreflang="en">
@@ -57,10 +58,10 @@
     </div>
   </nav>
   <p class="profiles">
-    <a href="https://scholar.google.com/citations?user=wA7Yb2gAAAAJ&hl=en" rel="noopener" target="_blank">Google Scholar</a> ·
-    <a href="https://www.researchgate.net/profile/Felipe-G-Santos" rel="noopener" target="_blank">ResearchGate</a> ·
-    <a href="https://orcid.org/0000-0001-7006-2088" rel="noopener" target="_blank">ORCID</a> ·
-    <a href="https://www.linkedin.com/in/felipegsantos/" rel="noopener" target="_blank">LinkedIn</a>
+    <a href="{{ scholar.url }}" rel="noopener" target="_blank">{{ scholar.label }}</a> ·
+    <a href="{{ rg.url }}" rel="noopener" target="_blank">{{ rg.label }}</a> ·
+    <a href="{{ orcid.url }}" rel="noopener" target="_blank">{{ orcid.label }}</a> ·
+    <a href="{{ li.url }}" rel="noopener" target="_blank">{{ li.label }}</a>
   </p>
 </main>
 <script src="assets/js/router.js"></script>

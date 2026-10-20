@@ -27,11 +27,11 @@
           <dl class="book-details">
             <div><dt>{{ b.labels.author[L] }}</dt><dd>{{ profile.name }}</dd></div>
             <div><dt>{{ b.labels.publisher[L] }}</dt><dd>{{ b[k_pub] }}</dd></div>
-            <div><dt>{{ b.labels.print[L] }}</dt><dd>{{ b.isbn_print }}</dd></div>
-            <div><dt>{{ b.labels.ebook[L] }}</dt><dd>{{ b.isbn_ebook }}</dd></div>
-            <div><dt>DOI</dt><dd>{{ b.doi }}</dd></div>
+            <div><dt>{{ b.labels.print[L] }}</dt><dd>{{ pub.isbn_print }}</dd></div>
+            <div><dt>{{ b.labels.ebook[L] }}</dt><dd>{{ pub.isbn_ebook }}</dd></div>
+            <div><dt>DOI</dt><dd>{{ pub.doi }}</dd></div>
           </dl>
-          <p class="book-text"><a href="{{ b.publisher_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="publication-{{ pub.id }}">{{ b.labels.publisher_page[L] }}</a></p>
+          <p class="book-text"><a href="{{ b.publisher_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="publication-{{ pub.id }}">{{ b.labels.publisher_page[L] }}</a>{% if pub.pdf %} · <a href="{{ pub.pdf }}" class="inline-link" download data-goatcounter-click="pdf-{{ pub.id }}">{{ I.pdf_label[pub.pdf_version][L] }}</a>{% elsif pub.oa_url %} · <a href="{{ pub.oa_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="open-access-{{ pub.id }}">{{ I.open_access_label[L] }}</a>{% endif %}</p>
         </section>
         <section class="book-section" aria-labelledby="book-contents-h">
           <h2 class="section-heading" id="book-contents-h">{{ b.labels.contents[L] }}</h2>

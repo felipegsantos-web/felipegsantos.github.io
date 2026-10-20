@@ -3,11 +3,11 @@ layout: default
 lang: en
 ref: home
 title: "Felipe G. Santos · Political Sociologist"
-description: "Research Fellow in Political Sociology at City St George's, University of London, United Kingdom. I study social movements, the far right, and democratic change in Europe."
+description_from: profile
 jsonld: person
 ---
 {% include vars.html %}
-<main id="main-content">
+{% assign position_key = "position_" | append: L %}<main id="main-content">
 
   <!-- ═══ HERO: 3-column grid (photo | bio | news) ═══ -->
   <section class="hero-section" aria-label="Introduction">
@@ -16,9 +16,9 @@ jsonld: person
 
         <!-- Col 1: Photo + role + institutions -->
         <div class="hero-photo-wrap">
-          <img src="{{ rel }}images/Perfil.png"
-               alt="{{ I.hero_photo_alt[L] }}"
-               class="hero-photo" width="320" height="380" loading="eager">
+          <img src="{{ rel }}{{ profile.image | remove_first: '/' }}"
+               alt="{{ profile.name }}, {{ profile[position_key] }}"
+               class="hero-photo" width="{{ profile.image_width }}" height="{{ profile.image_height }}" fetchpriority="high">
           <div class="footer-social mt-sp4">
             {%- include profile-icons.html %}
           </div>
@@ -27,7 +27,8 @@ jsonld: person
 
         <!-- Col 2: Bio text -->
         <div class="hero-bio">
-          <h1 class="hero-bio__name">Felipe G. Santos</h1>
+          <h1 class="hero-bio__name">{{ profile.name }}</h1>
+          <p class="hero-bio__aka">{{ I.also_published_as[L] | replace: "%name%", profile.name_variants[0] }}</p>
           <p class="hero-bio__text">
             {{ profile.intro_en }}
           </p>

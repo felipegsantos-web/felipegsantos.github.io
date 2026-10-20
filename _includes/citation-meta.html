@@ -1,11 +1,27 @@
-{%- comment -%}Google Scholar tags for the publications of a theme page. They have always been emitted after </head>; kept as they are.{%- endcomment -%}
-{%- include vars.html -%}
-{%- assign cite_pubs = site.data.publications | where_exp: "p", "p.themes contains page.theme" -%}
-{%- for pub in cite_pubs %}
-<meta name="citation_title" content="{{ pub.title }}">
-<meta name="citation_author" content="{{ profile.name }}">
-<meta name="citation_publication_date" content="{{ pub.year }}">
-{%- if pub.doi %}
-<meta name="citation_doi" content="{{ pub.doi }}">
-{%- endif %}
+{%- comment -%}
+  Google Scholar tags (citation_*) for the work of a page of its own (`work:` in the front matter). Authors in the order of publications.yml.
+  Only pages about a single work get them; the theme pages list many works and have none.
+{%- endcomment -%}
+{%- assign cite = site.data.publications | where: "id", page.work | first %}
+<meta name="citation_title" content="{{ cite.title | strip_html | escape }}">
+{%- for a in cite.authors %}
+<meta name="citation_author" content="{{ a | escape }}">
 {%- endfor %}
+<meta name="citation_publication_date" content="{{ cite.year }}">
+{%- if cite.publisher %}
+<meta name="citation_publisher" content="{{ cite.publisher | escape }}">
+{%- endif %}
+{%- if cite.isbn_print %}
+<meta name="citation_isbn" content="{{ cite.isbn_print }}">
+{%- endif %}
+{%- if cite.isbn_ebook %}
+<meta name="citation_isbn" content="{{ cite.isbn_ebook }}">
+{%- endif %}
+{%- if cite.doi %}
+<meta name="citation_doi" content="{{ cite.doi }}">
+{%- endif %}
+{%- if cite.pdf %}
+<meta name="citation_pdf_url" content="{{ site.url }}{{ cite.pdf }}">
+{%- elsif cite.oa_url %}
+<meta name="citation_pdf_url" content="{{ cite.oa_url }}">
+{%- endif %}

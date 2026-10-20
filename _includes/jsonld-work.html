@@ -1,0 +1,47 @@
+{%- comment -%}
+  One publication (`pub`) as its own JSON-LD block. Authors keep the order of publications.yml; Felipe is a reference to the Person defined on the profile pages.
+  Type: article and profile -> ScholarlyArticle; book and edited volume -> Book; chapters and encyclopaedia entries -> Chapter.
+  `editor` replaces `author` for the edited volume.
+{%- endcomment -%}
+{%- include vars.html -%}
+{%- assign person_id = site.url | append: "/#person" -%}
+{%- assign k_summary = "summary_" | append: L -%}
+{%- case pub.type -%}
+  {%- when "book", "edited_volume" -%}{%- assign ld_type = "Book" -%}
+  {%- when "article", "profile" -%}{%- assign ld_type = "ScholarlyArticle" -%}
+  {%- else -%}{%- assign ld_type = "Chapter" -%}
+{%- endcase -%}
+{%- if pub.type == "edited_volume" %}{% assign k_people = "editor" %}{% else %}{% assign k_people = "author" %}{% endif -%}
+{%- if pub.doi %}{% assign work_url = "https://doi.org/" | append: pub.doi %}{% else %}{% assign work_url = pub.url %}{% endif -%}
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "{{ ld_type }}", "@id": {{ site.url | append: "/#work-" | append: pub.id | jsonify }}, "name": {{ pub.title | strip_html | jsonify }}, "{{ k_people }}": [
+{%- for a in pub.authors -%}
+  {%- if a == profile.name or profile.name_variants contains a -%}{"@id": {{ person_id | jsonify }}}{%- else -%}{"@type": "Person", "name": {{ a | jsonify }}}{%- endif -%}
+  {%- unless forloop.last %}, {% endunless -%}
+{%- endfor -%}
+], "datePublished": {{ pub.year | append: "" | jsonify }}
+{%- case pub.type -%}
+  {%- when "article", "profile" -%}
+    {%- capture periodical %}{"@type": "Periodical", "name": {{ pub.venue | strip_html | jsonify }}}{% endcapture -%}
+    {%- if pub.volume -%}
+      {%- capture volume %}{"@type": "PublicationVolume", "volumeNumber": {{ pub.volume | append: "" | jsonify }}, "isPartOf": {{ periodical }}}{% endcapture -%}
+    {%- endif -%}
+    {%- if pub.issue -%}
+      {%- capture part_of %}{"@type": "PublicationIssue", "issueNumber": {{ pub.issue | append: "" | jsonify }}, "isPartOf": {{ volume }}}{% endcapture -%}
+    {%- elsif pub.volume -%}{%- assign part_of = volume -%}
+    {%- else -%}{%- assign part_of = periodical -%}
+    {%- endif -%}
+, "isPartOf": {{ part_of }}
+  {%- when "chapter", "encyclopedia_entry" -%}
+, "isPartOf": {"@type": "Book", "name": {{ pub.book_title | jsonify }}, "publisher": {"@type": "Organization", "name": {{ pub.publisher | jsonify }}}}
+  {%- else -%}
+, "publisher": {"@type": "Organization", "name": {{ pub.publisher | jsonify }}}
+{%- endcase -%}
+{%- if pub.pages -%}
+  {%- if pub.pages contains "onwards" -%}, "pageStart": {{ pub.pages | split: " " | first | jsonify }}{%- else -%}, "pagination": {{ pub.pages | jsonify }}{%- endif -%}
+{%- endif -%}
+{%- if pub.isbn_print %}, "isbn": {{ pub.isbn_print | jsonify }}{% endif -%}
+, "url": {{ work_url | jsonify }}
+{%- if pub.doi %}, "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": {{ pub.doi | jsonify }}}{% endif -%}
+{%- if pub[k_summary] and pub.summary_list_en == nil %}, "description": {{ pub[k_summary] | strip_html | jsonify }}{% endif -%}
+{%- if pub.oa_url or pub.pdf %}, "isAccessibleForFree": true, "sameAs": [{% if pub.oa_url %}{{ pub.oa_url | jsonify }}{% endif %}{% if pub.oa_url and pub.pdf %}, {% endif %}{% if pub.pdf %}{{ site.url | append: pub.pdf | jsonify }}{% endif %}]{% endif -%}
+}</script>
