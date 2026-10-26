@@ -8,7 +8,7 @@
 {%- else -%}
   {%- assign page_title = page.title -%}
   {%- if page.description_from == "profile" -%}
-    {%- assign k_pdesc = "description_" | append: L -%}
+    {%- assign k_pdesc = "meta_description_" | append: L -%}
     {%- assign page_description = profile[k_pdesc] -%}
   {%- else -%}
     {%- assign page_description = page.description -%}
@@ -54,10 +54,10 @@
 <link rel="icon" type="image/png" href="{{ rel }}assets/favicon.png?v=2" sizes="32x32">
 <link rel="preload" href="{{ rel }}assets/fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ rel }}assets/fonts/playfair-display-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{{ rel }}assets/css/tokens.css?v=20261022">
-<link rel="stylesheet" href="{{ rel }}assets/css/base.css?v=20261022">
-<link rel="stylesheet" href="{{ rel }}assets/css/layout.css?v=20261022">
-<link rel="stylesheet" href="{{ rel }}assets/css/components.css?v=20261022">
+<link rel="stylesheet" href="{{ rel }}assets/css/tokens.css?v=20261023">
+<link rel="stylesheet" href="{{ rel }}assets/css/base.css?v=20261023">
+<link rel="stylesheet" href="{{ rel }}assets/css/layout.css?v=20261023">
+<link rel="stylesheet" href="{{ rel }}assets/css/components.css?v=20261023">
 {%- if page.work %}
 {%- include citation-meta.html %}
 {%- endif %}

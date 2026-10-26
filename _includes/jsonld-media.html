@@ -1,0 +1,22 @@
+{%- comment -%}
+  ItemList of every piece in media.yml, in file order (newest first). Type: oped -> OpinionNewsArticle, guest -> PodcastEpisode, quoted -> NewsArticle (radio pieces with a web page are NewsArticle too).
+  The outlet is the publisher. Op-eds name Felipe (a reference to the Person) and the co-authors in `with` as authors; quoted pieces and guest appearances `mention` Felipe.
+{%- endcomment -%}
+{%- include vars.html -%}
+{%- assign person_id = site.url | append: "/#person" -%}
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": {{ page.title | jsonify }}, "inLanguage": {{ L | jsonify }}, "numberOfItems": {{ site.data.media | size }}, "itemListElement": [
+{%- for m in site.data.media -%}
+  {%- case m.role -%}
+    {%- when "oped" -%}{%- assign ld_type = "OpinionNewsArticle" -%}
+    {%- when "guest" -%}{%- assign ld_type = "PodcastEpisode" -%}
+    {%- else -%}{%- assign ld_type = "NewsArticle" -%}
+  {%- endcase -%}
+  {"@type": "ListItem", "position": {{ forloop.index }}, "item": {"@type": "{{ ld_type }}", "headline": {{ m.headline | jsonify }}, "url": {{ m.url | jsonify }}, "datePublished": {{ m.date | jsonify }}, "inLanguage": {{ m.language | jsonify }}, "publisher": {"@type": "Organization", "name": {{ m.outlet | jsonify }}}
+  {%- if m.role == "oped" -%}
+    , "author": [{"@id": {{ person_id | jsonify }}}{% for w in m.with %}, {"@type": "Person", "name": {{ w | jsonify }}}{% endfor %}]
+  {%- else -%}
+    , "mentions": {"@id": {{ person_id | jsonify }}}
+  {%- endif -%}
+  }}{%- unless forloop.last %}, {% endunless -%}
+{%- endfor -%}
+]}</script>

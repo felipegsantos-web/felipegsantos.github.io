@@ -1,4 +1,4 @@
-{%- comment -%}One publication (`pub`). Used by the full list and the theme pages.{%- endcomment -%}
+{%- comment -%}One publication (`pub`). Used by the full list and the theme pages. The title links to `url`; the DOI line links only when `url` is not the DOI link itself. `cited` (theme pages): ids of the works the theme text relies on; those show no summary.{%- endcomment -%}
 {%- include vars.html -%}
 {%- assign group = I.pub_type_group[pub.type] -%}
 {%- assign k_summary = "summary_" | append: L -%}
@@ -30,14 +30,16 @@
       <p class="pub-entry__venue"{{ venue_lang }}>{{ venue }}</p>
       {%- endif %}
       {%- if pub.doi or pub.oa_url or pub.pdf %}
-      <p class="pub-entry__links">{% if pub.doi %}<span>DOI <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener" class="inline-link">{{ pub.doi }}</a></span>{% endif %}{% if pub.pdf %}<a href="{{ pub.pdf }}" class="pub-entry__download" download data-goatcounter-click="pdf-{{ pub.id }}">{% include icon.html name="download" %} {{ I.pdf_label[pub.pdf_version][L] }}<span class="sr-only"{{ title_lang }}>: {{ pub.title | strip_html }}</span></a>{% elsif pub.oa_url %}<span><a href="{{ pub.oa_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="open-access-{{ pub.id }}">{{ I.open_access_label[L] }}<span class="sr-only"{{ title_lang }}>: {{ pub.title | strip_html }}</span></a>{% if pub.oa_version == "accepted" %} ({{ I.oa_version_note.accepted[L] }}){% endif %}</span>{% endif %}</p>
+      <p class="pub-entry__links">{% if pub.doi %}{% assign doi_url = "https://doi.org/" | append: pub.doi %}<span>DOI {% if pub.url == doi_url %}{{ pub.doi }}{% else %}<a href="{{ doi_url }}" target="_blank" rel="noopener" class="inline-link">{{ pub.doi }}</a>{% endif %}</span>{% endif %}{% if pub.pdf %}<a href="{{ pub.pdf }}" class="pub-entry__download" download data-goatcounter-click="pdf-{{ pub.id }}">{% include icon.html name="download" %} {{ I.pdf_label[pub.pdf_version][L] }}<span class="sr-only"{{ title_lang }}>: {{ pub.title | strip_html }}</span></a>{% elsif pub.oa_url %}<span><a href="{{ pub.oa_url }}" target="_blank" rel="noopener" class="inline-link" data-goatcounter-click="open-access-{{ pub.id }}">{{ I.open_access_label[L] }}<span class="sr-only"{{ title_lang }}>: {{ pub.title | strip_html }}</span></a>{% if pub.oa_version == "accepted" %} ({{ I.oa_version_note.accepted[L] }}){% endif %}</span>{% endif %}</p>
       {%- endif %}
+      {%- unless include.cited contains pub.id %}
       {%- if pub[k_summary] %}
       <p class="pub-entry__abstract">{{ pub[k_summary] }}</p>
       {%- if pub[k_list] %}
       <ul class="pub-entry__list">{% for item in pub[k_list] %}<li>{{ item }}</li>{% endfor %}</ul>
       {%- endif %}
       {%- endif %}
+      {%- endunless %}
       {%- if pub.version_of %}
       {%- assign src = site.data.publications | where: "id", pub.version_of | first %}
       {%- assign src_theme = src.themes | first %}
