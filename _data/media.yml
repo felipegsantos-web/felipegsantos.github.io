@@ -17,7 +17,8 @@
   role: quoted
   headline: Spain's far-right polls closer to power than ever
   language: en
-  gloss_en: On polls showing a PP and Vox coalition within reach.
+  gloss_en: On polls showing a PP and Vox coalition in Spain within reach.
+  always_gloss: true
   gloss_es: Sobre las encuestas que sitúan al alcance una coalición de PP y Vox.
   url: https://theworld.org/segments/2026/09/09/spains-far-right-polls-closer-to-power-than-ever
 - id: 2026-el-pais
