@@ -61,6 +61,9 @@ jobs:
       - name: JSON-LD against _data
         run: python3 scripts/check_jsonld.py _site
 
+      - name: Name variants, meta descriptions and llms.txt
+        run: python3 scripts/check_visibility.py _site
+
       - name: PDF titles, authors and subjects against _data
         run: python3 scripts/pdf_metadata.py --check
 

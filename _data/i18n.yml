@@ -76,6 +76,10 @@ pub_type_group:
   chapter: chapter
   encyclopedia_entry: chapter
   profile: article
+# Label of the section menu on the CV pages (phones).
+jump_to_section:
+  en: Jump to section
+  es: Ir a la sección
 # Articles without a volume yet: "Party Politics, online first."
 online_first:
   en: online first

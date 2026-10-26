@@ -9,12 +9,15 @@ jsonld: person
 {% include vars.html %}
 {% assign position_key = "position_" | append: L %}<main id="main-content">
 
-  <!-- ═══ HERO: 3-column grid (photo | bio | news) ═══ -->
+  <!-- ═══ HERO ═══ -->
   <section class="hero-section" aria-label="Introduction">
     <div class="container">
       <div class="hero-grid">
 
-        <!-- Col 1: Photo + role + institutions -->
+        <!-- Source order is the reading order on phones: name, photo and icons, intro, news, book band.
+             On wide screens the grid areas place them as photo | name + intro | news, with the band below. -->
+        <h1 class="hero-bio__name">{{ profile.name }}</h1>
+
         <div class="hero-photo-wrap">
           <img src="{{ rel }}{{ profile.image | remove_first: '/' }}"
                alt="{{ profile.name }}, {{ profile[position_key] }}"
@@ -22,33 +25,28 @@ jsonld: person
           <ul class="footer-social mt-sp4" role="list" aria-label="{{ I.profiles_label[L] }}">
             {%- include profile-icons.html %}
           </ul>
-
         </div>
 
-        <!-- Col 2: Bio text -->
         <div class="hero-bio">
-          <h1 class="hero-bio__name">{{ profile.name }}</h1>
           <p class="hero-bio__text">
             {{ profile.intro_en }}
           </p>
           <p class="hero-bio__text">
             {% include current-post.html %}
           </p>
-          
         </div>
 
-        <!-- Book band: full width below the columns on desktop, between bio and news on phones -->
-        <div class="hero-book">
-          {% include book-card.html variant="home" %}
-        </div>
-
-        <!-- Col 3: News sidebar -->
         <aside class="hero-news" aria-label="{{ I.news_label[L] }}">
           <h2 class="hero-news__heading">{{ I.news_heading[L] | replace: "&", "&amp;" }}</h2>
           <div class="news-feed">
             {% include news.html %}
           </div>
         </aside>
+
+        <!-- Book band: full width below the columns on wide screens -->
+        <div class="hero-book">
+          {% include book-card.html variant="home" %}
+        </div>
 
       </div>
     </div>

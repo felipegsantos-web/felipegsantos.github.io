@@ -20,8 +20,16 @@ jsonld: person
     <div class="cv-layout">
       <nav class="cv-sidebar" aria-label="CV sections">
         <ul class="cv-sidebar__list">
-          {%- for sec in site.data.cv %}{% assign k_title = "title_" | append: L %}<li><a href="#{{ sec.id }}" class="cv-sidebar__link">{{ sec[k_title] }}</a></li>{% endfor -%}<li><a href="#publications" class="cv-sidebar__link">Publications</a></li>
+          {%- include cv-nav-items.html publications_label="Publications" %}
         </ul>
+      </nav>
+      <nav class="cv-jump" aria-label="CV sections">
+        <details class="cv-jump__details">
+          <summary class="cv-jump__summary">{{ I.jump_to_section[L] }}</summary>
+          <ul class="cv-sidebar__list">
+            {%- include cv-nav-items.html publications_label="Publications" %}
+          </ul>
+        </details>
       </nav>
       <div class="cv-body">
         <div class="cv-contact-card">

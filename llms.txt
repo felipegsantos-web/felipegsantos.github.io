@@ -1,13 +1,17 @@
 ---
 layout: null
+lang: en
 ---
 {%- assign profile = site.data.profile -%}
 {%- assign I = site.data.i18n -%}
 {%- assign book_pub = site.data.publications | where_exp: "p", "p.page" | first -%}
+{%- include vars.html -%}
 {%- assign all_profiles = profile.profiles | where_exp: "p", "p.id != 'email'" -%}
 # {{ profile.name }}
 
 > {{ profile.description_en }}
+
+Also published as: {{ profile.name_variants | join: ", " }}.
 
 ## Main pages (English)
 
@@ -25,6 +29,26 @@ layout: null
 
 - [{{ book_pub.title | split: ": " | first }}]({{ site.url }}{{ I.nav | where: "key", "publications" | map: "url" | first | map: "en" | first }}{{ book_pub.page }}/): {{ site.data.book.subtitle }} ({{ book_pub.publisher }}, {{ book_pub.year }})
 
+## Publications
+
+{% assign years = site.data.publications | map: "year" | uniq | sort | reverse -%}
+{%- for y in years -%}
+{%- assign in_year = site.data.publications | where_exp: "p", "p.year == y" -%}
+{%- for pub in in_year -%}
+{%- capture authors %}{% include list-names.html names=pub.authors %}{% if pub.type == "edited_volume" %} {{ I.eds_suffix[L] }}{% endif %}{% endcapture -%}
+{%- assign title = pub.title | strip_html | strip -%}
+{%- capture venue_line -%}
+{%- case pub.type -%}
+{%- when "article", "profile" -%}{{ pub.venue | strip_html }}{% if pub.volume %}, {{ pub.volume }}{% if pub.issue %}({{ pub.issue }}){% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %}{% else %}, {{ I.online_first[L] }}{% endif %}.
+{%- when "chapter", "encyclopedia_entry" -%}In {{ pub.book_title | strip_html }}, {{ pub.publisher }}{% if pub.pages %}, pp. {{ pub.pages }}{% endif %}.
+{%- else -%}{{ pub.venue | strip_html }}.
+{%- endcase -%}
+{%- endcapture -%}
+{%- if pub.doi %}{% assign link = "https://doi.org/" | append: pub.doi %}{% elsif pub.url != "" %}{% assign link = pub.url %}{% else %}{% assign link = "" %}{% endif -%}
+{%- assign last_char = title | slice: -1, 1 -%}
+- {{ authors | strip }} ({{ pub.year }}). {{ title }}{% unless last_char == "?" or last_char == "." or last_char == "!" %}.{% endunless %} {{ venue_line | strip }}{% if link != "" %} {{ link }}{% endif %}
+{% endfor -%}
+{%- endfor %}
 ## Páginas principales (español)
 
 - [Inicio]({{ site.url }}/es/): Presentación, temas de investigación y novedades

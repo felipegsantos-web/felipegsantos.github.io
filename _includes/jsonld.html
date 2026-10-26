@@ -1,11 +1,18 @@
 {%- comment -%}
   Structured data. Which blocks a page gets is set in its front matter:
   `jsonld: person` (homepages and CV pages): ProfilePage with the Person.
+  `jsonld: media` (media pages): the Person block and an ItemList of the pieces in media.yml.
+  Every other page gets the Person as a block of its own, so that each page defines it once and the other blocks (publications, media) can refer to it by @id.
   `jsonld: publications` (publication lists), `theme:` (theme pages): a CollectionPage and one block per publication.
   `work:` (book page): the block of that publication.
 {%- endcomment -%}
 {%- if page.jsonld == "person" %}
 {%- include jsonld-person.html %}
+{%- else %}
+{%- include vars.html %}
+<script type="application/ld+json">{"@context": "https://schema.org", {% capture person_node %}{% include jsonld-person-node.html lang=L %}{% endcapture %}{{ person_node | strip | remove_first: "{" }}</script>
+{%- if page.jsonld == "media" %}
+{%- include jsonld-media.html %}
 {%- elsif page.jsonld == "publications" or page.theme %}
 {%- if page.theme %}{% assign parts = site.data.publications | where_exp: "p", "p.themes contains page.theme" %}{% else %}{% assign parts = site.data.publications %}{% endif %}
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": {{ page_title | jsonify }}, "description": {{ page_description | jsonify }}, "url": {{ site.url | append: page.url | jsonify }}, "inLanguage": {{ L | jsonify }}, "author": {"@id": {{ site.url | append: "/#person" | jsonify }}}, "hasPart": [{% for pub in parts %}{"@id": {{ site.url | append: "/#work-" | append: pub.id | jsonify }}}{% unless forloop.last %}, {% endunless %}{% endfor %}]}</script>
@@ -15,4 +22,5 @@
 {%- elsif page.work %}
 {%- assign pub = site.data.publications | where: "id", page.work | first %}
 {%- include jsonld-work.html pub=pub %}
+{%- endif -%}
 {%- endif -%}

@@ -19,7 +19,7 @@ image_height: 500
 og_image: /images/felipe-g-santos-og.jpg
 og_image_width: 1200
 og_image_height: 630
-# Canonical description. Used word for word wherever a description of Felipe is needed.
+# Canonical description. Used word for word wherever a description of Felipe is needed (JSON-LD, llms.txt, other pages' meta descriptions).
 description_en: >-
   Felipe G. Santos (Felipe González Santos) is a political sociologist and
   Postdoctoral Research Fellow at City St George's, University of London. He
@@ -34,6 +34,25 @@ description_es: >-
   la sociedad civil y cómo las actitudes hacia la democracia condicionan la
   participación política, con encuestas comparadas, experimentos de encuesta y
   trabajo de campo en Europa.
+# The same sentence without the other spelling of the name: the visible bio on the root page.
+bio_en: >-
+  Felipe G. Santos is a political sociologist and Postdoctoral Research Fellow
+  at City St George's, University of London. He studies why people protest, how
+  far-right actors build support through civil society, and how attitudes
+  toward democracy shape political participation, drawing on cross-national
+  surveys, survey experiments and fieldwork across Europe.
+bio_es: >-
+  Felipe G. Santos es sociólogo político e investigador postdoctoral en City St
+  George's, University of London. Estudia por qué la gente protesta, cómo la
+  ultraderecha construye apoyos a través de la sociedad civil y cómo las
+  actitudes hacia la democracia condicionan la participación política, con
+  encuestas comparadas, experimentos de encuesta y trabajo de campo en Europa.
+# Short descriptions for search results (about 155 characters). Only the homepages' <meta name="description"> and og:description
+# and the root page's <meta name="description"> use them; the JSON-LD keeps the full description above.
+meta_description_en: >-
+  Felipe G. Santos (Felipe González Santos), political sociologist at City St George's, University of London: protest, democracy and the far right in Europe.
+meta_description_es: >-
+  Felipe G. Santos (Felipe González Santos), sociólogo político en City St George's, University of London: protesta, democracia y ultraderecha en Europa.
 # First paragraph of the homepage.
 intro_en: >-
   I study why people take to the streets, how the far right builds power, and
@@ -140,8 +159,12 @@ posts:
     to: 2020-12
 # `knowsAbout` in the JSON-LD.
 knows_about:
-  - Social Movements
   - Political Participation
-  - Far-Right Politics
+  - Protest
+  - Social Movements
+  - Democracy
   - Democratic Backsliding
-  - Housing Rights
+  - Far-Right Politics
+  - Anti-Gender Movements
+  - Anti-Feminist Movements
+  - Housing Movements

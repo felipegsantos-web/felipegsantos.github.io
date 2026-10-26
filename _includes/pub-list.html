@@ -1,9 +1,16 @@
-{%- comment -%}All publications, or only those of `theme_slug` when given.{%- endcomment -%}
+{%- comment -%}
+  All publications, or only those of `theme_slug` when given. On a theme page the works the theme's text already draws on (`sources` of the theme and of its questions in theme-answers.yml)
+  lose their summary, which would repeat what the text says; their "Why it matters" line stays.
+{%- endcomment -%}
 {%- if include.theme_slug -%}
   {%- assign list = site.data.publications | where_exp: "p", "p.themes contains include.theme_slug" -%}
+  {%- assign answers = site.data.theme-answers[include.theme_slug] -%}
+  {%- assign cited = answers.sources -%}
+  {%- for qa in answers.questions -%}{%- assign cited = cited | concat: qa.sources -%}{%- endfor -%}
 {%- else -%}
+  {%- assign cited = nil -%}
   {%- assign list = site.data.publications -%}
 {%- endif -%}
 {%- for pub in list -%}
-{% include pub-card.html pub=pub %}
+{% include pub-card.html pub=pub cited=cited %}
 {% endfor -%}
