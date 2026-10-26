@@ -3,6 +3,8 @@
 # Media items take outlet, role, date, headline and link from media.yml through `ref`; they have no other fields.
 # Publication items give their own `date` (YYYY-MM), `url`, `link` (the linked text) and `rest_*` (what follows it, inline HTML allowed).
 - type: media
+  ref: 2026-el-pais-2
+- type: media
   ref: 2026-the-world
 - type: media
   ref: 2026-el-pais
