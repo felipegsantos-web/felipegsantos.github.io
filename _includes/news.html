@@ -1,11 +1,12 @@
 {%- include vars.html -%}
 {%- assign k_rest = "rest_" | append: L -%}
+{%- assign k_text = "text_" | append: L -%}
 {%- for n in site.data.news -%}
 {%- if n.type == "media" %}{% assign css = "media" %}{% assign m = site.data.media | where: "id", n.ref | first %}{% else %}{% assign css = "pub" %}{% endif -%}
 <div class="news-item">
           {%- if n.type == "media" %}
           <div class="news-item__meta"><span class="news-item__type news-item__type--{{ css }}">{{ I.news_type[n.type][L] }}</span><time class="news-item__date" datetime="{{ m.date }}">{% include month-year.html date=m.date %}</time></div>
-          <p class="news-item__text">{{ I.media_role[m.role].label[L] }} <a href="{{ m.url }}" target="_blank" rel="noopener" data-goatcounter-click="{{ n.type }}-{{ n.ref }}">{{ m.outlet }}</a>: <span lang="{{ m.language }}">{{ m.headline }}</span></p>
+          <p class="news-item__text">{{ I.media_role[m.role].label[L] }} <a href="{{ m.url }}" target="_blank" rel="noopener" data-goatcounter-click="{{ n.type }}-{{ n.ref }}">{{ m.outlet }}</a>: {{ n[k_text] }}</p>
           {%- else %}
           <div class="news-item__meta"><span class="news-item__type news-item__type--{{ css }}">{{ I.news_type[n.type][L] }}</span><time class="news-item__date" datetime="{{ n.date }}">{% include month-year.html date=n.date %}</time></div>
           <p class="news-item__text"><a href="{{ n.url }}" target="_blank" rel="noopener" data-goatcounter-click="{{ n.type }}-{{ n.ref }}">{{ n.link }}</a>{{ n[k_rest] }}</p>

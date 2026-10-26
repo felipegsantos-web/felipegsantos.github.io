@@ -76,7 +76,7 @@ Add an entry to `_data/projects.yml` with `status: current` or `past` (newest fi
 
 ### A news item
 
-Add an entry at the top of `_data/news.yml` (the homepage shows them in file order). `ref` is the id of the media or publication entry it points to (used for the analytics event name). `link` is the linked text; `rest_en` / `rest_es` is the text after it.
+Add an entry at the top of `_data/news.yml` (the homepage shows them in file order). `ref` is the id of the media or publication entry it points to (used for the analytics event name). For a media item, `text_en` / `text_es` is the sentence after the outlet (the headline is not shown, so the entry is entirely in the page's language). For a publication, `link` is the linked text and `rest_en` / `rest_es` the text after it. Keep the list to three entries: drop the oldest when adding a new one.
 
 Interface strings (navigation, buttons, filter labels) are in `_data/i18n.yml`. A new research theme needs an entry in `_data/themes.yml`, a `.theme--<slug>` colour in `assets/css/components.css`, and two page files like `en/publications/theme/care/index.html` (they only contain front matter).
 
