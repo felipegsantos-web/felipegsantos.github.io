@@ -1,17 +1,17 @@
-# Homepage "News & Updates", newest first.
+# Homepage "Recent News", newest first. Keep it to three entries.
 # `type`: media | publication (labels in i18n.yml). `ref` is the id of the media or publication entry (analytics event name).
-# Media items take outlet, role, date, headline and link from media.yml through `ref`; they have no other fields.
+# Media items take outlet, role, date and link from media.yml through `ref`, and give their own text in both languages
+# (`text_en` / `text_es`), so the entry is entirely in the language of the page. The headline is not shown.
 # Publication items give their own `date` (YYYY-MM), `url`, `link` (the linked text) and `rest_*` (what follows it, inline HTML allowed).
 - type: media
   ref: 2026-el-pais-2
+  text_en: Hyperactivity among right-wing groups in Spain around the PP and Vox ahead of the 29 November election.
+  text_es: La hiperactividad de los grupos de la derecha en torno al PP y Vox ante las elecciones del 29-N.
 - type: media
   ref: 2026-the-world
+  text_en: Polls showing a PP and Vox coalition in Spain within reach.
+  text_es: Las encuestas que sitúan al alcance una coalición de PP y Vox.
 - type: media
   ref: 2026-el-pais
-- type: publication
-  ref: 2026-foot-in-parliament-foot-on-the-streets
-  date: '2026-01'
-  url: https://doi.org/10.1177/13540688251413043
-  link: One foot in parliament, one on the streets
-  rest_en: ' (with Hoffmann and Mercea): <em>Party Politics</em>.'
-  rest_es: ' (con Hoffmann y Mercea): <em>Party Politics</em>.'
+  text_en: What Orbán's fall means for the anti-abortion and anti-LGBTQ+ movement.
+  text_es: Lo que supone la caída de Orbán para el movimiento antiaborto y contra los derechos LGTBIQ+.
