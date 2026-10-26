@@ -2,13 +2,23 @@
 # `date`: YYYY-MM-DD, or YYYY-MM when the day is not known. `role`: quoted | guest | oped (labels in i18n.yml).
 # `headline`: exactly as published, in the language of the piece (`language`: es | en); never translated.
 # `with`: co-authors of an op-ed, or co-guests. `gloss_en` / `gloss_es`: one line on the topic, shown only when the headline's language differs from the page language, or always when `always_gloss` is true.
+- id: 2026-el-pais-2
+  outlet: El País
+  date: '2026-10-25'
+  role: quoted
+  headline: El 29-N desata la “hiperactividad” en el avispero de grupos en torno al PP y Vox
+  language: es
+  gloss_en: On the surge of activity among right-wing groups in Spain around the PP and Vox ahead of the 29 November election.
+  gloss_es: Sobre la hiperactividad de los grupos de la derecha en torno al PP y Vox ante las elecciones del 29-N.
+  url: https://elpais.com/espana/elecciones-generales/2026-10-25/el-29-n-desata-la-hiperactividad-en-el-avispero-de-grupos-en-torno-al-pp-y-vox.html
 - id: 2026-the-world
   outlet: The World (PRX)
   date: '2026-09-09'
   role: quoted
   headline: Spain's far-right polls closer to power than ever
   language: en
-  gloss_en: On polls showing a PP and Vox coalition within reach.
+  gloss_en: On polls showing a PP and Vox coalition in Spain within reach.
+  always_gloss: true
   gloss_es: Sobre las encuestas que sitúan al alcance una coalición de PP y Vox.
   url: https://theworld.org/segments/2026/09/09/spains-far-right-polls-closer-to-power-than-ever
 - id: 2026-el-pais

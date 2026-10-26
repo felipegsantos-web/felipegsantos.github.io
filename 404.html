@@ -8,9 +8,9 @@ bilingual: true
 noindex: true
 ---
 {% include vars.html %}
-{%- comment -%}GitHub Pages cannot redirect files: a visit to an old PDF path lands here and is sent to the new path (_data/pdf_redirects.yml).{%- endcomment -%}
+{%- comment -%}GitHub Pages cannot redirect files: a visit to an old PDF path (or a renamed page) lands here and is sent to the new path (_data/pdf_redirects.yml).{%- endcomment -%}
 {%- capture pdf_map %}{% for r in site.data.pdf_redirects %}{{ r.old | jsonify }}: {{ r.new | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endcapture %}
-<script>!function(){var m={ {{- pdf_map -}} },n=m[location.pathname];if(n)location.replace(n+location.search+location.hash)}()</script>
+<script>!function(){var m={"/en/current-work/":"/en/research-projects/","/es/trabajo-actual/":"/es/proyectos-investigacion/"{% if site.data.pdf_redirects.size > 0 %}, {% endif %}{{- pdf_map -}} },n=m[location.pathname];if(n)location.replace(n+location.search+location.hash)}()</script>
 <main id="main-content">
   <div class="container">
     <div class="page-header">

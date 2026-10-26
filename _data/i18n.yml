@@ -41,7 +41,7 @@ profiles_label:
 nav:
   - key: research
     label: {en: Research, es: Investigación}
-    url: {en: /en/current-work/, es: /es/trabajo-actual/}
+    url: {en: /en/research-projects/, es: /es/proyectos-investigacion/}
     description: {en: "Funded research projects, current and past", es: "Proyectos de investigación financiados, en curso y anteriores"}
   - key: publications
     label: {en: Publications, es: Publicaciones}
