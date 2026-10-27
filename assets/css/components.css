@@ -336,8 +336,7 @@
   line-height:1.4;margin-bottom:var(--sp1)}
 .media-entry__title a{color:inherit;text-decoration:none}
 .media-entry__title a:hover{color:var(--teal);text-decoration:underline}
-.media-entry__gloss,.media-entry__with{font-size:var(--tx-xs);color:var(--text-muted);line-height:1.5;margin:0}
-.media-entry__gloss+.media-entry__with{margin-top:var(--sp1)}
+.media-entry__summary{font-size:var(--tx-sm);color:var(--text-secondary);line-height:1.5;margin:0}
 .media-list{display:flex;flex-direction:column;gap:var(--sp3)}
 
 /* Media format badges */

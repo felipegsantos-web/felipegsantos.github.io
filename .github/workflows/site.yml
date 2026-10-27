@@ -64,6 +64,9 @@ jobs:
       - name: Name variants, meta descriptions and llms.txt
         run: python3 scripts/check_visibility.py _site
 
+      - name: Media summaries
+        run: python3 scripts/check_media.py
+
       - name: PDF titles, authors and subjects against _data
         run: python3 scripts/pdf_metadata.py --check
 

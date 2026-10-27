@@ -1,4 +1,4 @@
-{%- comment -%}Media items from media.yml. The headline is never translated; the gloss (topic in the page language) shows only when the headline's language differs from the page's, or when the entry sets `always_gloss`.{%- endcomment -%}
+{%- comment -%}Media items from media.yml. The headline is never translated; every item shows its summary in the page language (`summary_en` / `summary_es`), whatever the language of the piece.{%- endcomment -%}
 {%- include vars.html -%}
 {%- for m in site.data.media -%}
 {%- include media-item.html m=m -%}
