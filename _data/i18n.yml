@@ -165,9 +165,6 @@ month_names:
 month_year:
   en: "%month% %year%"
   es: "%month% de %year%"
-with_authors:
-  en: "With %names%."
-  es: "Con %names%."
 # Homepage
 news_type:
   media: {en: Media, es: Medios}
