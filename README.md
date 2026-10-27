@@ -68,7 +68,7 @@ Optional fields: `venue_es` (if the Spanish line differs), `book_title`, `publis
 
 ### A media item
 
-Add an entry at the top of `_data/media.yml` (newest first) with: `id`, `outlet`, `date` (`YYYY-MM-DD`, or `YYYY-MM`), `role` (`quoted`, `guest` or `oped`), `headline` (as published, never translated), `language` of the piece (`es` or `en`), `with` (op-eds only: the co-authors, used as authors in the structured data and not shown on the page), `summary_en` and `summary_es`, and `url`. Both summaries are required: one or two sentences, verb first and no subject, on the piece and Felipe's part in it, with no dashes. The page shows the summary in its own language under every headline, whatever the language of the piece.
+Add an entry at the top of `_data/media.yml` (newest first) with: `id`, `outlet`, `date` (`YYYY-MM-DD`, or `YYYY-MM`), `role` (`quoted`, `guest` or `oped`), `headline` (as published, never translated), `language` of the piece (`es` or `en`), `with` (op-eds only: the co-authors, used as authors in the structured data and not shown on the page), `summary_en` and `summary_es`, and `url`. Both summaries are required: one line on the topic of the piece (not what Felipe argues), a noun phrase ending in a period, at most 100 characters, with no dashes. The page shows the summary in its own language under every headline, whatever the language of the piece.
 
 ### A project
 
@@ -102,7 +102,7 @@ The repository's Pages source must be set to **GitHub Actions** (Settings → Pa
 3. `python3 scripts/check_hreflang.py`: every English page has a Spanish pair and the `hreflang` tags are reciprocal; `x-default` is the English version of the same page.
 4. `python3 scripts/check_jsonld.py _site`: every JSON-LD block parses, publication blocks have the authors of `_data/publications.yml` in order, every page defines the Person once, and the media pages have an `ItemList` with one item per entry of `_data/media.yml`.
 4b. `python3 scripts/check_visibility.py _site`: the other spellings of the name are in no visible text except publication author lists, the homepage meta descriptions are at most 160 characters, and `llms.txt` has the "Also published as" line and one line per publication.
-4c. `python3 scripts/check_media.py`: every entry of `_data/media.yml` has non-empty `summary_en` and `summary_es` of at most two sentences with no em or en dashes, no leftover `gloss_en`, `gloss_es` or `always_gloss`, and `with` only on op-eds.
+4c. `python3 scripts/check_media.py`: every entry of `_data/media.yml` has non-empty `summary_en` and `summary_es` of exactly one sentence and at most 100 characters, with no em or en dashes, no leftover `gloss_en`, `gloss_es` or `always_gloss`, and `with` only on op-eds.
 5. `python3 scripts/check_theme_answers.py`: word counts, sentence counts and links of `_data/theme-answers.yml`.
 6. `python3 scripts/check_contrast.py`: every text/background pair of the stylesheets, in both themes (4.5:1 for text, 3:1 for icons and focus rings).
 7. `scripts/a11y/axe.mjs` (axe with Playwright and Chromium): every page of `_site`, in both themes at 1280 and 375 px, plus the open mobile menu and the publications list view. It fails on any violation of the axe tags `wcag2a`, `wcag2aa`, `wcag21a`, `wcag21aa` and `wcag22aa`, on a page without exactly one `h1` or with a skipped heading level, and on any focusable element without a visible, unclipped focus indicator. Locally: `cd scripts/a11y && npm ci && npx playwright install chromium && node axe.mjs ../../_site`.

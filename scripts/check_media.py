@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check _data/media.yml: non-empty summary_en / summary_es of at most two sentences with no em or en dashes,
+"""Check _data/media.yml: non-empty summary_en / summary_es of exactly one sentence of at most 100 characters with no em or en dashes,
 no leftover gloss_en / gloss_es / always_gloss, and `with` only on op-eds. Usage: python3 scripts/check_media.py"""
 import re
 import sys
@@ -23,8 +23,10 @@ for m in media:
             errors.append(f"{i}: {k} is missing or empty")
             continue
         n = len(re.findall(r"[.?!](?:\s|$)", t))
-        if n > 2:
-            errors.append(f"{i}: {k} has {n} sentences (maximum 2)")
+        if n != 1:
+            errors.append(f"{i}: {k} has {n} sentences (exactly 1)")
+        if len(t) > 100:
+            errors.append(f"{i}: {k} has {len(t)} characters (maximum 100)")
         if re.search(r"[–—]", t):
             errors.append(f"{i}: {k} has an em or en dash")
 print(f"{len(media)} media entries checked")

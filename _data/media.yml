@@ -1,7 +1,7 @@
 # Media coverage, newest first (the order shown on the site). Templates build everything from these fields.
 # `id`: unique slug. `outlet`, `date` (YYYY-MM-DD, or YYYY-MM when the day is not known), `role` (quoted | guest | oped; labels in i18n.yml).
 # `headline`: exactly as published, in the language of the piece (`language`: es | en); never translated.
-# `summary_en` / `summary_es`: one or two sentences on the piece and Felipe's part in it, verb first, no subject; every entry has both and the page shows the one in its own language. No dashes (scripts/check_media.py).
+# `summary_en` / `summary_es`: one line on the topic of the piece (not what Felipe argues), a noun phrase ending in a period, at most 100 characters; every entry has both and the page shows the one in its own language. No dashes (scripts/check_media.py).
 # `with`: op-eds only (`role: oped`); co-authors, used as authors in the JSON-LD and not shown on the page.
 # `url`: link to the piece.
 - id: 2026-el-pais-2
@@ -10,8 +10,8 @@
   role: quoted
   headline: El 29-N desata la “hiperactividad” en el avispero de grupos en torno al PP y Vox
   language: es
-  summary_en: Explains the surge of activity among groups around the PP and Vox by a highly polarized campaign and the prospect of a right-wing government, in which they could seek influence and posts. Recalls that similar groups in Hungary and the United States presented themselves as a democratizing force against corrupt elites and then failed to react to abuses by their own side.
-  summary_es: Explica la hiperactividad de los grupos en torno al PP y Vox por una campaña muy polarizada y por la perspectiva de un gobierno de derechas, en el que podrían buscar influencia y cargos. Recuerda que en Hungría y Estados Unidos grupos similares se presentaron como una fuerza democratizadora frente a élites corruptas y después no reaccionaron ante los abusos de los suyos.
+  summary_en: Hyperactivity among right-wing civil society groups around the PP and Vox ahead of the election.
+  summary_es: La hiperactividad de los grupos derechistas de la sociedad civil en torno al PP y Vox ante el 29-N.
   url: https://elpais.com/espana/elecciones-generales/2026-10-25/el-29-n-desata-la-hiperactividad-en-el-avispero-de-grupos-en-torno-al-pp-y-vox.html
 - id: 2026-the-world
   outlet: The World (PRX)
@@ -19,8 +19,8 @@
   role: quoted
   headline: Spain's far-right polls closer to power than ever
   language: en
-  summary_en: Comments on polls that put a PP and Vox coalition within reach of a majority, and on what it would mean for Spain to have the far right in government.
-  summary_es: Comenta las encuestas que sitúan al alcance de la mayoría una coalición de PP y Vox, y lo que supondría para España tener a la ultraderecha en el gobierno.
+  summary_en: Polls putting a PP and Vox coalition in Spain within reach of a majority.
+  summary_es: Las encuestas que sitúan al alcance una mayoría de PP y Vox.
   url: https://theworld.org/segments/2026/09/09/spains-far-right-polls-closer-to-power-than-ever
 - id: 2026-el-pais
   outlet: El País
@@ -28,8 +28,8 @@
   role: quoted
   headline: El movimiento contra el aborto y contra los derechos LGTBIQ+ pierde con Orbán su modelo a seguir
   language: es
-  summary_en: Discusses what Orbán's fall means for the anti-abortion and anti-LGBTQ+ movement, which had taken his Hungary as a model.
-  summary_es: Analiza lo que supone la caída de Orbán para el movimiento antiaborto y contra los derechos LGTBIQ+, que había tomado su Hungría como modelo.
+  summary_en: The anti-abortion and anti-LGBTQ+ movement after Orbán's fall.
+  summary_es: El movimiento antiaborto y contra los derechos LGTBIQ+ tras la caída de Orbán.
   url: https://elpais.com/espana/2026-04-15/el-movimiento-contra-el-aborto-y-contra-los-derechos-lgtbiq-pierde-con-orban-su-modelo-a-seguir.html
 - id: 2025-el-pais
   outlet: El País
@@ -37,8 +37,8 @@
   role: quoted
   headline: La creciente red de grupos derechistas que ya junta a PP y Vox mientras sus líderes se pelean
   language: es
-  summary_en: Discusses the growing network of right-wing groups that brings the PP and Vox together while the two parties' leaders clash.
-  summary_es: Analiza la creciente red de grupos derechistas que reúne a PP y Vox mientras sus líderes se enfrentan.
+  summary_en: The growing network of right-wing civil society groups linking the PP and Vox.
+  summary_es: La creciente red de grupos derechistas de la sociedad civil que une a PP y Vox.
   url: https://elpais.com/espana/2025-10-11/la-creciente-red-de-grupos-derechistas-que-ya-junta-a-pp-y-vox-mientras-sus-lideres-discuten.html
 - id: 2025-eldiario-es
   outlet: elDiario.es
@@ -46,8 +46,8 @@
   role: quoted
   headline: El país toma el pulso a la crisis de la vivienda con manifestaciones en 40 ciudades
   language: es
-  summary_en: Reads the turnout as a sign of the tenant unions' capacity to mobilize and of an escalating conflict over housing. Argues that the housing movement has long been an early warning of major crises, as V de Vivienda was before the bubble burst and the PAH after it, and that institutions should listen to it.
-  summary_es: Interpreta la participación como una muestra de la capacidad de movilización de los sindicatos de inquilinos y de una escalada del conflicto por la vivienda. Sostiene que el movimiento por la vivienda ha sido siempre una alarma ante grandes crisis, como V de Vivienda antes del estallido de la burbuja y la PAH después, y que las instituciones deberían escucharlo.
+  summary_en: Housing protests in 40 Spanish cities and the movement behind them.
+  summary_es: Las manifestaciones por la vivienda en 40 ciudades y el movimiento que las convoca.
   url: https://www.eldiario.es/economia/pais-toma-pulso-crisis-vivienda-manifestaciones-40-ciudades_1_12192609.html
 - id: 2025-eldiario-es-2
   outlet: elDiario.es (Un tema al día)
@@ -55,8 +55,8 @@
   role: guest
   headline: Trump, Musk y el saludo nazi
   language: es
-  summary_en: Discusses what the new US far right seeks when figures such as Elon Musk and Steve Bannon make the Nazi salute in public.
-  summary_es: Analiza qué busca la nueva ultraderecha estadounidense cuando figuras como Elon Musk y Steve Bannon hacen el saludo nazi en público.
+  summary_en: Trump, Musk and the Nazi salute on the new US far right.
+  summary_es: Trump, Musk y el saludo nazi en la nueva ultraderecha estadounidense.
   url: https://www.eldiario.es/blog/al-dia/podcast-trump-musk-saludo-nazi_132_12090902.html
 - id: 2024-cadena-ser
   outlet: Cadena SER
@@ -64,8 +64,8 @@
   role: quoted
   headline: La tragedia de Valencia, caldo de cultivo para la antipolítica
   language: es
-  summary_en: Discusses the anti-political sentiment that followed the 2024 Valencia floods and its links to the far right.
-  summary_es: Analiza el sentimiento antipolítico que siguió a la dana de Valencia de 2024 y su relación con la ultraderecha.
+  summary_en: Anti-politics and the far right after the 2024 Valencia floods.
+  summary_es: La antipolítica y la ultraderecha tras la dana de Valencia de 2024.
   url: https://cadenaser.com/nacional/2024/11/08/la-tragedia-de-valencia-caldo-de-cultivo-para-la-antipolitica-cadena-ser/
 - id: 2024-el-pais
   outlet: El País
@@ -73,8 +73,8 @@
   role: quoted
   headline: Un frenesí ultraderechista en el lodazal de la dana
   language: es
-  summary_en: Discusses the far-right mobilization in the areas hit by the 2024 Valencia floods.
-  summary_es: Analiza la movilización de la ultraderecha en las zonas afectadas por la dana de Valencia de 2024.
+  summary_en: Far-right mobilization in the areas hit by the 2024 Valencia floods.
+  summary_es: La movilización ultraderechista en las zonas arrasadas por la dana de 2024.
   url: https://elpais.com/espana/2024-11-05/un-frenesi-ultraderechista-en-el-lodazal-de-la-dana.html
 - id: 2024-el-pais-2
   outlet: El País
@@ -82,8 +82,8 @@
   role: quoted
   headline: Los soldados españoles de la "batalla cultural"
   language: es
-  summary_en: Discusses the civil society organizations that Vox has created to wage its culture war.
-  summary_es: Analiza las organizaciones de la sociedad civil creadas desde Vox para librar su batalla cultural.
+  summary_en: The civil society organizations Vox has created to wage its culture war.
+  summary_es: Las organizaciones creadas desde Vox para librar su batalla cultural.
   url: https://elpais.com/espana/2024-08-04/los-soldados-espanoles-de-la-batalla-cultural.html
 - id: 2024-el-pais-3
   outlet: El País
@@ -91,8 +91,8 @@
   role: quoted
   headline: Abascal se coloca el cordón sanitario que nunca le puso el PP
   language: es
-  summary_en: Discusses Vox's decision to join Patriots for Europe, which places it inside the European Parliament's cordon sanitaire.
-  summary_es: Analiza la decisión de Vox de unirse a Patriotas por Europa, que lo sitúa dentro del cordón sanitario del Parlamento Europeo.
+  summary_en: Vox joining Patriots for Europe and the cordon sanitaire that comes with it.
+  summary_es: La entrada de Vox en Patriotas por Europa y el cordón sanitario que conlleva.
   url: https://elpais.com/espana/2024-07-15/abascal-se-coloca-el-cordon-sanitario-que-nunca-le-puso-el-pp.html
 - id: 2023-eldiario-es
   outlet: elDiario.es (Un tema al día)
@@ -100,8 +100,8 @@
   role: guest
   headline: 'La nueva ultraderecha: del odio al judío al amor por Israel'
   language: es
-  summary_en: Discusses why parts of the European far right, heirs to movements with an antisemitic past, have become firm supporters of Israel.
-  summary_es: Analiza por qué parte de la ultraderecha europea, heredera de movimientos con un pasado antisemita, se ha convertido en firme defensora de Israel.
+  summary_en: The European far right's shift from antisemitism to support for Israel.
+  summary_es: El giro de la ultraderecha europea del antisemitismo al apoyo a Israel.
   url: https://www.eldiario.es/blog/al-dia/podcast-la-nueva-ultraderecha-del-odio-al-judio-al-amor-por-israel_132_10656184.html
 - id: 2023-eldiario-es-2
   outlet: elDiario.es (Un tema al día)
@@ -109,8 +109,8 @@
   role: guest
   headline: Vox, la ola internacional y el muro de papeletas
   language: es
-  summary_en: Discusses Vox's loss of votes and seats in the July 2023 general election and how its result fits the pattern of the far right in other European countries.
-  summary_es: Analiza la pérdida de votos y escaños de Vox en las elecciones generales de julio de 2023 y cómo encaja su resultado en la evolución de la ultraderecha en otros países europeos.
+  summary_en: Vox's setback in the 2023 general election and the far right across Europe.
+  summary_es: El retroceso de Vox en las elecciones generales de 2023 y la ultraderecha en Europa.
   url: https://www.eldiario.es/blog/al-dia/podcast-vox-la-ola-interncional-y-el-muro-de-papeletas_132_10413459.html
 - id: 2022-cadena-ser-2
   outlet: Cadena SER
@@ -118,8 +118,8 @@
   role: quoted
   headline: 'Los satélites de Vox: cómo la ultraderecha utiliza una red de asociaciones para aparentar apoyo social a sus postulados'
   language: es
-  summary_en: Discusses the network of associations that Vox uses to give the impression of social support for its positions.
-  summary_es: Analiza la red de asociaciones que usa Vox para aparentar apoyo social a sus posiciones.
+  summary_en: The network of civic associations Vox uses to project social support.
+  summary_es: La red de asociaciones cívicas que usa Vox para aparentar apoyo social.
   url: https://cadenaser.com/nacional/2022/11/29/los-satelites-de-vox-como-la-ultraderecha-utiliza-una-red-de-asociaciones-para-aparentar-apoyo-social-a-sus-postulados-cadena-ser/
 - id: 2022-cadena-ser
   outlet: Cadena SER
@@ -127,8 +127,8 @@
   role: quoted
   headline: Macarena Olona busca su hueco en la ultraderecha abanderando el movimiento antifeminista
   language: es
-  summary_en: Discusses how Macarena Olona, after leaving Vox, is trying to carve out her own place on the far right as a champion of the anti-feminist movement.
-  summary_es: Analiza cómo Macarena Olona, tras dejar Vox, intenta hacerse un sitio en la ultraderecha como abanderada del movimiento antifeminista.
+  summary_en: Macarena Olona and the anti-feminist movement on the Spanish far right.
+  summary_es: Macarena Olona y el movimiento antifeminista en la ultraderecha española.
   url: https://cadenaser.com/nacional/2022/11/04/macarena-olona-busca-su-hueco-en-la-ultraderecha-abanderando-el-movimiento-antigenero-cadena-ser/
 - id: 2022-carne-cruda
   outlet: Carne Cruda (elDiario.es)
@@ -136,8 +136,8 @@
   role: guest
   headline: 'Pinchazos: Qué os pasa, hombres'
   language: es
-  summary_en: "Discusses whether the backlash against women's rights is organized: what male supremacism is, where it comes from, and the men's associations that openly oppose laws on women's rights."
-  summary_es: "Analiza si la reacción contra los derechos de las mujeres está organizada: qué es el supremacismo masculino, de dónde surge y qué asociaciones de hombres se oponen abiertamente a las leyes de derechos de las mujeres."
+  summary_en: Male supremacism and the organized backlash against feminism.
+  summary_es: El supremacismo masculino y la reacción organizada contra el feminismo.
   url: https://www.eldiario.es/carnecruda/programas/pinchazos-pasa-hombres_132_9309200.html
 - id: 2022-eldiario-es
   outlet: elDiario.es (Un tema al día)
@@ -145,8 +145,8 @@
   role: guest
   headline: '707 millones de tentáculos: el lobby ultraconservador en Europa'
   language: es
-  summary_en: Discusses the network of ultraconservative foundations and organizations in Europe, funded from the United States, Russia and Latin America, and how far its influence reaches.
-  summary_es: Analiza la red de fundaciones y organizaciones ultraconservadoras en Europa, financiada desde Estados Unidos, Rusia y América Latina, y hasta dónde llega su influencia.
+  summary_en: The network of ultraconservative foundations in Europe and who funds it.
+  summary_es: La red de fundaciones ultraconservadoras en Europa y quién la financia.
   url: https://www.eldiario.es/blog/al-dia/podcast-707-millones-tentaculos-lobby-ultraconservador-europa_132_9169314.html
 - id: 2022-the-conversation
   outlet: The Conversation
@@ -156,8 +156,8 @@
   language: en
   with:
   - Dan Mercea
-  summary_en: Argues, with ProDem survey data, that the six-party coalition against Orbán lost many of its parties' earlier voters and that including the far-right Jobbik weakened its message. Concludes that progressive parties should look for partners whose voters share their values.
-  summary_es: Sostiene, con datos de encuesta del proyecto ProDem, que la coalición de seis partidos contra Orbán perdió a muchos de los votantes que antes tenían sus partidos y que incluir a Jobbik, de ultraderecha, debilitó su mensaje. Concluye que los partidos progresistas deben buscar socios cuyos votantes compartan sus valores.
+  summary_en: Orbán's 2022 victory and the opposition's alliance with the far-right Jobbik.
+  summary_es: La victoria de Orbán en 2022 y la alianza opositora con el ultraderechista Jobbik.
   url: https://theconversation.com/hungary-election-triumph-for-viktor-orban-is-a-warning-to-progressive-parties-seeking-a-marriage-of-convenience-with-the-far-right-180196
 - id: 2021-chatham-house
   outlet: Chatham House (Undercurrents)
@@ -165,8 +165,8 @@
   role: guest
   headline: 'Undercurrents: Europe''s far-right educational institutions'
   language: en
-  summary_en: Discusses research published in International Affairs on two far-right institutions of higher education, Hungary's National University of Public Service and the ISSEP in France and Spain, and how they seek to transform the international order rather than reject it.
-  summary_es: Analiza, a partir de un artículo publicado en International Affairs, dos instituciones de educación superior vinculadas a la ultraderecha, la Universidad Nacional de la Función Pública de Hungría y el ISSEP en Francia y España, y cómo aspiran a transformar el orden internacional en lugar de rechazarlo.
+  summary_en: Far-right educational institutions in Hungary, France and Spain.
+  summary_es: Las instituciones educativas de la ultraderecha en Hungría, Francia y España.
   url: https://www.chathamhouse.org/2021/10/undercurrents-europes-far-right-educational-institutions
 - id: 2020-the-guardian
   outlet: The Guardian
@@ -179,8 +179,8 @@
   - Austin Choi-Fitzpatrick
   - Jeremy Pressman
   - Jay Ulfelder
-  summary_en: Documents nearly 100 methods of nonviolent action (physical, online and hybrid) that people took up in the first weeks of the pandemic. Argues that the crisis is producing new tactics rather than making social movements obsolete.
-  summary_es: Documenta casi un centenar de métodos de acción no violenta (presenciales, online e híbridos) adoptados en las primeras semanas de la pandemia. Sostiene que la crisis está generando nuevas tácticas en lugar de dejar obsoletos a los movimientos sociales.
+  summary_en: The new forms of nonviolent action that emerged during the pandemic.
+  summary_es: Las nuevas formas de acción no violenta surgidas durante la pandemia.
   url: https://www.theguardian.com/commentisfree/2020/apr/20/the-global-pandemic-has-spawned-new-forms-of-activism-and-theyre-flourishing
 - id: 2020-agenda-publica
   outlet: Agenda Pública
@@ -190,6 +190,6 @@
   language: es
   with:
   - Olga Onuch
-  summary_en: Uses surveys in Argentina and Ukraine to show that many people remained willing to protest during the pandemic, and not only among the young. Warns that governments should not assume the health crisis gives them a free hand, and that civil rights must remain a priority.
-  summary_es: Con encuestas en Argentina y Ucrania, muestra que muchas personas seguían dispuestas a protestar durante la pandemia, y no solo entre los jóvenes. Advierte de que los gobiernos no deben dar por hecho que la crisis sanitaria les da carta blanca y de que los derechos civiles deben seguir siendo una prioridad.
+  summary_en: Willingness to protest during the pandemic in Argentina and Ukraine.
+  summary_es: La disposición a protestar durante la pandemia en Argentina y Ucrania.
   url: https://agendapublica.es/noticia/16967/volveremos-calles-disposicion-protestar-durante-pandemia
